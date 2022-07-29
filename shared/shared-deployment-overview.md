@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -20,7 +20,7 @@ Automation is an important part of any cloud solution, and it's even more so in 
 
 - [{{site.data.keyword.cloud_notm}} Command Line Interface (CLI)](/docs/cli?topic=cli-getting-started)
 - [Application programming interfaces (APIs)](/docs?tab=api-docs)
-- [Terraform](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about)
+- [Terraform](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about), including a toolchain with modules designed specifically to [deploy infrastructure as code for the reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code)
 
 The remainder of this topic describes how to set up these tools for the reference architectures.
 

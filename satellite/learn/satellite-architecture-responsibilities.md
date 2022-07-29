@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # {{site.data.keyword.satelliteshort}} reference architecture shared responsibility model
 {: #satellite-architecture-shared-responsibilities}
 
-In {{site.data.keyword.cloud_notm}}, the responsibilities for deploying, operating, and securing products are shared between {{site.data.keyword.IBM_notm}} and our customers. This [{{site.data.keyword.cloud}} shared responsibility model](/docs/overview?topic=overview-shared-responsibilities#managed-responsibilities) is one of the most important things to understand when interpreting the control requirements of the {{site.data.keyword.framework-fs_notm}}. Here we dive deeper into this shared responsibility model for the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about).
+In {{site.data.keyword.cloud_notm}}, the responsibilities for deploying, operating, and securing products are shared between {{site.data.keyword.IBM_notm}} and our customers. This [{{site.data.keyword.cloud}} shared responsibility model](/docs/overview?topic=overview-shared-responsibilities) is one of the most important things to understand when interpreting the control requirements of the {{site.data.keyword.framework-fs_notm}}. Here we dive deeper into this shared responsibility model for the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about).
 {: shortdesc}
 
 ## Shared responsibilities for {{site.data.keyword.cloud_notm}} products
