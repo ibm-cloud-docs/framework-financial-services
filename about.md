@@ -35,7 +35,7 @@ The {{site.data.keyword.framework-fs_notm}} consists of:
 ### Control requirements
 {: #framework-control-requirements}
 
-The technology-agnostic control requirements defined in the framework were built by the industry for the industry. The framework contains 565 control requirements that span 7 focus areas and 21 control families. The controls are based on [NIST 800-53 Rev 4](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/800-53?version=4.0){: external}, with enhancements based on feedback from leading industry partners.
+The technology-agnostic control requirements defined in the framework were built by the industry for the industry. The framework contains 565 control requirements that span 7 focus areas and 21 control families. The control requirements were initially based on [NIST 800-53 Rev 4](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/800-53?version=4.0){: external} and have been enhanced based on feedback from leading industry partners.
 
 See [{{site.data.keyword.framework-fs_full}} - Control Requirements](https://cloud.ibm.com/media/docs/downloads/framework-financial-services/IBM_Cloud_Framework_for_Financial_Services_-_Control_Requirements_v1.1.0.xlsx){: external} for a spreadsheet of the control requirements.
 
@@ -51,10 +51,10 @@ We refer to the entity that uses (consumes) an application as the _consumer_ and
 You should use the information in the framework if you are an application provider (whether from a financial institution or ecosystem partner) who wishes to meet the requirements or leverage the best practices of {{site.data.keyword.cloud_notm}} for Financial Services. However, the content has a different purpose depending on whether you represent an application provider from an ecosystem partner or an application provider within a financial institution.
 
 Ecosystem partner
-:   The information represents a set of _required_ controls and guidance if you want to pursue a designation of [{{site.data.keyword.cloud_notm}} for Financial Services Validated](#becoming-fs-validated) from {{site.data.keyword.IBM_notm}}. The Financial Services Validated designation signifies that you have successfully evidenced compliance to the controls of the {{site.data.keyword.framework-fs_notm}} and may improve your ability to market to financial institutions.
+:   The reference architectures and guidance form a set of _requirements_ if you want to pursue a designation of [{{site.data.keyword.cloud_notm}} for Financial Services Validated](#becoming-fs-validated) from {{site.data.keyword.IBM_notm}}. The Financial Services Validated designation signifies that you have successfully evidenced compliance to the control requirements of the {{site.data.keyword.framework-fs_notm}} and may improve your ability to market to financial institutions. Even though these should be considered requirements, there is a process for requesting the approval of deviations when certain aspects of the guidance may not be feasible or make sense for a given application.
 
 Financial institution
-:   The information is a set of _recommended_ best practices. As a financial institution, you know your controls better than {{site.data.keyword.IBM_notm}} does. So, you have latitude in terms of following the best practices depending on what your internal controls dictate and the level of risk you are willing to take.
+:   The reference architectures and guidance form a set of  _recommendations_. As a financial institution, you know your controls better than {{site.data.keyword.IBM_notm}} does. So, you have latitude in terms of following the guidance depending on what your internal controls dictate and the level of risk you are willing to take. {{site.data.keyword.IBM_notm}} does not formally validate the applications of financial institutions.
 
 In addition, the framework is intended to cover the two types of applications that you might deliver as an application provider:
 
