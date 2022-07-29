@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -40,7 +40,7 @@ The following table lists the different solutions that you can use to protect yo
 
 | Scenario | What to use |
 | --- | --- |
-| You need to create, lease, and manage API keys, credentials, database configurations, and other secrets for your services and applications. | Bring your own solution, such as [HashiCorp Vault](https://vaultproject.io/). You might also consider [{{site.data.keyword.secrets-manager_full_notm}}](/docs/secrets-manager?topic=secrets-manager-getting-started), which is also built HashiCorp Vault. But, it is not yet Financial Services Validated. [^tabletext-1]  |
+| You need to create, lease, and manage API keys, credentials, database configurations, and other secrets for your services and applications. | Bring your own solution, such as [HashiCorp Vault](https://vaultproject.io/){: external}. You might also consider [{{site.data.keyword.secrets-manager_full_notm}}](/docs/secrets-manager?topic=secrets-manager-getting-started), which is also built HashiCorp Vault. But, it is not yet Financial Services Validated. [^tabletext-1]  |
 | You need to generate, renew, and manage TLS/SSL certificates for your deployments. | Bring your own solution to manage the lifecycle of certificates. You might also consider {{site.data.keyword.secrets-manager_short}}. But, it is not yet Financial Services Validated. [^tabletext-2] |
 | You need to create and manage encryption keys. | Use [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-overview) to manage encryption keys in a single-tenant service with dedicated hardware. |
 | You need secrets in your {{site.data.keyword.openshiftshort}} environment for microservices to connect to system resources. | Use [Kubernetes secrets](https://kubernetes.io/docs/concepts/configuration/secret/){: external} encrypted using [{{site.data.keyword.hscrypto}}](/docs/openshift?topic=openshift-encryption#keyprotect) as your Key Management Service (KMS) provider. |

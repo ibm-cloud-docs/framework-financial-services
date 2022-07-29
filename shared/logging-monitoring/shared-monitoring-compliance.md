@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -49,7 +49,7 @@ The following table provides references to additional information for managing s
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
 | Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-manage-security-compliance) [^tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-compliance#platform-compliance) | |
-| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-manage-security-compliance) \n - {{site.data.keyword.registryshort}} | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-manage-security-compliance) [^tabletext-satellite-enabled-openshift] \n - {{site.data.keyword.registryshort}} |  |
+| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-manage-security-compliance) \n - [{{site.data.keyword.registryshort}}](/docs/openshift?topic=openshift-manage-security-compliance) | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-manage-security-compliance) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/openshift?topic=openshift-manage-security-compliance) |  |
 | Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-manage-security-compliance) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-manage-security-compliance) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-manage-security-compliance) |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-manage-security-compliance) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-manage-security-compliance) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-manage-security-compliance) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-manage-security-compliance) |
