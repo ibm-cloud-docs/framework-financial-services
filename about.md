@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -15,8 +15,7 @@ subcollection: framework-financial-services
 # Getting started with {{site.data.keyword.cloud_notm}} for Financial Services
 {: #about}
 
-[{{site.data.keyword.cloud_notm}} for Financial Services™](https://www.ibm.com/cloud/financial-services){: external} designed, from its application-specific integrated circuits (ASICs) to its processes, to address cybersecurity and regulatory challenges, and deliver the benefits and flexibility of a public cloud in a secure and compliant environment.
-This enables financial services institutions, independent software vendors (ISVs), and Software as a Service (SaaS) providers to host applications and workloads in the cloud with confidence and trust.
+[{{site.data.keyword.cloud_notm}} for Financial Services™](https://www.ibm.com/cloud/financial-services){: external} designed, from its application-specific integrated circuits (ASICs) to its processes, to address cybersecurity and regulatory challenges, and deliver the benefits and flexibility of a public cloud in a secure and compliant environment. This enables financial services institutions, independent software vendors (ISVs), and Software as a Service (SaaS) providers to host applications and workloads in the cloud with confidence and trust.
 
 {{site.data.keyword.cloud_notm}} for Financial Services is designed to build trust and enable a transparent public cloud ecosystem with the features for security, compliance, and resiliency that financial institutions require. Financial institutions can confidently host their mission-critical applications in the cloud and transact quickly and efficiently. With a partner ecosystem of more than 90 ISV, SaaS, and fintech partners, {{site.data.keyword.cloud_notm}} for Financial Services offers a new generation of cloud for the enterprise. Financial institutions can now deploy on public cloud to enable innovation and deliver new outstanding customer experiences, while managing stringent industry regulations for sensitive data and complex workloads.
 
@@ -33,12 +32,23 @@ For more information, see [Accelerate innovation through security and compliance
 
 The {{site.data.keyword.framework-fs_notm}} consists of:
 
-* A comprehensive set of controls designed to help address the security requirements and regulatory compliance obligations of financial institutions and cloud best practices. The cloud best practices include a shared responsibility model across financial institutions, application providers, and {{site.data.keyword.cloud_notm}}.
-* Reference architectures and detailed control-by-control guidance for implementation and supporting evidence to help address the security and regulatory requirements of the financial industry.
-* Tools and {{site.data.keyword.IBM_notm}} services to enable parties to efficiently and effectively monitor compliance, remediate issues, and generate evidence of compliance.
+* A comprehensive [set of control requirements](#control-requirements) designed to help address the security requirements and regulatory compliance obligations of financial institutions and cloud best practices. The cloud best practices include a shared responsibility model across financial institutions, application providers, and {{site.data.keyword.cloud_notm}}.
+* Detailed [control-by-control guidance](#framework-guidance) for implementation and supporting evidence to help address the security and regulatory requirements of the financial industry. 
+* [Reference architectures](#framework-reference-architectures) designed to facilitate compliance with the control requirements. In addition, resources are provided to [deploy infrastructure as code](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code) in order to automate deployment and configuration of the reference architectures.
+* Tools and {{site.data.keyword.IBM_notm}} services, such as [{{site.data.keyword.compliance_full}}](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance), to enable parties to efficiently and effectively monitor compliance, remediate issues, and generate evidence of compliance.
 * Ongoing governance of the framework documentation that considers new and changing regulations, as well as bank and public cloud requirements.
 
-### Interpreting the framework
+### Control requirements
+{: #framework-control-requirements}
+
+The technology-agnostic control requirements defined in the framework were built by the industry for the industry. The framework contains 565 control requirements that span 7 focus areas and 21 control families. The controls are based on [NIST 800-53 Rev 4](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/800-53?version=4.0){: external}, with enhancements based on feedback from leading industry partners.
+
+See [{{site.data.keyword.framework-fs_full}} - Control Requirements](https://cloud.ibm.com/media/docs/downloads/framework-financial-services/IBM_Cloud_Framework_for_Financial_Services_-_Control_Requirements_v1.1.0.xlsx){: external} for a spreadsheet of the control requirements.
+
+### Framework guidance and reference architectures
+{: #framework-guidance}
+
+#### Interpreting the framework guidance
 {: #interpreting-guidance}
 
 We refer to the entity that uses (consumes) an application as the _consumer_ and the entity that develops or deploys (provides) an application as the _application provider_. The consumer and application provider might be the same when the organization providing the application also consumes it (for example, a financial institution deploys an application for internal use by others in their company). Or, they might be different if a third-party technology vendor is providing an application for a financial institution to use.
@@ -57,14 +67,7 @@ In addition, the framework is intended to cover the two types of applications th
 * Software as a service (SaaS) – You develop and operate the application that is deployed on the {{site.data.keyword.cloud_notm}} by using one of the reference architectures for the {{site.data.keyword.cloud_notm}} for Financial Services.
 * Software – You develop the application software, and another organization deploys and operates the application on their infrastructure in their own {{site.data.keyword.cloud_notm}} account.
 
-### Control requirements
-{: #framework-control-requirements}
-
-The technology-agnostic controls defined in the framework were built by the industry for the industry. The framework contains 565 control requirements that span 7 focus areas and 21 control families. The controls are based on [NIST 800-53 Rev 4](https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#!/800-53?version=4.0){: external}, with enhancements based on feedback from leading industry partners.
-
-See [{{site.data.keyword.framework-fs_full}} - Control Requirements](https://cloud.ibm.com/media/docs/downloads/framework-financial-services/IBM_Cloud_Framework_for_Financial_Services_-_Control_Requirements_v1.1.0.xlsx){: external} for a spreadsheet of the control requirements.
-
-### Control implementation overview templates
+#### Control implementation overview templates
 {: #control-implementation-overview-templates}
 
 The templates that are referenced in this section are available under NDA only. Work with your {{site.data.keyword.IBM_notm}} account representative to get access.
@@ -76,7 +79,7 @@ The framework's control implementation overview (CIO) templates provide detailed
 
 
 
-### Reference architectures and deployment guidance
+#### Reference architectures and deployment guidance
 {: #framework-reference-architectures}
 
 [Reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) have been defined which can be used as a basis for meeting the security and regulatory requirements defined by the controls. The reference architectures each center on specific {{site.data.keyword.cloud_notm}} technologies, including:

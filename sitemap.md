@@ -31,13 +31,9 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 * [{{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-about#ibm-cloud-framework-for-financial-services)
 
-    * [Interpreting the framework](/docs/framework-financial-services?topic=framework-financial-services-about#interpreting-guidance)
-
     * [Control requirements](/docs/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements)
 
-    * [Control implementation overview templates](/docs/framework-financial-services?topic=framework-financial-services-about#control-implementation-overview-templates)
-
-    * [Reference architectures and deployment guidance](/docs/framework-financial-services?topic=framework-financial-services-about#framework-reference-architectures)
+    * [Framework guidance and reference architectures](/docs/framework-financial-services?topic=framework-financial-services-about#framework-guidance)
 
 * [Becoming {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-about#becoming-fs-validated)
 
