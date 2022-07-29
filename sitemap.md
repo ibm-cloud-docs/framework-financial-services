@@ -658,9 +658,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [Accessing the public internet](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet#vpc-architecture-connectivity-to-internet)
 
-* [Public gateways](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet#public-gateways)
-
-* [Floating IP addresses](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet#floating-ips)
+* [Public gateways and floating IP addresses](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet#public-gateways)
 
 * [Related controls in {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet#related-controls)
 

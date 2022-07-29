@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-04-10"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -29,7 +29,7 @@ You must also:
 
 * Configure storage capacity for audit log storage to support retention requirements. Your configuration should allow for retention of 90 days of online records and one (1) years’ worth of records offline to support archival Online retention refers to security audit logs that are available for analysis within one (1) hour or less, and offline retention refers to security audit logs that are available for analysis within two (2) business days or less. This provides you the ability to support after-the-fact investigations when potential incidents are detected.
 * Monitor to ensure that more audit storage is allocated if needed.
-* Ensure that audit events are collected from your Cloud Object Storage instance and added to your [security information and event management (SIEM)](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-audit-provider#vpc-architecture-logging-audit-provider-siem)
+* Ensure that audit events are collected from your Cloud Object Storage instance and added to your [security information and event management (SIEM)](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit-provider)
 
 ## Setup {{site.data.keyword.atracker_short}}
 {: #activity-tracking-setup}
@@ -53,4 +53,4 @@ When you set up your Cloud Object Storage bucket, you should be sure to use {{si
 ## Next steps
 {: #next-steps}
 
-* [Audit logging of application provider events and SIEM](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-audit-provider)
+* [Audit logging of application provider events and SIEM](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit-provider)

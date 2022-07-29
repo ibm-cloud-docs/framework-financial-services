@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -25,7 +25,7 @@ Answers to common questions about {{site.data.keyword.cloud_notm}} for Financial
 {: #reference-architectures}
 {: faq}
 
-See [references architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architectures).
+See [references architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview).
 
 
 ## What is a _consumer_ and what is an _application provider_?

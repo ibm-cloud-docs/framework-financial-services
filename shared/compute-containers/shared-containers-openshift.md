@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -29,17 +29,12 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 
 3. Create your {{site.data.keyword.openshiftshort}} cluster. For more information, see [Creating a {{site.data.keyword.openshiftshort}} cluster in your VPC](/docs/openshift?topic=openshift-vpc_rh_tutorial).
 
-4. Install {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} Service Mesh by using the [{{site.data.keyword.redhat_notm}} service mesh operator](https://docs.openshift.com/container-platform/4.5/service_mesh/v1x/servicemesh-release-notes.html){: external}. For more information, see [Installing {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} Service Mesh](https://docs.openshift.com/container-platform/4.5/service_mesh/v1x/installing-ossm.html){: external}.
+4. Install [Service Mesh on {{site.data.keyword.openshiftshort}}](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh) which is based on the open source [Istio](https://istio.io/){: external} project. 
 
-   Based on the open source [Istio](https://istio.io/){: external} project, {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} Service Mesh adds a transparent layer on existing distributed applications without requiring any changes to the service code. You add {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} Service Mesh support to services by deploying a special sidecar proxy to relevant services in the mesh that intercepts all network communication between microservices. You configure and manage the Service Mesh using the control plane features. For more information, see[Understanding {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} Service Mesh](https://docs.openshift.com/container-platform/4.5/service_mesh/v1x/ossm-architecture.html){: external}.
+   Two of the most important reasons for using Service Mesh is to enable you to:
 
-   Two of the most important reasons for using Service mesh is to enable you to:
-
-   * Encrypt network traffic between microservices running in your cluster. See [Data encryption in transit](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit) for more details.
-   * Implement gateways to manage inbound and outbound traffic for your mesh to specify which traffic you want to enter or leave the mesh. For example, you can use an egress gateways to control/allowlist all necessary endpoints and domains that your application needs to connect to. You should deny all traffic by default. See [Traffic Management](https://docs.openshift.com/container-platform/4.5/service_mesh/v1x/ossm-traffic-manage.html#ossm-routing-gw_routing-traffic-v1x) for more details.
-
-   The default {{site.data.keyword.cloud_notm}} configuration of the routers enables host networking, which is not compatible with the service mesh network policy. For the service mesh ingress to work, [apply a network policy](https://gist.githubusercontent.com/kitch/39c504a2ed9e381c2aadea436d5b52e4/raw/d8efa69f41d41425b16bb363a881a98d40d3708c/mesh-policy.yaml){: external}.
-   {: tip}
+   * Encrypt network traffic between microservices running in your cluster. See [Data encryption in transit](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit) and [enable mTLS between containers](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh#openshift-service-mesh-secure_services) for more details.
+   * Implement gateways to specify which traffic you want to enter or leave the mesh (and deny all traffic by default). You can use an egress gateway to control/allowlist all necessary endpoints and domains that your application needs to connect to. For examples, see [Expose the app with the Istio Ingress Gateway and Route](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh#openshift-service-mesh-ingress_gateway_route) and [Perform traffic management](docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh#openshift-service-mesh-traffic_management)
 
 5. Set up {{site.data.keyword.registryshort}} and Vulnerability Advisor. For more information, see [Container Registry and Vulnerability Advisor](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes#vpc-architecture-development-processes-registry-vulnerability-advisor).
 

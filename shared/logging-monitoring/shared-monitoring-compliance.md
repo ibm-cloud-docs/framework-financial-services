@@ -84,4 +84,4 @@ For more information, see:
 ## Next steps
 {: #next-steps}
 
-* [Operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational)
+* [Operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-operational)
