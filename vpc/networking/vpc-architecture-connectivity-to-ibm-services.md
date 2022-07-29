@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -20,12 +20,12 @@ subcollection: framework-financial-services
 
 When inside a VPC, this private access can be accomplished by using a [virtual private endpoint (VPE)](/docs/vpc?topic=vpc-about-vpe) to map a VPC IP address to the {{site.data.keyword.cloud_notm}} service. VPEs are virtual IP interfaces that are bound to an endpoint gateway created on a per service, or service instance, basis (depending on the service operation model). The endpoint gateway is a virtualized function that scales horizontally, is redundant and highly available, and spans all availability zones of your VPC. Endpoint gateways enable communications from virtual server instances within your VPC and {{site.data.keyword.cloud_notm}} service on the private backbone. VPE for VPC gives you the experience of controlling all the private addressing within your cloud.
 
-The [VPE supported services](/docs/vpc?topic=vpc-vpe-supported-services) pages list all of the {{site.data.keyword.cloud_notm}} services that support VPE and provide links that describe the private hosts to use and any special instructions that might be needed. Not only does this list include the Financial Services Validated IaaS and PaaS services that are available, but they also include a number of platform services, such as [{{site.data.keyword.iamshort}} (IAM)](/apidocs/iam-access-groups#endpoint-urls).
+The [VPE supported services](/docs/vpc?topic=vpc-vpe-supported-services) page list all of the {{site.data.keyword.cloud_notm}} services that support VPE and provide links that describe the private hosts to use and any special instructions that might be needed. Not only does this list include the Financial Services Validated IaaS and PaaS services that are available, but they also include a number of platform services, such as [{{site.data.keyword.iamshort}} (IAM)](/apidocs/iam-access-groups#endpoint-urls).
 
 Private endpoints should be used whether you are accessing a service by using the CLI, API, or Terraform. For more information, see:
 
 * [Securing your connection when using the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-service-connection)
-* [Configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform to use the Cloud Service Endpoint](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-config-provider)
+* `visibility` input parameter in [Configuring the IBM Cloud Provider plug-in](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference#provider-parameter-ov)
 
 
 

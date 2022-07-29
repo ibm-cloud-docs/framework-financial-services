@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-04-12"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -17,7 +17,7 @@ subcollection: framework-financial-services
 # Operational monitoring
 {: #shared-monitoring-operational}
 
-Operational monitoring for gauging system health is a important complement to [monitoring for security and compliance](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-compliance). Proper operational monitoring can help you determine whether you need to fail over to an alternative storage or processing site. In addition, operational monitoring can help you determine whether operations have returned to normal after a system disruption. Operational metrics include measurements for CPU usage, memory usage, or API response times.
+Operational monitoring for gauging system health is a important complement to [monitoring for security and compliance](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance). Proper operational monitoring can help you determine whether you need to fail over to an alternative storage or processing site. In addition, operational monitoring can help you determine whether operations have returned to normal after a system disruption. Operational metrics include measurements for CPU usage, memory usage, or API response times.
 {: shortdesc}
 
 Since {{site.data.keyword.mon_full_notm}} is not Financial Services Validated, the next two sections describe "bring your own" software solutions for {{site.data.keyword.openshiftshort}} and {{site.data.keyword.vsi_is_short}}.
@@ -47,4 +47,4 @@ You need to install your own software solution for monitoring in virtual server 
 ## Next steps
 {: #next-steps}
 
-* [Data encryption at rest](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-at-rest)
+* [Data encryption at rest](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)

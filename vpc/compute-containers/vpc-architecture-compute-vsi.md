@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -35,7 +35,6 @@ You can optionally use [dedicated hosts for VPC](/docs/vpc?topic=vpc-creating-de
       * [Creating instances on dedicated hosts](/docs/vpc?topic=vpc-creating-instance-on-dh)
    * If not using dedicated hosts, see the following for more details:
       * [Planning for instances](/docs/vpc?topic=vpc-vsi_best_practices)
-      * [Creating virtual server instances by using the CLI](/docs/vpc?topic=vpc-creating-virtual-servers-cli)
 
   
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -71,4 +71,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 ## Next steps
 {: #next-steps}
 
-* [Business continuity and disaster recovery](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr)
+* [Development processes and software integrity](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)
