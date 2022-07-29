@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -272,6 +272,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Relation to {{site.data.keyword.framework-fs_full}} best practices](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices#satellite-architecture-best-practices)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices#next-steps)
+
+[{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture](/docs/framework-financial-services?topic=framework-financial-services-vmware-overview#vmware-overview)
 
 
 ## Release notes
