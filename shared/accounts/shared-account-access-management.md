@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -89,8 +89,7 @@ For more information see:
 
 If you're using an enterprise, these resources provide additional information:
 
-* [User management for enterprises](/docs/account?topic=account-enterprise-access)
-* [Assigning enterprise access](/docs/account?topic=account-assign-access-enterprise)
+* [Setting up an enterprise](/docs/account?topic=account-enterprise-tutorial)
 
 ## Required permissions for services in reference architecture
 {: #required-permissions}
@@ -118,14 +117,14 @@ The following table provides references to additional information for managing a
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}
 
-The following {{site.data.keyword.framework-fs_notm}} controls are most related to this guidance. However, in addition to following the guidance here, do your own due diligence to ensure that you have met the requirements.
+{{site.data.content.related-controls-disclaimer}}
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | AC-5 Separation of Duties \n AC-6 Least Privilege |
+| Access Control (AC) | AC-3 Access Enforcement \n AC-5 Separation of Duties \n AC-6 Least Privilege |
 {: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}
 
-* [Handling and securing secrets](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets).
+* [Handling and securing secrets](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets)

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -29,7 +29,7 @@ You can choose between several identity providers. For more information, see [Ma
 {: #app-id-integrations}
 
 
-You can use {{site.data.keyword.appid_short_notm}} with other {{site.data.keyword.cloud_notm}} offerings. For example, if you're using {{site.data.keyword.openshiftshort}}, you can configure Ingress in your cluster to secure your apps at the cluster level. For more details, see [Setting up Ingress](/docs/openshift?topic=openshift-ingress-roks4) and [{{site.data.keyword.appid_short_notm}} authentication Ingress annotation](/docs/containers?topic=containers-ingress_annotation#appid-auth) to get started.
+You can use {{site.data.keyword.appid_short_notm}} with other {{site.data.keyword.cloud_notm}} offerings. For example, if you're using {{site.data.keyword.openshiftshort}}, you can configure Ingress in your cluster to secure your apps at the cluster level. For more details, see [Setting up Ingress](/docs/openshift?topic=openshift-ingress-roks4) and [{{site.data.keyword.appid_short_notm}} authentication Ingress annotation](/docs/containers?topic=containers-comm-ingress-annotations#app-id-authenticationh) to get started.
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Creating and connecting the management and workload VPCs
 {: #vpc-architecture-connectivity-create-vpcs}
 
-After completing the work for [account setup and management](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-account-setup), you can now create the management and workload VPCs from the [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi) and connect them using [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-about).
+After completing the work for [account setup and management](/docs/framework-financial-services?topic=framework-financial-services-shared-account-setup), you can now create the management and workload VPCs from the [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi) and connect them using [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-about).
 {: shortdesc}
 
 1. Create two VPCs in one of the [approved MZRs](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions), one for the management VPC and another for the workload VPC. See [Create a VPC](/docs/vpc?topic=vpc-creating-a-vpc-using-cli#create-a-vpc-cli) for more details. For now, you should not follow the instructions in any of the other sections in that reference.
@@ -25,7 +25,7 @@ After completing the work for [account setup and management](/docs/framework-fin
 
 1. Review [Designing an addressing plan for a VPC](/docs/vpc?topic=vpc-vpc-addressing-plan-design) to get guidance how to plan for addressing within your VPC. VPC uses [Classless Inter-Domain Routing (CIDR) notation](/docs/vpc?topic=vpc-choosing-ip-ranges-for-your-vpc) for specifying addresses.
 
-1.  Create the address prefix for each zone in both VPCs based on the plan that you developed in the previous step. See [`ibmcloud is vpc-address-prefix-create`]](/docs/vpc?topic=vpc-infrastructure-cli-plugin-vpc-reference#vpc-address-prefix-create) for details.
+1.  Create the address prefix for each zone in both VPCs based on the plan that you developed in the previous step. See [`ibmcloud is vpc-address-prefix-create`](/docs/vpc?topic=vpc-infrastructure-cli-plugin-vpc-reference#vpc-address-prefix-create) for details.
 
 1. Create the subnets for the three zones by using the CIDRs. For more information, see [Create a subnet](/docs/vpc?topic=vpc-creating-a-vpc-using-cli#create-a-subnet-cli).
 

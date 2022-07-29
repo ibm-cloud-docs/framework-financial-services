@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-07-29"
 
 keywords: 
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # {{site.data.keyword.cloud_notm}} account setup
 {: #shared-account-setup}
 
-An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overview) is needed to provision and manage {{site.data.keyword.cloud_notm}} services that make up the reference architectures of the {{site.data.keyword.cloud_notm}} for Financial Services. Along with the high-level steps to follow, we describe some of the best practices for account setup that will help you satisfy the requirements of the {{site.data.keyword.framework-fs_notm}}.
+An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overview) is needed to provision and manage {{site.data.keyword.cloud_notm}} services that make up the reference architectures of the {{site.data.keyword.cloud_notm}} for Financial Services. Along with the high-level steps to follow, we describe some of the best practices for account setup that will help you satisfy the requirements of the {{site.data.keyword.framework-fs_notm}}. In addition, the most relevant [control requirements](/docs/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) are provided.
 {: shortdesc}
 
 1. Create an {{site.data.keyword.cloud_notm}} account. For more information, see [Create your account](/docs/account?topic=account-account-getting-started#account-gs-create).
@@ -30,7 +30,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
    | Access Control (AC) | AC-2 Account Management  |
    {: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}} for account creation" caption-side="top"}
 
-1. Set up the {{site.data.keyword.atracker_short}} service as described in [Audit logging for {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-logging-audit). This enables {{site.data.keyword.cloud_notm}} platform events to be recorded for auditing purposes. Setting this up early in the process is important so that all platform events that occur during the rest of these steps are available in the audit logs.
+1. Set up the {{site.data.keyword.atracker_short}} service as described in [Audit logging for {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit). This enables {{site.data.keyword.cloud_notm}} platform events to be recorded for auditing purposes. Setting this up early in the process is important so that all platform events that occur during the rest of these steps are available in the audit logs.
 
    The following table shows the controls that are most related to this step.
 
@@ -57,11 +57,6 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 1. Restrict IP addresses from which a user can access the {{site.data.keyword.cloud_notm}} account. For more information, see [Allowing specific IP addresses for an account](/docs/account?topic=account-ips#ips_account) for more information.
 
    The following table shows the controls that are most related to this step.
-
-   | Family              | Control                                           |
-   |---------------------|---------------------------------------------------|
-   | Access Control (AC) | AC-3 Access Enforcement  |
-   {: caption="Table 1. " caption-side="top"}
 
    | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
