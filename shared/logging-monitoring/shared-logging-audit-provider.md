@@ -1,0 +1,83 @@
+---
+
+copyright:
+  years: 2020, 2022
+lastupdated: "2022-03-27"
+
+keywords: 
+
+subcollection: framework-financial-services
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+# Audit logging of application provider events and SIEM
+{: #shared-logging-audit-provider}
+
+In addition, to [audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-audit), you also need to consider auditing of events your applications might generate. Auditable events from all sources need to be consolidated into a security information and event management (SIEM).
+{: shortdesc}
+
+## Auditable events
+{: #events}
+
+You should audit the following events that occur within the system (in all environments, such as dev, test, prod):
+
+* Access, downloading, revisions to Confidential information
+* Access to or update to any financial transaction data
+* Any changes to customer accounts
+* Login or logoff event, success or failure
+* Changes to a system that impact business logic or work flow, examples include but are not limited to, changing call routing, interest rates that are offered for a class of customer, a website flow a customer uses
+* Any changes to customer systems that include but not limited to: software install or uninstall, configuration changes, directory or file moves, adds, or deletes, configuration changes, port turn ups, MAC’s, routing changes, and so on.
+* Each command action taken, both successful and unsuccessful, by a privileged account that includes but not limited to:
+    * All changes, additions, or deletions to any account such as lock, unlock, password reset, permission changes,
+    * Modification to system time / time-synchronization configuration,
+    * Log files: access to logs files; initialization, stopping or pausing of logging, log modification, changes to access permission on log files,
+    * Files and system level objects creation and deletion,
+    * Attempts to perform unauthorized functions or access data that the user is not authorized to access,
+    * Modification of security rules,
+    * Application and related systems start-ups and shut-downs
+* For privileged accounts:
+    * Attempts to execute privilege elevation
+    * System errors relevant to security events, including but not limited to SQL errors that indicate an SQL injection, fuzzing, multiple failed logins, failed configuration change, failed/disabled anti-virus software, service failures
+    * Web access events in extended log format
+
+The events that are collected should comply with the Cloud Auditing Data Federation (CADF) standard. And, audit event must contain at a minimum:
+
+* Type of event
+* When the event occurred
+* Where the event occurred
+* Source of the event
+* Outcome (success or failure) of the event
+* Identity of any user/subject/device associated with the event
+* Port and protocol, where available
+* Session duration, identification, and modification where available
+* Authentication method
+
+## Storing events in a SIEM
+{: #siem}
+
+A SIEM system provides the ability to gather security data from information system components and presents that data as actionable information through a single interface. Events of the type in the previous section should be stored in a SIEM.
+
+
+
+Information on {{site.data.keyword.IBM_notm}} QRadar is provided, but we do not have a recommended Financial Services Validated solution for SIEM at this time.
+{: important}
+
+You need to install your own software solution within your VPC for SIEM. An example SIEM is [{{site.data.keyword.IBM_notm}} QRadar](https://www.ibm.com/products/qradar-siem){: external}. It helps security teams accurately detect and prioritize threats across the enterprise, and it provides intelligent insights that enable teams to respond quickly to reduce the impact of incidents. By consolidating log events and network flow data from thousands of devices, endpoints and applications that are distributed throughout your network, QRadar correlates all this different information and aggregates related events into single alerts to accelerate incident analysis and remediation.
+
+## Related {{site.data.keyword.cloud_notm}} for Financial Services controls
+{: #related-controls}
+
+{{site.data.content.related-controls-disclaimer}}
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Access Control (AC) | AC-2 Account Management \n AC-2 (1) Account Management &#124; Automated System Account Management \n AC-2 (4) Account Management &#124; Automated Audit Actions \n AC-2 (7) Account Management &#124; Privileged User Accounts |
+| Audit and Accountability (AU) | AU-3 Content of Audit Records \n AU-4 Audit Log Storage Capacity \n AU-5 Response to Audit Processing Failures \n AU-6 Audit Record Review, Analysis. and Reporting \n AU-6 (1) Audit Record Review, Analysis. and Reporting &#124; Automated Process Integration \n AU-7 Audit Record Reduction and Report Generation \n AU-10 Non-Repudiation \n AU-11 Audit Record Retention |
+{: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+
+## Next steps
+{: #next-steps}
+
+* [Operational logging](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational).

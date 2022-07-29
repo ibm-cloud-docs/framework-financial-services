@@ -1,0 +1,155 @@
+---
+toc:
+  properties:
+    subcollection: framework-financial-services
+    category: platform_services
+    audience: solution
+    href: /docs/framework-financial-services
+    product-page: https://www.ibm.com/cloud/financial-services
+    path: framework-financial-services
+    label: IBM Cloud Framework for Financial Services
+
+  entries: 
+  - navgroup: 
+      id: learn
+      topics:
+      - about.md
+      - topicgroup: 
+          label: Best practices and requirements
+          topics:
+          - best-practices/best-practices-saas.md
+          - best-practices/best-practices-software.md
+      - topicgroup: 
+          label: Reference architectures
+          topics:
+          - reference-architecture-overview.md
+          - topicgroup: 
+              label: IBM Virtual Private Cloud (VPC) architecture
+              topics:
+              - topic: vpc/learn/vpc-architecture-overview.md
+                navtitle: VPC reference architecture
+              - vpc/learn/vpc-architecture-concepts.md
+              - topic: vpc/learn/vpc-architecture-detailed-vsi.md
+                navtitle: VPC with virtual servers reference architecture
+              - topic: vpc/learn/vpc-architecture-detailed-openshift.md
+                navtitle: VPC with Red Hat OpenShift on IBM Cloud reference architecture
+          - topicgroup:
+              label: IBM Cloud Satellite architecture
+              topics:
+              - topic: satellite/learn/satellite-architecture-overview.md
+                navtitle: Satellite reference architecture
+              - satellite/learn/satellite-architecture-use-cases.md
+              - satellite/learn/satellite-architecture-responsibilities.md
+              - satellite/learn/satellite-architecture-best-practices.md
+          - vmware/vmware-overview.md
+      - release-notes.md
+
+  - navgroup: 
+      id: tutorial
+      topics: 
+      - topicgroup:
+          label: Bring your own solutions for VPC reference architecture samples
+          topics: 
+          - topicgroup: 
+              label:  Web application firewall and full-tunnel VPN
+              topics:
+              - vpc/tutorials/waf-full-tunnel-vpn/vpc-architecture-connectivity-f5-tutorial.md
+              - vpc/tutorials/waf-full-tunnel-vpn/vpc-architecture-connectivity-waf-tutorial.md
+              - vpc/tutorials/waf-full-tunnel-vpn/vpc-architecture-connectivity-full-tunnel-vpn.md
+          - topicgroup:
+              label: Logging and monitoring
+              topics:
+              - vpc/tutorials/logging-monitoring/vpc-architecture-logging-operational-tutorial.md
+              - vpc/tutorials/logging-monitoring/vpc-architecture-monitoring-operational-tutorial.md
+          - topicgroup:
+              label: Bastion host
+              topics:
+              - vpc/tutorials/bastion-host/vpc-architecture-connectivity-bastion-tutorial-teleport.md
+
+  - navgroup: 
+      id: howto
+      topics:
+      - topicgroup:
+          label: General deployment and configuration information
+          topics: 
+            - shared/shared-deployment-overview.md
+            - shared/shared-infrastructure-as-code.md
+      - topicgroup: 
+          label: Accounts, identity management, and access control
+          topics: 
+          - shared/accounts/shared-account-setup.md
+          - shared/accounts/shared-account-organization.md
+          - shared/accounts/shared-account-access-management.md
+          - shared/accounts/shared-secrets.md
+          - shared/accounts/shared-account-consumer.md
+          - shared/accounts/shared-tagging-resources.md
+      - topicgroup:
+          label: Networking 
+          topics:
+          - topicgroup:
+             label: Networking for VPC reference architecture
+             topics:
+              - vpc/networking/vpc-architecture-connectivity-overview.md
+              - vpc/networking/vpc-architecture-connectivity-create-vpcs.md
+              - vpc/networking/vpc-architecture-connectivity-management.md
+              - vpc/networking/vpc-architecture-connectivity-bastion.md
+              - vpc/networking/vpc-architecture-connectivity-workload.md
+              - vpc/networking/vpc-architecture-connectivity-to-ibm-services.md
+              - vpc/networking/vpc-architecture-connectivity-to-internet.md
+          - topicgroup:
+              label: Networking for Satellite reference architecture
+              topics:
+              - satellite/networking/satellite-architecture-connectivity-overview.md
+              - satellite/networking/satellite-architecture-connectivity-management-isolation.md
+              - satellite/networking/satellite-architecture-connectivity-to-internet.md
+              - satellite/networking/satellite-architecture-connectivity-bastion.md
+              - satellite/networking/satellite-architecture-connectivity-to-ibm-services.md
+              - satellite/networking/satellite-architecture-connectivity-workload.md
+      - topicgroup:
+          label: Compute and containers
+          topics:
+          - vpc/compute-containers/vpc-architecture-compute-vsi.md
+          - shared/compute-containers/shared-containers-openshift.md
+      - topicgroup:
+          label: Storage 
+          topics:
+          - vpc/vpc-architecture-storage.md
+          - satellite/satellite-architecture-storage.md
+      - topicgroup:
+          label: Logging and monitoring
+          topics:
+          - shared/logging-monitoring/shared-logging-audit.md
+          - shared/logging-monitoring/shared-logging-audit-provider.md
+          - shared/logging-monitoring/shared-logging-operational.md
+          - shared/logging-monitoring/shared-monitoring-compliance.md
+          - shared/logging-monitoring/shared-monitoring-operational.md
+      - topicgroup:
+          label: Data encryption 
+          topics:
+          - shared/encryption/shared-encryption-at-rest.md
+          - shared/encryption/shared-encryption-in-transit.md
+      - topicgroup:
+          label: Business continuity and disaster recovery
+          topics:
+            - shared/shared-bcdr.md
+            - vpc/vpc-architecture-bcdr.md
+            - satellite/satellite-architecture-bcdr.md
+      - topicgroup:
+          label: High availability
+          topics:
+            - shared/shared-high-availability.md
+            - vpc/vpc-architecture-high-availability.md
+            - satellite/satellite-architecture-high-availability.md
+      - shared/shared-development-processes.md
+      - shared/shared-responsibilities.md
+
+  - navgroup:
+      id: reference
+      topics: 
+      - onboarding-to-catalog.md
+
+  - navgroup:
+      id: help
+      topics: 
+      - faqs.md
+      - sitemap.md

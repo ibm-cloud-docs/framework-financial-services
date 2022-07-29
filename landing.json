@@ -1,0 +1,64 @@
+{
+    "title": " IBM Cloud Framework for Financial Services - Deployment and Configuration Guide",
+    "lastupdated": "2022-03-19",
+    "introduction": "Learn about the IBM Cloud for Financial Services and the associated reference architectures that enable sensitive and business-critical financial institution workloads to run in public cloud-based environments.",
+    "section_devtools": {
+    },
+    "section_recommended": [
+      {
+        "title": "Getting started with IBM Cloud for Financial Services",
+        "description": "TODO: Description of topic.",
+        "href": "/docs/allowlist/framework-financial-services?topic=framework-financial-services-get-started"
+      },
+      {
+        "title": "About IBM Cloud for Financial Services",
+        "description": "TODO: Description of topic.",
+        "href": "/docs/allowlist/framework-financial-services?topic=framework-financial-services-about"
+      },
+      {
+        "title": "Best practices for software as a service",
+        "description": "TODO: Description of topic.",
+        "href": "/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices"
+      },
+      {
+        "title": "IBM Virtual Private Cloud (VPC) architecture",
+        "description": "TODO: Description of topic.",
+        "href": "/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-about"
+      },
+      {
+        "title": "IBM Cloud Satellite architecture",
+        "description": "TODO: Description of topic.",
+        "href": "/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-about"
+      },
+      {
+        "title": "IBM Cloud for VMware Regulated Workloads architecture",
+        "description": "TODO: Description of topic.",
+        "href": "/docs/allowlist/framework-financial-services?topic=framework-financial-services-vmware-overview"
+      }
+    ],
+    "section_videos": [
+    ],
+    "section_learn": {
+      "architecture": "https://www.ibm.com/cloud/architecture/architectures/banking"
+    },
+    "section_updates": {
+      "view_more": "/docs/acme-test?topic=acme-test-release-notes",
+      "tiles": [
+        {
+          "date": "12 March 2021",
+          "title": "TODO: Title for change",
+          "description": "TODO: Description for change."
+        },
+        {
+          "date": "10 March 2021",
+          "title": "TODO: Title for change",
+          "description": "TODO: Description for change."
+        },
+        {
+          "date": "09 March 2021",
+          "title": "TODO: Title for change",
+          "description": "TODO: Description for change."
+        }
+      ]
+    }
+  }
