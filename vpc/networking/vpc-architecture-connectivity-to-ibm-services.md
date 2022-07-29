@@ -50,4 +50,4 @@ Private endpoints should be used whether you are accessing a service by using th
 ## Next steps
 {: #next-steps}
 
-* [Connectivity to public internet](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet)
+* [Connectivity to public internet](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet)

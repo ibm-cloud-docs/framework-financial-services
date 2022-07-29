@@ -24,11 +24,11 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, sec
 ## 28 July 2022
 {: #28-july-2022}
 
-* Added extensive content for the new [{{site.data.keyword.satellitelong}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-about) as well as deployment and configuration guidance for that architecture. During this process, there were numerous organizational changes that were made due to the overlap between the {{site.data.keyword.satellitelong}} reference architecture and the {{site.data.keyword.vpc_short}} reference architecture.
-* Enabled link to spreadsheet of [control requirements](/docs/allowlist/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) in {{site.data.keyword.framework-fs_notm}}.
-* Added article [Deploy infrastructure as code for reference architectures](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code) about Terraform automation for {{site.data.keyword.cloud_notm}} for Financial Services.
-* Enhanced content on {{site.data.keyword.compliance_full}} and {{site.data.keyword.cloud_notm}} for Financial Services profile. See [Compliance monitoring](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance).
-* Added [site map](/docs/allowlist/framework-financial-services?topic=framework-financial-services-sitemap).
+* Added extensive content for the new [{{site.data.keyword.satellitelong}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about) as well as deployment and configuration guidance for that architecture. During this process, there were numerous organizational changes that were made due to the overlap between the {{site.data.keyword.satellitelong}} reference architecture and the {{site.data.keyword.vpc_short}} reference architecture.
+* Enabled link to spreadsheet of [control requirements](/docs/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) in {{site.data.keyword.framework-fs_notm}}.
+* Added article [Deploy infrastructure as code for reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code) about Terraform automation for {{site.data.keyword.cloud_notm}} for Financial Services.
+* Enhanced content on {{site.data.keyword.compliance_full}} and {{site.data.keyword.cloud_notm}} for Financial Services profile. See [Compliance monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance).
+* Added [site map](/docs/framework-financial-services?topic=framework-financial-services-sitemap).
 * Made many editorial updates.
 
 ## 17 March 2022
@@ -44,7 +44,7 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, sec
 ## 14 October 2021
 {: #14-october-2021}
 
-* Revamped [Best practices for software as a service](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices). Added clarifications and detail. Also, added some new best practices derived from the Control Implementation Overview Template documents.
+* Revamped [Best practices for software as a service](/docs/framework-financial-services?topic=framework-financial-services-best-practices). Added clarifications and detail. Also, added some new best practices derived from the Control Implementation Overview Template documents.
 
 ## 07 April 2021
 {: #07-april-2021}

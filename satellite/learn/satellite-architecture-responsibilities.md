@@ -15,17 +15,17 @@ subcollection: framework-financial-services
 # {{site.data.keyword.satelliteshort}} reference architecture shared responsibility model
 {: #satellite-architecture-shared-responsibilities}
 
-In {{site.data.keyword.cloud_notm}}, the responsibilities for deploying, operating, and securing products are shared between {{site.data.keyword.IBM_notm}} and our customers. This [{{site.data.keyword.cloud}} shared responsibility model](/docs/overview?topic=overview-shared-responsibilities#managed-responsibilities) is one of the most important things to understand when interpreting the control requirements of the {{site.data.keyword.framework-fs_notm}}. Here we dive deeper into this shared responsibility model for the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-about).
+In {{site.data.keyword.cloud_notm}}, the responsibilities for deploying, operating, and securing products are shared between {{site.data.keyword.IBM_notm}} and our customers. This [{{site.data.keyword.cloud}} shared responsibility model](/docs/overview?topic=overview-shared-responsibilities#managed-responsibilities) is one of the most important things to understand when interpreting the control requirements of the {{site.data.keyword.framework-fs_notm}}. Here we dive deeper into this shared responsibility model for the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about).
 {: shortdesc}
 
 ## Shared responsibilities for {{site.data.keyword.cloud_notm}} products
 {: #satellite-architecture-shared-responsibilities-roles}
 
-All services that run in {{site.data.keyword.cloud_notm}} as part of the {{site.data.keyword.satelliteshort}} reference architecture are considered [managed products](/docs/overview?topic=overview-shared-responsibilities#managed-responsibilities) in the {{site.data.keyword.cloud_notm}} shared responsibility model. Each of these products has their own [service-specific shared responsibilities](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-responsibilities). 
+All services that run in {{site.data.keyword.cloud_notm}} as part of the {{site.data.keyword.satelliteshort}} reference architecture are considered [managed products](/docs/overview?topic=overview-shared-responsibilities#managed-responsibilities) in the {{site.data.keyword.cloud_notm}} shared responsibility model. Each of these products has their own [service-specific shared responsibilities](/docs/framework-financial-services?topic=framework-financial-services-shared-responsibilities). 
 
 Due to the hybrid nature of {{site.data.keyword.satelliteshort}}, there is a unique set of [{{site.data.keyword.satelliteshort}}-specific shared responsibilities](/docs/satellite?topic=satellite-responsibilities) for components that run in the on-premises {{site.data.keyword.satelliteshort}} location.
 
-For all products, these responsibilities cut across the following five task areas, which intersect with the {{site.data.keyword.framework-fs_notm}}'s [best practices and requirements](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices):
+For all products, these responsibilities cut across the following five task areas, which intersect with the {{site.data.keyword.framework-fs_notm}}'s [best practices and requirements](/docs/framework-financial-services?topic=framework-financial-services-best-practices):
 
 | Types of tasks | Description |
 | - | - |
@@ -131,4 +131,4 @@ The workload provider and on-premises IaaS / data center provider are solely res
 ## Next steps
 {: #next-steps}
 
-- [{{site.data.keyword.satelliteshort}} architecture best practices](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices)
+- [{{site.data.keyword.satelliteshort}} architecture best practices](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices)

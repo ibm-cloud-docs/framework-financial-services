@@ -31,9 +31,9 @@ Even though {{site.data.keyword.compliance_short}} is not yet Financial Services
 Running a scan against a specific profile does not ensure regulatory compliance. The scan is intended to provide a point in time statement of your current posture for a specific group of resources.
 {: important}
 
-The {{site.data.keyword.cloud_notm}} for Financial Services profile provides a tailored set of goals that are mapped to the [{{site.data.keyword.framework-fs_notm}} control requirements](/docs/allowlist/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements). This profile should always be used when leveraging the [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
+The {{site.data.keyword.cloud_notm}} for Financial Services profile provides a tailored set of goals that are mapped to the [{{site.data.keyword.framework-fs_notm}} control requirements](/docs/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements). This profile should always be used when leveraging the [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
 
-In addition, if you are using {{site.data.keyword.openshiftshort}} (whether in the VPC reference architecture or the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)), then you should leverage the [{{site.data.keyword.openshiftshort}} Compliance Operator (OSCO)](https://github.com/openshift/compliance-operator){: external} via the [OSCO integration](/docs/security-compliance?topic=security-compliance-setup-osco) with SCC.
+In addition, if you are using {{site.data.keyword.openshiftshort}} (whether in the VPC reference architecture or the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)), then you should leverage the [{{site.data.keyword.openshiftshort}} Compliance Operator (OSCO)](https://github.com/openshift/compliance-operator){: external} via the [OSCO integration](/docs/security-compliance?topic=security-compliance-setup-osco) with SCC.
 
 To start evaluating your resources, see the tutorial series: [Monitor IBM Cloud resources](/docs/security-compliance?topic=security-compliance-ibm-credential).
 
@@ -84,4 +84,4 @@ For more information, see:
 ## Next steps
 {: #next-steps}
 
-* [Operational monitoring](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational)
+* [Operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational)

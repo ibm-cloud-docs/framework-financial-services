@@ -47,4 +47,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 ## Next steps
 {: #next-steps}
 
-- [Consumer connectivity to workload resources](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-workload)
+- [Consumer connectivity to workload resources](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-workload)

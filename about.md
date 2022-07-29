@@ -79,11 +79,11 @@ The framework's control implementation overview (CIO) templates provide detailed
 ### Reference architectures and deployment guidance
 {: #framework-reference-architectures}
 
-[Reference architectures](/docs/allowlist/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) have been defined which can be used as a basis for meeting the security and regulatory requirements defined by the controls. The reference architectures each center on specific {{site.data.keyword.cloud_notm}} technologies, including:
+[Reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) have been defined which can be used as a basis for meeting the security and regulatory requirements defined by the controls. The reference architectures each center on specific {{site.data.keyword.cloud_notm}} technologies, including:
 
 {{site.data.content.reference-architectures-list-full-names}}
 
-In addition, prescriptive [deployment and configuration guidance](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment) is provided for the components in each of these reference architectures. The guidance is intended as an easier to consume supplement to the CIO templates that is more appropriate for architects and developers trying to build and implement applications for {{site.data.keyword.cloud_notm}} for Financial Services.
+In addition, prescriptive [deployment and configuration guidance](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment) is provided for the components in each of these reference architectures. The guidance is intended as an easier to consume supplement to the CIO templates that is more appropriate for architects and developers trying to build and implement applications for {{site.data.keyword.cloud_notm}} for Financial Services.
 
 ## Becoming {{site.data.keyword.cloud_notm}} for Financial Services Validated
 {: #becoming-fs-validated}
@@ -96,14 +96,14 @@ Through the shared responsibility model of the {{site.data.keyword.framework-fs_
 * Reduction in the time and effort by financial institutions to ensure the compliance of third-party vendors, and more time spent delivering new, innovative services to their customers.
 * Streamlined procurement, contracting, and onboarding within the ecosystem that leads to reduced time to market for all parties.
 
-In addition, technology vendors (even those who are not yet {{site.data.keyword.cloud_notm}} for Financial Services Validated) are encouraged to [onboard to the {{site.data.keyword.cloud_notm}} catalog](/docs/allowlist/framework-financial-services?topic=framework-financial-services-onboarding-to-catalog)
+In addition, technology vendors (even those who are not yet {{site.data.keyword.cloud_notm}} for Financial Services Validated) are encouraged to [onboard to the {{site.data.keyword.cloud_notm}} catalog](/docs/framework-financial-services?topic=framework-financial-services-onboarding-to-catalog)
 
 ## Next steps
 {: #next-steps}
 
 If you plan to provide SaaS:
 
-* Review [Best practices for software as a service](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices), which represent a generic set of implementation principles that apply to SaaS applications on both reference architectures.
-* Explore the [reference architectures](/docs/allowlist/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) and deployment guidance
+* Review [Best practices for software as a service](/docs/framework-financial-services?topic=framework-financial-services-best-practices), which represent a generic set of implementation principles that apply to SaaS applications on both reference architectures.
+* Explore the [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) and deployment guidance
 
-If you plan to provide software that another organization will operate, review [Best practices for software](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices-software).
+If you plan to provide software that another organization will operate, review [Best practices for software](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software).

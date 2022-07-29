@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Connecting application provider to the management VPC
 {: #vpc-architecture-connectivity-management}
 
-The management VPC should be accessed only by you, the application provider. It's important that the connection be secure to avoid bad actors gaining access and conducting malicious operations. There are two options to enable this connectivity from your on-premises enterprise network: [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) and [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn). Alternatively, if you want to support connectivity without going through your enterprise network, you can deploy your own full tunnel client-to-site VPN solution. After a connection is established, operators can [complete actions through a bastion host](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion) in the management VPC.
+The management VPC should be accessed only by you, the application provider. It's important that the connection be secure to avoid bad actors gaining access and conducting malicious operations. There are two options to enable this connectivity from your on-premises enterprise network: [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) and [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn). Alternatively, if you want to support connectivity without going through your enterprise network, you can deploy your own full tunnel client-to-site VPN solution. After a connection is established, operators can [complete actions through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion) in the management VPC.
 {: shortdesc}
 
 Operators who are connecting to the on-premises enterprise network from offsite (such as their home) should connect to the enterprise network only by using a full tunnel client-to-site VPN solution. After connected to the enterprise network through a full tunnel, they can access the management VPC to perform their duties.
@@ -57,7 +57,7 @@ For more information, see:
 ## Full tunnel client-to-site VPN
 {: #vpn-client-to-site}
 
-The third option for connectivity for your operators is to use a full tunnel client-to-site VPN, so they do not have to be on your on-premises network. However, {{site.data.keyword.IBM_notm}} does not provide a Financial Services Validated full tunnel client-to-site VPN solution. So, if you want to use this option, you need to deploy your own. See [Setting up full tunnel VPN with FS BIG-IP](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-full-tunnel-vpn) for one example of how to do this.
+The third option for connectivity for your operators is to use a full tunnel client-to-site VPN, so they do not have to be on your on-premises network. However, {{site.data.keyword.IBM_notm}} does not provide a Financial Services Validated full tunnel client-to-site VPN solution. So, if you want to use this option, you need to deploy your own. See [Setting up full tunnel VPN with FS BIG-IP](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-full-tunnel-vpn) for one example of how to do this.
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}
@@ -76,4 +76,4 @@ The third option for connectivity for your operators is to use a full tunnel cli
 ## Next steps
 {: #next-steps}
 
-* [Performing operator actions through a bastion host](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion)
+* [Performing operator actions through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion)

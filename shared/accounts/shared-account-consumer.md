@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Consumer accounts for application provider workloads
 {: #shared-account-consumer}
 
-You must have a system for authentication and authorization of the consumer organization's users when they connect to your application workloads through a web app or API. As the best practice for [enabling a zero trust environment](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-zero-trust) says, you need to provide proper role-based access control (RBAC) for these users.
+You must have a system for authentication and authorization of the consumer organization's users when they connect to your application workloads through a web app or API. As the best practice for [enabling a zero trust environment](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-zero-trust) says, you need to provide proper role-based access control (RBAC) for these users.
 {: shortdesc}
 
 You can use [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-about) to secure your apps, back-end resources, and APIs by using standards-based authentication. {{site.data.keyword.appid_short_notm}} makes it easy to add an authentication step to your applications with a few lines of code. You can add email or username, social, or enterprise sign in to your apps with APIs, SDKs, prebuilt UIs, or your own branded UIs.
@@ -45,4 +45,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 ## Next steps
 {: #next-steps}
 
-* [Tagging {{site.data.keyword.cloud_notm}} resources and managing access through tags](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
+* [Tagging {{site.data.keyword.cloud_notm}} resources and managing access through tags](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)

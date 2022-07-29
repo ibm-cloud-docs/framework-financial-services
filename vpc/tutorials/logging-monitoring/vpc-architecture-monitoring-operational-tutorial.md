@@ -26,7 +26,7 @@ completion-time: 2h
 {: toc-completion-time="2h"}
 
 
-This tutorial shows you one way that can be used to meet the {{site.data.keyword.framework-fs_notm}} requirements that are related to [operational monitoring](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial) by using [Prometheus and Grafana](https://docs.openshift.com/container-platform/4.5/monitoring/cluster_monitoring/about-cluster-monitoring.html){: external} on {{site.data.keyword.openshiftshort}}. This approach can be used to can gain insight into the health and performance of the provisioned infrastructure and the workloads that are running on the infrastructure -- all while keeping your monitoring data safe within your environment.
+This tutorial shows you one way that can be used to meet the {{site.data.keyword.framework-fs_notm}} requirements that are related to [operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial) by using [Prometheus and Grafana](https://docs.openshift.com/container-platform/4.5/monitoring/cluster_monitoring/about-cluster-monitoring.html){: external} on {{site.data.keyword.openshiftshort}}. This approach can be used to can gain insight into the health and performance of the provisioned infrastructure and the workloads that are running on the infrastructure -- all while keeping your monitoring data safe within your environment.
 {: shortdesc}
 
 We provide guidance here, but you are solely responsible for installing, configuring, and operating {{site.data.keyword.IBM_notm}} third-party software in a way that satisfies {{site.data.keyword.framework-fs_notm}} requirements. In addition, {{site.data.keyword.IBM_notm}} does not provide support for third-party software.
@@ -434,4 +434,4 @@ Your application can also expose an endpoint that you can use to provide metrics
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}
 
-See the [related controls for operational monitoring](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-monitoring-operational).
+See the [related controls for operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-operational).

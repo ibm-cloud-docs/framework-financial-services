@@ -2,10 +2,9 @@
 toc:
   properties:
     subcollection: framework-financial-services
-    allowlist-id: ee91ffe7-eef0-2e1d-d5fb-4db3fa078923
     category: platform_services
     audience: solution
-    href: /docs/allowlist/framework-financial-services
+    href: /docs/framework-financial-services
     product-page: https://www.ibm.com/cloud/financial-services
     path: framework-financial-services
     label: IBM Cloud Framework for Financial Services

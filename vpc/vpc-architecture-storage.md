@@ -49,10 +49,10 @@ To start creating {{site.data.keyword.block_storage_is_short}} volumes, see the 
 
 More details on some of the major {{site.data.keyword.framework-fs_notm}} controls related to storage can be found in the following articles:
 
-- [Encryption at rest](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)
-- [Backup and recovery](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-bcdr)
+- [Encryption at rest](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)
+- [Backup and recovery](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr)
 
 ## Next steps
 {: #next-steps}
 
-* [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-logging-audit)
+* [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit)

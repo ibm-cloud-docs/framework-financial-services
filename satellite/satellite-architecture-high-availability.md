@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # High availability for {{site.data.keyword.satelliteshort}} reference architecture
 {: #satellite-architecture-high-availability}
 
-As described in [High availability (HA) overview](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-high-availability), HA is important for all cloud-based applications. Ready to learn more specifics about HA in the {{site.data.keyword.satelliteshort}} reference architecture?
+As described in [High availability (HA) overview](/docs/framework-financial-services?topic=framework-financial-services-shared-high-availability), HA is important for all cloud-based applications. Ready to learn more specifics about HA in the {{site.data.keyword.satelliteshort}} reference architecture?
 
 ## High availability in your {{site.data.keyword.satelliteshort}} location
 {: #your-workloads}
@@ -43,14 +43,14 @@ In addition, it is possible to autoscale your pods. For more information, see [S
 ## HA for {{site.data.keyword.cloud_notm}} services
 {: #ibm-cloud-services}
 
-Your high availability strategy needs to consider all of the {{site.data.keyword.cloud_notm}} services in your deployment, including the services that run in {{site.data.keyword.cloud_notm}} outside of your {{site.data.keyword.satelliteshort}} location. For more information, see [High availability for {{site.data.keyword.cloud_notm}} services](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-high-availability#ibm-cloud-services).
+Your high availability strategy needs to consider all of the {{site.data.keyword.cloud_notm}} services in your deployment, including the services that run in {{site.data.keyword.cloud_notm}} outside of your {{site.data.keyword.satelliteshort}} location. For more information, see [High availability for {{site.data.keyword.cloud_notm}} services](/docs/framework-financial-services?topic=framework-financial-services-shared-high-availability#ibm-cloud-services).
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
-For more information, see [related controls for high availability](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-high-availability#related-controls).
+For more information, see [related controls for high availability](/docs/framework-financial-services?topic=framework-financial-services-shared-high-availability#related-controls).
 
 ## Next steps
 {: #next-steps}
 
-- [Development processes and software integrity](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-development-processes)
+- [Development processes and software integrity](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)

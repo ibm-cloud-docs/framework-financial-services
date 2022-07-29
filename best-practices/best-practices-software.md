@@ -15,10 +15,10 @@ subcollection: framework-financial-services
 # Best practices and requirements for software
 {: #best-practices-software}
 
-These best practices summarize some of the most important technical principles for software providers based on the [controls](/docs/allowlist/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) and implementation guidance of the {{site.data.keyword.framework-fs_notm}}. These best practices are _not_ a replacement for the information provided in the [Control Implementation Overview templates](/docs/allowlist/framework-financial-services?topic=framework-financial-services-about#control-implementation-overview-templates), which are still the definitive guides to the controls and required evidence for application providers.
+These best practices summarize some of the most important technical principles for software providers based on the [controls](/docs/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) and implementation guidance of the {{site.data.keyword.framework-fs_notm}}. These best practices are _not_ a replacement for the information provided in the [Control Implementation Overview templates](/docs/framework-financial-services?topic=framework-financial-services-about#control-implementation-overview-templates), which are still the definitive guides to the controls and required evidence for application providers.
 {: shortdesc}
 
-If you're a SaaS provider, see [Best practices for software as a service](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices).
+If you're a SaaS provider, see [Best practices for software as a service](/docs/framework-financial-services?topic=framework-financial-services-best-practices).
 {: tip}
 
 ## 1. Enable operators to properly configure your application to meet the controls

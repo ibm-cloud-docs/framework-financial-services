@@ -22,8 +22,8 @@ Ensuring high availability (HA) is important for all cloud-based applications, a
 
 See the following resources depending on which reference architecture you are using:
 
-- [High availability for VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-high-availability)
-- [High availability for {{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-high-availability)
+- [High availability for VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-high-availability)
+- [High availability for {{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-high-availability)
 
 ## HA in {{site.data.keyword.cloud_notm}} services
 {: #ibm-cloud-services}
@@ -55,7 +55,7 @@ The references cover the steps that the service has taken to achieve high availa
 In addition to the Financial Services Validated services in the reference architecture, see the following references for other important information:
 
 * [How {{site.data.keyword.cloud_notm}} ensures high availability and disaster recovery](/docs/overview?topic=overview-zero-downtime)
-* [Responsibilities for operating services in your deployment](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-responsibilities)
+* [Responsibilities for operating services in your deployment](/docs/framework-financial-services?topic=framework-financial-services-shared-responsibilities)
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
@@ -71,4 +71,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 ## Next steps
 {: #next-steps}
 
-* [Business continuity and disaster recovery](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-bcdr)
+* [Business continuity and disaster recovery](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr)

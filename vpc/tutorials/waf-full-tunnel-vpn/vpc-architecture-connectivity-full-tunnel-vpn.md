@@ -22,7 +22,7 @@ completion-time: 2h
 {: toc-services="f5"}
 {: toc-completion-time="2h"}
 
-One of the approaches for [enabling connectivity to the management VPC](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management) is with a client to site full tunnel VPN. Application providers who want to use this option must deploy their own solution. This tutorial shows one approach that uses [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external} that can be used to meet {{site.data.keyword.framework-fs_notm}} requirements.
+One of the approaches for [enabling connectivity to the management VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management) is with a client to site full tunnel VPN. Application providers who want to use this option must deploy their own solution. This tutorial shows one approach that uses [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external} that can be used to meet {{site.data.keyword.framework-fs_notm}} requirements.
 {: shortdesc}
 
 The following diagram shows a deployment of the VPC reference architecture with a BIG-IP full tunnel VPN deployment.
@@ -45,7 +45,7 @@ BIG-IP currently cannot be integrated with App ID for authentication.  Work is o
 
 The following items are needed to deploy and configure the reference architecture with a full tunnel VPN provided by BIG-IP:
 
-* [Provisioned and licensed BIG-IP](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-f5-tutorial)
+* [Provisioned and licensed BIG-IP](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-f5-tutorial)
 * Configured LDAP
 
 ## Enable license modules on the BIG-IP
@@ -85,12 +85,12 @@ For more information about LDAP setup as a AAA Server in BIG-IP, see the [LDAP a
 {: #f5-vpn-client-ssl-profile}
 {: step}
 
-If you have set up and configured the [web application firewall](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial), you can skip to the next step.
+If you have set up and configured the [web application firewall](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial), you can skip to the next step.
 {: note}
 
-1. [Import client certificate and key to BIG-IP](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#client-certs-key).
-1. [Configure cipher suites](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#f5-waf-ciphers).
-1. [Create a client SSL profile](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#ssl-profiles).
+1. [Import client certificate and key to BIG-IP](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#client-certs-key).
+1. [Configure cipher suites](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#f5-waf-ciphers).
+1. [Create a client SSL profile](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#ssl-profiles).
 
 ## Create a BIG-IP VPN
 {: #f5-vpn-setup}

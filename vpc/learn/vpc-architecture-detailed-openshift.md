@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Single region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.openshiftshort}}
 {: #vpc-architecture-detailed-openshift}
 
-If you want to use containers, you can add [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-roks-overview) to your VPC. Except for the addition of {{site.data.keyword.openshiftshort}}, you use the same architectural patterns and components that were described for the [Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi).
+If you want to use containers, you can add [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-roks-overview) to your VPC. Except for the addition of {{site.data.keyword.openshiftshort}}, you use the same architectural patterns and components that were described for the [Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi).
 {: shortdesc}
 
 The following diagram shows a more detailed view of both the management and workload VPCs when {{site.data.keyword.openshiftshort}} is introduced.
@@ -42,4 +42,4 @@ For more information, see [Understanding {{site.data.keyword.openshiftshort}} on
 ## Next steps
 {: #next-steps}
 
-* [Setup environment for deployment and configuration](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment).
+* [Setup environment for deployment and configuration](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment).

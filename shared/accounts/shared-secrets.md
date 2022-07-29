@@ -66,4 +66,4 @@ The following table lists the different solutions that you can use to protect yo
 ## Next steps
 {: #next-steps}
 
-* [Consumer accounts for application provider workloads](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-consumer)
+* [Consumer accounts for application provider workloads](/docs/framework-financial-services?topic=framework-financial-services-shared-account-consumer)

@@ -98,5 +98,5 @@ In addition, you must follow the guidance found in Appendix A: Cryptographic Req
 ## Next steps
 {: #next-steps}
 
-* [Data encryption in transit](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit)
+* [Data encryption in transit](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit)
 

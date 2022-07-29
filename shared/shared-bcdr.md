@@ -28,7 +28,7 @@ The following sections describe some of the requirements that you must follow fo
 
 You must establish and configure an alternative storage site in at least one geographically separate {{site.data.keyword.cloud_notm}} region. So, if the storage in one region becomes unavailable, you can use storage from another region.
 
-See [Deploy your {{site.data.keyword.cloud_notm}} resources only to approved multizone regions](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) for the list of Financial Services Validated regions. You can choose any of them to act as an alternative storage site. However, your consumers must be able to opt out of having their data stored in the alternate region based on their data residency requirements.
+See [Deploy your {{site.data.keyword.cloud_notm}} resources only to approved multizone regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) for the list of Financial Services Validated regions. You can choose any of them to act as an alternative storage site. However, your consumers must be able to opt out of having their data stored in the alternate region based on their data residency requirements.
 {: tip}
 
 
@@ -66,8 +66,8 @@ You should enable recovery and reconstitution of the system to a known state aft
 
 See the following resources depending on which reference architecture you are using:
 
-- [Business continuity and disaster recovery for VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-bcdr)
-- [Business continuity and disaster recovery for {{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-bcdr)
+- [Business continuity and disaster recovery for VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-bcdr)
+- [Business continuity and disaster recovery for {{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-bcdr)
 
 ## Backup and disaster recovery for {{site.data.keyword.cloud_notm}} services
 {: #ibm-cloud-services}
@@ -97,8 +97,8 @@ The following table provides references for more information about BCDR for each
 In addition to the Financial Services Validated services in the reference architecture, see the following references for other important information:
 
 * [How {{site.data.keyword.cloud_notm}} ensures high availability and disaster recovery](/docs/overview?topic=overview-zero-downtime)
-* [High availability](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-high-availability) in the VPC reference architecture
-* [Responsibilities for operating services in your deployment](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-responsibilities) of the VPC reference architecture
+* [High availability](/docs/framework-financial-services?topic=framework-financial-services-shared-high-availability) in the VPC reference architecture
+* [Responsibilities for operating services in your deployment](/docs/framework-financial-services?topic=framework-financial-services-shared-responsibilities) of the VPC reference architecture
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}
@@ -114,4 +114,4 @@ In addition to the Financial Services Validated services in the reference archit
 ## Next steps
 {: #next-steps}
 
-* [Development processes and software integrity](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-development-processes)
+* [Development processes and software integrity](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)

@@ -53,4 +53,4 @@ See [Use a floating IP address for external connectivity of a virtual server ins
 ## Next steps
 {: #next-steps}
 
-* [Working with virtual servers in VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-compute-vsi)
+* [Working with virtual servers in VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-compute-vsi)

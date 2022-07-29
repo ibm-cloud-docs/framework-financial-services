@@ -18,7 +18,7 @@ subcollection: framework-financial-services
 In {{site.data.keyword.cloud_notm}}, the responsibilities for deploying, operating, and securing products are shared between {{site.data.keyword.IBM_notm}} and you, the application provider. It is important for you to understand these responsibilities for every {{site.data.keyword.cloud_notm}} service you've deployed as part of the reference architectures.
 {: shortdesc}
 
-Depending on the product, the responsibility for the following types of tasks (which span activities for Day 0, Day 1, and Day 2) can be exclusive to {{site.data.keyword.IBM_notm}}, you, or shared. The tasks for each type of product are grouped in the following categories, which cut across nearly all of the {{site.data.keyword.framework-fs_notm}}'s [best practices and requirements](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices).
+Depending on the product, the responsibility for the following types of tasks (which span activities for Day 0, Day 1, and Day 2) can be exclusive to {{site.data.keyword.IBM_notm}}, you, or shared. The tasks for each type of product are grouped in the following categories, which cut across nearly all of the {{site.data.keyword.framework-fs_notm}}'s [best practices and requirements](/docs/framework-financial-services?topic=framework-financial-services-best-practices).
 
 Incident and operations management
 :   Includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.

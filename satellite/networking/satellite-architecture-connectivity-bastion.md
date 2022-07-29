@@ -46,7 +46,7 @@ If operator access to a {{site.data.keyword.satelliteshort}} host is required fo
 ## Set up a bastion host
 {: #setup}
 
-You need to install and manage your own bastion solution within your management plane. A bastian solution can be implemented in a variety of ways. For one example that uses Teleport Enterprise Edition in the VPC reference architecture, see [Setting up a bastion host for secure connectivity](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport).
+You need to install and manage your own bastion solution within your management plane. A bastian solution can be implemented in a variety of ways. For one example that uses Teleport Enterprise Edition in the VPC reference architecture, see [Setting up a bastion host for secure connectivity](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport).
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #next-steps}
@@ -63,4 +63,4 @@ You need to install and manage your own bastion solution within your management 
 ## Next steps
 {: #next-steps}
 
-- [Using {{site.data.keyword.cloud_notm}} services with {{site.data.keyword.satelliteshort}} Link](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-services)
+- [Using {{site.data.keyword.cloud_notm}} services with {{site.data.keyword.satelliteshort}} Link](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-services)

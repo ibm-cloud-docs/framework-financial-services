@@ -76,7 +76,7 @@ There is not a Financial Services Validated solution for scanning virtual server
 ## Next steps
 {: #next-steps}
 
-* [Responsibilities for operating services in your deployment](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-responsibilities)
+* [Responsibilities for operating services in your deployment](/docs/framework-financial-services?topic=framework-financial-services-shared-responsibilities)
 
 
 

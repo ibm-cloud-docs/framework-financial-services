@@ -6,8 +6,8 @@ This is the documentation repository for the Reference Architecture / Deployment
 
 ## Cloud Docs locations
 
-* [Production](https://cloud.ibm.com/docs/allowlist/framework-financial-services) - Requires being added to the external allow list by submitting an [access request](http://ibm.biz/FSCloudDocRequest).
-* [Staging](https://test.cloud.ibm.com/docs/allowlist/framework-financial-services) - Available internally to all IBMers
+* [Production](https://cloud.ibm.com/docs/framework-financial-services)
+* [Staging](https://test.cloud.ibm.com/docs/framework-financial-services)
 
 ## Content Design and Development in IBM Cloud
 
@@ -29,7 +29,7 @@ These docs depend on having a link to the downloadable spreadsheet of controls. 
 
 ## Internal FAQs
 
-An _internal_ [Technical FAQs for IBM Cloud for Financial Services](https://test.cloud.ibm.com/docs/allowlist/framework-financial-services?topic=framework-financial-services-faqs-internal) is also provided.
+An _internal_ [Technical FAQs for IBM Cloud for Financial Services](https://test.cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-faqs-internal) is also provided.
 
 ## Checking build status
 

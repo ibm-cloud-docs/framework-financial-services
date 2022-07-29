@@ -57,4 +57,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 ## Next steps
 {: #next-steps}
 
-- [Working with {{site.data.keyword.openshiftlong_notm}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-containers-openshift)
+- [Working with {{site.data.keyword.openshiftlong_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-containers-openshift)

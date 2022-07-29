@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services
 {: #vpc-architecture-about}
 
-[{{site.data.keyword.vpc_full}} (VPC)](/docs/vpc?topic=vpc-about-vpc#about-vpc) is a public cloud offering that lets an enterprise establish its own private cloud-like computing environment on shared public cloud infrastructure. A VPC gives an enterprise the ability to define and control a virtual network that is logically isolated from all other public cloud tenants, creating a private, secure place on the public cloud. The VPC reference architecture for the {{site.data.keyword.cloud_notm}} for Financial Services is designed to provide a framework for building a VPC-based offering according to the [best practices and requirements of the {{site.data.keyword.framework-fs_notm}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices). We detail this architecture and provide guidance for deploying, configuring, and managing it.
+[{{site.data.keyword.vpc_full}} (VPC)](/docs/vpc?topic=vpc-about-vpc#about-vpc) is a public cloud offering that lets an enterprise establish its own private cloud-like computing environment on shared public cloud infrastructure. A VPC gives an enterprise the ability to define and control a virtual network that is logically isolated from all other public cloud tenants, creating a private, secure place on the public cloud. The VPC reference architecture for the {{site.data.keyword.cloud_notm}} for Financial Services is designed to provide a framework for building a VPC-based offering according to the [best practices and requirements of the {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-best-practices). We detail this architecture and provide guidance for deploying, configuring, and managing it.
 {: shortdesc}
 
 ## Architecture diagram
@@ -34,7 +34,7 @@ Workload VPC
 Other key features to note:
 
 * Supports a single tenant.
-* Resides in one or more [multizone regions](/docs/overview?topic=overview-locations) from the [list of approved regions](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions).
+* Resides in one or more [multizone regions](/docs/overview?topic=overview-locations) from the [list of approved regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions).
 * Gives two options for compute that can be mixed and matched: [{{site.data.keyword.vsi_is_full}}](#services-compute-vsi) and [{{site.data.keyword.openshiftlong}}](#services-containers-openshift).
 * Enables access to the management VPC from the application provider's enterprise environment through [{{site.data.keyword.dl_full}} Dedicated](#services-networking-direct-link) or [{{site.data.keyword.cloud}} {{site.data.keyword.vpn_vpc_full}}](#services-networking-vpn).
 * Provides connectivity from the consumer's enterprise environment to the workload VPC through {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}.
@@ -54,7 +54,7 @@ The revised architecture adds:
 * [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) to provide global load balancing and layer 3/4 protection against distributed denial-of-service (DDoS) attacks.
 * Virtual network firewall software in the workload VPC to provide web application firewall (WAF) protection and layer 7 protection against denial-of-service (DoS) attacks.
 
-See [VPC architecture with virtual servers](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture) for more details on this variation.
+See [VPC architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture) for more details on this variation.
 
 
 
@@ -321,7 +321,7 @@ The following table provides a summary of the main features of the VPC reference
 ## Next steps
 {: #next-steps}
 
-* Learn about some important [VPC concepts](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-concepts).
+* Learn about some important [VPC concepts](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-concepts).
 * Explore more detailed views of the VPC reference architecture based on compute type:
-    * [{{site.data.keyword.vsi_is_short}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi)
-    * [{{site.data.keyword.openshiftlong_notm}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift)
+    * [{{site.data.keyword.vsi_is_short}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi)
+    * [{{site.data.keyword.openshiftlong_notm}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift)

@@ -17,7 +17,7 @@ subcollection: framework-financial-services
 
 
 
-Use cases for the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)  for the {{site.data.keyword.cloud_notm}} for Financial Services typically fall into the four categories in the following table.
+Use cases for the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)  for the {{site.data.keyword.cloud_notm}} for Financial Services typically fall into the four categories in the following table.
 {: shortdec}
 
 
@@ -76,5 +76,5 @@ Highlights of their architecture include the following:
 ## Next steps
 {: #next-steps}
 
-- [{{site.data.keyword.satelliteshort}} shared responsibility model](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-shared-responsibilities)
-- [{{site.data.keyword.satelliteshort}} architecture best practices](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices)
+- [{{site.data.keyword.satelliteshort}} shared responsibility model](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-shared-responsibilities)
+- [{{site.data.keyword.satelliteshort}} architecture best practices](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices)

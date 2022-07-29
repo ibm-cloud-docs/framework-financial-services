@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}
 {: #vpc-architecture-detailed-vsi}
 
-Now that you've seen the [high-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-about) and looked at some [VPC concepts](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-about), we will take a deeper look at some of the details of a reference architecture that uses virtual servers.
+Now that you've seen the [high-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about) and looked at some [VPC concepts](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about), we will take a deeper look at some of the details of a reference architecture that uses virtual servers.
 {: shortdesc}
 
 This architecture shows a deployment of the VPC that uses {{site.data.keyword.vsi_is_short}} as the primary compute.
@@ -35,7 +35,7 @@ The management VPC provides compute, storage, and network services to enable app
 
 The management VPC is distributed across three zones in one [multizone region (MZR)](/docs/overview?topic=overview-locations#mzr-table). Each zone contains two subnets that are protected by different ACLs.
 
-You must use an MZR from the [list of regions](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) that are approved for the {{site.data.keyword.cloud_notm}} for Financial Services.
+You must use an MZR from the [list of regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) that are approved for the {{site.data.keyword.cloud_notm}} for Financial Services.
 {: important}
 
 ### Subnets for management tools
@@ -118,11 +118,11 @@ You might want to allow consumers to access your service through the public inte
 
 ![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/vpc-single-region-edge.svg){: caption="Figure 5. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
-For complete details on this variation of the architecture, see [Consumer connectivity to workload VPC](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet).
+For complete details on this variation of the architecture, see [Consumer connectivity to workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet).
 
 ## Next steps
 {: #next-steps}
 
-If you plan to use {{site.data.keyword.openshiftlong_notm}}, explore a more detailed view of the [VPC reference architecture with {{site.data.keyword.openshiftshort}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift)
+If you plan to use {{site.data.keyword.openshiftlong_notm}}, explore a more detailed view of the [VPC reference architecture with {{site.data.keyword.openshiftshort}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift)
 
-If you don't plan to use {{site.data.keyword.openshiftlong_notm}}, you can skip ahead to learn more about deployment in [Setup environment for deployment and configuration](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment).
+If you don't plan to use {{site.data.keyword.openshiftlong_notm}}, you can skip ahead to learn more about deployment in [Setup environment for deployment and configuration](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment).

@@ -15,10 +15,10 @@ subcollection: framework-financial-services
 # Best practices and requirements for software as a service
 {: #best-practices}
 
-These best practices summarize some of the most important technical principles for SaaS providers based on the [controls](/docs/allowlist/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) and implementation guidance of the {{site.data.keyword.framework-fs_notm}}. These best practices are _not_ a replacement for the information provided in the [Control Implementation Overview templates](/docs/allowlist/framework-financial-services?topic=framework-financial-services-about#control-implementation-overview-templates), which are still the definitive guides to the controls and required evidence for application providers.
+These best practices summarize some of the most important technical principles for SaaS providers based on the [controls](/docs/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) and implementation guidance of the {{site.data.keyword.framework-fs_notm}}. These best practices are _not_ a replacement for the information provided in the [Control Implementation Overview templates](/docs/framework-financial-services?topic=framework-financial-services-about#control-implementation-overview-templates), which are still the definitive guides to the controls and required evidence for application providers.
 {: shortdesc}
 
-If you're a software provider, see [Best practices for software](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices-software).
+If you're a software provider, see [Best practices for software](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software).
 {: tip}
 
 ## 1. Use an approved reference architecture
@@ -110,8 +110,8 @@ Individuals should be able to request access to resources, and they should be gr
 **Implementation guidance:**
 
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-setup)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-setup)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-account-setup)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-account-setup)
 
 
 **Most Relevant Controls:**
@@ -177,8 +177,8 @@ Boundary protection increases security by monitoring and restricting communicati
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-overview)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-overview)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-overview)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-overview)
 
 
 **Most Relevant Controls:**
@@ -199,8 +199,8 @@ Boundary protection increases security by monitoring and restricting communicati
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-bastion)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-bastion)
 
 
 **Most Relevant Controls:**
@@ -229,8 +229,8 @@ Your software components (whether written by you or a third-party) should be ena
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-logging-audit)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-logging-audit)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit)
 
 
 **Most Relevant Controls:**
@@ -253,7 +253,7 @@ Operational logging is a complement to [audit logs](#best-practices-audit-logs).
 Operational logs can be split into two categories:
 
 * Application - Log data generated by software components that you deploy and manage within your deployment. This may be from your own code, or other software components like databases, message queues, etc.
-* Platform - Log data from {{site.data.keyword.cloud_notm}} service instances that is not contained in the [audit data sent to {{site.data.keyword.atracker_short}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-logging-audit).
+* Platform - Log data from {{site.data.keyword.cloud_notm}} service instances that is not contained in the [audit data sent to {{site.data.keyword.atracker_short}}](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit).
 
 Operational monitoring for gauging system health is a very important complement to [monitoring for security and compliance](#best-practices-security-compliance-monitoring). Operational metrics include measurements for CPU usage, memory usage, API response times, etc.
 
@@ -278,8 +278,8 @@ Lack of software integrity leaves you vulnerable to security problems. So, it is
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-development-processes)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-development-processes)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)
 
 
 **Most Relevant Controls:**
@@ -308,8 +308,8 @@ More detailed guidance can be found in the Cryptographic Requirements appendix o
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)
 
 
 **Most Relevant Controls:**
@@ -330,8 +330,8 @@ In addition, you must follow best practices for BCDR as defined by the specific 
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-bcdr)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-bcdr)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-bcdr)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-bcdr)
 
 
 **Most Relevant Controls:**
@@ -361,8 +361,8 @@ In addition, it is recommended that you:
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-high-availability)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-high-availability)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-high-availability)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-high-availability)
 
 
 **Most Relevant Controls:**
@@ -430,8 +430,8 @@ You should should ensure:
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-secrets)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-secrets)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets)
 
 **Most Relevant Controls:**
 
@@ -450,8 +450,8 @@ You should should ensure:
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
 
 
 **Most Relevant Controls:**
@@ -476,8 +476,8 @@ Even though {{site.data.keyword.compliance_short}} is not yet Financial Services
 
 **Implementation guidance:**
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance)
 
 
 **Most Relevant Controls:**
@@ -492,12 +492,12 @@ Even though {{site.data.keyword.compliance_short}} is not yet Financial Services
 
 Learn about the three reference architectures for the {{site.data.keyword.cloud_notm}} for Financial Services:
 
-* [VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-about)
-* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)
-* [VMware Regulated Workloads reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vmware-overview)
+* [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about)
+* [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)
+* [VMware Regulated Workloads reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vmware-overview)
 
 Or, if you're intending to be a software provider, see also:
 
-* [Best practices for software](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices-software)
+* [Best practices for software](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software)
 
 

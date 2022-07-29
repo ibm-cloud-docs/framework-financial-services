@@ -35,13 +35,13 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 
    Two of the most important reasons for using Service mesh is to enable you to:
 
-   * Encrypt network traffic between microservices running in your cluster. See [Data encryption in transit](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit) for more details.
+   * Encrypt network traffic between microservices running in your cluster. See [Data encryption in transit](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit) for more details.
    * Implement gateways to manage inbound and outbound traffic for your mesh to specify which traffic you want to enter or leave the mesh. For example, you can use an egress gateways to control/allowlist all necessary endpoints and domains that your application needs to connect to. You should deny all traffic by default. See [Traffic Management](https://docs.openshift.com/container-platform/4.5/service_mesh/v1x/ossm-traffic-manage.html#ossm-routing-gw_routing-traffic-v1x) for more details.
 
    The default {{site.data.keyword.cloud_notm}} configuration of the routers enables host networking, which is not compatible with the service mesh network policy. For the service mesh ingress to work, [apply a network policy](https://gist.githubusercontent.com/kitch/39c504a2ed9e381c2aadea436d5b52e4/raw/d8efa69f41d41425b16bb363a881a98d40d3708c/mesh-policy.yaml){: external}.
    {: tip}
 
-5. Set up {{site.data.keyword.registryshort}} and Vulnerability Advisor. For more information, see [Container Registry and Vulnerability Advisor](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-development-processes#vpc-architecture-development-processes-registry-vulnerability-advisor).
+5. Set up {{site.data.keyword.registryshort}} and Vulnerability Advisor. For more information, see [Container Registry and Vulnerability Advisor](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes#vpc-architecture-development-processes-registry-vulnerability-advisor).
 
 6. Develop and deploy applications to your cluster. See the following for more details:
    * [Planning app deployments](/docs/openshift?topic=openshift-plan_deploy) for more details.
@@ -75,6 +75,6 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 ## Next steps
 {: #next-steps}
 
-If using the VPC reference architecture, see [Storage for VPC reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-storage).
+If using the VPC reference architecture, see [Storage for VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-storage).
 
-If using the {{site.data.keyword.satelliteshort}} reference architecture, see [Storage for {{site.data.keyword.satelliteshort}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-storage).
+If using the {{site.data.keyword.satelliteshort}} reference architecture, see [Storage for {{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-storage).

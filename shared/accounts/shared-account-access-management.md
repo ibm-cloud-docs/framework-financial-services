@@ -17,7 +17,7 @@ subcollection: framework-financial-services
 
 
 
-After deciding how to [organize your accounts and resources](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-organization), you will need to properly manage access for deployments of the reference architectures that will help achieve [separation of duties and least privilege](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-least-privilege).
+After deciding how to [organize your accounts and resources](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization), you will need to properly manage access for deployments of the reference architectures that will help achieve [separation of duties and least privilege](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-least-privilege).
 {: shortdesc}
 
 ## Managing access with access groups
@@ -128,4 +128,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 ## Next steps
 {: #next-steps}
 
-* [Handling and securing secrets](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-secrets).
+* [Handling and securing secrets](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets).

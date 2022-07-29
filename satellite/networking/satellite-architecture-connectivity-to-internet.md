@@ -88,4 +88,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 ## Next steps
 {: #next-steps}
 
-* [Completing operator actions through a bastion host](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-bastion)
+* [Completing operator actions through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-bastion)

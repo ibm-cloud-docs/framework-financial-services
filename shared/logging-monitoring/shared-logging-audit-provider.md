@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Audit logging of application provider events and SIEM
 {: #shared-logging-audit-provider}
 
-In addition, to [audit logging of {{site.data.keyword.cloud_notm}} events](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-audit), you also need to consider auditing of events your applications might generate. Auditable events from all sources need to be consolidated into a security information and event management (SIEM).
+In addition, to [audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-audit), you also need to consider auditing of events your applications might generate. Auditable events from all sources need to be consolidated into a security information and event management (SIEM).
 {: shortdesc}
 
 ## Auditable events
@@ -80,4 +80,4 @@ You need to install your own software solution within your VPC for SIEM. An exam
 ## Next steps
 {: #next-steps}
 
-* [Operational logging](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational).
+* [Operational logging](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational).

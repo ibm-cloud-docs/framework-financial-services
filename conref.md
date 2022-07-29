@@ -19,10 +19,10 @@ content-type: conref
 # Content references for framework-financial-services
 {: #conref-framework-financial-services}
 
-Generally speaking, you should strive to use only services which are Financial Services Validated in your solutions. However, depending on your circumstance there may be exceptions. See the best practice [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services) for more details and potential exceptions.
+Generally speaking, you should strive to use only services which are Financial Services Validated in your solutions. However, depending on your circumstance there may be exceptions. See the best practice [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services) for more details and potential exceptions.
 {: #fs-validated-disclaimer}
 
-Generally speaking, you should strive to use only services which are Financial Services Validated in your solutions. However, depending on your circumstance there may be exceptions. See the best practice [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services) for more details and potential exceptions.
+Generally speaking, you should strive to use only services which are Financial Services Validated in your solutions. However, depending on your circumstance there may be exceptions. See the best practice [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services) for more details and potential exceptions.
 {: important}
 {: #fs-validated-disclaimer-important}
 
@@ -85,7 +85,7 @@ Use [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) to seamlessly c
 Users of {{site.data.keyword.cos_short}} refer to their binary data, such as files, images, media, archives, or even entire databases as objects. Objects are stored in a bucket, the container for their unstructured data. Buckets contain both inherent and user-defined metadata. Finally, objects are defined by a globally unique combination of the bucket name and the object key, or name.
 {: #service-description-cloud-object-storage-2}
 
-All {{site.data.keyword.cos_short}} buckets must be encrypted with KYOK by using keys that are managed by {{site.data.keyword.hscrypto}}. For more information, see [Encryption at rest](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest). In addition, a geographically separate region should be used as an [alternative storage site](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-bcdr#your-workloads-requirements-alternate-storage-site). This means you should use [cross region resiliency](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) for all of your {{site.data.keyword.cos_short}} buckets.
+All {{site.data.keyword.cos_short}} buckets must be encrypted with KYOK by using keys that are managed by {{site.data.keyword.hscrypto}}. For more information, see [Encryption at rest](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest). In addition, a geographically separate region should be used as an [alternative storage site](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr#your-workloads-requirements-alternate-storage-site). This means you should use [cross region resiliency](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) for all of your {{site.data.keyword.cos_short}} buckets.
 {: important}
 {: #service-description-cloud-object-storage-use-cross-region-kyok-important}
 
@@ -115,7 +115,7 @@ To start working with {{site.data.keyword.cos_short}}, see the following instruc
 {{site.data.keyword.atracker_short}} provides for either event routing or [hosted event search](/docs/activity-tracker?topic=activity-tracker-getting-started-search). However, only the event routing features of {{site.data.keyword.atracker_short}} are Financial Services Validated. In regions where it's available, you must configure {{site.data.keyword.atracker_short}} event routing to send events to {{site.data.keyword.cos_short}}, where they must be encrypted with KYOK.
 {: #service-description-activity-tracker-event-routing-2}
 
-{{site.data.keyword.atracker_short}} event routing is only available in some regions (see [Locations for {{site.data.keyword.atracker_short}} event routing](/docs/activity-tracker?topic=activity-tracker-regions#regions-atracker) for more details). For regions where it's not available, you must use {{site.data.keyword.atracker_short}} hosted event search until {{site.data.keyword.atracker_short}} event routing is available. When event routing becomes available in those regions, you must switch to use event routing. For more information and possible exceptions, see [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services).
+{{site.data.keyword.atracker_short}} event routing is only available in some regions (see [Locations for {{site.data.keyword.atracker_short}} event routing](/docs/activity-tracker?topic=activity-tracker-regions#regions-atracker) for more details). For regions where it's not available, you must use {{site.data.keyword.atracker_short}} hosted event search until {{site.data.keyword.atracker_short}} event routing is available. When event routing becomes available in those regions, you must switch to use event routing. For more information and possible exceptions, see [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services).
 {: important}
 {: #service-description-activity-tracker-event-routing-3-important}
 
@@ -180,7 +180,7 @@ You are responsible for providing the underlying virtual and physical storage th
 
 ## Related controls disclaimer
 
-The following [{{site.data.keyword.framework-fs_notm}} controls](/docs/allowlist/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) are most related to this guidance. However, in addition to following the guidance here, do your own due diligence to ensure you meet the requirements.
+The following [{{site.data.keyword.framework-fs_notm}} controls](/docs/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements) are most related to this guidance. However, in addition to following the guidance here, do your own due diligence to ensure you meet the requirements.
 {: #related-controls-disclaimer}
 
 ## Beta document message
@@ -202,10 +202,10 @@ Responsibility is shared, except that the workload provider is solely responsibl
 
 # List reference architectures with full names
 
-* [{{site.data.keyword.vpc_full}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-about), with options for using one or both of:
-    * [{{site.data.keyword.vsi_is_full}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi)
-    * [{{site.data.keyword.openshiftlong}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift)
-* [{{site.data.keyword.satellitelong}} reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-about) 
-* [{{site.data.keyword.cloud}} for VMware® Regulated Workloads reference architecture](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vmware-overview)
+* [{{site.data.keyword.vpc_full}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about), with options for using one or both of:
+    * [{{site.data.keyword.vsi_is_full}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi)
+    * [{{site.data.keyword.openshiftlong}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift)
+* [{{site.data.keyword.satellitelong}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about) 
+* [{{site.data.keyword.cloud}} for VMware® Regulated Workloads reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vmware-overview)
 {: #reference-architectures-list-full-names}
 

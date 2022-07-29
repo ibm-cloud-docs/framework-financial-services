@@ -86,10 +86,10 @@ For more information, see the following resources:
 
 The edge VPC is used to enhance boundary protection for both the management VPC and the workload VPC. For public internet access to the workload VPC, a WAF in the edge VPC is use to protect web applications by filtering and monitoring internet web traffic. A WAF can prevent attacks exploiting a web application's known vulnerabilities.
 
-{{site.data.keyword.IBM_notm}} does not currently offer a Financial Services Validated solution for WAF. So, you need to install and manage your own WAF within your edge VPC. One option for WAF is to use F5 BIG-IP. See the tutorial [Setup WAF with F5 BIG-IP](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial) for more details.
+{{site.data.keyword.IBM_notm}} does not currently offer a Financial Services Validated solution for WAF. So, you need to install and manage your own WAF within your edge VPC. One option for WAF is to use F5 BIG-IP. See the tutorial [Setup WAF with F5 BIG-IP](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial) for more details.
 {: tip}
 
-For [management VPC connectivity](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management), your operators can connect to the environment from your on-premises network (with {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}) or through a full-tunnel client-to-site VPN. In practice, all three zones in the edge VPC would be the same, but for illustrative purposes, each zone in the edge VPC box depicts one of the three scenarios for operator connectivity:
+For [management VPC connectivity](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management), your operators can connect to the environment from your on-premises network (with {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}) or through a full-tunnel client-to-site VPN. In practice, all three zones in the edge VPC would be the same, but for illustrative purposes, each zone in the edge VPC box depicts one of the three scenarios for operator connectivity:
 
 * Zone 1 - Connectivity with {{site.data.keyword.dl_short}}, so neither a full-tunnel client-to-site VPN nor {{site.data.keyword.vpn_vpc_short}} is needed.
 * Zone 2 - Connectivity from the application provider is with {{site.data.keyword.vpn_vpc_short}}, so a full-tunnel client-to-site VPN is not needed.
@@ -118,4 +118,4 @@ Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribu
 ## Next steps
 {: #next-steps}
 
-* [Connectivity to {{site.data.keyword.cloud_notm}} services with private endpoints](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-services)
+* [Connectivity to {{site.data.keyword.cloud_notm}} services with private endpoints](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-services)

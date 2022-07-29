@@ -46,8 +46,8 @@ You can optionally use [dedicated hosts for VPC](/docs/vpc?topic=vpc-creating-de
 ## Next steps
 {: #next-steps}
 
-* If you plan to use {{site.data.keyword.openshiftshort}}, see [Working with {{site.data.keyword.openshiftlong_notm}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-containers-openshift).
-* Otherwise, see [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-logging-audit).
+* If you plan to use {{site.data.keyword.openshiftshort}}, see [Working with {{site.data.keyword.openshiftlong_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-containers-openshift).
+* Otherwise, see [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit).
 
 
 

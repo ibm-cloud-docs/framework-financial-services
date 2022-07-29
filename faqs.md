@@ -25,7 +25,7 @@ Answers to common questions about {{site.data.keyword.cloud_notm}} for Financial
 {: #reference-architectures}
 {: faq}
 
-See [references architectures](/docs/allowlist/framework-financial-services?topic=framework-financial-services-reference-architectures).
+See [references architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architectures).
 
 
 ## What is a _consumer_ and what is an _application provider_?
@@ -58,7 +58,7 @@ Application providers who are within financial institutions are not beholden to 
 
 Self-installed (or "bring your own") software from third parties is permitted without special approval. Examples include databases, logging stacks, web application firewalls, and so on. But just like first-party software you might develop and deploy, self-installed third-party software must comply with all of the requirements of the {{site.data.keyword.framework-fs_notm}}. And, it is your responsibility to provide appropriate supporting evidence.
 
-For more information, see [Ensure all usage of software meets {{site.data.keyword.framework-fs_notm}} controls](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-self-installed-software).
+For more information, see [Ensure all usage of software meets {{site.data.keyword.framework-fs_notm}} controls](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-self-installed-software).
 
 
 

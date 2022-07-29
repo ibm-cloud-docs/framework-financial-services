@@ -30,7 +30,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
    | Access Control (AC) | AC-2 Account Management  |
    {: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}} for account creation" caption-side="top"}
 
-1. Set up the {{site.data.keyword.atracker_short}} service as described in [Audit logging for {{site.data.keyword.cloud_notm}} events](/docs/allowlist/framework-financial-services?topic=framework-financial-services-logging-audit). This enables {{site.data.keyword.cloud_notm}} platform events to be recorded for auditing purposes. Setting this up early in the process is important so that all platform events that occur during the rest of these steps are available in the audit logs.
+1. Set up the {{site.data.keyword.atracker_short}} service as described in [Audit logging for {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-logging-audit). This enables {{site.data.keyword.cloud_notm}} platform events to be recorded for auditing purposes. Setting this up early in the process is important so that all platform events that occur during the rest of these steps are available in the audit logs.
 
    The following table shows the controls that are most related to this step.
 
@@ -42,7 +42,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
 1. Upgrade your account to either Pay-As-You-Go or Subscription. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
 
-   It is highly recommended to upgrade to a Subscription account so that you can [set up an enterprise](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-access-management#enterprise).
+   It is highly recommended to upgrade to a Subscription account so that you can [set up an enterprise](/docs/framework-financial-services?topic=framework-financial-services-shared-account-access-management#enterprise).
    {: tip}
 
 1. Enable [multi-factor authentication (MFA)](/docs/account?topic=account-enablemfa) by using the **U2F MFA** type for all users in your account. Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F standard, this method offers the highest level of security. This security is needed because the {{site.data.keyword.framework-fs_notm}} requires a smart card or hardware token that is designed and operated to FIPS 140-2 level 2 or higher or equivalent (for example, ANSI X9.24 or ISO 13491-1:2007).
@@ -115,4 +115,4 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 ## Next steps
 {: #next-steps}
 
-* [Organizing your {{site.data.keyword.cloud_notm}} accounts and resources](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-organization)
+* [Organizing your {{site.data.keyword.cloud_notm}} accounts and resources](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization)

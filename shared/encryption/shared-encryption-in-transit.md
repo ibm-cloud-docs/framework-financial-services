@@ -103,4 +103,4 @@ In addition, you must follow the guidance found in Appendix A: Cryptographic Req
 ## Next steps
 {: #shared-encryption-in-transit-next-steps}
 
-* [Business continuity and disaster recovery](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-bcdr)
+* [Business continuity and disaster recovery](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr)

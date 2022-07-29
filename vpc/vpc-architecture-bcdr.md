@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Business continuity and disaster recovery for VPC reference architecture
 {: #vpc-architecture-bcdr}
 
-As described in [Business continuity and disaster recovery (BCDR) overview](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-bcdr), BCDR is important for all cloud-based applications. In this article, you will learn about specifics of BCDR in the {{site.data.keyword.satelliteshort}} reference architecture.
+As described in [Business continuity and disaster recovery (BCDR) overview](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr), BCDR is important for all cloud-based applications. In this article, you will learn about specifics of BCDR in the {{site.data.keyword.satelliteshort}} reference architecture.
 
 ## Workloads in VPC reference architecture
 {: #your-workloads}
@@ -37,14 +37,14 @@ See [Storing data on software-defined storage (SDS) with Portworx](/docs/openshi
 ## Backup and disaster recovery for {{site.data.keyword.cloud_notm}} services
 {: #ibm-cloud-services}
 
-In addition to backing up your workloads and having the capability to restore service in the face of a disaster, your BCDR strategy needs to consider all of the {{site.data.keyword.cloud_notm}} services in your deployment. See [Backup and disaster recovery for {{site.data.keyword.cloud_notm}} services](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-bcdr#ibm-cloud-services).
+In addition to backing up your workloads and having the capability to restore service in the face of a disaster, your BCDR strategy needs to consider all of the {{site.data.keyword.cloud_notm}} services in your deployment. See [Backup and disaster recovery for {{site.data.keyword.cloud_notm}} services](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr#ibm-cloud-services).
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
-See [related controls for backup and recovery](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-bcdr#related-controls).
+See [related controls for backup and recovery](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr#related-controls).
 
 ## Next steps
 {: #next-steps}
 
-- [High availability overview](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-high-availability)
+- [High availability overview](/docs/framework-financial-services?topic=framework-financial-services-shared-high-availability)

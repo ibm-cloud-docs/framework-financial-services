@@ -58,8 +58,8 @@ In addition, for services that store data, it is suggested that you use one or m
 
 If using the VPC reference architecture, then see:
 
-* [VPC networking overview](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-overview)
+* [VPC networking overview](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-overview)
 
 If using the {{site.data.keyword.satelliteshort}} reference architecture, then see:
 
-* [{{site.data.keyword.satelliteshort}} networking overview](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-overview)
+* [{{site.data.keyword.satelliteshort}} networking overview](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-overview)

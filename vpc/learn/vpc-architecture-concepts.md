@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # VPC concepts
 {: #vpc-architecture-concepts}
 
-Now that you've seen the [high-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-about), there are a number of important VPC concepts that will help you understand the components within the management and workload VPCs as we dive into lower-level details. Each VPC is a virtual network that is linked to your customer account. It gives you cloud security, with the ability to scale dynamically, by providing fine-grained control over your virtual infrastructure and your network traffic segmentation.
+Now that you've seen the [high-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about), there are a number of important VPC concepts that will help you understand the components within the management and workload VPCs as we dive into lower-level details. Each VPC is a virtual network that is linked to your customer account. It gives you cloud security, with the ability to scale dynamically, by providing fine-grained control over your virtual infrastructure and your network traffic segmentation.
 {: shortdesc}
 
 ## Network
@@ -26,7 +26,7 @@ Now that you've seen the [high-level VPC reference architecture for {{site.data.
 
 All VPCs exist in a single region. A [region](#x2091391){: term} is an abstraction that is related to the geographic area in which a VPC is deployed. Each region contains multiple zones. A [zone](x2070723){: term} is another an abstraction that refers to the physical data center that hosts the compute, network, and storage resources, as well as the related cooling and power, which provides services and applications.
 
-VPC that are created in a one of the [required multizone regions](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) can span multiple zones to facilitate high availability.
+VPC that are created in a one of the [required multizone regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) can span multiple zones to facilitate high availability.
 
 For {{site.data.keyword.cloud_notm}} for Financial Services, you should use at least three zones in each VPC to help ensure resiliency.
 {: tip}
@@ -68,7 +68,7 @@ See [Creating dedicated hosts and groups](/docs/vpc?topic=vpc-creating-dedicated
 
 You can also use {{site.data.keyword.openshiftlong_notm}} to run applications. It is also backed by virtual server instances, but, in that case, the virtual service instances are managed by IBM.
 
-See [VPC reference architecture with {{site.data.keyword.openshiftshort}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift) for more details.
+See [VPC reference architecture with {{site.data.keyword.openshiftshort}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift) for more details.
 
 ## Storage
 {: #storage}
@@ -82,4 +82,4 @@ See [About Block Storage for VPC](/docs/vpc?topic=vpc-block-storage-about) for m
 ## Next steps
 {: #next-steps}
 
-* Take a deeper look at the [VPC reference architecture with virtual servers](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi).
+* Take a deeper look at the [VPC reference architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi).

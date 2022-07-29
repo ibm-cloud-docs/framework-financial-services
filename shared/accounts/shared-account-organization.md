@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Organizing {{site.data.keyword.cloud_notm}} accounts and resources
 {: #shared-account-organization}
 
-After you complete your [{{site.data.keyword.cloud_notm}} account setup](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-setup), consider the best practices for organizing your accounts and resources. The choices here are important as you set up [access management](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-access-management) in later steps.
+After you complete your [{{site.data.keyword.cloud_notm}} account setup](/docs/framework-financial-services?topic=framework-financial-services-shared-account-setup), consider the best practices for organizing your accounts and resources. The choices here are important as you set up [access management](/docs/framework-financial-services?topic=framework-financial-services-shared-account-access-management) in later steps.
 {: shortdesc}
 
 All resources that are managed by [{{site.data.keyword.cloud_notm}} Identity and Access Management (IAM)](/docs/account?topic=account-access-getstarted) are placed into resource groups for access control and billing purposes.
@@ -50,7 +50,7 @@ For the {{site.data.keyword.satelliteshort}} reference architecture, you can put
 ## Organization for multiple deployments
 {: #multiple-deployments}
 
-It is required that you have [separate test and production deployments](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-non-production-environments) of the reference architecture, and that those deployments are managed by separate accounts. This means you need at least two accounts, each with a dedicated resource group.
+It is required that you have [separate test and production deployments](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-non-production-environments) of the reference architecture, and that those deployments are managed by separate accounts. This means you need at least two accounts, each with a dedicated resource group.
 
 ### VPC reference architecture
 {: #multiple-deployments-vpc}
@@ -147,4 +147,4 @@ The following diagram shows an enterprise with one account group that contains s
 ## Next steps
 {: #next-steps}
 
-* [Access management in {{site.data.keyword.cloud_notm}}](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-account-access-management)
+* [Access management in {{site.data.keyword.cloud_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-account-access-management)

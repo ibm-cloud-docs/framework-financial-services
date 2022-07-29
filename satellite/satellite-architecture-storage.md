@@ -23,7 +23,7 @@ You need to consider storage options both in {{site.data.keyword.cloud_notm}} an
 
 All {{site.data.keyword.satelliteshort}} control plane data is backed up to an [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage) service instance within {{site.data.keyword.cloud_notm}}. This is done so that your location can be restored after a disaster. When you create a location, you also provide a {{site.data.keyword.cos_short}} service instance that you control for backup of the location control plane worker nodes. Control plane master data is backed up by {{site.data.keyword.IBM_notm}} and stored in an {{site.data.keyword.IBM_notm}}-owned {{site.data.keyword.cos_short}} instance. {{site.data.keyword.satelliteshort}} cluster master data is backed up to the {{site.data.keyword.cos_short}} instance that you own.
 
-Aside from backing up data from the {{site.data.keyword.satelliteshort}} location, {{site.data.keyword.cos_short}} is also used to store auditable {{site.data.keyword.cloud_notm}} events. For more information, see [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-logging-audit).
+Aside from backing up data from the {{site.data.keyword.satelliteshort}} location, {{site.data.keyword.cos_short}} is also used to store auditable {{site.data.keyword.cloud_notm}} events. For more information, see [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit).
 
 ### About {{site.data.keyword.cos_short}}
 {: #satellite-architecture-storage-ibm-cloud-cos}
@@ -50,10 +50,10 @@ Within the {{site.data.keyword.satelliteshort}} location, {{site.data.keyword.sa
 
 More details on some of the major {{site.data.keyword.framework-fs_notm}} controls related to storage can be found in the following articles:
 
-- [Encryption at rest](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)
-- [Backup and recovery](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-bcdr)
+- [Encryption at rest](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)
+- [Backup and recovery](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr)
 
 ## Next steps
 {: #next-steps}
 
-* [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-logging-audit)
+* [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit)

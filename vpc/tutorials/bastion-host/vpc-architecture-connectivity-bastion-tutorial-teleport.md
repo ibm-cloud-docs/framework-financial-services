@@ -23,7 +23,7 @@ completion-time: 2h
 {: toc-services="cloud-object-storage, appid, vpc"}
 {: toc-completion-time="2h"}
 
-This tutorial shows you one way that can be used to meet the {{site.data.keyword.framework-fs_notm}} requirements that are related to [bastion host](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion). There are various ways to implement a compliant bastion solution, but we show you how to configure a bastion host in your VPC by using [Teleport Enterprise Edition](https://goteleport.com/){: external}, along with {{site.data.keyword.cos_short}} and {{site.data.keyword.appid_short_notm}} for enhanced security. You will learn how to set up a Teleport-based solution that meets the previously described {{site.data.keyword.framework-fs_notm}} requirements.
+This tutorial shows you one way that can be used to meet the {{site.data.keyword.framework-fs_notm}} requirements that are related to [bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion). There are various ways to implement a compliant bastion solution, but we show you how to configure a bastion host in your VPC by using [Teleport Enterprise Edition](https://goteleport.com/){: external}, along with {{site.data.keyword.cos_short}} and {{site.data.keyword.appid_short_notm}} for enhanced security. You will learn how to set up a Teleport-based solution that meets the previously described {{site.data.keyword.framework-fs_notm}} requirements.
 {: shortdesc}
 
 We provide guidance, but you are solely responsible for installing, configuring, and operating {{site.data.keyword.IBM_notm}} third-party software in a way that satisfies {{site.data.keyword.framework-fs_notm}} requirements. In addition, {{site.data.keyword.IBM_notm}} does not provide support for third-party software. So, if you choose to use Teleport and encounter issues with the Teleport software that require support, you should contact Teleport.
@@ -306,7 +306,7 @@ With your virtual server instances provisioned and set-up with a security group 
    * `tctl create /var/lib/teleport/oidc.yaml` 
 1. Set up forwarding of Teleport logs and system logs. Teleport logs are located in the directory `/var/lib/teleport` and system logs in `/var/logs`.  
 
-Logs must be forwarded to an operational logging solution. For more information, see [operational logging](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational)
+Logs must be forwarded to an operational logging solution. For more information, see [operational logging](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational)
 {: important}
 
 ## Log in to the bastion host
@@ -351,5 +351,5 @@ Now that Teleport is installed and setup, remove SSH port 22 from the allowed li
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #controls}
 
-See the [related controls for bastion host](/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion#next-steps).
+See the [related controls for bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion#next-steps).
 

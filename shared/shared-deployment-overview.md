@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Set up environment for deployment and configuration 
 {: #shared-deployment-setup-environment}
 
-Automation is an important part of any cloud solution, and it's even more so in regulated industries. You want to ensure that your deployment, operations, and management procedures are secure and repeatable. Manual activities can be error prone and lead to the introduction of vulnerabilities. So, as you work with the [reference architectures](/docs/allowlist/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) for the {{site.data.keyword.cloud_notm}} for Financial Services, you will want to take advantage of the tools that {{site.data.keyword.cloud_notm}} provides to make automation possible. These include:
+Automation is an important part of any cloud solution, and it's even more so in regulated industries. You want to ensure that your deployment, operations, and management procedures are secure and repeatable. Manual activities can be error prone and lead to the introduction of vulnerabilities. So, as you work with the [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) for the {{site.data.keyword.cloud_notm}} for Financial Services, you will want to take advantage of the tools that {{site.data.keyword.cloud_notm}} provides to make automation possible. These include:
 {: shortdesc}
 
 - [{{site.data.keyword.cloud_notm}} Command Line Interface (CLI)](/docs/cli?topic=cli-getting-started)
@@ -106,4 +106,4 @@ The following table contains links about the Terraform capabilities for each ser
 ## Next steps
 {: #next-steps}
 
-* [Deploy infrastructure as code for reference architectures](/docs/allowlist/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code)
+* [Deploy infrastructure as code for reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code)

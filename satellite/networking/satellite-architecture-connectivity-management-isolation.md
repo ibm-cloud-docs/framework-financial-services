@@ -18,11 +18,11 @@ subcollection: framework-financial-services
 A key aspect of the {{site.data.keyword.framework-fs_notm}} is to separate user workloads from system management functions and isolate security functions from nonsecurity functions. The network infrastructure of the {{site.data.keyword.satelliteshort}} location can be used to provide physical and logical separation between the {{site.data.keyword.satelliteshort}} management control plane and your workloads. 
 {: shortdesc}
 
-Network flow rule design should follow the {{site.data.keyword.framework-fs_notm}}'s [information flow guidelines](/docs/allowlist/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-boundary-protection) by using a "deny by default" approach.
+Network flow rule design should follow the {{site.data.keyword.framework-fs_notm}}'s [information flow guidelines](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-boundary-protection) by using a "deny by default" approach.
 
 ## Before you begin
 
-1. Complete the work for [account setup and management](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-account-setup).
+1. Complete the work for [account setup and management](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-account-setup).
 2. Complete [{{site.data.keyword.satelliteshort}} location setup](/docs/satellite?topic=satellite-locations).
 
 ## Identify network areas for control plane hosts and workload hosts
@@ -49,7 +49,7 @@ The following rules for control plane hosts must be implemented within the netwo
 3. Allow outbound flows to workload hosts of the same {{site.data.keyword.satelliteshort}} location.
 4. If {{site.data.keyword.satelliteshort}} Link [location endpoint](/docs/satellite?topic=satellite-link-location-cloud#link-location-endpoint) is configured to enable connection from {{site.data.keyword.cloud_notm}} to a resource within the {{site.data.keyword.satelliteshort}} location, allow the outbound flow from control plane hosts to the resource used in the location endpoint for each such endpoint.
 5. If {{site.data.keyword.satelliteshort}} Link [cloud endpoints](/docs/satellite?topic=satellite-link-location-cloud#link-cloud-endpoint) are used by components other than workload hosts in the {{site.data.keyword.satelliteshort}} location (for example, to access {{site.data.keyword.cloud_notm}} IAM services from an application deployed outside of the {{site.data.keyword.satelliteshort}} location), allow inbound flow to the control plane hosts from the resource that requires access the cloud endpoint that uses the destination port listed in the endpoint address attribute.
-6. Ensure that control plane hosts are configured to allow outbound access to {{site.data.keyword.cloud_notm}} public endpoints. For more information, see [Accessing external resources from the {{site.data.keyword.satelliteshort}} location](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-external).
+6. Ensure that control plane hosts are configured to allow outbound access to {{site.data.keyword.cloud_notm}} public endpoints. For more information, see [Accessing external resources from the {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-external).
 
 ## Configure network flow rules for workload hosts
 {: #security-groups-workload}
@@ -62,7 +62,7 @@ The following rules for workload hosts must be implemented within the networking
 4. Identify and allow network flows to other services deployed in the {{site.data.keyword.satelliteshort}} location (for example, another {{site.data.keyword.openshiftshort}} cluster) if required by the workload application architecture.
 5. Identify and allow the ingress network flows from the edge plane that is used to expose the workload services to application consumers (for example, load balancers).
 6. Allow outbound network flows to service endpoints in management plane that is needed for logging and monitoring.
-7. Ensure that workload hosts have outbound access to {{site.data.keyword.cloud_notm}} public endpoints. For more information, see [Accessing external resources](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-external).
+7. Ensure that workload hosts have outbound access to {{site.data.keyword.cloud_notm}} public endpoints. For more information, see [Accessing external resources](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-external).
 
 ## (Optional) Configure virtual network flow rules within {{site.data.keyword.openshiftshort}}
 {: #security-groups-workload}
@@ -84,4 +84,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls below are most re
 ## Next steps
 {: #next-steps}
 
-* [Accessing external resources from the {{site.data.keyword.satelliteshort}} location](/docs/allowlist/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-external)
+* [Accessing external resources from the {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-external)
