@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-29"
+lastupdated: "2022-08-23"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -29,7 +29,7 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 
 3. Create your {{site.data.keyword.openshiftshort}} cluster. For more information, see [Creating a {{site.data.keyword.openshiftshort}} cluster in your VPC](/docs/openshift?topic=openshift-vpc_rh_tutorial).
 
-4. Install [Service Mesh on {{site.data.keyword.openshiftshort}}](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh) which is based on the open source [Istio](https://istio.io/){: external} project. 
+4. Install [Service Mesh on {{site.data.keyword.openshiftshort}}](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh) which is based on the open source [Istio](https://istio.io/){: external} project.
 
    Two of the most important reasons for using Service Mesh is to enable you to:
 
@@ -40,7 +40,7 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 
 6. Develop and deploy applications to your cluster. See the following for more details:
    * [Planning app deployments](/docs/openshift?topic=openshift-plan_deploy) for more details.
-   * [Deploying applications on {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} Service Mesh](https://docs.openshift.com/container-platform/4.5/service_mesh/v1x/prepare-to-deploy-applications-ossm.html){: external}
+   * [Deploying applications on {{site.data.keyword.openshiftshort}} Service Mesh](https://docs.openshift.com/container-platform/4.5/service_mesh/v1x/prepare-to-deploy-applications-ossm.html){: external}
 
 ## Related resources
 {: #related-resources}
@@ -51,7 +51,7 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 * [Scalable web application on {{site.data.keyword.openshiftshort}}](/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-openshift)
 * [Deploy microservices with {{site.data.keyword.openshiftshort}}](/docs/solution-tutorials?topic=solution-tutorials-openshift-microservices)
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 {{site.data.content.related-controls-disclaimer}}

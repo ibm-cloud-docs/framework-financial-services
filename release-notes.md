@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-08-25"
 
 keywords: 
 
@@ -20,6 +20,11 @@ Use the release notes to learn about the latest changes to the documentation for
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
+
+## 24 August 2022
+{: #24-august-2022}
+
+* Fixed a couple of links and addressed some formatting issues.
 
 
 

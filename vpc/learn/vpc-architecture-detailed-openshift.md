@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-29"
+lastupdated: "2022-08-24"
 
 keywords: 
 
@@ -37,7 +37,7 @@ You can choose to use {{site.data.keyword.openshiftshort}} alongside (or instead
 For {{site.data.keyword.cloud_notm}} for Financial Services, you should provision {{site.data.keyword.openshiftlong_notm}} in a VPC only and not in classic infrastructure.
 {: important}
 
-For more information, see [Understanding {{site.data.keyword.openshiftshort}} on IBM Cloud](/docs/openshift?topic=openshift-roks-overview).
+For more information, see [Understanding {{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-roks-overview).
 
 ## Next steps
 {: #next-steps}
