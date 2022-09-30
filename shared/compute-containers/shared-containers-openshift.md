@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-08-23"
+lastupdated: "2022-09-30"
 
 keywords:
 
@@ -58,8 +58,8 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 
 | Family | Control |
 |--------|---------|
-| Identification and Authentication (IA) | IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts |
-| System and Communications Protection (SC) | SC-7 (5) Boundary Protection &#124; Deny by Default / Allow by Exception \n SC-8	Transmission Confidentiality and Integrity |
+| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2.1) |
+| System and Communications Protection (SC) | [SC-7 (5) Boundary Protection &#124; Deny by Default / Allow by Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) |
 {: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 
