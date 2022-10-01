@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-09-30"
+lastupdated: "2022-10-01"
 
 keywords: 
 
@@ -24,7 +24,7 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, sec
 ## 30 September 2022
 {: #30-september-2022}
 
-* Added contextual links into [[{{site.data.keyword.framework-fs_full}} - Control Requirements](/docs/framework-financial-services-controls) to make it easier to understand how the control requirements related to implementation guidance.
+* Added contextual links into [{{site.data.keyword.framework-fs_full}} - Control Requirements](/docs/framework-financial-services-controls) to make it easier to understand how the control requirements related to implementation guidance.
 
 ## 24 August 2022
 {: #24-august-2022}
