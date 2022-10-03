@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-29"
+lastupdated: "2022-09-30"
 
 keywords: 
 
@@ -64,8 +64,8 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Contingency Planning (CP) | CP-2 Contingency Plan \n CP-7 Alternate Processing Site |
-| System and Communications Protection (SC) | SC-6 Resource Availability |
+| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) |
+| System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-6) |
 {: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps

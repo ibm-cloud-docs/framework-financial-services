@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-09-30"
 
 keywords: 
 
@@ -112,7 +112,7 @@ Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribu
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Communications Protection (SC)  | SC-5 Denial of Service Protection    \n SC-7 Boundary Protection \n SC-7(4) Boundary Protection &#124; External Telecommunications Services \n SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception \n SC-7 (10) Boundary Protection &#124; Prevent Exfiltration \n SC-8 Transmission Confidentiality and Integrity \n SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection \n SC-11 Trusted Path  |
+| System and Communications Protection (SC)  | [SC-5 Denial of Service Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-5)    \n [SC-7 Boundary Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) \n [SC-7(4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-11)  |
 {: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps

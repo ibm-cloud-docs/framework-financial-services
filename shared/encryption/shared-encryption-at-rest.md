@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-09-30"
 
 keywords: 
 
@@ -90,7 +90,7 @@ The following table provides references for requirements that are related to enc
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Communications Protection (SC) | SC-12 Cryptographic Key Establishment and Management \n SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys \n SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys \n SC-13 Cryptographic Protection \n SC-28 Protection of Information At Rest \n SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection  |
+| System and Communications Protection (SC) | [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-13) \n [SC-28 Protection of Information At Rest](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28) \n [SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28.1)  |
 {: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 In addition, you must follow the guidance found in Appendix A: Cryptographic Requirements within the "Control Implementation Overview Template for Application Providers Using {{site.data.keyword.vpc_full}}".

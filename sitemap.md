@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-08-25"
+lastupdated: "2022-09-30"
 
 keywords: 
 
@@ -277,6 +277,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 [Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
+
+* [30 September 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#30-september-2022)
 
 * [24 August 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#24-august-2022)
 

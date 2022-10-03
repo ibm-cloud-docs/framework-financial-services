@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-09-30"
 
 keywords: 
 
@@ -49,7 +49,7 @@ Ideally, you should support integration with an external (to the application) id
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | AC-2 Account Management \n AC-3 Access Enforcement \n AC-5 Separation of Duties \n AC-6 Least Privilege \n AC-14 Permitted Actions without Identification or Authentication |
+| Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2) \n [AC-3 Access Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-3) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6) \n [AC-14 Permitted Actions without Identification or Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-14) |
 {: caption="Table 1. Related controls for zero trust" caption-side="top"}
 
 ## 3. Enable ability to capture audit events
@@ -77,7 +77,7 @@ You must provide the technical capability to ensure only permitted users have ac
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Audit and Accountability (AU) | AU-2 Audit Events \n AU-3 Content of Audit Records \n AU-5 Response to Audit Processing Failures \n AU-8 Time Stamps \n AU-9 Protection of Audit Information \n AU-10 Non-repudiation \n AU-11 Audit Record Retention \n AU-12 Audit Generation |
+| Audit and Accountability (AU) | [AU-2 Audit Events](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-2) \n [AU-3 Content of Audit Records](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-3) \n [AU-5 Response to Audit Processing Failures](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-5) \n [AU-8 Time Stamps](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-8) \n [AU-9 Protection of Audit Information](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-9) \n [AU-10 Non-repudiation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-10) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-11) \n [AU-12 Audit Generation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-12) |
 {: caption="Table 2. Related controls for audit logs" caption-side="top"}
 
 ## 4. Follow secure development processes and ensure software integrity 
@@ -93,7 +93,7 @@ Lack of software integrity leaves your operator vulnerable to security problems.
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Services Acquisition (SA) | SA-8 Security Engineering Principles \n SA-11 Developer Security Testing and Evaluation \n SA-12 Supply Chain Protection \n SA-14 Criticality Analysis \n SA-15 Development Process, Standards, and Tools
+| System and Services Acquisition (SA) | [SA-8 Security Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-11 Developer Security Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-12 Supply Chain Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-12) \n [SA-14 Criticality Analysis](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-14) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15)
 {: caption="Table 3. Related controls for development processes" caption-side="top"}
 
 ## 5. Ensure consumer data can be encrypted at rest and in transit
@@ -112,7 +112,7 @@ Lack of software integrity leaves your operator vulnerable to security problems.
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Communications Protection (SC) | SC-8 Transmission Confidentiality and Integrity \n SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection \n SC-12 Cryptographic Key Establishment and Management \n SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys \n SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys \n SC-13 Cryptographic Protection \n SC-28 Protection of Information At Rest \n SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection  |
+| System and Communications Protection (SC) | [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-13) \n [SC-28 Protection of Information At Rest](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28) \n [SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28.1)  |
 {: caption="Table 4. Related controls for data encryption" caption-side="top"}
 
 ## 6. Enable software to be run in a highly available manner
@@ -126,7 +126,7 @@ Lack of software integrity leaves your operator vulnerable to security problems.
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Communications Protection (SC) | SC-6 Resource Availability |
+| System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-6) |
 {: caption="Table 6. Related controls for high-availability" caption-side="top"}
 
 

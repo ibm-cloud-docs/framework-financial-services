@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-29"
+lastupdated: "2022-09-30"
 
 keywords: 
 
@@ -41,7 +41,7 @@ You need to install your own software solution for monitoring in virtual server 
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Contingency Planning (CP) | CP-2 (3) Contingency Plan &#124; Resume Essential Missions / Business Functions \n CP-6 Alternate Storage Site \n CP-7	Alternate Processing Site \n CP-10 Information System Recovery and Reconstitution  |
+| Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Essential Missions / Business Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7	Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10)  |
 {: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps

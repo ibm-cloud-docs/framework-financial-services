@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-08-25"
+lastupdated: "2022-10-01"
 
 keywords: 
 
@@ -20,6 +20,11 @@ Use the release notes to learn about the latest changes to the documentation for
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
+
+## 30 September 2022
+{: #30-september-2022}
+
+* Added contextual links into [{{site.data.keyword.framework-fs_full}} - Control Requirements](/docs/framework-financial-services-controls) to make it easier to understand how the control requirements related to implementation guidance.
 
 ## 24 August 2022
 {: #24-august-2022}
