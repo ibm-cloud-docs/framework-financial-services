@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-10-01"
+lastupdated: "2022-10-28"
 
 keywords: 
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Release notes
 {: #release-notes}
 
-Use the release notes to learn about the latest changes to the documentation for the {{site.data.keyword.cloud_notm}} for Financial Services™.
+Use the release notes to learn about the latest changes to the documentation for the {{site.data.keyword.cloud_notm}} for Financial Services&reg.
 {: shortdesc}
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
