@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-10-28"
+lastupdated: "2022-10-29"
 
 keywords: 
 
@@ -16,7 +16,7 @@ subcollection: framework-financial-services
 # Site map
 {: #sitemap}
 
-Find what you are looking for in the topics that are available for {{site.data.keyword.cloud_notm}} for Financial Services&reg.
+Find what you are looking for in the topics that are available for {{site.data.keyword.cloud_notm}} for Financial Services®.
 {: shortdesc}
 
 
