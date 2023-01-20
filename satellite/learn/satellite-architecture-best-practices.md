@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-29"
+  years: 2020, 2023
+lastupdated: "2023-01-20"
 
 keywords: 
 
@@ -50,4 +50,4 @@ The following table provides a summary of how the {{site.data.keyword.satellites
 ## Next steps
 {: #next-steps}
 
-- [Set up environment for deployment and configuration](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment##shared-deployment-setup-environment-satellite)
+- [Set up environment for deployment and configuration](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment)
