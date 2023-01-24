@@ -81,10 +81,6 @@ For technology vendors:
 
 You will be expected to provide appropriate evidence for all software as part of the validation process. Using software that is already Financial Services Validated will make it easier for you to provide this evidence.
 
-VMware Regulated Workloads reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vmware-day0-account-setup)
-
--->
-
 
 
 ## 4. Implement a system of account, identity, and access management to enable a zero-trust environment
@@ -454,7 +450,6 @@ You should should ensure:
 
 * [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
 * [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
-VMware Regulated Workloads reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources) -->
 
 **Most Relevant Controls:**
 
