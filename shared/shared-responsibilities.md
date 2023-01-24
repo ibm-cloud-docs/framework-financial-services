@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -49,7 +49,7 @@ The following table provides references that describe your responsibilities for 
 | Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-responsibilities-vpc) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-responsibilities) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-tg-responsibilities) | | |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-responsibilities-vpc) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-responsibilities) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-responsibilities) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-shared-responsibilities) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-shared-responsibilities) | - {{site.data.keyword.appid_short_notm}} [^tabletext-no-specific-link-appid] |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} [^tabletext-not-yet-validated] \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-responsibilities-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-responsibilities-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} |  |
 | Integration  | |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-event_streams_responsibilities) |
 | Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-responsibilities-hpdbass) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass) |
 {: caption="Table 1. Your responsibilities for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
@@ -57,8 +57,6 @@ The following table provides references that describe your responsibilities for 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
 [^tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
-
-[^tabletext-not-yet-validated]: {{site.data.content.not-yet-validated}}
 
 [^tabletext-no-specific-link-appid]: There is not a specific shared responsibility article for {{site.data.keyword.appid_short_notm}}.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-29"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -56,7 +56,8 @@ The revised architecture adds:
 
 See [VPC architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture) for more details on this variation.
 
-
+Financial Services Validated... See https://github.ibm.com/cloud-docs-allowlist/framework-financial-services/issues/223 This includes strict instructions on not using WAF in CIS.
+-->
 
 ## Financial Services Validated services
 {: #financial-services-validated-services}
@@ -72,9 +73,10 @@ Deploying the reference architecture depends upon VPC infrastructure and PaaS se
 | Networking - VPC infrastructure  | - [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-about-vpc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.alb_full}}](#services-networking-alb) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.vpn_vpc_full}}](#services-networking-vpn) [^fs-validated-table-4-1] \n - [{{site.data.keyword.dns_full}}](#services-networking-dns-services) \n - [{{site.data.keyword.cloud}} Virtual Private Endpoints for VPC](#services-networking-vpe) |  |
 | Networking - interconnectivity  | - [{{site.data.keyword.dl_full}} (2.0)](#services-networking-direct-link)[^fs-validated-table-4-2] \n - [{{site.data.keyword.tg_full}}](#services-networking-transit-gateway) |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_full}}](#services-storage-block) \n - [{{site.data.keyword.cos_full}}](#services-storage-cos) |  |
-| Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.appid_full}}](#services-security-app-id) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_full_notm}}](#services-logging-platform-events) [^fs-validated-table-5] \n - [{{site.data.keyword.compliance_long}}](#services-scc) [^tabletext-not-yet-validated] \n - [{{site.data.keyword.cloud}} Flow Logs for VPC](#services-logging-flow-logs) [^fs-validated-table-1-2]  |  |
+| Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n [{{site.data.keyword.appid_full}}](#services-security-app-id)  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_full_notm}}](#services-logging-platform-events) [^fs-validated-table-5] \n - [{{site.data.keyword.compliance_long}}](#services-scc) \n - [{{site.data.keyword.cloud}} Flow Logs for VPC](#services-logging-flow-logs) [^fs-validated-table-1-2]  |  |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams) |
+| Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started)  |
 | Databases  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](#services-databases-ihsdbaas_mongodb) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](#services-databases-ihsdbaas_postgresql)  |
 {: caption="Table 1. Required and optional services for VPC reference architecture" caption-side="top"}
 
@@ -93,8 +95,6 @@ Deploying the reference architecture depends upon VPC infrastructure and PaaS se
 [^fs-validated-table-4-2]: {{site.data.content.only-one-of-dl-or-vpc}}
 
 [^fs-validated-table-5]: {{site.data.content.event-routing-fs-validation}}
-
-[^tabletext-not-yet-validated]: {{site.data.content.not-yet-validated}}
 
 The remainder of this section goes into more detail about how these services fit into the reference architecture.
 
@@ -292,19 +292,19 @@ The following table provides a summary of the main features of the VPC reference
 | Bastion host | Install your own software |
 | Scaling compute  | Auto Scale for VPC |
 | Web app authentication in workload VPC | {{site.data.keyword.appid_short_notm}} |
-| Secrets management | Install your own software |
+| Secrets management | {{site.data.keyword.secrets-manager_short}} or \n Install your own software |
 | IBM Cloud platform audit logging | {{site.data.keyword.atracker_short}} [^component-tabletext-3]  |
 | Application provider audit logging | Install your own software for SIEM |
 | Application provider operational logging | Install your own software  |
 | Application provider operational monitoring  | Install your own software |
-| Compliance monitoring  | {{site.data.keyword.compliance_short}} [^component-tabletext-4] |
+| Compliance monitoring  | {{site.data.keyword.compliance_short}} |
 | Flow/traffic logging | Flow Logs for VPC  |
 | Encryption at rest | {{site.data.keyword.hscrypto}}  |
 | Encryption in transit (TLS offload)  | {{site.data.keyword.hscrypto}} |
 | Cross-zone high availability | Multizone region |
 | Cross-region high availability | Deploy in multiple regions |
 | Backup and recovery  | Install your own software |
-| Developer tools  | Install your own software |
+| Developer tools  | {{site.data.keyword.contdelivery_short}} or \n Install your own software |
 | Endpoint protection  | Install your own software |
 | Event queues | {{site.data.keyword.messagehub}} or \n Install your own software |
 | Databases | {{site.data.keyword.ihsdbaas_mongodb_full}} or \n {{site.data.keyword.ihsdbaas_postgresql_full}} or \n Install your own software |
@@ -315,8 +315,6 @@ The following table provides a summary of the main features of the VPC reference
 [^component-tabletext-2]: {{site.data.content.byo-software-disclaimer}}
 
 [^component-tabletext-3]: {{site.data.content.event-routing-fs-validation}}
-
-[^component-tabletext-4]: {{site.data.content.not-yet-validated}}
 
 ## Next steps
 {: #next-steps}

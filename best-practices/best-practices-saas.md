@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-10-01"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -81,7 +81,9 @@ For technology vendors:
 
 You will be expected to provide appropriate evidence for all software as part of the validation process. Using software that is already Financial Services Validated will make it easier for you to provide this evidence.
 
+VMware Regulated Workloads reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vmware-day0-account-setup)
 
+-->
 
 
 
@@ -452,7 +454,7 @@ You should should ensure:
 
 * [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
 * [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources)
-
+VMware Regulated Workloads reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources) -->
 
 **Most Relevant Controls:**
 
@@ -468,9 +470,6 @@ You should should ensure:
 **Requirement:** Deploy and use tooling for monitoring and reporting of security and compliance. Maintain a baseline configuration for your service that consists of automated mechanisms to facilitate information system baseline management.
 
 {{site.data.content.service-description-scc}}
-
-Even though {{site.data.keyword.compliance_short}} is not yet Financial Services Validated, it's on the road map and we recommend its use. 
-{: note}
 
 **Purpose & value:** Continuous monitoring and reporting helps detect malicious activity and security vulnerabilities as early as possible. Automated baseline management makes it much more likely that any compliance-breaking changes to your system configurations are caught early.
 
