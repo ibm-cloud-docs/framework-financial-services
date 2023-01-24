@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -29,7 +29,7 @@ Generally speaking, you should strive to use only services which are Financial S
 Installing your own software is recommended when there is not yet an {{site.data.keyword.cloud_notm}} service that is Financial Services Validated. However, when installing your own software you are still responsible for the controls of the {{site.data.keyword.framework-fs_notm}} if you are seeking your own Financial Services Validated designation.
 {: #byo-software-disclaimer}
 
-Only the event routing features of {{site.data.keyword.atracker_short}} have been Financial Services Validated.
+Only the event routing features of {{site.data.keyword.at_short} have been Financial Services Validated.
 {: #event-routing-fs-validation}
 
 Not yet Financial Services Validated.

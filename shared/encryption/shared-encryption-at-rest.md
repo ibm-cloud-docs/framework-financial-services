@@ -88,7 +88,7 @@ The following table provides references for requirements that are related to enc
 
 [^tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
 
-Financial Services Validated service. So, question is, does Container Registry support HPCS now? If not, what do we say? -->
+
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}

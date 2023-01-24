@@ -62,7 +62,7 @@ When properly configured and managed, services that are Financial Services Valid
 | {{site.data.keyword.satelliteshort}}  | - [{{site.data.keyword.satellitelong}}](#services-core-satellite) |  |
 | Containers | - [{{site.data.keyword.openshiftlong}}](#services-containers-openshift) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registrylong}}](#services-containers-registry) | |
 | Storage  | - [{{site.data.keyword.cos_full}}](#services-storage-cos)   |    |
-| Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n [{{site.data.keyword.appid_full}}](#services-security-app-id)   |
+| Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n - [{{site.data.keyword.appid_full}}](#services-security-app-id)   |
 | Logging and monitoring  | - [{{site.data.keyword.atracker_full}}](#services-logging-platform-events)[^tabletext] \n - [{{site.data.keyword.compliance_full}}](#services-scc) | |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams)       |
 | Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started)  |
