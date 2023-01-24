@@ -31,16 +31,7 @@ You must ensure that:
 * Keys have a lifecycle that is defined and are rotated periodically based on {{site.data.keyword.framework-fs_notm}} controls.
 * Recovery functions, if used, can be accessed only by authorized personnel.
 
-Financial Services Validated solution for retrieving the consumer's keys from the consumer's instance of {{site.data.keyword.hscrypto}}.
-{: important}
 
-For now, if you are a provider from a technology vendor, you can use one of the short-term workarounds:
-
-1. Allow the consumer to use your {{site.data.keyword.hscrypto}} instance to manage their keys. This key management would be done with an API with an API key you give to the consumer.
-2. Use your own keys with your own instance of {{site.data.keyword.hscrypto}}.
-
-Neither option entirely satisfies the base requirement. Both achieve the goal of preventing {{site.data.keyword.IBM_notm}} from decrypting the consumer's data. But, even with the first option that gives more control to the consumer, you as the provider might still decrypt the data.
--->
 
 ### Setting up {{site.data.keyword.hscrypto}}
 {: #setup-hpcs}

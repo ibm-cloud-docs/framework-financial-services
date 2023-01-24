@@ -71,16 +71,6 @@ The templates that are referenced in this section are available under NDA only. 
 
 The framework's control implementation overview (CIO) templates provide detailed implementation and evidence guidance for all of the framework's control requirements. Each of the templates provides guidance specific to the underlying {{site.data.keyword.cloud_notm}} technology used in one of the [reference architectures](#framework-reference-architectures). They are referred to as "templates" because they allow you to assess how well your solution meets each of the control requirements. A completed CIO template is a requirement for any ecosystem partner seeking to be Financial Services Validated.
 
-Control Implementation Overview Template for Application Providers Using {{site.data.keyword.vpc_full}}" provides the implementation and evidence guidance that is needed to meet the requirements of the framework when you are either:
-
-* Developing and operating a SaaS application that uses the [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about). The VPC reference architecture has options for using one or both of [{{site.data.keyword.vsi_is_short}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi) and [{{site.data.keyword.openshiftlong}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift).
-* Developing software that you intend someone else to operate on VPC infrastructure in their account.
-
-Similarly, the "Control Implementation Overview Template for {{site.data.keyword.cloud}} for VMware® Regulated Workloads" does the same for the case when the [{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vmware-overview) is used.
-
-
--->
-
 #### Reference architectures and deployment guidance
 {: #framework-reference-architectures}
 

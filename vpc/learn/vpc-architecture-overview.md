@@ -56,8 +56,7 @@ The revised architecture adds:
 
 See [VPC architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture) for more details on this variation.
 
-Financial Services Validated... See https://github.ibm.com/cloud-docs-allowlist/framework-financial-services/issues/223 This includes strict instructions on not using WAF in CIS.
--->
+
 
 ## Financial Services Validated services
 {: #financial-services-validated-services}
