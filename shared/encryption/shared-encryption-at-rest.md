@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -31,7 +31,16 @@ You must ensure that:
 * Keys have a lifecycle that is defined and are rotated periodically based on {{site.data.keyword.framework-fs_notm}} controls.
 * Recovery functions, if used, can be accessed only by authorized personnel.
 
+Financial Services Validated solution for retrieving the consumer's keys from the consumer's instance of {{site.data.keyword.hscrypto}}.
+{: important}
 
+For now, if you are a provider from a technology vendor, you can use one of the short-term workarounds:
+
+1. Allow the consumer to use your {{site.data.keyword.hscrypto}} instance to manage their keys. This key management would be done with an API with an API key you give to the consumer.
+2. Use your own keys with your own instance of {{site.data.keyword.hscrypto}}.
+
+Neither option entirely satisfies the base requirement. Both achieve the goal of preventing {{site.data.keyword.IBM_notm}} from decrypting the consumer's data. But, even with the first option that gives more control to the consumer, you as the provider might still decrypt the data.
+-->
 
 ### Setting up {{site.data.keyword.hscrypto}}
 {: #setup-hpcs}
@@ -68,7 +77,7 @@ The following table provides references for requirements that are related to enc
 | Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-vpc-encryption-about) \n - {{site.data.keyword.dl_short}} [^tabletext-2] \n - {{site.data.keyword.tg_short}}  | |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-block-storage-vpc-encryption) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) |  |
 | Security | - {{site.data.keyword.hscrypto}}  | - {{site.data.keyword.hscrypto}} | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-mng-data#enable-customer-keys-hpcs) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-mng-data) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-mng-data) [^tabletext-not-yet-validated] \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-vpc-encryption-about) | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-mng-data) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-mng-data) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-mng-data) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-mng-data) \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-vpc-encryption-about) | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-mng-data) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-mng-data) |  |
 | Integration  | |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-managing_encryption) |
 | Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-hpcs-byok) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok) | |
 {: caption="Table 1. Data encryption information for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
@@ -78,8 +87,6 @@ The following table provides references for requirements that are related to enc
 [^tabletext-2]: Neither {{site.data.keyword.dl_short}} nor {{site.data.keyword.tg_short}} store consumer data, so no integration with {{site.data.keyword.hscrypto}} is needed.
 
 [^tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
-
-[^tabletext-not-yet-validated]: {{site.data.content.not-yet-validated}}
 
 
 

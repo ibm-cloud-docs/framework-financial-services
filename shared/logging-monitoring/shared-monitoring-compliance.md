@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -19,9 +19,6 @@ subcollection: framework-financial-services
 
 You are required to continuously monitor for possible security flaws and changes in baseline configurations for which you should take corrective action. {{site.data.content.service-description-scc}}
 {: shortdesc}
-
-Even though {{site.data.keyword.compliance_short}} is not yet Financial Services Validated, it's on the road map and we recommend its use. 
-{: note}
 
 ## Using {{site.data.keyword.compliance_short}}
 {: #using-security-compliance-center}
@@ -53,7 +50,7 @@ The following table provides references to additional information for managing s
 | Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-manage-security-compliance) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-manage-security-compliance) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-manage-security-compliance) |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-manage-security-compliance) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-manage-security-compliance) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-manage-security-compliance) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-manage-security-compliance) |
-| Logging and monitoring   | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} [^tabletext-not-yet-validated]  \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-manage-security-compliance)  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} | |
+| Logging and monitoring   | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-manage-security-compliance)  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} | |
 | Integration  | |   | - {{site.data.keyword.messagehub}} |
 | Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-manage-security-compliance) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-security-compliance) | |
 {: caption="Table 1. Managing security and compliance for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
@@ -61,8 +58,6 @@ The following table provides references to additional information for managing s
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
 [^tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
-
-[^tabletext-not-yet-validated]: {{site.data.content.not-yet-validated}}
 
 For more information, see:
 

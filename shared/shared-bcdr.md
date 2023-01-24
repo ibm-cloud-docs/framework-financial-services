@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -83,7 +83,7 @@ The following table provides references for more information about BCDR for each
 | Networking  | - [VPC infrastructure services](/vpc?topic=vpc-ha-dr-vpc) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-ha-dr) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-ha-dr#disaster-recovery)  |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/vpc?topic=vpc-ha-dr-vpc) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-ha-dr#cross-region-disaster-recovery)  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-ha-dr#cross-region-disaster-recovery)  | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-ha-dr)  |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) [^tabletext-not-yet-validated] \n - [Flow Logs for VPC](/vpc?topic=vpc-ha-dr-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) \n - [Flow Logs for VPC](/vpc?topic=vpc-ha-dr-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-disaster_recovery_scenario) |
 | Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-high-availability-disaster-recovery) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery) |
 {: caption="Table 1. Backup and disaster recovery information for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
@@ -91,8 +91,6 @@ The following table provides references for more information about BCDR for each
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
 [^tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
-
-[^tabletext-not-yet-validated]: {{site.data.content.not-yet-validated}}
 
 In addition to the Financial Services Validated services in the reference architecture, see the following references for other important information:
 

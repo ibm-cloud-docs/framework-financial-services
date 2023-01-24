@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -62,17 +62,16 @@ When properly configured and managed, services that are Financial Services Valid
 | {{site.data.keyword.satelliteshort}}  | - [{{site.data.keyword.satellitelong}}](#services-core-satellite) |  |
 | Containers | - [{{site.data.keyword.openshiftlong}}](#services-containers-openshift) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registrylong}}](#services-containers-registry) | |
 | Storage  | - [{{site.data.keyword.cos_full}}](#services-storage-cos)   |    |
-| Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.appid_full}}](#services-security-app-id)    |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_full}}](#services-logging-platform-events)[^tabletext] \n - [{{site.data.keyword.compliance_full}}](#services-scc) [^tabletext-not-yet-validated] | |
+| Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n - [{{site.data.keyword.appid_full}}](#services-security-app-id)   |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_full}}](#services-logging-platform-events)[^tabletext] \n - [{{site.data.keyword.compliance_full}}](#services-scc) | |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams)       |
+| Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started)  |
 | Databases  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](#services-databases-ihsdbaas_mongodb) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](#services-databases-ihsdbaas_postgresql)  |
 {: caption="Table 2. Required and optional services for {{site.data.keyword.satelliteshort}} reference architecture" caption-side="top"}
 
 [^tabletext]: {{site.data.content.event-routing-fs-validation}}
 
 [^tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
-
-[^tabletext-not-yet-validated]: {{site.data.content.not-yet-validated}}
 
 The remainder of the topic goes into more detail about how these services fit into the reference architecture.
 

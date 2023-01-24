@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-10-29"
+  years: 2020, 2023
+lastupdated: "2023-01-24"
 
 keywords: 
 
@@ -277,6 +277,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 [Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
+
+* [23 January 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#23-january-2023)
 
 * [30 September 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#30-september-2022)
 
@@ -1016,3 +1018,4 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Should I only use {{site.data.keyword.IBM_notm}} or third-party managed services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated?](/docs/framework-financial-services?topic=framework-financial-services-faqs-framework#not-financial-services-validated)
 
 * [What if I don't want to use managed services, but I want to install and manage my own software?](/docs/framework-financial-services?topic=framework-financial-services-faqs-framework#self-installed-software)
+
