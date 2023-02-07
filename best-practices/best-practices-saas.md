@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-02-07"
 
 keywords: 
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Best practices and requirements for software as a service
 {: #best-practices}
 
-These best practices summarize some of the most important technical principles for SaaS providers based on the [controls requirements](](/docs/framework-financial-services-controls) and implementation guidance of the {{site.data.keyword.framework-fs_notm}}. These best practices are _not_ a replacement for the information provided in the [Control Implementation Overview templates](/docs/framework-financial-services?topic=framework-financial-services-about#control-implementation-overview-templates), which are still the definitive guides to the controls and required evidence for application providers.
+These best practices summarize some of the most important technical principles for SaaS providers based on the [control requirements](/docs/framework-financial-services-controls) and implementation guidance of the {{site.data.keyword.framework-fs_notm}}. These best practices are _not_ a replacement for the information provided in the [Control Implementation Overview templates](/docs/framework-financial-services?topic=framework-financial-services-about#control-implementation-overview-templates), which are still the definitive guides to the controls and required evidence for application providers.
 {: shortdesc}
 
 If you're a software provider, see [Best practices for software](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software).
