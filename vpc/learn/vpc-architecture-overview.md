@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-02-07"
 
 keywords: 
 
@@ -40,7 +40,7 @@ Other key features to note:
 * Provides connectivity from the consumer's enterprise environment to the workload VPC through {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}.
 * Connects management VPC and workload VPC by using [{{site.data.keyword.tg_full}}](#services-networking-transit-gateway).
 * Allows connectivity to {{site.data.keyword.cloud_notm}} services that use [{{site.data.keyword.cloud_notm}} Virtual Private Endpoints for VPC](#services-networking-vpe).
-* Encrypts data by using [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}, which enables keep your own key (KYOK) functionality which provides technical assurance that {{site.data.keyword.IBM_notm}} cannot access your keys.
+* Encrypts data by using [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](#services-security-hpcs), which enables keep your own key (KYOK) functionality which provides technical assurance that {{site.data.keyword.IBM_notm}} cannot access your keys.
 
 ## Variation with edge or transit VPC for public internet access
 {: #edge-vpc-architecture}
