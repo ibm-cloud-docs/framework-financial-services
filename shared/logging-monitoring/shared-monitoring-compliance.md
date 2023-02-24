@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-02-24"
 
 keywords: 
 
@@ -32,7 +32,7 @@ The {{site.data.keyword.cloud_notm}} for Financial Services profile provides a t
 
 In addition, if you are using {{site.data.keyword.openshiftshort}} (whether in the VPC reference architecture or the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)), then you should leverage the [{{site.data.keyword.openshiftshort}} Compliance Operator (OSCO)](https://github.com/openshift/compliance-operator){: external} via the [OSCO integration](/docs/security-compliance?topic=security-compliance-setup-osco) with SCC.
 
-To start evaluating your resources, see the tutorial series: [Monitor IBM Cloud resources](/docs/security-compliance?topic=security-compliance-ibm-credential).
+To start evaluating your resources, see the [Getting started with {{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-getting-started)
 
 ## Compliance best practices for Financial Services Validated services
 {: #related-resources}
