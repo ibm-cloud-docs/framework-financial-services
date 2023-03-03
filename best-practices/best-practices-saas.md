@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-02-07"
+lastupdated: "2023-03-03"
 
 keywords: 
 
@@ -151,10 +151,15 @@ It is permissible to run a "pre-production" environment in your production accou
 
 **Purpose & value:** For all consumer data to stay within the boundary of {{site.data.keyword.cloud_notm}} for Financial Services, you should only create {{site.data.keyword.cloud_notm}} resources in the Financial Services Validated [multizone regions (MZRs)](/docs/overview?topic=overview-locations#mzr-table) listed in [Enabling your account to use Financial Services Validated products](/docs/account?topic=account-enabling-fs-validated):
 
-* Dallas (`us-south`)
-* Washington, D.C. (`us-east`)
-* Frankfort (`eu-de`)
-* London (`eu-gb`)
+* Americas
+    * Dallas (`us-south`)
+    * Washington, D.C. (`us-east`)
+    * Toronto (`ca-tor`)
+* Europe
+    * Frankfort (`eu-de`)
+    * London (`eu-gb`)
+* Asia Pacific
+    * Sydney (`au-syd`)
 
 **Most Relevant Controls:**
 

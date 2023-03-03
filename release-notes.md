@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-03-03"
 
 keywords: 
 
@@ -21,10 +21,15 @@ Use the release notes to learn about the latest changes to the documentation for
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
 
+## 03 March 2023
+{: #03-march-2023}
+
+* Updated [list of multizone regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) which are {{site.data.keyword.cloud_notm}} for Financial Services Validated to include Toronto (`ca-tor`) and Sydney (`au-syd`).
+
 ## 23 January 2023
 {: #23-january-2023}
 
-* Update list of services which are designated as {{site.data.keyword.cloud_notm}} for Financial Services Validated to include {{site.data.keyword.compliance_long}}, {{site.data.keyword.contdelivery_full}}, {{site.data.keyword.secrets-manager_full}}, and {{site.data.keyword.cloud}} Client {{site.data.keyword.vpn_vpc_full}}.
+* Updated list of services which are designated as {{site.data.keyword.cloud_notm}} for Financial Services Validated to include {{site.data.keyword.compliance_long}}, {{site.data.keyword.contdelivery_full}}, {{site.data.keyword.secrets-manager_full}}, and {{site.data.keyword.cloud}} Client {{site.data.keyword.vpn_vpc_full}}.
 
 ## 30 September 2022
 {: #30-september-2022}
