@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-02-07"
+lastupdated: "2023-02-24"
 
 keywords: 
 
@@ -16,8 +16,6 @@ subcollection: framework-financial-services
 {: #about}
 
 [{{site.data.keyword.cloud_notm}} for Financial Services®](https://www.ibm.com/cloud/financial-services){: external} is designed to build trust and enable a transparent public cloud ecosystem with the features for security, compliance, and resiliency that financial institutions require. Financial institutions can confidently host their mission-critical applications in the cloud and transact quickly and efficiently. With a large partner ecosystem of independent software vendors (ISVs), Software as a Service (SaaS), and fintech partners, {{site.data.keyword.cloud_notm}} for Financial Services offers a new generation of cloud for the enterprise. Financial institutions can now deploy on public cloud to enable innovation and deliver new outstanding customer experiences, while managing stringent industry regulations for sensitive data and complex workloads.
-
-For more information, see [Accelerate innovation through security and compliance with {{site.data.keyword.cloud_notm}} for Financial Services](https://www.ibm.com/downloads/cas/1OLRGDBA){: external}.
 
 ## {{site.data.keyword.framework-fs_notm}}
 {: #ibm-cloud-framework-for-financial-services}
