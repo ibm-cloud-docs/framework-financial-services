@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-03-03"
+lastupdated: "2023-03-31"
 
 keywords: 
 
@@ -40,6 +40,7 @@ A key aspect of the framework is to separate user workloads from system manageme
 |---------------------|---------------------------------------------------|
 | System and Communications Protection (SC) | [SC-2 Application Partitioning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-3) |
 {: caption="Table 1. Related controls for use of reference architecture" caption-side="top"}
+{: #related-controls-reference-architecture}
 
 ## 2. Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated
 {: #best-practices-financial-services-validated-services}
@@ -71,6 +72,7 @@ For technology vendors:
 | Enterprise System and Services Acquisition (ESA) | [ESA-5 Subcontractor Risk Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-esa-5) |
 | Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
 {: caption="Table 2. Related controls for using only Financial Services Validated services" caption-side="top"}
+{: #related-controls-financial-services-validated-services}
 
 ## 3. Ensure all deployed software meets all controls
 {: #best-practices-self-installed-software}
@@ -80,8 +82,6 @@ For technology vendors:
 **Purpose & value:** Your service will need software to function. This may be software you implement, or it may be software from third-parties, such as databases, logging stacks, bastion hosts, web application firewalls, etc. These are all perfectly acceptable if you adhere to all {{site.data.keyword.framework-fs_notm}} requirements related to development, deployment, configuration, and management of the software.
 
 You will be expected to provide appropriate evidence for all software as part of the validation process. Using software that is already Financial Services Validated will make it easier for you to provide this evidence.
-
-
 
 ## 4. Implement a system of account, identity, and access management to enable a zero-trust environment
 {: #best-practices-zero-trust}
@@ -119,6 +119,7 @@ Individuals should be able to request access to resources, and they should be gr
 | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2) \n [AC-3 Access Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-3) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6) \n [AC-14 Permitted Actions without Identification or Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-14) |
 | Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-Based Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5.1) |
 {: caption="Table 3. Related controls for zero trust" caption-side="top"}
+{: #related-controls-zero-trust}
 
 ## 5. Use and maintain non-production environments for development and testing
 {: #best-practices-non-production-environments}
@@ -143,6 +144,7 @@ It is permissible to run a "pre-production" environment in your production accou
 | System and Services Acquisition (SA) | [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-15 (9) Development Process, Standards, and Tools &#124; Use of Live Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15.9) |
 | System and Communications Protection (SC) | [SC-2 Application Partitioning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-3) |
 {: caption="Table 4. Related controls for non-production environments" caption-side="top"}
+{: #related-controls-non-production-environments}
 
 ## 6. Deploy your {{site.data.keyword.cloud_notm}} resources only to approved multizone regions
 {: #best-practices-financial-services-regions}
@@ -168,6 +170,7 @@ It is permissible to run a "pre-production" environment in your production accou
 | Access Control (AC) | [AC-20 Use of External Information Systems](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-20) |
 | Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
 {: caption="Table 5. Related controls for using only approved geographic regions" caption-side="top"}
+{: #related-controls-financial-services-regions}
 
 ## 7. Enforce information flow policies and protect the boundaries of your application
 {: #best-practices-boundary-protection}
@@ -192,6 +195,7 @@ Boundary protection increases security by monitoring and restricting communicati
 | Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
 | System and Communications Protection (SC)  | [SC-5 Denial of Service Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-5) \n [SC-7 Boundary Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) \n [SC-7(4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-11)  |
 {: caption="Table 6. Related controls for boundary protection" caption-side="top"}
+{: #related-controls-boundary-protection}
 
 ## 8. Ensure all operator actions are executed through a bastion host
 {: #best-practices-bastion-host}
@@ -214,6 +218,7 @@ Boundary protection increases security by monitoring and restricting communicati
 | Audit and Accountability (AU) | [AU-14 Session Audit](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-14) |
 | Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2.1) |
 {: caption="Table 7. Related controls for bastion host" caption-side="top"}
+{: #related-controls-bastion-host}
 
 ## 9. Capture audit events and forward to a SIEM
 {: #best-practices-audit-logs}
@@ -243,6 +248,7 @@ Your software components (whether written by you or a third-party) should be ena
 | Audit and Accountability (AU) | [AU-1 Audit and Accountability Policy and Procedures) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-1) \n [AU-2 Audit Events](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-2) \n [AU-3 Content of Audit Records](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-3) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-11) |
 | System and Information Integrity (SI) | [SI-4 Information System Monitoring](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-4) |
 {: caption="Table 8. Related controls for audit logs" caption-side="top"}
+{: #related-controls-audit-logs}
 
 ## 10. Ensure operational logging and monitoring is implemented
 {: #best-practices-operational-logging-and-monitoring}
@@ -269,6 +275,7 @@ Operational monitoring for gauging system health is a very important complement 
 | Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Essential Missions / Business Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10)  |
 | System and Information Integrity (SI) | [SI-11 Error Handling](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-11)    |
 {: caption="Table 9. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: #related-controls-operational-logging-and-monitoring}
 
 ## 11. Follow secure development processes and ensure software integrity 
 {: #best-practices-development-processes}
@@ -293,6 +300,7 @@ Lack of software integrity leaves you vulnerable to security problems. So, it is
 | System and Services Acquisition (SA) | [SA-3 System Development Life Cycle](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3) \n [SA-8 Security Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-10 (1) Developer Configuration Management &#124; Software and Firmware Integrity Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10.1) \n [SA-11 Developer Security Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15) \n [SA-15 (9) Development Process, Standards, and Tools &#124; Use of Live Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15.9) |
 | Risk Assessment (RA) | [RA-5 Vulnerability Scanning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ra-5)  |
 {: caption="Table 10. Related controls for development processes" caption-side="top"}
+{: #related-controls-development-processes}
 
 ## 12. Encrypt consumer data at rest and in transit
 {: #best-practices-encryption}
@@ -321,6 +329,7 @@ More detailed guidance can be found in the Cryptographic Requirements appendix o
 |---------------------|---------------------------------------------------|
 | System and Communications Protection (SC) | [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-13) \n [SC-28 Protection of Information At Rest](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28) \n [SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28.1)  |
 {: caption="Table 11. Related controls for data encryption" caption-side="top"}
+{: #related-controls-encryption}
 
 ## 13. Implement business continuity and disaster recovery
 {: #best-practices-bcdr}
@@ -343,6 +352,7 @@ In addition, you must follow best practices for BCDR as defined by the specific 
 |---------------------|---------------------------------------------------|
 | Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-9 Information System Backup](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-9) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10) \n [CP-10 (2) System Recovery and Reconstitution &#124; Transaction Recovery](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10.2) |
 {: caption="Table 12. Related controls for business continuity and disaster recovery" caption-side="top"}
+{: #related-controls-bcdr}
 
 ## 14. Design your application for high availability (recommended)
 {: #best-practices-high-availability}
@@ -375,6 +385,7 @@ In addition, it is recommended that you:
 | Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) |
 | System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-6) |
 {: caption="Table 13. Related controls for high-availability" caption-side="top"}
+{: #related-controls-high-availability}
 
 ## 15. Use endpoint detection and remediation (EDR) tooling to detect malicious code
 {: #best-practices-endpoint-detection-remediation}
@@ -393,6 +404,7 @@ There are many EDR solutions for virtual server instances such as CrowdStrike an
 |---------------------|---------------------------------------------------|
 | System and Information Integrity (SI) | [SI-3 Malicious Code Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-3) |
 {: caption="Table 14. Related controls for business continuity and disaster recovery" caption-side="top"}
+{: #related-controls-endpoint-detection-remediation}
 
 ## 16. Regularly scan for open ports / protocols
 {: #best-practices-network-threat-detection}
@@ -409,6 +421,8 @@ There are many EDR solutions for virtual server instances such as CrowdStrike an
 |---------------------|---------------------------------------------------|
 | Configuration Management (CM) | [CM-7 Least Functionality](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-7) \n [CM-7 (1)Least Functionality &#124; Periodic Review](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-7.1) |
 {: caption="Table 15. Related controls for port scanning" caption-side="top"}
+{: #related-controls-network-threat-detection}
+
 
 ## 17. Secure and manage secrets and certificates
 {: #best-practices-secrets-management}
@@ -443,6 +457,7 @@ You should should ensure:
 | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2)  |
 | Identification and Authentication (IA)  | [IA-2 User Identification and Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2) \n [IA-3 Device Identification and Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-3) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5)  |
 {: caption="Table 16. Related controls for secrets management" caption-side="top"}
+{: #related-controls-secrets-management}
 
 ## 18. Tag all {{site.data.keyword.cloud_notm}} resources with security attributes
 {: #best-practices-security-attributes}
@@ -463,6 +478,7 @@ You should should ensure:
 | Access Control (AC) | [AC-16 Security Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-16)  |
 | System and Communications Protection (SC) | [SC-16 Transmission of Security Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-16) |
 {: caption="Table 17. Related controls for non-production environments" caption-side="top"}
+{: #related-controls-security-attributes}
 
 ## 19. Monitor for security and compliance against a baseline configuration
 {: #best-practices-security-compliance-monitoring}
@@ -485,6 +501,7 @@ You should should ensure:
 |---------------------|---------------------------------------------------|
 | Change Management (CM) | [CM-2 (2) Baseline Configuration &#124; Automation Support for Accuracy and Currency](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-2.2) \n [CM-6 Configuration Settings](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-6) \n [CM-6 (1) Configuration Settings &#124; Automated Management, Application, and Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-6.1)   |
 {: caption="Table 18. Related controls for monitoring security and compliance" caption-side="top"}
+{: #related-controls-security-compliance-monitoring}
 
 ## Next steps
 {: #best-practices-next-steps}
