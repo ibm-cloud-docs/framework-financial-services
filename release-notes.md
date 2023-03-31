@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-03-03"
+lastupdated: "2023-03-31"
 
 keywords: 
 
@@ -20,6 +20,11 @@ Use the release notes to learn about the latest changes to the documentation for
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
+
+## 31 March 2023
+{: #31-march-2023}
+
+* Integrated references to supplemental guidance for [enterprise account architecture](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-about) for large enterprises.
 
 ## 03 March 2023
 {: #03-march-2023}

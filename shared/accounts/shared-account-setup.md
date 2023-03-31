@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-03-31"
 
 keywords: 
 
@@ -42,7 +42,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
 1. Upgrade your account to either Pay-As-You-Go or Subscription. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
 
-   It is highly recommended to upgrade to a Subscription account so that you can [set up an enterprise](/docs/framework-financial-services?topic=framework-financial-services-shared-account-access-management#enterprise).
+   It is highly recommended to upgrade to a Subscription account so that you can [set up an enterprise](/docs/framework-financial-services?topic=framework-financial-services-shared-account-access-management#enterprise). Enterprises offer significant advantages in your ability to scale your environment over time as described in [Enterprise account architecture](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-about).
    {: tip}
 
 1. Enable [multi-factor authentication (MFA)](/docs/account?topic=account-enablemfa) by using the **U2F MFA** type for all users in your account. Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F standard, this method offers the highest level of security. This security is needed because the {{site.data.keyword.framework-fs_notm}} requires a smart card or hardware token that is designed and operated to FIPS 140-2 level 2 or higher or equivalent (for example, ANSI X9.24 or ISO 13491-1:2007).

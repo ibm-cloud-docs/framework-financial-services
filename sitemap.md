@@ -109,6 +109,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
 
+* [31 March 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#31-march-2023)
+
 * [03 March 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#03-march-2023)
 
 * [23 January 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#23-january-2023)
@@ -537,7 +539,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [Organizing {{site.data.keyword.cloud_notm}} accounts and resources](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#shared-account-organization)
 
-* [Organization for a single deployment](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#single-deployment)
+* [Organization for a single deployment within an account](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#single-deployment)
 
     * [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#single-deployment-vpc)
 
@@ -549,7 +551,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#multiple-deployments-satellite)
 
-* [Scaling the number of deployments](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#scaling-deployments)
+* [Scaling the number of deployments within an account](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#scaling-deployments)
 
     * [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#scaling-deployments-satellite)
 
