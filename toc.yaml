@@ -1,16 +1,19 @@
 toc:
   properties:
     subcollection: framework-financial-services
-    category: platform_services
+    category: solution_docs
+    industry: FinancialSector
     audience: solution
+    content-type: solution
     href: /docs/framework-financial-services?topic=framework-financial-services-about
     product-page: https://www.ibm.com/cloud/financial-services
     path: framework-financial-services
+    description: Financial institutions can confidently host their mission-critical applications in the cloud and transact quickly and efficiently.
     label: IBM Cloud Framework for Financial Services
 
-  entries: 
-  - navgroup: 
-      id: learn
+  entries:
+  - navgroup:
+      id: overview
       topics:
       - about.md
       - topicgroup: 
@@ -18,30 +21,31 @@ toc:
           topics:
           - best-practices/best-practices-saas.md
           - best-practices/best-practices-software.md
-      - topicgroup: 
-          label: Reference architectures
-          topics:
-          - reference-architecture-overview.md
-          - topicgroup: 
-              label: IBM Virtual Private Cloud (VPC) architecture
-              topics:
-              - topic: vpc/learn/vpc-architecture-overview.md
-                navtitle: VPC reference architecture
-              - vpc/learn/vpc-architecture-concepts.md
-              - topic: vpc/learn/vpc-architecture-detailed-vsi.md
-                navtitle: VPC with virtual servers reference architecture
-              - topic: vpc/learn/vpc-architecture-detailed-openshift.md
-                navtitle: VPC with Red Hat OpenShift on IBM Cloud reference architecture
-          - topicgroup:
-              label: IBM Cloud Satellite architecture
-              topics:
-              - topic: satellite/learn/satellite-architecture-overview.md
-                navtitle: Satellite reference architecture
-              - satellite/learn/satellite-architecture-use-cases.md
-              - satellite/learn/satellite-architecture-responsibilities.md
-              - satellite/learn/satellite-architecture-best-practices.md
-          - vmware/vmware-overview.md
       - release-notes.md
+
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture-overview.md
+      - topicgroup: 
+          label: IBM Virtual Private Cloud (VPC) architecture
+          topics:
+          - topic: vpc/learn/vpc-architecture-overview.md
+            navtitle: VPC reference architecture
+          - vpc/learn/vpc-architecture-concepts.md
+          - topic: vpc/learn/vpc-architecture-detailed-vsi.md
+            navtitle: VPC with virtual servers reference architecture
+          - topic: vpc/learn/vpc-architecture-detailed-openshift.md
+            navtitle: VPC with Red Hat OpenShift on IBM Cloud reference architecture
+      - topicgroup:
+          label: IBM Cloud Satellite architecture
+          topics:
+          - topic: satellite/learn/satellite-architecture-overview.md
+            navtitle: Satellite reference architecture
+          - satellite/learn/satellite-architecture-use-cases.md
+          - satellite/learn/satellite-architecture-responsibilities.md
+          - satellite/learn/satellite-architecture-best-practices.md
+      - vmware/vmware-overview.md
 
   - navgroup: 
       id: tutorial
@@ -64,8 +68,8 @@ toc:
               label: Bastion host
               topics:
               - vpc/tutorials/bastion-host/vpc-architecture-connectivity-bastion-tutorial-teleport.md
-
-  - navgroup: 
+  
+  - navgroup:
       id: howto
       topics:
       - topicgroup:

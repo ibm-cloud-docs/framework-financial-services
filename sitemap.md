@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-03-03"
+lastupdated: "2023-03-31"
 
 keywords: 
 
@@ -24,7 +24,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 ## Getting started with {{site.data.keyword.cloud_notm}} for Financial Services
-{: #sitemap_getting_started_with__for_financial_services}
+{: #sitemap_getting_started_with_for_financial_services}
 
 
 [Getting started with {{site.data.keyword.cloud_notm}} for Financial Services](/docs/framework-financial-services?topic=framework-financial-services-about#about)
@@ -103,14 +103,41 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software#best-practices-next-steps)
 
 
-## Reference architectures
-{: #sitemap_reference_architectures}
+## Release notes
+{: #sitemap_release_notes}
+
+
+[Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
+
+* [31 March 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#31-march-2023)
+
+* [03 March 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#03-march-2023)
+
+* [23 January 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#23-january-2023)
+
+* [30 September 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#30-september-2022)
+
+* [24 August 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#24-august-2022)
+
+* [28 July 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#28-july-2022)
+
+* [17 March 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#17-march-2022)
+
+* [03 February 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#03-february-2022)
+
+* [14 October 2021](/docs/framework-financial-services?topic=framework-financial-services-release-notes#14-october-2021)
+
+* [07 April 2021](/docs/framework-financial-services?topic=framework-financial-services-release-notes#07-april-2021)
+
+
+## Reference architecture overview
+{: #sitemap_reference_architecture_overview}
 
 
 [Reference architecture overview](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview#reference-architecture-overview)
 
 
-### IBM Virtual Private Cloud (VPC) architecture
+## IBM Virtual Private Cloud (VPC) architecture
 {: #sitemap_ibm_virtual_private_cloud_vpc_architecture}
 
 
@@ -203,7 +230,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift#next-steps)
 
 
-### IBM Cloud Satellite architecture
+## IBM Cloud Satellite architecture
 {: #sitemap_ibm_cloud_satellite_architecture}
 
 
@@ -269,32 +296,12 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices#next-steps)
 
+
+## {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture
+{: #sitemap__for_vmware_regulated_workloads_architecture}
+
+
 [{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture](/docs/framework-financial-services?topic=framework-financial-services-vmware-overview#vmware-overview)
-
-
-## Release notes
-{: #sitemap_release_notes}
-
-
-[Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
-
-* [03 March 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#03-march-2023)
-
-* [23 January 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#23-january-2023)
-
-* [30 September 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#30-september-2022)
-
-* [24 August 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#24-august-2022)
-
-* [28 July 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#28-july-2022)
-
-* [17 March 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#17-march-2022)
-
-* [03 February 2022](/docs/framework-financial-services?topic=framework-financial-services-release-notes#03-february-2022)
-
-* [14 October 2021](/docs/framework-financial-services?topic=framework-financial-services-release-notes#14-october-2021)
-
-* [07 April 2021](/docs/framework-financial-services?topic=framework-financial-services-release-notes#07-april-2021)
 
 
 ## Bring your own solutions for VPC reference architecture samples
@@ -523,7 +530,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 ## Accounts, identity management, and access control
-{: #sitemap_accounts,_identity_management,_and_access_control}
+{: #sitemap_accounts_identity_management_and_access_control}
 
 
 [{{site.data.keyword.cloud_notm}} account setup](/docs/framework-financial-services?topic=framework-financial-services-shared-account-setup#shared-account-setup)
@@ -532,7 +539,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [Organizing {{site.data.keyword.cloud_notm}} accounts and resources](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#shared-account-organization)
 
-* [Organization for a single deployment](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#single-deployment)
+* [Organization for a single deployment within an account](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#single-deployment)
 
     * [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#single-deployment-vpc)
 
@@ -544,7 +551,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#multiple-deployments-satellite)
 
-* [Scaling the number of deployments](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#scaling-deployments)
+* [Scaling the number of deployments within an account](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#scaling-deployments)
 
     * [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization#scaling-deployments-satellite)
 
@@ -997,7 +1004,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 ## Onboarding to the {{site.data.keyword.cloud_notm}} catalog
-{: #sitemap_onboarding_to_the__catalog}
+{: #sitemap_onboarding_to_the_catalog}
 
 
 [Onboarding to the {{site.data.keyword.cloud_notm}} catalog](/docs/framework-financial-services?topic=framework-financial-services-onboarding-to-catalog#onboarding-to-catalog)
@@ -1006,7 +1013,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 ## FAQs for {{site.data.keyword.cloud_notm}} for Financial Services
-{: #sitemap_faqs_for__for_financial_services}
+{: #sitemap_faqs_for_for_financial_services}
 
 
 [FAQs for {{site.data.keyword.cloud_notm}} for Financial Services](/docs/framework-financial-services?topic=framework-financial-services-faqs-framework#faqs-framework)
