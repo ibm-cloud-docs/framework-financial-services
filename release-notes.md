@@ -22,8 +22,9 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, sec
 {: note}
 
 ## 24 April 2023
+{: #24-april-2023}
 
-* Removed requirement to use only specific {{site.data.keyword.cloud_notm}} multizone regions.
+* Removed recommendation that limited deployments to a subset of available multizone regions.
 
 ## 31 March 2023
 {: #31-march-2023}
