@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-03-31"
+lastupdated: "2023-04-24"
 
 keywords: 
 
@@ -21,6 +21,11 @@ Use the release notes to learn about the latest changes to the documentation for
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
 
+## 24 April 2023
+{: #24-april-2023}
+
+* Removed recommendation that limited deployments to a subset of available multizone regions.
+
 ## 31 March 2023
 {: #31-march-2023}
 
@@ -29,7 +34,7 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, sec
 ## 03 March 2023
 {: #03-march-2023}
 
-* Updated [list of multizone regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) which are {{site.data.keyword.cloud_notm}} for Financial Services Validated to include Toronto (`ca-tor`) and Sydney (`au-syd`).
+* Updated list of multizone regions which are {{site.data.keyword.cloud_notm}} for Financial Services Validated to include Toronto (`ca-tor`) and Sydney (`au-syd`).
 
 ## 23 January 2023
 {: #23-january-2023}

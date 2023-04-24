@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-04-18"
+lastupdated: "2023-04-24"
 
 keywords: 
 
@@ -56,33 +56,31 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 * [5. Use and maintain non-production environments for development and testing](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-non-production-environments)
 
-* [6. Deploy your {{site.data.keyword.cloud_notm}} resources only to approved multizone regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions)
+* [6. Enforce information flow policies and protect the boundaries of your application](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-boundary-protection)
 
-* [7. Enforce information flow policies and protect the boundaries of your application](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-boundary-protection)
+* [7. Ensure all operator actions are executed through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-bastion-host)
 
-* [8. Ensure all operator actions are executed through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-bastion-host)
+* [8. Capture audit events and forward to a SIEM](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-audit-logs)
 
-* [9. Capture audit events and forward to a SIEM](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-audit-logs)
+* [9. Ensure operational logging and monitoring is implemented](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-operational-logging-and-monitoring)
 
-* [10. Ensure operational logging and monitoring is implemented](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-operational-logging-and-monitoring)
+* [10. Follow secure development processes and ensure software integrity](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-development-processes)
 
-* [11. Follow secure development processes and ensure software integrity](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-development-processes)
+* [11. Encrypt consumer data at rest and in transit](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-encryption)
 
-* [12. Encrypt consumer data at rest and in transit](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-encryption)
+* [12. Implement business continuity and disaster recovery](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-bcdr)
 
-* [13. Implement business continuity and disaster recovery](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-bcdr)
+* [13. Design your application for high availability (recommended)](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-high-availability)
 
-* [14. Design your application for high availability (recommended)](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-high-availability)
+* [14. Use endpoint detection and remediation (EDR) tooling to detect malicious code](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-endpoint-detection-remediation)
 
-* [15. Use endpoint detection and remediation (EDR) tooling to detect malicious code](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-endpoint-detection-remediation)
+* [15. Regularly scan for open ports / protocols](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-network-threat-detection)
 
-* [16. Regularly scan for open ports / protocols](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-network-threat-detection)
+* [16. Secure and manage secrets and certificates](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-secrets-management)
 
-* [17. Secure and manage secrets and certificates](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-secrets-management)
+* [17. Tag all {{site.data.keyword.cloud_notm}} resources with security attributes](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-security-attributes)
 
-* [18. Tag all {{site.data.keyword.cloud_notm}} resources with security attributes](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-security-attributes)
-
-* [19. Monitor for security and compliance against a baseline configuration](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-security-compliance-monitoring)
+* [18. Monitor for security and compliance against a baseline configuration](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-security-compliance-monitoring)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-next-steps)
 
@@ -108,6 +106,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 [Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
+
+* [24 April 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#24-april-2023)
 
 * [31 March 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#31-march-2023)
 
