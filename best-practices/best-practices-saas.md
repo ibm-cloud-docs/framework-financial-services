@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-03-31"
+lastupdated: "2023-04-24"
 
 keywords: 
 
@@ -146,33 +146,7 @@ It is permissible to run a "pre-production" environment in your production accou
 {: caption="Table 4. Related controls for non-production environments" caption-side="top"}
 {: #related-controls-non-production-environments}
 
-## 6. Deploy your {{site.data.keyword.cloud_notm}} resources only to approved multizone regions
-{: #best-practices-financial-services-regions}
-
-**Requirement:** Deploy your {{site.data.keyword.cloud_notm}} resources only to multizone regions which are Financial Services Validated.
-
-**Purpose & value:** For all consumer data to stay within the boundary of {{site.data.keyword.cloud_notm}} for Financial Services, you should only create {{site.data.keyword.cloud_notm}} resources in the Financial Services Validated [multizone regions (MZRs)](/docs/overview?topic=overview-locations#mzr-table) listed in [Enabling your account to use Financial Services Validated products](/docs/account?topic=account-enabling-fs-validated):
-
-* Americas
-    * Dallas (`us-south`)
-    * Washington, D.C. (`us-east`)
-    * Toronto (`ca-tor`)
-* Europe
-    * Frankfort (`eu-de`)
-    * London (`eu-gb`)
-* Asia Pacific
-    * Sydney (`au-syd`)
-
-**Most Relevant Controls:**
-
-| Family              | Control                                           |
-|---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-20 Use of External Information Systems](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-20) |
-| Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
-{: caption="Table 5. Related controls for using only approved geographic regions" caption-side="top"}
-{: #related-controls-financial-services-regions}
-
-## 7. Enforce information flow policies and protect the boundaries of your application
+## 6. Enforce information flow policies and protect the boundaries of your application
 {: #best-practices-boundary-protection}
 
 **Requirement:** Leverage the components of the reference architecture to enforce policies for information flows and to protect the boundaries of your application.
@@ -197,7 +171,7 @@ Boundary protection increases security by monitoring and restricting communicati
 {: caption="Table 6. Related controls for boundary protection" caption-side="top"}
 {: #related-controls-boundary-protection}
 
-## 8. Ensure all operator actions are executed through a bastion host
+## 7. Ensure all operator actions are executed through a bastion host
 {: #best-practices-bastion-host}
 
 **Requirement:** Ensure all interactive operator actions can only be run through a bastion host in your dedicated edge or management plane which is properly isolated from your workload plane. Enable recording of bastion sessions for auditing.
@@ -220,7 +194,7 @@ Boundary protection increases security by monitoring and restricting communicati
 {: caption="Table 7. Related controls for bastion host" caption-side="top"}
 {: #related-controls-bastion-host}
 
-## 9. Capture audit events and forward to a SIEM
+## 8. Capture audit events and forward to a SIEM
 {: #best-practices-audit-logs}
 
 **Requirement:** Capture audit events for actions performed on the components of your service, including {{site.data.keyword.cloud_notm}} services as well as any software components you install within your deployment. Audit logs should be securely stored, and they should also be forwarded to a security information and event management (SIEM) system.
@@ -250,7 +224,7 @@ Your software components (whether written by you or a third-party) should be ena
 {: caption="Table 8. Related controls for audit logs" caption-side="top"}
 {: #related-controls-audit-logs}
 
-## 10. Ensure operational logging and monitoring is implemented
+## 9. Ensure operational logging and monitoring is implemented
 {: #best-practices-operational-logging-and-monitoring}
 
 **Requirement:** Ensure operational logging and monitoring is implemented.
@@ -277,7 +251,7 @@ Operational monitoring for gauging system health is a very important complement 
 {: caption="Table 9. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 {: #related-controls-operational-logging-and-monitoring}
 
-## 11. Follow secure development processes and ensure software integrity 
+## 10. Follow secure development processes and ensure software integrity 
 {: #best-practices-development-processes}
 
 **Requirement:** Ensure that security engineering principles are applied in the design, development, implementation, and modification of the system. Maintain software integrity by using signed images, applying security patches, doing vulnerability scans, etc.
@@ -302,7 +276,7 @@ Lack of software integrity leaves you vulnerable to security problems. So, it is
 {: caption="Table 10. Related controls for development processes" caption-side="top"}
 {: #related-controls-development-processes}
 
-## 12. Encrypt consumer data at rest and in transit
+## 11. Encrypt consumer data at rest and in transit
 {: #best-practices-encryption}
 
 **Requirement:** Encrypt all consumer data whether at rest or in transit.
@@ -331,12 +305,12 @@ More detailed guidance can be found in the Cryptographic Requirements appendix o
 {: caption="Table 11. Related controls for data encryption" caption-side="top"}
 {: #related-controls-encryption}
 
-## 13. Implement business continuity and disaster recovery
+## 12. Implement business continuity and disaster recovery
 {: #best-practices-bcdr}
 
 **Requirement:** Implement a system for business continuity and disaster recovery (BCDR). Define Recovery Point Objective (RPO), Recovery Time Objective (RTO), and Maximum Tolerable Downtime (MTD) metrics for essential business functions. Implement your application so that the metrics are achieved.
 
-**Purpose & value:** Unfortunately, disasters occur that can make some or all of the data centers in a region unavailable. To avoid data loss, you must ensure all important data is backed up to a separate Financial Services Validated multizone region that can be used to restore service. However, your consumers must be able to opt out of having their data stored in the alternate region based on their data residency requirements.
+**Purpose & value:** Unfortunately, disasters occur that can make some or all of the data centers in a region unavailable. To avoid data loss, you must ensure all important data is backed up to a separate multizone region that can be used to restore service. However, your consumers must be able to opt out of having their data stored in the alternate region based on their data residency requirements.
 
 In addition, you must follow best practices for BCDR as defined by the specific managed services that you use. For example, {{site.data.keyword.dl_short}}, {{site.data.keyword.hscrypto}}, etc.
 
@@ -354,7 +328,7 @@ In addition, you must follow best practices for BCDR as defined by the specific 
 {: caption="Table 12. Related controls for business continuity and disaster recovery" caption-side="top"}
 {: #related-controls-bcdr}
 
-## 14. Design your application for high availability (recommended)
+## 13. Design your application for high availability (recommended)
 {: #best-practices-high-availability}
 
 **Requirement:** Design your application for high availability (HA) to minimize downtime for your consumers.
@@ -364,8 +338,8 @@ This item is unique among the other best practices in that it represents a recom
 
 **Purpose & value:** Consumers will be relying on your service for critical operations and have the potential to be deeply impacted by any downtime. To avoid downtime, you should implement redundancy to eliminate single points of failure. It is strongly recommended that you deploy your application to:
 
-* Multiple availability zones within any Financial Services Validated multizone region you're using. This enables you to ensure if one data center in a region goes down, that your application can continue to function.
-* Multiple Financial Services Validated multizone regions with failover between them. If something catastrophic happens that impacts an entire region, you can failover to another so consumers can still use your service.
+* Multiple availability zones within any multizone region you're using. This enables you to ensure if one data center in a region goes down, that your application can continue to function.
+* Multiple multizone regions with failover between them. If something catastrophic happens that impacts an entire region, you can failover to another so consumers can still use your service.
 
 In addition, it is recommended that you:
 
@@ -387,7 +361,7 @@ In addition, it is recommended that you:
 {: caption="Table 13. Related controls for high-availability" caption-side="top"}
 {: #related-controls-high-availability}
 
-## 15. Use endpoint detection and remediation (EDR) tooling to detect malicious code
+## 14. Use endpoint detection and remediation (EDR) tooling to detect malicious code
 {: #best-practices-endpoint-detection-remediation}
 
 **Requirement:** Use endpoint detection and remediation (EDR) tooling that is effective at detecting malicious code in a cloud environment.
@@ -406,7 +380,7 @@ There are many EDR solutions for virtual server instances such as CrowdStrike an
 {: caption="Table 14. Related controls for business continuity and disaster recovery" caption-side="top"}
 {: #related-controls-endpoint-detection-remediation}
 
-## 16. Regularly scan for open ports / protocols
+## 15. Regularly scan for open ports / protocols
 {: #best-practices-network-threat-detection}
 
 **Requirement:** Regularly scan for open ports / protocols, and ensure only those ports / protocols needed by your service are open.
@@ -424,7 +398,7 @@ There are many EDR solutions for virtual server instances such as CrowdStrike an
 {: #related-controls-network-threat-detection}
 
 
-## 17. Secure and manage secrets and certificates
+## 16. Secure and manage secrets and certificates
 {: #best-practices-secrets-management}
 
 **Requirement:** Secrets must be securely protected through their entire lifecycle.
@@ -459,7 +433,7 @@ You should should ensure:
 {: caption="Table 16. Related controls for secrets management" caption-side="top"}
 {: #related-controls-secrets-management}
 
-## 18. Tag all {{site.data.keyword.cloud_notm}} resources with security attributes
+## 17. Tag all {{site.data.keyword.cloud_notm}} resources with security attributes
 {: #best-practices-security-attributes}
 
 **Requirement:** Tag all {{site.data.keyword.cloud_notm}} resources with security attributes.
@@ -480,7 +454,7 @@ You should should ensure:
 {: caption="Table 17. Related controls for non-production environments" caption-side="top"}
 {: #related-controls-security-attributes}
 
-## 19. Monitor for security and compliance against a baseline configuration
+## 18. Monitor for security and compliance against a baseline configuration
 {: #best-practices-security-compliance-monitoring}
 
 **Requirement:** Deploy and use tooling for monitoring and reporting of security and compliance. Maintain a baseline configuration for your service that consists of automated mechanisms to facilitate information system baseline management.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-04-24"
 
 keywords: 
 
@@ -26,9 +26,7 @@ The [High availability (HA) overview](/docs/framework-financial-services?topic=f
 #### Distribute workloads across zones
 {: #your-workloads-multizone-distribution}
 
-Recall that all VPCs exist in a single region referring to the geographic area in which a VPC is deployed. The [supported regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) for the {{site.data.keyword.cloud_notm}} for Financial Services are multizone, meaning they have multiple isolated physical data centers that host compute, network, and storage resources.
-
-It is recommended to distribute your workloads across multiple zones in a given region as the first step in creating an HA solution. That is, if one zone goes down, the other zones can continue to support the workload. You should use [{{site.data.keyword.alb_full}} (ALB)](/docs/vpc?topic=vpc-load-balancers) to distribute your traffic across zones in a region.
+Recall that all VPCs exist in a single region referring to the geographic area in which a VPC is deployed.  It is recommended that you distribute your workloads across multiple zones within a region as the first step in creating an HA solution. That is, if one zone goes down, the other zones can continue to support the workload. You should use [{{site.data.keyword.alb_full}} (ALB)](/docs/vpc?topic=vpc-load-balancers) to distribute your traffic across zones in a region.
 
 #### Scale based on resource demands
 {: #your-workloads-multizone-scaling}
@@ -46,7 +44,7 @@ In addition, it is possible to autoscale your pods. See [Scaling apps](/docs/ope
 
 Despite the steps you take to leverage multiple zones in a region and increase resiliency with auto scaling, it is still possible for an entire region to be taken out of service. For example, a natural disaster like a hurricane, tornado, or earthquake could knock out multiple zones in a region.
 
-So, it is also recommended to establish and configure an alternate processing site in at least one geographically separate multizone region to ensure the continuation of secure system operation. Then, in addition to spreading your workloads across zones in a region, you can distribute your workloads across regions. The alternative region(s) you use must be chosen from the [list of regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) which are Financial Services Validated. However, your consumers must be able to opt out of having their data stored in the alternate region based on their data residency requirements.
+So, it is also recommended to establish and configure an alternate processing site in at least one geographically separate [multizone region](/docs/overview?topic=overview-locations) to ensure the continuation of secure system operation. Then, in addition to spreading your workloads across zones in a region, you can distribute your workloads across regions. However, your consumers must be able to opt out of having their data stored in the alternate region based on their data residency requirements.
 
 The diagram below shows an expansion of the VPC reference architecture to use multiple regions. The key to making this work is to use the [global load balancing functionality](/docs/dns-svcs?topic=dns-svcs-global-load-balancers) in {{site.data.keyword.dns_short}}. The global load balancer offers HA and geographical distribution of your traffic, based on the health of your origin servers and the geographical region where the user request originates. So, if one region becomes unhealthy, then traffic would get routed to the next closest healthy region.
 

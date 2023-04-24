@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-04-24"
 
 keywords: 
 
@@ -34,9 +34,6 @@ This architecture shows a deployment of the VPC that uses {{site.data.keyword.vs
 The management VPC provides compute, storage, and network services to enable application provider administrators to monitor, operate, and maintain the environment. The intent is to completely isolate management operations from the VPC running consumer workloads.
 
 The management VPC is distributed across three zones in one [multizone region (MZR)](/docs/overview?topic=overview-locations#mzr-table). Each zone contains two subnets that are protected by different ACLs.
-
-You must use an MZR from the [list of regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) that are approved for the {{site.data.keyword.cloud_notm}} for Financial Services.
-{: important}
 
 ### Subnets for management tools
 {: #vpc-architecture-detailed-management-subnets}

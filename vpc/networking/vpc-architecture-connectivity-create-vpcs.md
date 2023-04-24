@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-04-24"
 
 keywords: 
 
@@ -18,7 +18,7 @@ subcollection: framework-financial-services
 After completing the work for [account setup and management](/docs/framework-financial-services?topic=framework-financial-services-shared-account-setup), you can now create the management and workload VPCs from the [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi) and connect them using [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-about).
 {: shortdesc}
 
-1. Create two VPCs in one of the [approved MZRs](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions), one for the management VPC and another for the workload VPC. See [Create a VPC](/docs/vpc?topic=vpc-creating-a-vpc-using-cli#create-a-vpc-cli) for more details. For now, you should not follow the instructions in any of the other sections in that reference.
+1. Create two VPCs in a multizone region, one for the management VPC and another for the workload VPC. See [Create a VPC](/docs/vpc?topic=vpc-creating-a-vpc-using-cli#create-a-vpc-cli) for more details. For now, you should not follow the instructions in any of the other sections in that reference.
 
    Do _not_ create default address prefixes when you create the VPCs. You can specify `manual` for the `--address-prefix-management` argument in the [`ibmcloud is vpc-create` command](/docs/vpc?topic=vpc-infrastructure-cli-plugin-vpc-reference#vpc-create), such as in `ibmcloud is vpc-create my-vpc --address-prefix-management manual`.
    {: tip}
@@ -29,7 +29,7 @@ After completing the work for [account setup and management](/docs/framework-fin
 
 1. Create the subnets for the three zones by using the CIDRs. For more information, see [Create a subnet](/docs/vpc?topic=vpc-creating-a-vpc-using-cli#create-a-subnet-cli).
 
-   You need to specify zones. For `us-south`, the three zones are `us-south-1`, `us-south-2`, `us-south-3`. For `us-east`, the three zones are `us-east-1`, `us-east-2`, `us-east-3`. See [multizone regions](/docs/overview?topic=overview-locations#mzr-table) for more information, including the zone identifiers for other [approved regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions).
+   You need to specify zones. For `us-south`, the three zones are `us-south-1`, `us-south-2`, `us-south-3`. For `us-east`, the three zones are `us-east-1`, `us-east-2`, `us-east-3`. See [multizone regions](/docs/overview?topic=overview-locations#mzr-table) for more information, including the zone identifiers for other multizone regions.
    {: tip}
 
 1. Create security groups to define inbound and outbound traffic that's allowed for virtual server instances. For more information, see [Using security groups](/docs/vpc?topic=vpc-using-security-groups) and [Overview of network security options](/docs/openshift?topic=openshift-vpc-network-policy).

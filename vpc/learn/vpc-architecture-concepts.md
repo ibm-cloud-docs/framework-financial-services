@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-04-24"
 
 keywords: 
 
@@ -24,18 +24,16 @@ Now that you've seen the [high-level VPC reference architecture for {{site.data.
 ### Regions, zones, and subnets
 {: #regions}
 
-All VPCs exist in a single region. A [region](#x2091391){: term} is an abstraction that is related to the geographic area in which a VPC is deployed. Each region contains multiple zones. A [zone](x2070723){: term} is another an abstraction that refers to the physical data center that hosts the compute, network, and storage resources, as well as the related cooling and power, which provides services and applications.
+All VPCs exist in a single region. A [region](#x2091391){: term} is an abstraction that is related to the geographic area in which a VPC is deployed. Each [multizone region](/docs/overview?topic=overview-locations) contains multiple zones. A [zone](x2070723){: term} is another an abstraction that refers to the physical data center that hosts the compute, network, and storage resources, as well as the related cooling and power, which provides services and applications.
 
-VPC that are created in a one of the [required multizone regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) can span multiple zones to facilitate high availability.
-
-For {{site.data.keyword.cloud_notm}} for Financial Services, you should use at least three zones in each VPC to help ensure resiliency.
-{: tip}
+VPCs that are created in a one of the multizone regions can span multiple zones to facilitate high availability. For {{site.data.keyword.cloud_notm}} for Financial Services, it is recommended to use at least three zones in each VPC to help ensure resiliency.
 
 Subnets consist of a specified IP address range (CIDR block). Subnets are bound to a single zone, and they cannot span multiple zones or regions. Subnets in the same VPC are connected to each other.
 
 For more information, see [About networking](/docs/vpc?topic=vpc-about-networking-for-vpc).
 
-
+{{site.data.keyword.cloud_notm}} for Financial Services that stuff in About networking like
+Public Gateway and Floating IPs should not generally be used. -->
 
 ### Access control lists and security groups
 {: #security-groups-access-control-lists}

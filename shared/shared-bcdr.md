@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-04-24"
 
 keywords: 
 
@@ -26,10 +26,7 @@ The following sections describe some of the requirements that you must follow fo
 ### Alternative storage site 
 {: #your-workloads-requirements-alternate-storage-site}
 
-You must establish and configure an alternative storage site in at least one geographically separate {{site.data.keyword.cloud_notm}} region. So, if the storage in one region becomes unavailable, you can use storage from another region.
-
-See [Deploy your {{site.data.keyword.cloud_notm}} resources only to approved multizone regions](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-regions) for the list of Financial Services Validated regions. You can choose any of them to act as an alternative storage site. However, your consumers must be able to opt out of having their data stored in the alternate region based on their data residency requirements.
-{: tip}
+You must establish and configure an alternative storage site in at least one geographically separate {{site.data.keyword.cloud_notm}} multizone region. So, if the storage in one region becomes unavailable, you can use storage from another region.
 
 
 
