@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-29"
+  years: 2020, 2023
+lastupdated: "2023-04-25"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -12,21 +12,15 @@ subcollection: framework-financial-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deploy infrastructure as code for reference architectures 
+# Deploy infrastructure as code for reference architectures
 {: #shared-deploy-infrastructure-as-code}
 
-[Infrastructure as Code (IaC)](https://www.ibm.com/cloud/learn/infrastructure-as-code){: external} automates the provisioning of infrastructure, enabling your organization to develop, deploy, and scale cloud applications with greater speed, less risk, and reduced cost. With that in mind, a toolchain for {{site.data.keyword.contdelivery_full}} has been developed to automate deploying different flavors of the [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
+[Infrastructure as Code (IaC)](https://www.ibm.com/cloud/learn/infrastructure-as-code){: external} automates the provisioning of infrastructure and enables your organization to develop, deploy, and scale cloud applications with greater speed, less risk, and reduced cost. With that in mind, {{site.data.keyword.cloud_notm}} offers a set of deployable architectures that automate the deployment of different variations on VPC.
 {: shortdesc}
-
-To get started, visit the [Deploy infrastructure as code for the IBM Cloud for Financial Services](https://cloud.ibm.com/devops/setup/deploy?repository=https%3A%2F%2Fus-east.git.cloud.ibm.com%2Fopen-toolchain%2Flanding-zone&env_id=ibm:yp:us-east){: external} toolchain and follow the instructions. 
-
-For more information, see the following:
-
-* [Documentation for the toolchain](https://github.com/open-toolchain/landing-zone){: external}
-* [Source code](https://us-east.git.cloud.ibm.com/open-toolchain/landing-zone/tree/main){: external}
 
 ## Next steps
 {: #next-steps}
 
-* [Account setup in {{site.data.keyword.cloud_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-account-setup)
-
+* [Get started](/docs/secure-infrastructure-vpc) with deployable architectures on VPC.
+* Learn about [deployable architectures](/docs/solution-as-code?topic=solution-as-code-what-is)
+* Browse the [Solution library](/docs?tab=solutions&compliance=IBMCloudFFS) for {{site.data.keyword.framework-fs_notm}}
