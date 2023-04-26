@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-04-25"
+lastupdated: "2023-04-26"
 
 keywords:
 
@@ -22,5 +22,4 @@ subcollection: framework-financial-services
 {: #next-steps}
 
 * [Get started](/docs/secure-infrastructure-vpc) with deployable architectures on VPC.
-* Learn about [deployable architectures](/docs/solution-as-code?topic=solution-as-code-what-is)
 * Browse the [Solution library](/docs?tab=solutions&compliance=IBMCloudFFS) for {{site.data.keyword.framework-fs_notm}}
