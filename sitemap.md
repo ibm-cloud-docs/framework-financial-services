@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-04-26"
+lastupdated: "2023-04-30"
 
 keywords: 
 
@@ -516,15 +516,15 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [Set up environment for deployment and configuration](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment)
 
-* [Set up CLI environment for the reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment-cli)
+* [{{site.data.keyword.cloud_notm}} Command Line Interface](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment-cli)
 
-* [Set up API environment for the reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment-api)
+* [Application programming interfaces](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment-api)
 
-* [Set up Terraform environment for the reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment-terraform)
+* [Terraform for {{site.data.keyword.cloud_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment-terraform)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#next-steps)
 
-[Deploy infrastructure as code for reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code#shared-deploy-infrastructure-as-code)
+[Use deployable architectures to deploy your resources](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code#shared-deploy-infrastructure-as-code)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code#next-steps)
 
