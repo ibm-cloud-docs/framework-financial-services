@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-08-25"
+  years: 2020, 2023
+lastupdated: "2023-04-30"
 
 keywords: 
 
@@ -15,24 +15,27 @@ subcollection: framework-financial-services
 # Set up environment for deployment and configuration 
 {: #shared-deployment-setup-environment}
 
-Automation is an important part of any cloud solution, and it's even more so in regulated industries. You want to ensure that your deployment, operations, and management procedures are secure and repeatable. Manual activities can be error prone and lead to the introduction of vulnerabilities. So, as you work with the [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) for the {{site.data.keyword.cloud_notm}} for Financial Services, you will want to take advantage of the tools that {{site.data.keyword.cloud_notm}} provides to make automation possible. These include:
+Automation is an important part of any cloud solution, and it's even more so in regulated industries. You want to ensure that your deployment, operations, and management procedures are secure and repeatable. Manual activities can be error prone and lead to the introduction of vulnerabilities. So, as you work with the [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) for the {{site.data.keyword.cloud_notm}} for Financial Services, you will want to take advantage of the tools that {{site.data.keyword.cloud_notm}} provides to make automation possible.
 {: shortdesc}
 
-- [{{site.data.keyword.cloud_notm}} Command Line Interface (CLI)](/docs/cli?topic=cli-getting-started)
-- [Application programming interfaces (APIs)](/docs?tab=api-docs)
-- [Terraform](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about), including a toolchain with modules designed specifically to [deploy infrastructure as code for the reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code)
+If using Virtual Private Cloud (VPC) reference architecture, is highly recommended that you use the [VPC landing zone deployable architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code) which provide a preconfigured set of infrastructure as code (IaC) assets to help you get started with your deployments.
+{: tip}
 
-The remainder of this topic describes how to set up these tools for the reference architectures.
+The remainder of this topic describes how to set up the following tools for working with your {{site.data.keyword.cloud_notm}} resources.
+
+- {{site.data.keyword.cloud_notm}} Command Line Interface (CLI)
+- Application programming interfaces (APIs)
+- Terraform for {{site.data.keyword.cloud_notm}}
 
 Use private routes to {{site.data.keyword.cloud_notm}} service endpoints to enhance control and security over your data when you use the services that make up the reference architectures. Private routes are not accessible or reachable over the internet. By using them, you can protect your data from threats from the public network and logically extend your private network. For more information, see [Secure access to services by using service endpoints](/docs/account?topic=account-service-endpoints-overview) and [Securing your connection when you use the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-service-connection).
 {: important}
 
-## Set up CLI environment for the reference architectures 
+## {{site.data.keyword.cloud_notm}} Command Line Interface
 {: #shared-deployment-setup-environment-cli}
 
-The CLI offers a powerful set of commands to work with {{site.data.keyword.cloud_notm}} resources. Most of the {{site.data.keyword.cloud_notm}} services that are part of the reference architectures have [specific plug-ins](/docs/cli?topic=cli-plug-ins) that you can use to extend the base CLI experience. 
+The [CLI](/docs/cli?topic=cli-getting-started) offers a powerful set of commands to work with your resources. Most of the services that are part of the reference architectures have [specific plug-ins](/docs/cli?topic=cli-plug-ins) that you can use to extend the base CLI experience. 
 
-The following table provides links for how to set up CLI extensions for each service that has one.
+The following table provides links for the CLI extensions for each service in the reference architectures that has one.
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
@@ -58,10 +61,10 @@ The following table provides links for how to set up CLI extensions for each ser
 
 [^cli-tabletext-no-cli-information-flow-logs]: No specific CLI information is available for Flow Logs.
 
-## Set up API environment for the reference architectures 
+## Application programming interfaces
 {: #shared-deployment-setup-environment-api}
 
-The following table provides links about the APIs that can be used for each service in the reference architectures.
+{{site.data.keyword.cloud_notm}} offers a rich set of [APIs](/docs?tab=api-docs) for working with your resources. The following table provides links for the APIs that can be used for each service in the reference architectures.
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
@@ -80,10 +83,10 @@ The following table provides links about the APIs that can be used for each serv
 [^api-tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
 
 
-## Set up Terraform environment for the reference architectures 
+## Terraform for {{site.data.keyword.cloud_notm}} 
 {: #shared-deployment-setup-environment-terraform}
 
-The following table contains links about the Terraform capabilities for each service in the reference architectures.
+[Terraform on {{site.data.keyword.cloud_notm}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about) enables predictable and consistent provisioning of {{site.data.keyword.cloud_notm}} resources so that you can rapidly build IaC to deploy complex cloud environments. The following table contains links about the Terraform capabilities for each service in the reference architectures.
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
