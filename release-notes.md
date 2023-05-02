@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-04-24"
+lastupdated: "2023-05-02"
 
 keywords: 
 
@@ -20,6 +20,11 @@ Use the release notes to learn about the latest changes to the documentation for
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
+
+## 30 April 2023
+{: #30-april-2023}
+
+* Updated [Infrastructure as Code (IaC) article](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code) to point at new deployable architectures.
 
 ## 24 April 2023
 {: #24-april-2023}
