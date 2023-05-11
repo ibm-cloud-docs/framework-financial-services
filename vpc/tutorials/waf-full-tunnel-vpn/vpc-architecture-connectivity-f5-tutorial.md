@@ -76,7 +76,7 @@ You need the following items to deploy and configure this reference architecture
    * **instance_profile**:
      * If you are using BIG-IP for either full tunnel VPN or web application firewall, use a minimum profile of `cx2-4x8`.
      * If you are using BIG-IP for full tunnel VPN and web application firewall, use a minimum profile of `cx2-8x16`.
-   * **tmos_image_name**: `f5-bigip-16-0-1-1-0-0-6-all-1slot-1`
+   * **tmos_image_name**: `bigip-16-1`
 3. When you click **Install**, an {{site.data.keyword.bplong_notm}} workspace is created and initialized.
 4. Click **Generate Plan** in the top right.
 5. After the plan is generated successfully, click **Apply Plan**.
