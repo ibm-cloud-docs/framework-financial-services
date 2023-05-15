@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-05-11"
 
 keywords: 
 
@@ -340,8 +340,11 @@ You can log in to the bastion host through the web console or tsh client as desc
 
 Now that the bastion host is set up and configured, you can install the tools that are needed to interact with your infrastructure, such as:
 
-1. [IBM Cloud CLI](/docs/cli?topic=cli-install-ibmcloud-cli) and associated [plug-ins](/docs/cli?topic=cli-plug-ins)
-1. [{{site.data.keyword.openshiftshort}} CLI](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html){: external}
+1. [IBM Cloud CLI](/docs/cli?topic=cli-install-ibmcloud-cli) and associated [plug-ins](/docs/cli?topic=cli-plug-ins).
+1. [OpenShift Origin CLI](/docs/openshift?topic=openshift-openshift-cli).
+
+For information on accessing your {{site.data.keyword.openshiftshort}} cluster via the tools above, see accessing [{{site.data.keyword.redhat_openshift_notm}} clusters](/docs/openshift?topic=openshift-access_cluster#access_oc_cl).
+{: note}
 
 ## Remove SSH port from security group and access control list
 {: step}
