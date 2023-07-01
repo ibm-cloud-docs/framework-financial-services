@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-10-01"
+lastupdated: "2022-07-01"
 
 keywords: 
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Audit logging of application provider events and SIEM
 {: #shared-logging-audit-provider}
 
-In addition, to [audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit), you also need to consider auditing of events your applications might generate. Auditable events from all sources need to be consolidated into a security information and event management (SIEM).
+In addition, to [audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit), you also need to consider auditing of events your applications might generate. Auditable events from all sources need to be consolidated into a security information and event management (SIEM) system.
 {: shortdesc}
 
 ## Auditable events
@@ -42,7 +42,7 @@ You should audit the following events that occur within the system (in all envir
     * System errors relevant to security events, including but not limited to SQL errors that indicate an SQL injection, fuzzing, multiple failed logins, failed configuration change, failed/disabled anti-virus software, service failures
     * Web access events in extended log format
 
-The events that are collected should comply with the Cloud Auditing Data Federation (CADF) standard. And, audit event must contain at a minimum:
+The events that are collected should comply with the Cloud Auditing Data Federation (CADF) standard. And, audit events must contain at a minimum:
 
 * Type of event
 * When the event occurred
@@ -57,14 +57,7 @@ The events that are collected should comply with the Cloud Auditing Data Federat
 ## Storing events in a SIEM
 {: #siem}
 
-A SIEM system provides the ability to gather security data from information system components and presents that data as actionable information through a single interface. Events of the type in the previous section should be stored in a SIEM.
-
-
-
-Information on {{site.data.keyword.IBM_notm}} QRadar is provided, but we do not have a recommended Financial Services Validated solution for SIEM at this time.
-{: important}
-
-You need to install your own software solution within your VPC for SIEM. An example SIEM is [{{site.data.keyword.IBM_notm}} QRadar](https://www.ibm.com/products/qradar-siem){: external}. It helps security teams accurately detect and prioritize threats across the enterprise, and it provides intelligent insights that enable teams to respond quickly to reduce the impact of incidents. By consolidating log events and network flow data from thousands of devices, endpoints and applications that are distributed throughout your network, QRadar correlates all this different information and aggregates related events into single alerts to accelerate incident analysis and remediation.
+A SIEM system provides the ability to gather security data from information system components and presents that data as actionable information through a single interface. Events of the type in the previous section should be stored in a SIEM. You need to install your own software solution within your VPC for SIEM. 
 
 ## Related {{site.data.keyword.cloud_notm}} for Financial Services controls
 {: #related-controls}
