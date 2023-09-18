@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-05-11"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -18,6 +18,7 @@ subcollection: framework-financial-services
 
 Find what you are looking for in the topics that are available for {{site.data.keyword.cloud_notm}} for Financial Services®.
 {: shortdesc}
+
 
 
 
@@ -167,8 +168,6 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [Integration](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-architecture-optional-services-integration)
 
-    * [Databases](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-architecture-optional-services-databases)
-
 * [Reference architecture components](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-architecture-detailed-vsi-component-summary)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#next-steps)
@@ -253,8 +252,6 @@ Find what you are looking for in the topics that are available for {{site.data.k
     * [Logging and monitoring](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about#services-logging-monitoring)
 
     * [Integration](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about#satellite-architecture-optional-services-integration)
-
-    * [Databases](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about#satellite-architecture-optional-services-databases)
 
 * [{{site.data.keyword.satelliteshort}} components in {{site.data.keyword.cloud_notm}}](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about#components-ibm-cloud)
 
