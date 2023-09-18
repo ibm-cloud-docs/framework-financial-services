@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-02-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -40,24 +40,22 @@ See [{{site.data.keyword.framework-fs_full}} - Control Requirements](/docs/frame
 ### Framework guidance and reference architectures
 {: #framework-guidance}
 
-#### Interpreting the framework guidance
-{: #interpreting-guidance}
+#### Intended audience
+{: #framework-guidance-audience}
 
-We refer to the entity that uses (consumes) an application as the _consumer_ and the entity that develops or deploys (provides) an application as the _application provider_. The consumer and application provider might be the same when the organization providing the application also consumes it (for example, a financial institution deploys an application for internal use by others in their company). Or, they might be different if a third-party ecosystem partner is providing an application for a financial institution to use.
-{: note}
+We refer to the entity that uses (consumes) an application as the _consumer_ and the entity that develops or deploys (provides) an application as the _application provider_. The consumer and application provider might be the same when the organization providing the application also consumes it (for example, a financial institution deploys an application for internal use by others in their company). Or, they might be different if a third-party ecosystem partner is providing an application for a financial institution to use. You should use the information in the framework if you are an application provider (whether from a financial institution or ecosystem partner). 
 
-You should use the information in the framework if you are an application provider (whether from a financial institution or ecosystem partner) who wishes to meet the requirements or leverage the best practices of {{site.data.keyword.cloud_notm}} for Financial Services. However, the content has a different purpose depending on whether you represent an application provider from an ecosystem partner or an application provider within a financial institution.
-
-Ecosystem partner
-:   The reference architectures and guidance form a set of _requirements_ if you want to pursue a designation of [{{site.data.keyword.cloud_notm}} for Financial Services Validated](#becoming-fs-validated) from {{site.data.keyword.IBM_notm}}. The Financial Services Validated designation signifies that you have successfully evidenced compliance to the control requirements of the {{site.data.keyword.framework-fs_notm}} and may improve your ability to market to financial institutions. Even though these should be considered requirements, there is a process for requesting the approval of deviations when certain aspects of the guidance may not be feasible or make sense for a given application.
-
-Financial institution
-:   The reference architectures and guidance form a set of  _recommendations_. As a financial institution, you know your controls better than {{site.data.keyword.IBM_notm}} does. So, you have latitude in terms of following the guidance depending on what your internal controls dictate and the level of risk you are willing to take. {{site.data.keyword.IBM_notm}} does not formally validate the applications of financial institutions.
-
-In addition, the framework is intended to cover the two types of applications that you might deliver as an application provider:
+The framework cover two types of applications that you might deliver as an application provider:
 
 * Software as a service (SaaS) – You develop and operate the application that is deployed on the {{site.data.keyword.cloud_notm}} by using one of the reference architectures for the {{site.data.keyword.cloud_notm}} for Financial Services.
 * Software – You develop the application software, and another organization deploys and operates the application on their infrastructure in their own {{site.data.keyword.cloud_notm}} account.
+
+#### Interpreting framework guidance
+{: #interpreting-guidance}
+
+The reference architectures and associated guidance are intended to help you meet the control requirements. However, there is no one-size-fits-all approach for designing solutions for regulated industries, and you have latitude to make adjustments based on your situation. Ultimately, you are responsible for your choices based on careful consideration of organizational policies, data classification requirements, vulnerability and threat information, applicable regulations, compliance standards, and risk appetite. One approach to help you make decisions is to do a [security categorization](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization) of your information and information system.
+
+If you represent an ecosystem partner, you may wish to pursue the designation of [{{site.data.keyword.cloud_notm}} for Financial Services Validated](#becoming-fs-validated) from {{site.data.keyword.IBM_notm}} (the designation is not available to financial institutions). The Financial Services Validated designation signifies that you have successfully evidenced compliance to the control requirements and may improve your ability to market to financial institutions. While there is some flexibility allowed in your architectural decisions based on your security categorization, you will find it much easier to demonstrate compliance if you closely follow the guidance.
 
 #### Control implementation overview templates
 {: #control-implementation-overview-templates}
@@ -100,3 +98,4 @@ If you plan to provide SaaS:
 * Explore the [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) and deployment guidance
 
 If you plan to provide software that another organization will operate, review [Best practices for software](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software).
+

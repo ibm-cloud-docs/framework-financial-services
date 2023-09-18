@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -28,7 +28,7 @@ Aside from backing up data from the {{site.data.keyword.satelliteshort}} locatio
 ### About {{site.data.keyword.cos_short}}
 {: #satellite-architecture-storage-ibm-cloud-cos}
 
-{{site.data.content.service-description-cloud-object-storage-1}}
+[{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage) stores encrypted and dispersed data across multiple geographic locations. {{site.data.keyword.cos_short}} is available with three types of resiliency: Cross Region, Regional, and Single Data Center. Cross Region provides higher durability and availability than using a single region at the cost of slightly higher latency. Regional service reverses those tradeoffs, and distributes objects across multiple availability zones within a single region. If a given region or availability zone is unavailable, the object store continues to function without impediment. Single Data Center distributes objects across multiple machines within the same physical location.
 
 {{site.data.content.service-description-cloud-object-storage-2}}
 
@@ -57,3 +57,4 @@ More details on some of the major {{site.data.keyword.framework-fs_notm}} contro
 {: #next-steps}
 
 * [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit)
+

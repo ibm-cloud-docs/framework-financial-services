@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -68,9 +68,8 @@ The following table provides references for requirements that are related to enc
 | Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-vpc-encryption-about) \n - {{site.data.keyword.dl_short}} [^tabletext-2] \n - {{site.data.keyword.tg_short}}  | |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-block-storage-vpc-encryption) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) |  |
 | Security | - {{site.data.keyword.hscrypto}}  | - {{site.data.keyword.hscrypto}} | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-mng-data#enable-customer-keys-hpcs) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-mng-data) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-mng-data) \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-vpc-encryption-about) | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-mng-data) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-mng-data) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-mng-data) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-mng-data) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-vpc-encryption-about) | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-mng-data) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-mng-data) |  |
 | Integration  | |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-managing_encryption) |
-| Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-hpcs-byok) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok) | |
 {: caption="Table 1. Data encryption information for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext-1]: {{site.data.content.vpc-infrastructure-services-content}}
@@ -97,4 +96,5 @@ In addition, you must follow the guidance found in Appendix A: Cryptographic Req
 {: #next-steps}
 
 * [Data encryption in transit](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit)
+
 

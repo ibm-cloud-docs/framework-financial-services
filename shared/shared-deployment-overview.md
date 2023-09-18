@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-04-30"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -44,9 +44,8 @@ The following table provides links for the CLI extensions for each service in th
 | Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-cli-plugin-dl-cli) \n - [{{site.data.keyword.tg_short}}](/docs/tg-cli-plugin?topic=tg-cli-plugin-transit-gateway-cli)  |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-cli-plugin-ic-cos-cli) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-cli-plugin-ic-cos-cli) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-cli-plugin-hpcs-cli-plugin)  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-cli-plugin-hpcs-cli-plugin)  | - {{site.data.keyword.appid_short_notm}} [^cli-tabletext-no-cli-information-app-id] |
-| Logging and monitoring  | - {{site.data.keyword.atracker_short}} [^cli-tabletext-no-cli-information-atracker]  \n - {{site.data.keyword.compliance_short}} [^cli-tabletext-no-cli-information-scc] \n - Flow Logs for VPC [^cli-tabletext-no-cli-information-flow-logs]  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} |  |
+| Logging and monitoring  | - {{site.data.keyword.atracker_short}} [^cli-tabletext-no-cli-information-atracker]  \n - {{site.data.keyword.compliance_short}} [^cli-tabletext-no-cli-information-scc] \n - {{site.data.keyword.fl_full}} [^cli-tabletext-no-cli-information-flow-logs]  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-cli#cli) |
-| Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-install-dbaas-cli-plugin) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin) |
 {: caption="Table 2. CLI information for services in reference architectures" caption-side="top"}
 
 [^cli-tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
@@ -55,7 +54,7 @@ The following table provides links for the CLI extensions for each service in th
 
 [^cli-tabletext-no-cli-information-app-id]: No specific CLI information is available for {{site.data.keyword.appid_short_notm}}.
 
-[^cli-tabletext-no-cli-information-atracker]: No specific CLI information is available for {{site.data.keyword.atracker_short}} event routing.
+[^cli-tabletext-no-cli-information-atracker]: No specific CLI information is available for {{site.data.keyword.atracker_short}}.
 
 [^cli-tabletext-no-cli-information-scc]: No specific CLI information is available for {{site.data.keyword.compliance_short}}.
 
@@ -73,9 +72,8 @@ The following table provides links for the CLI extensions for each service in th
 | Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment&interface=api) \n - [{{site.data.keyword.dl_short}}](/apidocs/direct_link){: external} \n - [{{site.data.keyword.tg_short}}](/apidocs/transit-gateway){: external}  |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/apidocs/hs-crypto){: external}  | - [{{site.data.keyword.hscrypto}}](/apidocs/hs-crypto){: external}  | - [{{site.data.keyword.appid_short_notm}}](https://us-south.appid.cloud.ibm.com/swagger-ui/#/){: external} |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-set-up-environment&interface=api)  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-set-up-environment&interface=api)  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-admin_api) |
-| Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-api-setup) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup) |
 {: caption="Table 3. API information for services in reference architectures" caption-side="top"}
 
 [^api-tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
@@ -95,18 +93,18 @@ The following table provides links for the CLI extensions for each service in th
 | Networking  | - [VPC infrastructure services](/docs/vpc?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-terraform-setup-dl) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-terraform-setup-tgw)  |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-terraform) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-terraform) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/hpcs){: external}  | - [{{site.data.keyword.hscrypto}}](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/hpcs){: external}  | - [{{site.data.keyword.appid_short_notm}}](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/appid_action_url){: external} |
-| Logging and monitoring  | - {{site.data.keyword.atracker_short}} [^terraform-tabletext-no-cli-information-atracker]  \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) \n - [Flow Logs for VPC](/docs/vpc?topic=ibm-cloud-provider-for-terraform-getting-started)  | - {{site.data.keyword.atracker_short}} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) |  |
-| Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-template#event-stream-snippet) |
-| Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-terraform-setup) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup) |
+| Logging and monitoring  | - {{site.data.keyword.atracker_short}} [^terraform-tabletext-no-cli-information-atracker]  \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=ibm-cloud-provider-for-terraform-getting-started)  | - {{site.data.keyword.atracker_short}} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) |  |
+| Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-template#event-stream-snippet)
 {: caption="Table 3. Terraform information for services in reference architectures" caption-side="top"}
 
 [^terraform-tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
 [^terraform-tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
 
-[^terraform-tabletext-no-cli-information-atracker]: No specific Terraform information is available for {{site.data.keyword.atracker_short}} event routing.
+[^terraform-tabletext-no-cli-information-atracker]: No specific Terraform information is available for {{site.data.keyword.atracker_short}}.
 
 ## Next steps
 {: #next-steps}
 
 * [Deploy infrastructure as code for reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code)
+

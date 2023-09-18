@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -102,7 +102,7 @@ Finally, the bastion can be put either in the edge VPC or the management VPC. If
 
 Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribute traffic among multiple server instances within the same region of your VPC. For more information, see the following resources:
 
-* [About {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers&interface=ui)
+* [About {{site.data.keyword.cloud_notm}} {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers&interface=ui)
 * [Creating an {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancer)
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
@@ -119,3 +119,4 @@ Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribu
 {: #next-steps}
 
 * [Connectivity to {{site.data.keyword.cloud_notm}} services with private endpoints](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-services)
+

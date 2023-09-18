@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-08-24"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -30,11 +30,11 @@ You can choose to use {{site.data.keyword.openshiftshort}} alongside (or instead
 ## {{site.data.keyword.openshiftshort}} concepts
 {: #concepts}
 
-{{site.data.content.service-description-openshift}}
+[{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-roks-overview) is a managed offering to create your own {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.openshiftlong_notm}} provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and rollbacks, and secret and configuration management for your apps. Combined with an intuitive user experience, built-in security and isolation, and advanced tools to secure, manage, and monitor your cluster workloads, you can rapidly deliver highly available and secure containerized apps in the public cloud.
 
 {{site.data.keyword.openshiftshort}} extends the Kubernetes platform with built-in software to enhance app lifecycle development, operations, and security. The master nodes are entirely {{site.data.keyword.IBM_notm}}'s responsibility, while there is shared responsibility for the worker nodes.
 
-For {{site.data.keyword.cloud_notm}} for Financial Services, you should provision {{site.data.keyword.openshiftlong_notm}} in a VPC only and not in classic infrastructure.
+For {{site.data.keyword.cloud_notm}} for Financial Services, you should provision {{site.data.keyword.openshiftlong_notm}} only in a VPC and not in classic infrastructure.
 {: important}
 
 For more information, see [Understanding {{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-roks-overview).
@@ -43,3 +43,4 @@ For more information, see [Understanding {{site.data.keyword.openshiftshort}}](/
 {: #next-steps}
 
 * [Setup environment for deployment and configuration](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment).
+

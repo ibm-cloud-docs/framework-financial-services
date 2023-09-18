@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-04-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -71,9 +71,9 @@ See [VPC reference architecture with {{site.data.keyword.openshiftshort}}](/docs
 ## Storage
 {: #storage}
 
-{{site.data.keyword.block_storage_is_short}} provides hypervisor-mounted, high-performance data storage for your virtual server instances (instances) that you can provision within an {{site.data.keyword.vpc_full}} (VPC). The VPC infrastructure provides rapid scaling across zones and extra performance and security.
+ [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-block-storage-about) provides hypervisor-mounted, high-performance data storage for your virtual server instances that you can provision within a VPC. The VPC infrastructure provides rapid scaling across zones and extra performance and security.
 
-{{site.data.keyword.block_storage_is_short}} provides primary boot volumes and secondary data volumes. Boot volumes are automatically created and attached during instance provisioning. Data volumes can be created and attached during instance provisioning as well, or as stand-alone volumes that you can later attach to an instance. To protect your data, you can use your own encryption keys with {{site.data.keyword.hscrypto}}.
+{{site.data.keyword.block_storage_is_short}} is used for both primary boot volumes and secondary data volumes. Boot volumes are automatically created and attached during instance provisioning. Data volumes can be created and attached during instance provisioning as well, or as stand-alone volumes that you can later attach to an instance. To protect your data, you should use KYOK encryption with {{site.data.keyword.hscrypto}}.
 
 See [About Block Storage for VPC](/docs/vpc?topic=vpc-block-storage-about) for more details.
 
@@ -81,3 +81,4 @@ See [About Block Storage for VPC](/docs/vpc?topic=vpc-block-storage-about) for m
 {: #next-steps}
 
 * Take a deeper look at the [VPC reference architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi).
+

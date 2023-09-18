@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-05-11"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -340,7 +340,7 @@ You can log in to the bastion host through the web console or tsh client as desc
 
 Now that the bastion host is set up and configured, you can install the tools that are needed to interact with your infrastructure, such as:
 
-1. [IBM Cloud CLI](/docs/cli?topic=cli-install-ibmcloud-cli) and associated [plug-ins](/docs/cli?topic=cli-plug-ins).
+1. [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli) and associated [plug-ins](/docs/cli?topic=cli-plug-ins).
 1. [OpenShift Origin CLI](/docs/openshift?topic=openshift-openshift-cli).
 
 For information on accessing your {{site.data.keyword.openshiftshort}} cluster via the tools above, see accessing [{{site.data.keyword.redhat_openshift_notm}} clusters](/docs/openshift?topic=openshift-access_cluster#access_oc_cl).
@@ -355,4 +355,5 @@ Now that Teleport is installed and setup, remove SSH port 22 from the allowed li
 {: #controls}
 
 See the [related controls for bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion#next-steps).
+
 

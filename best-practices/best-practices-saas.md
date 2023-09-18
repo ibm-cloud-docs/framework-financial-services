@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-04-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -276,6 +276,9 @@ Lack of software integrity leaves you vulnerable to security problems. So, it is
 {: caption="Table 10. Related controls for development processes" caption-side="top"}
 {: #related-controls-development-processes}
 
+
+
+
 ## 11. Encrypt consumer data at rest and in transit
 {: #best-practices-encryption}
 
@@ -459,7 +462,7 @@ You should should ensure:
 
 **Requirement:** Deploy and use tooling for monitoring and reporting of security and compliance. Maintain a baseline configuration for your service that consists of automated mechanisms to facilitate information system baseline management.
 
-{{site.data.content.service-description-scc}}
+With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-getting-started) you can embed security checks into your every day workflows to help monitor for security and compliance. By monitoring for risks, you can identify security vulnerabilities and quickly work to mitigate the impact and fix the issue. By using {{site.data.keyword.compliance_short}} along with [external integrations](/security-compliance/integrations) (such as, OpenShift Compliance Operator (OSCO), Tanium, NeuVector, and so on), you can build a robust approach for monitoring for security and compliance issues. 
 
 **Purpose & value:** Continuous monitoring and reporting helps detect malicious activity and security vulnerabilities as early as possible. Automated baseline management makes it much more likely that any compliance-breaking changes to your system configurations are caught early.
 
@@ -477,6 +480,9 @@ You should should ensure:
 {: caption="Table 18. Related controls for monitoring security and compliance" caption-side="top"}
 {: #related-controls-security-compliance-monitoring}
 
+
+
+
 ## Next steps
 {: #best-practices-next-steps}
 
@@ -489,5 +495,6 @@ Learn about the three reference architectures for the {{site.data.keyword.cloud_
 Or, if you're intending to be a software provider, see also:
 
 * [Best practices for software](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software)
+
 
 

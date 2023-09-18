@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -43,7 +43,7 @@ The connectivity to the following endpoints must also be allowed, but can be pot
 * Attachment / assignment endpoint
 * {{site.data.keyword.satelliteshort}} Config and Link APIs
 * RHEL container registry
-* {{site.data.keyword.registrylong_notm}} 
+* {{site.data.keyword.registrylong_notm}}
 * {{site.data.keyword.cloud_notm}} monitoring and log analysis
 
 For more information, see [host networking requirements](/docs/satellite?topic=satellite-reqs-host-network#reqs-host-network-firewall-outbound).
@@ -89,3 +89,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 {: #next-steps}
 
 * [Completing operator actions through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-bastion)
+
