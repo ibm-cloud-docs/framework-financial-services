@@ -6,7 +6,7 @@ This is the documentation repository for the Reference Architecture / Deployment
 
 ## IBM Cloud Docs Links
 
-* [Public](https://cloud.ibm.com/docs/framework-financial-services)
+* [Public](https://cloud.ibm.com/docs/framework-financial-services) (based on `publish` branch)
 
 
 
