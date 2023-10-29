@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-04-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -48,7 +48,7 @@ The lower subnets in the diagram relate to inbound connectivity, and we'll cover
 ### Connectivity inbound to VPC
 {: #vpc-architecture-detailed-management-connectivity-inbound}
 
-Connectivity from your application provider's enterprise environment to the management VPC is accomplished by using {{site.data.keyword.dl_full_notm}} Dedicated or {{site.data.keyword.cloud}} {{site.data.keyword.vpn_vpc_full}}. You must use one or the other.
+Connectivity from your application provider's enterprise environment to the management VPC is accomplished by using {{site.data.keyword.dl_full_notm}} or {{site.data.keyword.cloud_notm}} {{site.data.keyword.vpn_vpc_full}}. You must use one or the other.
 
 [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) is the most secure way to enable connectivity from the application provider's on-premises environment to the management VPC. The speed and reliability of {{site.data.keyword.dl_short}} extends your organization’s data center network and offers more consistent, higher-throughput connectivity, keeping traffic within the {{site.data.keyword.cloud_notm}} network. When using {{site.data.keyword.dl_short}}, a private [{{site.data.keyword.alb_full}} (ALB)](/docs/vpc?topic=vpc-load-balancers) is used to distribute traffic among multiple server instances within the same region of your VPC.
 
@@ -104,9 +104,9 @@ By default, all objects that are stored in {{site.data.keyword.cos_short}} are e
 ### Using {{site.data.keyword.cloud_notm}} services outside of a VPC
 {: #vpc-architecture-detailed-connectivity-services}
 
-To connect to {{site.data.keyword.cloud_notm}} services from your VPC, you need to use [Virtual Private Endpoints (VPE) for VPC](/docs/vpc?topic=vpc-about-vpe). In the reference architecture diagram, VPEs appear in the middle subnets of the workload VPC. With VPEs, you can connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network by using the IP addresses of your choosing, which is allocated from a subnet within your VPC.
+With [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](/docs/vpc?topic=vpc-about-vpe) you can connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network by using the IP addresses of your choosing, which is allocated from a subnet within your VPC. In the reference architecture diagram, VPEs appear in the middle subnets of the workload VPC.
 
-{{site.data.content.service-description-vpe}}
+{{site.data.content.service-description-vpe-2}}
 
 ## Variation with edge/transit VPC for public internet access
 {: #edge-vpc-architecture}
@@ -123,3 +123,4 @@ For complete details on this variation of the architecture, see [Consumer connec
 If you plan to use {{site.data.keyword.openshiftlong_notm}}, explore a more detailed view of the [VPC reference architecture with {{site.data.keyword.openshiftshort}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift)
 
 If you don't plan to use {{site.data.keyword.openshiftlong_notm}}, you can skip ahead to learn more about deployment in [Setup environment for deployment and configuration](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment).
+

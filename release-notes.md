@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-05-02"
+lastupdated: "2023-09-21"
 
 keywords: 
 
@@ -44,7 +44,7 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, sec
 ## 23 January 2023
 {: #23-january-2023}
 
-* Updated list of services which are designated as {{site.data.keyword.cloud_notm}} for Financial Services Validated to include {{site.data.keyword.compliance_long}}, {{site.data.keyword.contdelivery_full}}, {{site.data.keyword.secrets-manager_full}}, and {{site.data.keyword.cloud}} Client {{site.data.keyword.vpn_vpc_full}}.
+* Updated list of services which are designated as {{site.data.keyword.cloud_notm}} for Financial Services Validated to include {{site.data.keyword.compliance_long}}, {{site.data.keyword.contdelivery_full}}, {{site.data.keyword.secrets-manager_full}}, and {{site.data.keyword.cloud}} Client {{site.data.keyword.vpn_vpc_short}}.
 
 ## 30 September 2022
 {: #30-september-2022}

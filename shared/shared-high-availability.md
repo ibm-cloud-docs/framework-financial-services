@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -39,9 +39,8 @@ Your HA strategy needs to consider all of the {{site.data.keyword.cloud_notm}} s
 | Networking | - [VPC infrastructure services](/vpc?topic=vpc-ha-dr-vpc) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-ha-dr) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-ha-dr#high-availability) |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/vpc?topic=vpc-ha-dr-vpc) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-ha-dr) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-ha-dr) | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-ha-dr) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) \n - [Flow Logs for VPC](/vpc?topic=vpc-ha-dr-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) \n - [{{site.data.keyword.fl_full}}](/vpc?topic=vpc-ha-dr-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-sla) |
-| Databases  |  |  | - [{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-high-availability-disaster-recovery) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery) |
 {: caption="Table 1. High availability information for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
@@ -70,3 +69,4 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 {: #next-steps}
 
 * [Development processes and software integrity](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)
+

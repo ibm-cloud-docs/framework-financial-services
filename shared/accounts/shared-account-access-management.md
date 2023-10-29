@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -103,9 +103,8 @@ The following table provides references to additional information for managing a
 | Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-iam) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-iam)| |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-iam) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-iam) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-access) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-access)  | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-service-access-management) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-iam) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) \n - [Flow Logs for VPC](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-iam) \n [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-iam) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-iam) \n [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) |  |
 | Integration  | | | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-security) |
-| Databases  |  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-iam) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam) |
 {: caption="Table 1. Managing access for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
@@ -126,3 +125,4 @@ The following table provides references to additional information for managing a
 {: #next-steps}
 
 * [Handling and securing secrets](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets)
+

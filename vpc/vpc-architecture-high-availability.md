@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-04-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -33,7 +33,13 @@ Recall that all VPCs exist in a single region referring to the geographic area i
 
 Even with multiple zones, you should take additional steps to ensure that your environment can be scaled out based on the resources used by your workloads to enhance resiliency.
 
-For example, by using [Auto Scale for VPC](/docs/vpc?topic=vpc-creating-auto-scale-instance-group), you can improve performance and costs by dynamically creating virtual server instances to meet the demands of your environment. You set scaling policies that define your desired average utilization for metrics like CPU, memory, and network usage. The policies that you define determine when virtual server instances are added or removed from your instance group.
+##### Virtual servers
+{: #your-workloads-multizone-scaling-vsi}
+
+With [Auto Scale for VPC](/docs/vpc?topic=vpc-creating-auto-scale-instance-group), you can improve performance and costs by dynamically creating virtual server instances to meet the demands of your environment. Auto Scale for VPC is highly recommended if you are using virtual servers. You set scaling policies that define your desired average utilization for metrics like CPU, memory, and network usage. The policies that you define determine when virtual server instances are added or removed from your instance group. Auto Scale for VPC is highly recommended if you are using virtual servers.
+
+##### Containers
+{: #your-workloads-multizone-scaling-containers}
 
 For {{site.data.keyword.openshiftshort}}, you can use the `cluster-autoscaler` add-on to scale the worker pools in your cluster automatically to increase or decrease the number of worker nodes in the worker pool based on the sizing needs of your scheduled workloads. The `cluster-autoscaler` add-on is based on the [Kubernetes Cluster-Autoscaler project](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler). See [Autoscaling clusters](/docs/openshift?topic=openshift-ca) for more information.
 
@@ -75,3 +81,4 @@ See [related controls for high availability](/docs/framework-financial-services?
 {: #next-steps}
 
 - [Development processes and software integrity](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)
+

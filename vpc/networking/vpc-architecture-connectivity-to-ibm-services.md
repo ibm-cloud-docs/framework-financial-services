@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -25,7 +25,7 @@ The [VPE supported services](/docs/vpc?topic=vpc-vpe-supported-services) page li
 Private endpoints should be used whether you are accessing a service by using the CLI, API, or Terraform. For more information, see:
 
 * [Securing your connection when using the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-service-connection)
-* `visibility` input parameter in [Configuring the IBM Cloud Provider plug-in](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference#provider-parameter-ov)
+* `visibility` input parameter in [Configuring the {{site.data.keyword.cloud_notm}} Provider plug-in](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference#provider-parameter-ov)
 
 
 
@@ -51,3 +51,4 @@ Private endpoints should be used whether you are accessing a service by using th
 {: #next-steps}
 
 * [Connectivity to public internet](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet)
+

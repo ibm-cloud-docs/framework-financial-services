@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-01"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -74,3 +74,4 @@ A SIEM system provides the ability to gather security data from information syst
 {: #next-steps}
 
 * [Operational logging](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-operational)
+

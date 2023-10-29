@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -36,7 +36,7 @@ You need to install your own software solution for capturing application log dat
 ### VPC network traffic
 {: #solutions-network-flow-logs}
 
-If you are using virtual server instances, you are required to use [Flow Logs for VPC](/docs/vpc?topic=vpc-flow-logs) to enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic going to and from network interfaces on virtual server instances within your VPC.
+If you are using virtual server instances, you are required to use [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-flow-logs) to enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic going to and from network interfaces on virtual server instances within your VPC.
 
 Flow logs can help with a number of tasks, including:
 
@@ -74,3 +74,4 @@ There is not a Financial Services Validated solution for capturing operational p
 {: #next-steps}
 
 * [Compliance monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance)
+

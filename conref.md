@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -41,14 +41,31 @@ Only required if using virtual servers instead of or in addition to {{site.data.
 Highly recommended if using virtual servers instead of or in addition to {{site.data.keyword.openshiftshort}}.
 {: #highly-recommended-with-virtual-servers}
 
+
+
 Only required if using containers instead of or in addition to virtual servers.
 {: #only-required-openshift}
 
-Only choose one of {{site.data.keyword.dl_short}} and {{site.data.keyword.vpn_vpc_short}}.
+Only applicable if using containers in {{site.data.keyword.openshiftshort}}.
+{: #only-applicable-openshift}
+
+
+
+Only choose one of {{site.data.keyword.dl_short}} and {{site.data.keyword.vpn_vpc_short}}. 
 {: #only-one-of-dl-or-vpc}
 
-Includes VPC, Dedicated hosts for VPC, Auto Scale for VPC, {{site.data.keyword.alb_full}}, {{site.data.keyword.vpn_vpc_short}}, {{site.data.keyword.dns_short}}, and Virtual Private Endpoints for VPC.
+Includes VPC, Dedicated hosts for VPC, Auto Scale for VPC, {{site.data.keyword.alb_full}}, {{site.data.keyword.vpn_vpc_short}}, {{site.data.keyword.dns_short}}, and {{site.data.keyword.vpe_short}}.
 {: #vpc-infrastructure-services-content}
+
+Only required if enabling public internet access to workload VPC for application consumers.
+{: #only-required-public-internet-access}
+
+Only required if enabling failover between regions for high availability (which is recommended).
+{: #only-required-failover-regions}
+
+Only required if enabling failover between regions for high availability (which is recommended) and public internet access to workload VPC for application consumers.
+{: #only-required-failover-regions-public-internet-access}
+
 
 
 
@@ -56,31 +73,43 @@ Includes VPC, Dedicated hosts for VPC, Auto Scale for VPC, {{site.data.keyword.a
 
 ### Red Hat OpenShift on IBM Cloud
 
-{{site.data.keyword.openshiftshort}} is a managed offering to create your own {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.openshiftlong_notm}} provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and rollbacks, and secret and configuration management for your apps. Combined with an intuitive user experience, built-in security and isolation, and advanced tools to secure, manage, and monitor your cluster workloads, you can rapidly deliver highly available and secure containerized apps in the public cloud.
-{: #service-description-openshift}
+
 
 {{site.data.keyword.satelliteshort}}-enabled service which runs in your {{site.data.keyword.satelliteshort}} location.
 {: #satellite-enabled-openshift}
 
 ### Container Registry
 
-Use [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_overview) to store and access private container images. {{site.data.keyword.registryshort}} provides a multi-tenant, highly available, scalable, and encrypted private image registry that is hosted and managed by {{site.data.keyword.IBM}}. You can use {{site.data.keyword.registryshort}} by setting up your own image namespace and pushing container images to your namespace. This service is required if using {{site.data.keyword.openshiftshort}}.
-{: #service-description-container-registry}
+
 
 ### Virtual Private Endpoint
 
+
+
 VPE is an evolution of the private connectivity to {{site.data.keyword.cloud_notm}} services. VPEs are virtual IP interfaces that are bound to an endpoint gateway created on a per service, or service instance, basis (depending on the service operation model). The endpoint gateway is a virtualized function that scales horizontally, is redundant and highly available, and spans all availability zones of your VPC. Endpoint gateways enable communications from virtual server instances within your VPC and {{site.data.keyword.cloud_notm}} service on the private backbone. VPE for VPC gives you the experience of controlling all the private addressing within your cloud.
-{: #service-description-vpe}
+{: #service-description-vpe-2}
 
 ### Direct Link
 
-Use [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) to seamlessly connect your on-premises resources to your cloud resources. The speed and reliability of {{site.data.keyword.dl_short}} extends your organization’s data center network and offers more consistent, higher-throughput connectivity, keeping traffic within the {{site.data.keyword.cloud_notm}} network. {{site.data.keyword.dl_short}} is the most secure way to enable connectivity from on-premises environments to {{site.data.keyword.cloud_notm}}.
-{: #service-description-direct-link}
+
+
+### Block Storage for VPC
+
+
+
+
+To learn more and to start creating {{site.data.keyword.block_storage_is_short}} volumes, see the following resources:
+{: #service-description-block-storage-reference-list-intro}
+
+* [About {{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-block-storage-about)
+* [Create and attach a block storage volume when you create a new instance](/docs/vpc?topic=vpc-creating-block-storage#create-from-vsi)
+* [Create a stand-alone block storage volume](/docs/vpc?topic=vpc-creating-block-storage#create-standalone-vol)
+* [Creating block storage volumes with customer-managed encryption](/docs/vpc?topic=vpc-block-storage-vpc-encryption)
+{: #service-description-block-storage-reference-list}
 
 ### Cloud Object Storage
 
-[{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage) stores encrypted and dispersed data across multiple geographic locations. {{site.data.keyword.cos_short}} is available with three types of resiliency: Cross Region, Regional, and Single Data Center. Cross Region provides higher durability and availability than using a single region at the cost of slightly higher latency. Regional service reverses those tradeoffs, and distributes objects across multiple availability zones within a single region. If a given region or availability zone is unavailable, the object store continues to function without impediment. Single Data Center distributes objects across multiple machines within the same physical location.
-{: #service-description-cloud-object-storage-1}
+
 
 Users of {{site.data.keyword.cos_short}} refer to their binary data, such as files, images, media, archives, or even entire databases as objects. Objects are stored in a bucket, the container for their unstructured data. Buckets contain both inherent and user-defined metadata. Finally, objects are defined by a globally unique combination of the bucket name and the object key, or name.
 {: #service-description-cloud-object-storage-2}
@@ -92,6 +121,7 @@ All {{site.data.keyword.cos_short}} buckets must be encrypted with KYOK by using
 To start working with {{site.data.keyword.cos_short}}, see the following instructions:
 {: #service-description-cloud-object-storage-reference-list-intro}
 
+- [About {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage)
 - [Getting started with {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)
 - [Connecting to {{site.data.keyword.cos_short}} from VPC](/docs/vpc?topic=vpc-connecting-vpc-cos)
 - [Encrypting your data](/docs/cloud-object-storage?topic=cloud-object-storage-encryption)
@@ -99,30 +129,27 @@ To start working with {{site.data.keyword.cos_short}}, see the following instruc
 
 ### Hyper Protect Crypto Services
 
-[{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-overview) is a dedicated key management service and hardware security module (HSM) based on {{site.data.keyword.cloud_notm}}. This service allows you to take the ownership of the cloud HSM to fully manage your encryption keys and to perform cryptographic operations using Keep Your Own Key (KYOK). {{site.data.keyword.hscrypto}} is also the only service in the cloud industry that is built on FIPS 140-2 Level 4-certified hardware.
-{: #service-description-hpcs}
+
 
 ### App ID
 
-[{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-about) helps developers to easily add authentication to their web and mobile apps with few lines of code, and secure their cloud-native applications and services on {{site.data.keyword.cloud_notm}}.
-{: #service-description-app-id}
 
-### Activity Tracker event routing
+
+### Activity Tracker Event Routing
 
 [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started-routing&interface=cli) is used to collect auditable platform events that are generated by services in your {{site.data.keyword.cloud_notm}} account. These events allow you to monitor the activity of your {{site.data.keyword.cloud_notm}} account so that you can investigate abnormal activity and critical actions.
 {: #service-description-activity-tracker-event-routing-1}
 
-{{site.data.keyword.atracker_short}} provides for either event routing or [hosted event search](/docs/activity-tracker?topic=activity-tracker-getting-started-search). However, only the event routing features of {{site.data.keyword.atracker_short}} are Financial Services Validated. In regions where it's available, you must configure {{site.data.keyword.atracker_short}} event routing to send events to {{site.data.keyword.cos_short}}, where they must be encrypted with KYOK.
+{{site.data.keyword.atracker_short}} provides for either event routing or [hosted event search](/docs/activity-tracker?topic=activity-tracker-getting-started-search). However, only the event routing features of {{site.data.keyword.atracker_short}} are Financial Services Validated. In regions where it's available, you must configure {{site.data.keyword.atracker_short}} to send events to {{site.data.keyword.cos_short}}, where they must be encrypted with KYOK.
 {: #service-description-activity-tracker-event-routing-2}
 
-{{site.data.keyword.atracker_short}} event routing is only available in some regions (see [Locations for {{site.data.keyword.atracker_short}} event routing](/docs/activity-tracker?topic=activity-tracker-regions#regions-atracker) for more details). For regions where it's not available, you must use {{site.data.keyword.atracker_short}} hosted event search until {{site.data.keyword.atracker_short}} event routing is available. When event routing becomes available in those regions, you must switch to use event routing. For more information and possible exceptions, see [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services).
+{{site.data.keyword.atracker_short}} is only available in some regions (see [Locations for {{site.data.keyword.atracker_short}} event routing](/docs/activity-tracker?topic=activity-tracker-regions#regions-atracker) for more details). For regions where it's not available, you must use {{site.data.keyword.atracker_short}} hosted event search until {{site.data.keyword.atracker_short}} is available. When event routing becomes available in those regions, you must switch to use event routing. For more information and possible exceptions, see [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services).
 {: important}
 {: #service-description-activity-tracker-event-routing-3-important}
 
 ### Event Streams
 
-[{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-about) is a high-throughput message bus built with Apache Kafka. It is optimized for event ingestion into {{site.data.keyword.cloud_notm}} and event stream distribution between your services and applications.
-{: #service-description-event-streams-1}
+
 
 You can use {{site.data.keyword.messagehub}} to complete the following tasks:
 {: #service-description-event-streams-2}
@@ -132,29 +159,9 @@ You can use {{site.data.keyword.messagehub}} to complete the following tasks:
 - Publish event data to multiple applications to react in real time.
 {: #service-description-event-streams-3-unordered-list}
 
-{{site.data.keyword.messagehub}} offers a fully managed Apache Kafka service, ensuring durability and high availability for our clients. By using {{site.data.keyword.messagehub}}, you have support around the clock from our team of Kafka experts.
-{: #service-description-event-streams-4}
-
-### Hyper Protect DBaaS for MongoDB
-
-Moving confidential and mission-critical data to the cloud presents data confidentiality, security, and reliability concerns. [{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-overview) offers highly secure database environments that have technology-enforced protection and high availability.
-{: #service-description-ihsdbaas-mongodb-1}
-
-Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.ihsdbaas_mongodb_full}} helps you to alleviate data security and compliance concerns with built-in encryption and tamper protection for data at rest and in flight. You can deploy your workloads with sensitive data and build compliant applications without having to be a security expert.
-{: #service-description-ihsdbaas-mongodb-2}
-
-### Hyper Protect DBaaS for PostgreSQL
-
-Moving confidential and mission-critical data to the cloud presents data confidentiality, security, and reliability concerns. [{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-overview) offers highly secure database environments that have technology-enforced protection and high availability.
-{: #service-description-ihsdbaas-postgresql-1}
-
-Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.ihsdbaas_postgresql_full}} helps you to alleviate data security and compliance concerns with built-in encryption and tamper protection for data at rest and in flight. You can deploy your workloads with sensitive data and build compliant applications without having to be a security expert.
-{: #service-description-ihsdbaas-postgresql-2}
-
 ### Security and Compliance Center
 
-With [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) you can embed security checks into your every day workflows to help monitor for security and compliance. By monitoring for risks, you can identify security vulnerabilities and quickly work to mitigate the impact and fix the issue. By using {{site.data.keyword.compliance_short}} along with [external integrations](/security-compliance/integrations) (such as, OpenShift Compliance Operator (OSCO), Tanium, NeuVector, and so on), you can build a robust approach for monitoring for security and compliance issues.
-{: #service-description-scc}
+
 
 ## Bastion host requirements
 
@@ -200,7 +207,7 @@ Responsibility is shared, except that the workload provider is solely responsibl
 Responsibility is shared, except that the workload provider is solely responsible for [Change management](/docs/satellite?topic=satellite-responsibilities#change-management) and [Security and regulation compliance](/docs/satellite?topic=satellite-responsibilities#security-compliance).
 {: #workload-provider-responsibilities-operating-system}
 
-# List reference architectures with full names
+# List of reference architectures with full names
 
 * [{{site.data.keyword.vpc_full}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about), with options for using one or both of:
     * [{{site.data.keyword.vsi_is_full}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi)
@@ -208,4 +215,5 @@ Responsibility is shared, except that the workload provider is solely responsibl
 * [{{site.data.keyword.satellitelong}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about) 
 * [{{site.data.keyword.cloud}} for VMware® Regulated Workloads reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vmware-overview)
 {: #reference-architectures-list-full-names}
+
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-02-24"
+lastupdated: "2023-10-29"
 
 keywords: 
 
@@ -40,6 +40,8 @@ See [{{site.data.keyword.framework-fs_full}} - Control Requirements](/docs/frame
 ### Framework guidance and reference architectures
 {: #framework-guidance}
 
+
+
 #### Interpreting the framework guidance
 {: #interpreting-guidance}
 
@@ -58,6 +60,9 @@ In addition, the framework is intended to cover the two types of applications th
 
 * Software as a service (SaaS) – You develop and operate the application that is deployed on the {{site.data.keyword.cloud_notm}} by using one of the reference architectures for the {{site.data.keyword.cloud_notm}} for Financial Services.
 * Software – You develop the application software, and another organization deploys and operates the application on their infrastructure in their own {{site.data.keyword.cloud_notm}} account.
+
+
+
 
 #### Control implementation overview templates
 {: #control-implementation-overview-templates}
@@ -100,3 +105,4 @@ If you plan to provide SaaS:
 * Explore the [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) and deployment guidance
 
 If you plan to provide software that another organization will operate, review [Best practices for software](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software).
+

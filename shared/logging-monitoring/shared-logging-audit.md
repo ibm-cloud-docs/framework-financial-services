@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -20,9 +20,9 @@ When you work in a cloud environment, such as the {{site.data.keyword.cloud_notm
 
 [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started-routing&interface=cli) is used to collect [auditable events from {{site.data.keyword.cloud_notm}} services](/docs/activity-tracker?topic=activity-tracker-cloud_services) that are generated for variety of [event types](/docs/activity-tracker?topic=activity-tracker-event_types). These events allow you to monitor the activity of your {{site.data.keyword.cloud_notm}} account so that you can investigate abnormal activity and critical actions.
 
-{{site.data.keyword.atracker_short}} provides for either event routing or hosted event search. However, only the event routing features of {{site.data.keyword.atracker_short}} have been Financial Services Validated. In regions where it's available, you must configure {{site.data.keyword.atracker_short}} event routing to send events to {{site.data.keyword.cos_short}}. All {{site.data.keyword.cos_short}} buckets must be encrypted with KYOK using keys managed by {{site.data.keyword.hscrypto}}. See [Encryption at rest](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest) for more information.
+{{site.data.keyword.atracker_short}} provides for either event routing or hosted event search. However, only the event routing features of {{site.data.keyword.atracker_short}} have been Financial Services Validated. In regions where it's available, you must configure {{site.data.keyword.atracker_short}} to send events to {{site.data.keyword.cos_short}}. All {{site.data.keyword.cos_short}} buckets must be encrypted with KYOK using keys managed by {{site.data.keyword.hscrypto}}. See [Encryption at rest](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest) for more information.
 
-{{site.data.keyword.atracker_short}} event routing is only available in some regions (see [Locations for {{site.data.keyword.atracker_short}} event routing](/docs/activity-tracker?topic=activity-tracker-regions#regions-atracker) for more details). For regions where it's not available, you must use {{site.data.keyword.atracker_short}} hosted event search until {{site.data.keyword.atracker_short}} event routing is available. After event routing becomes available in those regions, you must switch to use event routing. See [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services) for more information and possible exceptions.
+{{site.data.keyword.atracker_short}} event routing is only available in some regions (see [Locations for {{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-regions#regions-atracker) for more details). For regions where it's not available, you must use {{site.data.keyword.atracker_short}} hosted event search until {{site.data.keyword.atracker_short}} is available. After event routing becomes available in those regions, you must switch to use event routing. See [Use only services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-financial-services-validated-services) for more information and possible exceptions.
 {: important}
 
 You must also:
@@ -54,3 +54,4 @@ When you set up your Cloud Object Storage bucket, you should be sure to use {{si
 {: #next-steps}
 
 * [Audit logging of application provider events and SIEM](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit-provider)
+

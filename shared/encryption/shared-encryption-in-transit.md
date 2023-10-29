@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -27,7 +27,7 @@ As an application provider, you must:
 * Never send confidential information with URL parameters.
 * Use HTTPS for all connections from the web. HTTP connections must be refused or redirected to HTTPS.
 
-The requirement to encrypt data in transit also applies to traffic within your VPCs. This might be traffic from one virtual server instance to another, or from one {{site.data.keyword.openshiftshort}} container to another {{site.data.keyword.openshiftshort}} container. For containers, one option to consider is that with [Service Mesh on {{site.data.keyword.openshiftshort}}](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh) you can [enable mTLS between containers](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh#openshift-service-mesh-secure_services) without code changes.
+ The requirement to encrypt data in transit also applies to traffic within your VPCs. This might be traffic from one virtual server instance to another, or from one {{site.data.keyword.openshiftshort}} container to another. If using containers, you might consider [{{site.data.keyword.openshiftshort}} Service Mesh](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh) which can [enable mTLS between containers](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh#openshift-service-mesh-secure_services) without code changes.
 {: important}
 
 ## TLS requirements
@@ -104,3 +104,4 @@ In addition, you must follow the guidance found in Appendix A: Cryptographic Req
 {: #shared-encryption-in-transit-next-steps}
 
 * [Business continuity and disaster recovery](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr)
+

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-10-01"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -34,7 +34,7 @@ For more information, see:
 
 * [Interconnecting your VPC that uses {{site.data.keyword.cloud_notm}} offerings](/docs/vpc?topic=vpc-interconnectivity)
 * [Getting started with {{site.data.keyword.dl_short}}](/docs/dl/getting-started?topic=dl-get-started-with-ibm-cloud-dl)
-* [Ordering {{site.data.keyword.dl_full_notm}} Dedicated](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-dedicated)
+* [Ordering {{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-dedicated)
 * [Integrating with Virtual Private Endpoint for VPC](/docs/dl?topic=dl-vpe-for-ibm-cloud-direct-link)
 
 
@@ -77,3 +77,4 @@ The third option for connectivity for your operators is to use a full tunnel cli
 {: #next-steps}
 
 * [Performing operator actions through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion)
+

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -50,7 +50,7 @@ Key features of their approach include:
 - Placing management tools in virtual servers within their {{site.data.keyword.cloud_notm}} account.
 - Using the following services on {{site.data.keyword.cloud_notm}}:
     - IAM for identity and access management
-    - {{site.data.keyword.atracker_short}} event routing to collect {{site.data.keyword.cloud_notm}} audit events
+    - {{site.data.keyword.atracker_short}} to collect {{site.data.keyword.cloud_notm}} audit events
     - {{site.data.keyword.cos_short}} for backup and archiving data
 
 ## Multinational bank
@@ -78,3 +78,4 @@ Highlights of their architecture include the following:
 
 - [{{site.data.keyword.satelliteshort}} shared responsibility model](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-shared-responsibilities)
 - [{{site.data.keyword.satelliteshort}} architecture best practices](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices)
+

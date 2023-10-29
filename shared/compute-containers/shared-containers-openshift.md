@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-09-30"
+  years: 2020, 2023
+lastupdated: "2023-09-18"
 
 keywords:
 
@@ -29,9 +29,9 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 
 3. Create your {{site.data.keyword.openshiftshort}} cluster. For more information, see [Creating a {{site.data.keyword.openshiftshort}} cluster in your VPC](/docs/openshift?topic=openshift-vpc_rh_tutorial).
 
-4. Install [Service Mesh on {{site.data.keyword.openshiftshort}}](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh) which is based on the open source [Istio](https://istio.io/){: external} project.
+4. Install [{{site.data.keyword.openshiftshort}} Service Mesh](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh) which is based on the open source [Istio](https://istio.io/){: external} project.
 
-   Two of the most important reasons for using Service Mesh is to enable you to:
+   Two of the most important reasons for using {{site.data.keyword.openshiftshort}} Service Mesh is to enable you to:
 
    * Encrypt network traffic between microservices running in your cluster. See [Data encryption in transit](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit) and [enable mTLS between containers](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh#openshift-service-mesh-secure_services) for more details.
    * Implement gateways to specify which traffic you want to enter or leave the mesh (and deny all traffic by default). You can use an egress gateway to control/allowlist all necessary endpoints and domains that your application needs to connect to. For examples, see [Expose the app with the Istio Ingress Gateway and Route](/docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh#openshift-service-mesh-ingress_gateway_route) and [Perform traffic management](docs/solution-tutorials?topic=solution-tutorials-openshift-service-mesh#openshift-service-mesh-traffic_management)
@@ -73,3 +73,4 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 If using the VPC reference architecture, see [Storage for VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-storage).
 
 If using the {{site.data.keyword.satelliteshort}} reference architecture, see [Storage for {{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-storage).
+

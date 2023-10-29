@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-09-18"
 
 keywords: 
 
@@ -57,16 +57,17 @@ When properly configured and managed, services that are Financial Services Valid
 
 
 
+
+
 | Category | Required services | Optional services |
 |----------|-------------------|-------------------|
 | {{site.data.keyword.satelliteshort}}  | - [{{site.data.keyword.satellitelong}}](#services-core-satellite) |  |
 | Containers | - [{{site.data.keyword.openshiftlong}}](#services-containers-openshift) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registrylong}}](#services-containers-registry) | |
 | Storage  | - [{{site.data.keyword.cos_full}}](#services-storage-cos)   |    |
-| Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n - [{{site.data.keyword.appid_full}}](#services-security-app-id)   |
+| Security  | - [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n - [{{site.data.keyword.appid_full}}](#services-security-app-id) |
 | Logging and monitoring  | - [{{site.data.keyword.atracker_full}}](#services-logging-platform-events)[^tabletext] \n - [{{site.data.keyword.compliance_full}}](#services-scc) | |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams)       |
-| Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started)  |
-| Databases  |  | - [{{site.data.keyword.ihsdbaas_mongodb_full}}](#services-databases-ihsdbaas_mongodb) \n - [{{site.data.keyword.ihsdbaas_postgresql_full}}](#services-databases-ihsdbaas_postgresql)  |
+| Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) |
 {: caption="Table 2. Required and optional services for {{site.data.keyword.satelliteshort}} reference architecture" caption-side="top"}
 
 [^tabletext]: {{site.data.content.event-routing-fs-validation}}
@@ -103,13 +104,13 @@ Several [{{site.data.keyword.satelliteshort}}-enabled services](/docs/satellite?
 #### {{site.data.keyword.openshiftlong_notm}} 
 {: #services-containers-openshift}
 
-You use [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-roks-overview) to run your application workloads in your {{site.data.keyword.satelliteshort}} location. {{site.data.content.service-description-openshift}}
+You use {{site.data.keyword.openshiftlong_notm}} to run your application workloads in your {{site.data.keyword.satelliteshort}} location. [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-roks-overview) is a managed offering to create your own {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.openshiftlong_notm}} provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and rollbacks, and secret and configuration management for your apps. Combined with an intuitive user experience, built-in security and isolation, and advanced tools to secure, manage, and monitor your cluster workloads, you can rapidly deliver highly available and secure containerized apps in the public cloud.
 
 
 #### {{site.data.keyword.registrylong_notm}} 
 {: #services-containers-registry}
 
-{{site.data.content.service-description-container-registry}}
+[{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_overview) provides a multi-tenant, highly available, scalable, and encrypted private image registry that is hosted and managed by {{site.data.keyword.IBM}}. When you push images to Container Registry, you benefit from the built-in Vulnerability Advisor features that scan for potential security issues and vulnerabilities.
 
 ### Storage
 {: #services-storage}
@@ -118,7 +119,7 @@ You use [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshi
 #### {{site.data.keyword.cos_full_notm}}
 {: #services-storage-cos}
 
-{{site.data.content.service-description-cloud-object-storage-1}}
+[{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage) stores encrypted and dispersed data across multiple geographic locations. {{site.data.keyword.cos_short}} is available with three types of resiliency: Cross Region, Regional, and Single Data Center. Cross Region provides higher durability and availability than using a single region at the cost of slightly higher latency. Regional service reverses those tradeoffs, and distributes objects across multiple availability zones within a single region. If a given region or availability zone is unavailable, the object store continues to function without impediment. Single Data Center distributes objects across multiple machines within the same physical location.
 
 {{site.data.content.service-description-cloud-object-storage-2}}
 
@@ -129,13 +130,13 @@ You use [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshi
 #### {{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}
 {: #services-security-hpcs}
 
-{{site.data.content.service-description-hpcs}}
+[{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-overview) is a dedicated key management service and hardware security module (HSM) based on {{site.data.keyword.cloud_notm}}. This service allows you to take the ownership of the cloud HSM to fully manage your encryption keys and to perform cryptographic operations using Keep Your Own Key (KYOK). {{site.data.keyword.hscrypto}} is also the only service in the cloud industry that is built on FIPS 140-2 Level 4-certified hardware.
 
 
 #### {{site.data.keyword.appid_full_notm}} (optional)
 {: #services-security-app-id}
 
-{{site.data.content.service-description-app-id}}
+[{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-about) helps developers to easily add authentication to their web and mobile apps with few lines of code, and secure their cloud-native applications and services on {{site.data.keyword.cloud_notm}}.
 
 ### Logging and monitoring
 {: #services-logging-monitoring}
@@ -152,7 +153,7 @@ You use [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshi
 #### {{site.data.keyword.compliance_long}}
 {: #services-scc}
 
-{{site.data.content.service-description-scc}}
+With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-getting-started) you can embed security checks into your every day workflows to help monitor for security and compliance. By monitoring for risks, you can identify security vulnerabilities and quickly work to mitigate the impact and fix the issue. By using {{site.data.keyword.compliance_short}} along with [external integrations](/security-compliance/integrations) (such as, OpenShift Compliance Operator (OSCO), Tanium, NeuVector, and so on), you can build a robust approach for monitoring for security and compliance issues. 
 
 ### Integration
 {: #satellite-architecture-optional-services-integration}
@@ -161,32 +162,11 @@ You use [{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshi
 #### {{site.data.keyword.IBM_notm}} {{site.data.keyword.messagehub}} for {{site.data.keyword.cloud_notm}} (optional)
 {: #services-integration-event-streams}
 
-{{site.data.content.service-description-event-streams-1}}
+{{site.data.keyword.messagehub}} is a high-throughput message bus built with Apache Kafka. It is optimized for event ingestion into {{site.data.keyword.cloud_notm}} and event stream distribution between your services and applications.
 
 {{site.data.content.service-description-event-streams-2}}
 
 {{site.data.content.service-description-event-streams-3-unordered-list}}
-
-{{site.data.content.service-description-event-streams-4}}
-
-### Databases
-{: #satellite-architecture-optional-services-databases}
-
-
-#### {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} (optional) 
-{: #services-databases-ihsdbaas_mongodb}
-
-{{site.data.content.service-description-ihsdbaas-mongodb-1}}
-
-{{site.data.content.service-description-ihsdbaas-mongodb-2}}
-
-
-#### {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} (optional) 
-{: #services-databases-ihsdbaas_postgresql}
-
-{{site.data.content.service-description-ihsdbaas-postgresql-1}}
-
-{{site.data.content.service-description-ihsdbaas-postgresql-2}}
 
 ## {{site.data.keyword.satelliteshort}} components in {{site.data.keyword.cloud_notm}}
 {: #components-ibm-cloud}
@@ -282,3 +262,4 @@ The following table describes these components in more detail.
 - [{{site.data.keyword.satelliteshort}} use cases](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-use-cases)
 - [{{site.data.keyword.satelliteshort}} shared responsibility model](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-shared-responsibilities)
 - [{{site.data.keyword.satelliteshort}} architecture best practices](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices)
+

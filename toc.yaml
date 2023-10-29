@@ -11,7 +11,6 @@ toc:
     path: framework-financial-services
     description: Financial institutions can confidently host their mission-critical applications in the cloud and transact quickly and efficiently.
     label: IBM Cloud Framework for Financial Services
-
   entries:
   - navgroup:
       id: overview
@@ -23,7 +22,6 @@ toc:
           - best-practices/best-practices-saas.md
           - best-practices/best-practices-software.md
       - release-notes.md
-
   - navgroup:
       id: architecture
       topics:
@@ -47,7 +45,6 @@ toc:
           - satellite/learn/satellite-architecture-responsibilities.md
           - satellite/learn/satellite-architecture-best-practices.md
       - vmware/vmware-overview.md
-
   - navgroup: 
       id: tutorial
       topics: 
@@ -69,7 +66,6 @@ toc:
               label: Bastion host
               topics:
               - vpc/tutorials/bastion-host/vpc-architecture-connectivity-bastion-tutorial-teleport.md
-  
   - navgroup:
       id: howto
       topics:
@@ -146,12 +142,10 @@ toc:
           - satellite/satellite-architecture-high-availability.md
       - shared/shared-development-processes.md
       - shared/shared-responsibilities.md
-
   - navgroup:
       id: reference
       topics: 
       - onboarding-to-catalog.md
-
   - navgroup:
       id: help
       topics: 
