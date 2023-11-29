@@ -25,11 +25,11 @@ Within {{site.data.keyword.cloud_notm}}, you must encrypt data at rest using enc
 
 With {{site.data.keyword.hscrypto}} you can take ownership of the cloud HSM to fully manage your encryption keys and to perform cryptographic operations by using the [Keep Your Own Key (KYOK)](/docs/hs-crypto?topic=hs-crypto-understand-concepts#kyok-concept) concept. This means you have full control and authority over encryption keys. No one except you (not even {{site.data.keyword.IBM_notm}}) has access to your encryption keys.
 
-Some organizations require the use of a dedicated HSM where the device can be initialized by their cryptography specialists. We offer [{{site.data.keyword.hscrypto}} with {[BYOHSM]}](/docs/hs-crypto?topic=hs-crypto-introduce-bring-your-own-hsm) to enable those organizations to manage their HSM over the network at a remote location. This solution does use a key manager that service that has been Financial Services Validated but as IBM has no control over the {[BYOHSM]}, this solution as a whole isn't Financial Services Validated.
+Some organizations require the use of a dedicated HSM where the device can be initialized by their cryptography specialists. We offer [{{site.data.keyword.hscrypto}} with Bring Your Own HSM](/docs/hs-crypto?topic=hs-crypto-introduce-bring-your-own-hsm) to enable those organizations to manage their HSM over the network at a remote location. This solution does use a key manager that service that has been Financial Services Validated but as IBM has no control over the Bring Your Own HSM, this solution as a whole isn't Financial Services Validated.
 
 Where you have systems with a medium or low security categorization, you have the option of using {{site.data.keyword.keymanagementservicefull}} for your key management. {{site.data.keyword.keymanagementserviceshort}} is a multi-tenant cloud service using the [Bring Your Own Key (BYOK)](/docs/key-protect?topic=key-protect-manage-secrets-ibm-cloud#key-features) concept. Many capabilities are common between {{site.data.keyword.hscrypto}} and {{site.data.keyword.keymanagementserviceshort}} but the underlying security implementation is different as show in Table 1 below.
 
-| | {{site.data.keyword.hscrypto}} | {{site.data.keyword.hscrypto}} with {[BYOHSM]} [^kms-byohsm] | {{site.data.keyword.keymanagementserviceshort}} |
+| | {{site.data.keyword.hscrypto}} | {{site.data.keyword.hscrypto}} with Bring Your Own HSM [^kms-byohsm] | {{site.data.keyword.keymanagementserviceshort}} |
 |----|----|------|----|
 | Cloud REST API | X | X | X |
 | Multi-Tenant Key Manager | | | X |
@@ -43,9 +43,9 @@ Where you have systems with a medium or low security categorization, you have th
 | UKO Key Generation [^kms-uko] | X | | |
 {: caption="Table 1. Key Features for {{site.data.keyword.cloud_notm}} Key Management}
 
-Note 1: Capability depends on functionality of {[BYOHSM]}.
+Note 1: Capability depends on functionality of Bring Your Own HSM.
 
-[^kms-byohsm]: HSM capabilities depend on the technology provided for the {[BYOHSM]} component.
+[^kms-byohsm]: HSM capabilities depend on the technology provided for the Bring Your Own HSM component.
 
 [^kms-uko]: UKO only supports {{site.data.keyword.hscrypto}} using an {{site.data.keyword.cloud_notm}} HSM.
 
@@ -76,25 +76,25 @@ For more background information and considerations, see:
 * [Components and concepts](/docs/hs-crypto?topic=hs-crypto-understand-concepts)
 * [Bringing your encryption keys to the cloud](/docs/hs-crypto?topic=hs-crypto-importing-keys)
 
-### Setting up {{site.data.keyword.hscrypto}} with {[BYOHSM]}
+### Setting up {{site.data.keyword.hscrypto}} with Bring Your Own HSM
 {: #setup-hpcs-byohsm}
 
 As an alternative to using the in-built FIPS 140-2 Level 4 Cloud HSM for {{site.data.keyword.hscrypto}}, there is an option to Bring Your Own Hardware Security Module (BYOHSM).  Details on the integration and the configuration is contained in the [Introducing Bring Your Own HSM](/docs/hs-crypto?topic=hs-crypto-introduce-bring-your-own-hsm) documentation.
 
-The {[BYOHSM]} option provides you with the the benefit of being able to physically initialize your own HSM device. We understands for some organizations this is a mandatory requirement and this solution will meet that requirement.
+The Bring Your Own HSM option provides you with the the benefit of being able to physically initialize your own HSM device. We understands for some organizations this is a mandatory requirement and this solution will meet that requirement.
 
-However to operational characteristics of {{site.data.keyword.hscrypto}} changes. Here are a few things to keep in mind when selecting to use the {[BYOHSM]} option:
+However to operational characteristics of {{site.data.keyword.hscrypto}} changes. Here are a few things to keep in mind when selecting to use the Bring Your Own HSM option:
 
-1. The {[BYOHSM]} may be FIPS 140-2 Level 3, which is a lower security level than the Cloud HSM used as default by {{site.data.keyword.hscrypto}}.
-2. With the standard {{site.data.keyword.hscrypto}} solution there is negligible latency between the {{site.data.keyword.hscrypto}} key manager and Cloud HSM as they're within the same system. Ensure you assess any impact from increased latency between the HPCS key manager and your {[BYOHSM]}.
-3. With the additional network hops between the {{site.data.keyword.hscrypto}} instance and the {[BYOHSM]} there may be a reduction in workload resilience. Review and understand the impact this change may have to your workload resiliency.
-4. Ensure you identify an effective cold start sequence for HPCS connecting to your {[BYOHSM]} and the services that depend on {{site.data.keyword.hscrypto}} key management. For example, if the the connection of HPCS to the {[BYOHSM]} is through a firewall appliance using block storage with a key from {{site.data.keyword.hscrypto}}, you may get into a situation where the {[BYOHSM]} can't communicate from the firewall not being able to decrypt the block storage. This is otherwise known as the "keys locked in the car" scenario.
+1. The Bring Your Own HSM may be FIPS 140-2 Level 3, which is a lower security level than the Cloud HSM used as default by {{site.data.keyword.hscrypto}}.
+2. With the standard {{site.data.keyword.hscrypto}} solution there is negligible latency between the {{site.data.keyword.hscrypto}} key manager and Cloud HSM as they're within the same system. Ensure you assess any impact from increased latency between the HPCS key manager and your Bring Your Own HSM.
+3. With the additional network hops between the {{site.data.keyword.hscrypto}} instance and the Bring Your Own HSM there may be a reduction in workload resilience. Review and understand the impact this change may have to your workload resiliency.
+4. Ensure you identify an effective cold start sequence for HPCS connecting to your Bring Your Own HSM and the services that depend on {{site.data.keyword.hscrypto}} key management. For example, if the the connection of HPCS to the Bring Your Own HSM is through a firewall appliance using block storage with a key from {{site.data.keyword.hscrypto}}, you may get into a situation where the Bring Your Own HSM can't communicate from the firewall not being able to decrypt the block storage. This is otherwise known as the "keys locked in the car" scenario.
 
 For more background information and considerations, see:
 
-* [Introducing {[BYOHSM]}](/docs/hs-crypto?topic=hs-crypto-introduce-bring-your-own-hsm)
-* [Setting up {[BYOHSM]}](/docs/hs-crypto?topic=hs-crypto-deploy-hsm-for-byohsm)
-* [Managing your keys with {[BYOHSM]} in {{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-tutorial-byohsm)
+* [Introducing Bring Your Own HSM](/docs/hs-crypto?topic=hs-crypto-introduce-bring-your-own-hsm)
+* [Setting up Bring Your Own HSM](/docs/hs-crypto?topic=hs-crypto-deploy-hsm-for-byohsm)
+* [Managing your keys with Bring Your Own HSM in {{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-tutorial-byohsm)
 
 ### Setting up {{site.data.keyword.keymanagementserviceshort}}
 {: #setup-keyprotect}
