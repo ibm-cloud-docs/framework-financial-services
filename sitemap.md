@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-11-01"
+lastupdated: "2023-11-29"
 
 keywords: 
 
@@ -865,9 +865,11 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [Setting up {{site.data.keyword.hscrypto}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-hpcs)
 
-* [Data encryption at rest in {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#shared-encryption-at-rest-satellite-location)
+    * [Setting up {{site.data.keyword.hscrypto}} with {[BYOHSM]}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-hpcs-byohsm)
 
-* [Integrating {{site.data.keyword.hscrypto}} with other {{site.data.keyword.cloud_notm}} services](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#related-resources)
+    * [Setting up {{site.data.keyword.keymanagementserviceshort}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-keyprotect)
+
+* [Data encryption at rest in {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#shared-encryption-at-rest-satellite-location)
 
 * [Related controls in {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#related-controls)
 
