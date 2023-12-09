@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-11-29"
+lastupdated: "2023-12-09"
 
 keywords: 
 
@@ -865,7 +865,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [Setting up {{site.data.keyword.hscrypto}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-hpcs)
 
-    * [Setting up {{site.data.keyword.hscrypto}} with {[BYOHSM]}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-hpcs-byohsm)
+    * [Setting up {{site.data.keyword.hscrypto}} with Bring Your Own HSM](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-hpcs-byohsm)
 
     * [Setting up {{site.data.keyword.keymanagementserviceshort}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-keyprotect)
 
