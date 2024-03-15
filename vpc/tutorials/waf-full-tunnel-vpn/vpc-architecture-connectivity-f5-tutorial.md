@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-02-22"
+lastupdated: "2024-03-15"
 
 keywords: 
 
@@ -78,12 +78,12 @@ You need the following items to deploy and configure this reference architecture
      * If you are using BIG-IP for full tunnel VPN and web application firewall, use a minimum profile of `cx2-8x16`.
    * **tmos_image_name**: `bigip-16-1`
 3. To encrypt the boot disk of the F5 you must enter a value for the optional parameter encryption_key_crn . To get the value for that parameter:
-    a. In the IBM Cloud console, go to your HPCS instance page
-    b. On the left side of the page select 'KMS Keys'
-    c. Find which key you use to encrypt disks. SLZ normally names this key "vsi-volume"
-    d. Click on the three dot menu on the right side of the row containing your key
-    e. Select View Key Details
-    f. Copy the entire contents of the 'Cloud Resource Name' to your clipboard and use it to populate the value for `encryption_key_crn`
+   1. In the IBM Cloud console, go to your HPCS instance page
+   2. On the left side of the page select 'KMS Keys'
+   3. Find which key you use to encrypt disks. SLZ normally names this key "vsi-volume"
+   4. Click on the three dot menu on the right side of the row containing your key
+   5. Select View Key Details
+   6. Copy the entire contents of the 'Cloud Resource Name' to your clipboard and use it to populate the value for `encryption_key_crn`
 4. When you click **Install**, an {{site.data.keyword.bplong_notm}} workspace is created and initialized.
 5. Click **Generate Plan** in the top right.
 6. After the plan is generated successfully, click **Apply Plan**.

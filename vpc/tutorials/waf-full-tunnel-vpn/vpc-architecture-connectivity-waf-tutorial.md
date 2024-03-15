@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-03-23"
+  years: 2020, 2024
+lastupdated: "2024-03-15"
 
 keywords: 
 
@@ -176,10 +176,6 @@ When the edge application is working, it is important to prevent users from usin
 1. Either upload your certificate or paste your certificate under the option **Certificate Source**.
 1. Click **Import**.
 
-
-BIG-IP feature enhancement for HPCS integration is being worked on.
-{: note}
-
 ## Import server-side intermediate certificates to BIG-IP
 {: #server-certs-import}
 {: step}
@@ -265,6 +261,13 @@ For each server certificate that you imported, create a server SSL profile by co
    * **Server Certificate**: **require...**
    * **Trusted Certificate Authorities**: Set to your intermediate server certificate
 1. Click **Finished**.
+
+
+### Setting Up the HPCS integration with F5
+{: #integrate-f5-with-hpcs}
+{: step}
+
+Transport Layer Security (TLS) secures the communication between clients and servers, safeguarding against possible hacking attempts and man-in-the-middle attacks. TLS offloading involves employing a Hardware Security Module (HSM) to handle TLS encryption and decryption tasks instead of relying on the web server. This approach notably diminishes the risk of key compromise since TLS encryption keys are stored within FIPS 140-2 Level 4 validated HSMs. F5 Big IP offers configuration options through through which it can be integrated with HPCS for TLS offloading. To configure the HPCS to manage encryption keys and perform cryptographic operations in Big IP F5, see F5 docs on [Setting Up the Network HSM](https://techdocs.f5.com/en-us/bigip-16-1-2/big-ip-system-and-net-hsm-implementation/setting-up-the-network-hsm.html)
 
 
 ## Create a BIG-IP virtual server
