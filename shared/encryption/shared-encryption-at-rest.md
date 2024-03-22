@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-03-07"
+lastupdated: "2024-03-22"
 
 keywords:
 
@@ -12,15 +12,17 @@ subcollection: framework-financial-services
 
 {{site.data.keyword.attribute-definition-list}}
 
+
+
 # Data encryption at rest
 {: #shared-encryption-at-rest}
 
 
 Protecting data against unauthorized disclosure, modification or destruction throughout the data lifecycle is of paramount importance in the {{site.data.keyword.cloud_notm}} for Financial Services. Cryptographic controls must be in place in all regions and availability zones to protect the confidentiality and integrity of data. Data at rest is to always be encrypted using your keys.
-
-
-
 {: shortdesc}
+
+
+
 
 ## Data encryption at rest in {{site.data.keyword.cloud_notm}}
 {: #shared-encryption-at-rest-ibm-cloud}
@@ -44,7 +46,11 @@ You must ensure that:
 ### Setting up {{site.data.keyword.hscrypto}}
 {: #setup-hpcs}
 
+
+
+
 * Provision and configure an instance of {{site.data.keyword.hscrypto}}. See [Getting started with {{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started) for specific instructions.
+
 
 For the highest level of security, you should use smart cards when initializing {{site.data.keyword.hscrypto}}. See [Initializing service instances by using smart cards and the Management Utilities](/docs/hs-crypto?topic=hs-crypto-initialize-hsm-management-utilities) for more details.
 {: tip}
