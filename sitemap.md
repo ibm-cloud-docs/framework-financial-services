@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-03-22"
+lastupdated: "2024-04-10"
 
 keywords: 
 
@@ -867,7 +867,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [Setting up {{site.data.keyword.hscrypto}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-hpcs)
 
-* [Data encryption at rest in {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#shared-encryption-at-rest-satellite-location)
+    * [Data encryption at rest in {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#shared-encryption-at-rest-satellite-location)
 
 * [Integrating {{site.data.keyword.hscrypto}} with other {{site.data.keyword.cloud_notm}} services](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#related-resources)
 

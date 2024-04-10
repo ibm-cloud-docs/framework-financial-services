@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-03-22"
+lastupdated: "2024-04-10"
 
 keywords:
 
@@ -28,7 +28,7 @@ Protecting data against unauthorized disclosure, modification or destruction thr
 {: #shared-encryption-at-rest-ibm-cloud}
 
 
-Within {{site.data.keyword.cloud_notm}}, you must use [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-overview) to manage encryption keys. {{site.data.keyword.hscrypto}} is a dedicated key management service and hardware security module (HSM). {{site.data.keyword.hscrypto}} is the only service in the cloud industry that is built on FIPS 140-2 Level 4-certified hardware.
+Within {{site.data.keyword.cloud_notm}}, you must use [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-overview) to manage encryption keys. {{site.data.keyword.hscrypto}} is a dedicated key management service and hardware security module (HSM). {{site.data.keyword.hscrypto}} is the only service in the cloud industry that is built on FIPS 140-2 Level 4 certified hardware.
 
 With {{site.data.keyword.hscrypto}} you can take ownership of the cloud HSM to fully manage your encryption keys and to perform cryptographic operations by using [Keep Your Own Key (KYOK)](/docs/hs-crypto?topic=hs-crypto-understand-concepts#kyok-concept). This means you have full control and authority over encryption keys. No one except you (not even {{site.data.keyword.IBM_notm}}) has access to your encryption keys.
 
@@ -64,8 +64,10 @@ For more background information and considerations, see:
 
 
 
-## Data encryption at rest in {{site.data.keyword.satelliteshort}} location
+### Data encryption at rest in {{site.data.keyword.satelliteshort}} location
 {: #shared-encryption-at-rest-satellite-location}
+
+In an {{site.data.keyword.cloud_notm}} {{site.data.keyword.satelliteshort}} location, the cloud services must use {{site.data.keyword.keymanagementserviceshort}} on {{site.data.keyword.satelliteshort}} to connect to a user owned and managed hardware security module (HSM) for the encryption of data at rest. Consult [About Key Protect on Satellite](/docs/key-protect?topic=key-protect-satellite-about) for specific information on the dedicated service.
 
 {{site.data.content.encryption-at-rest-in-satellite-location-important}}
 
