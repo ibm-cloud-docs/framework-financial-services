@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-04-10"
+lastupdated: "2024-04-11"
 
 keywords: 
 
@@ -380,7 +380,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [Create a server SSL profile](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#ssl-profiles-server)
 
-    * [Setting Up the HPCS integration with F5](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#integrate-f5-with-hpcs)
+* [Setting Up the HPCS integration with F5](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#integrate-f5-with-hpcs)
 
 * [Create a BIG-IP virtual server](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#create-virtual-server)
 

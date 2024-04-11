@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-03-15"
+lastupdated: "2024-04-11"
 
 keywords: 
 
@@ -189,10 +189,6 @@ For each server certificate that you have, complete the following actions:
 1. Either upload your certificate or paste your certificate under the option **Certificate Source**.
 1. Click **Import**.
 
-
-BIG-IP feature enhancement for HPCS integration is being worked on.
-{: note}
-
 ## Configure ciphers
 {: #f5-waf-ciphers}
 {: step}
@@ -263,7 +259,7 @@ For each server certificate that you imported, create a server SSL profile by co
 1. Click **Finished**.
 
 
-### Setting Up the HPCS integration with F5
+## Setting Up the HPCS integration with F5
 {: #integrate-f5-with-hpcs}
 {: step}
 
