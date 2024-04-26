@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-10-29"
+  years: 2020, 2024
+lastupdated: "2024-04-26"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -25,7 +25,7 @@ subcollection: framework-financial-services
 The {{site.data.keyword.framework-fs_notm}} consists of:
 
 * A comprehensive [set of control requirements](#framework-control-requirements) designed to help address the security requirements and regulatory compliance obligations of financial institutions and cloud best practices. The cloud best practices include a shared responsibility model across financial institutions, application providers, and {{site.data.keyword.cloud_notm}}.
-* Detailed [control-by-control guidance](#framework-guidance) for implementation and supporting evidence to help address the security and regulatory requirements of the financial industry. 
+* Detailed [control-by-control guidance](#framework-guidance) for implementation and supporting evidence to help address the security and regulatory requirements of the financial industry.
 * [Reference architectures](#framework-reference-architectures) designed to facilitate compliance with the control requirements. In addition, resources are provided to [deploy infrastructure as code](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code) in order to automate deployment and configuration of the reference architectures.
 * Tools and {{site.data.keyword.IBM_notm}} services, such as [{{site.data.keyword.compliance_full}}](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance), to enable parties to efficiently and effectively monitor compliance, remediate issues, and generate evidence of compliance.
 * Ongoing governance of the framework documentation that considers new and changing regulations, as well as bank and public cloud requirements.
@@ -86,7 +86,11 @@ In addition, prescriptive [deployment and configuration guidance](/docs/framewor
 ## Becoming {{site.data.keyword.cloud_notm}} for Financial Services Validated
 {: #becoming-fs-validated}
 
+
 {{site.data.keyword.cloud_notm}} for Financial Services Validated designates that an {{site.data.keyword.cloud_notm}} service or ecosystem partner service has evidenced compliance to the controls of the {{site.data.keyword.framework-fs_notm}} and can be used to build solutions that might themselves be validated. Ecosystem partners who are interested in being {{site.data.keyword.cloud_notm}} for Financial Services Validated are required to complete a CIO template for evaluation by {{site.data.keyword.IBM_notm}} and to comply with the requirements of the {{site.data.keyword.framework-fs_notm}}.
+
+
+
 
 Through the shared responsibility model of the {{site.data.keyword.framework-fs_notm}} and the surrounding standardized processes, financial institutions and ecosystem partners get benefits such as:
 
@@ -105,4 +109,3 @@ If you plan to provide SaaS:
 * Explore the [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) and deployment guidance
 
 If you plan to provide software that another organization will operate, review [Best practices for software](/docs/framework-financial-services?topic=framework-financial-services-best-practices-software).
-
