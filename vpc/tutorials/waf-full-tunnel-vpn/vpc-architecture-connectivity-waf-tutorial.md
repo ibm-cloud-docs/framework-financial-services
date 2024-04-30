@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-04-11"
+lastupdated: "2024-04-30"
 
 keywords: 
 
@@ -14,7 +14,7 @@ account-plan: paid
 completion-time: 4h
 ---
 
-{{site.data.keyword.attribute-definition-list}}
+{{site.data.keyword.attribute-definition-list}} {:external: target="_blank" .external}
 
 # Setting up a web application firewall with F5 BIG-IP
 {: #vpc-architecture-connectivity-waf-tutorial}
@@ -263,7 +263,7 @@ For each server certificate that you imported, create a server SSL profile by co
 {: #integrate-f5-with-hpcs}
 {: step}
 
-Transport Layer Security (TLS) secures the communication between clients and servers, safeguarding against possible hacking attempts and man-in-the-middle attacks. TLS offloading involves employing a Hardware Security Module (HSM) to handle TLS encryption and decryption tasks instead of relying on the web server. This approach notably diminishes the risk of key compromise since TLS encryption keys are stored within FIPS 140-2 Level 4 validated HSMs. F5 Big IP offers configuration options through through which it can be integrated with HPCS for TLS offloading. To configure the HPCS to manage encryption keys and perform cryptographic operations in Big IP F5, see F5 docs on [Setting Up the Network HSM](https://techdocs.f5.com/en-us/bigip-16-1-2/big-ip-system-and-net-hsm-implementation/setting-up-the-network-hsm.html)
+Transport Layer Security (TLS) secures the communication between clients and servers, safeguarding against possible hacking attempts and man-in-the-middle attacks. TLS offloading involves employing a Hardware Security Module (HSM) to handle TLS encryption and decryption tasks instead of relying on the web server. This approach notably diminishes the risk of key compromise since TLS encryption keys are stored within FIPS 140-2 Level 4 validated HSMs. F5 Big IP offers configuration options through through which it can be integrated with HPCS for TLS offloading. To configure the HPCS to manage encryption keys and perform cryptographic operations in Big IP F5, see F5 docs on [Setting Up the Network HSM](https://techdocs.f5.com/en-us/bigip-16-1-2/big-ip-system-and-net-hsm-implementation/setting-up-the-network-hsm.html){:external}.
 
 
 ## Create a BIG-IP virtual server
