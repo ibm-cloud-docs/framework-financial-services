@@ -16,7 +16,8 @@ toc:
       id: overview
       topics:
       - about.md
-      - topicgroup: 
+      - system-security-categorization.md
+      - topicgroup:
           label: Best practices and requirements
           topics:
           - best-practices/best-practices-saas.md
@@ -26,7 +27,7 @@ toc:
       id: architecture
       topics:
       - reference-architecture-overview.md
-      - topicgroup: 
+      - topicgroup:
           label: IBM Virtual Private Cloud (VPC) architecture
           topics:
           - topic: vpc/learn/vpc-architecture-overview.md
@@ -45,13 +46,13 @@ toc:
           - satellite/learn/satellite-architecture-responsibilities.md
           - satellite/learn/satellite-architecture-best-practices.md
       - vmware/vmware-overview.md
-  - navgroup: 
+  - navgroup:
       id: tutorial
-      topics: 
+      topics:
       - topicgroup:
           label: Bring your own solutions for VPC reference architecture samples
-          topics: 
-          - topicgroup: 
+          topics:
+          - topicgroup:
               label: Web application firewall and full-tunnel VPN
               topics:
               - vpc/tutorials/waf-full-tunnel-vpn/vpc-architecture-connectivity-f5-tutorial.md
@@ -71,12 +72,12 @@ toc:
       topics:
       - topicgroup:
           label: General deployment and configuration information
-          topics: 
+          topics:
           - shared/shared-deployment-overview.md
           - shared/shared-infrastructure-as-code.md
-      - topicgroup: 
+      - topicgroup:
           label: Accounts, identity management, and access control
-          topics: 
+          topics:
           - shared/accounts/shared-account-setup.md
           - shared/accounts/shared-account-organization.md
           - shared/accounts/shared-account-access-management.md
@@ -111,7 +112,7 @@ toc:
           - vpc/compute-containers/vpc-architecture-compute-vsi.md
           - shared/compute-containers/shared-containers-openshift.md
       - topicgroup:
-          label: Storage 
+          label: Storage
           topics:
           - vpc/vpc-architecture-storage.md
           - satellite/satellite-architecture-storage.md
@@ -124,7 +125,7 @@ toc:
           - shared/logging-monitoring/shared-monitoring-compliance.md
           - shared/logging-monitoring/shared-monitoring-operational.md
       - topicgroup:
-          label: Data encryption 
+          label: Data encryption
           topics:
           - shared/encryption/shared-encryption-at-rest.md
           - shared/encryption/shared-encryption-in-transit.md
@@ -144,10 +145,10 @@ toc:
       - shared/shared-responsibilities.md
   - navgroup:
       id: reference
-      topics: 
+      topics:
       - onboarding-to-catalog.md
   - navgroup:
       id: help
-      topics: 
+      topics:
       - faqs.md
       - sitemap.md

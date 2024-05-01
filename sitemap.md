@@ -41,6 +41,31 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-about#next-steps)
 
 
+## Security categorization, functionality and assurance
+{: #sitemap_security_categorization_functionality_and_assurance}
+
+
+[Security categorization, functionality and assurance](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization)
+
+* [Framework for security categorization](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization-framework)
+
+* [Using FIPS 199 guidelines](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization-usage)
+
+    * [Example 1: Payment processing system](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization-usage-example-1)
+
+    * [Example 2: Training system](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization-usage-example-2)
+
+    * [Example 3: Back-end of mobile application](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization-usage-example-3)
+
+    * [Example 4: Fraud management system](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization-usage-example-4)
+
+    * [Example 5: Network security system](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization-usage-example-5)
+
+* [Functionality and assurance](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#system-security-categorization-functionality-and-assurance)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization#next-steps)
+
+
 ## Best practices and requirements
 {: #sitemap_best_practices_and_requirements}
 
