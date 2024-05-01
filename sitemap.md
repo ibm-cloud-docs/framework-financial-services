@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-10-29"
+  years: 2020, 2024
+lastupdated: "2024-04-30"
 
 keywords: 
 
@@ -379,6 +379,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
     * [Create a client SSL profile](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#ssl-profiles-client)
 
     * [Create a server SSL profile](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#ssl-profiles-server)
+
+* [Setting Up the HPCS integration with F5](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#integrate-f5-with-hpcs)
 
 * [Create a BIG-IP virtual server](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial#create-virtual-server)
 
