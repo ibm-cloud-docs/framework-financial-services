@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-01"
 
 keywords:
 
@@ -86,11 +86,7 @@ In addition, prescriptive [deployment and configuration guidance](/docs/framewor
 ## Becoming {{site.data.keyword.cloud_notm}} for Financial Services Validated
 {: #becoming-fs-validated}
 
-
-{{site.data.keyword.cloud_notm}} for Financial Services Validated designates that an {{site.data.keyword.cloud_notm}} service or ecosystem partner service has evidenced compliance to the controls of the {{site.data.keyword.framework-fs_notm}} and can be used to build solutions that might themselves be validated. Ecosystem partners who are interested in being {{site.data.keyword.cloud_notm}} for Financial Services Validated are required to complete a CIO template for evaluation by {{site.data.keyword.IBM_notm}} and to comply with the requirements of the {{site.data.keyword.framework-fs_notm}}.
-
-
-
+IBM designates {{site.data.keyword.cloud_notm}} services as {{site.data.keyword.cloud_notm}} for Financial Services Validated when the Services have been determined by IBM to materially implement {{site.data.keyword.framework-fs_notm}} control requirements. Similarly, IBM designates ecosystem partners as {{site.data.keyword.cloud_notm}} for Financial Services Validated when the partners conform to the {{site.data.keyword.cloud_notm}} for Financial Services® reference architectures and guidance and have been determined by IBM to materially implement the {{site.data.keyword.framework-fs_notm}} control requirements. Clients should review associated documentation made available by IBM and ecosystem partners to conduct their due diligence.
 
 Through the shared responsibility model of the {{site.data.keyword.framework-fs_notm}} and the surrounding standardized processes, financial institutions and ecosystem partners get benefits such as:
 

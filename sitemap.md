@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-04-30"
+lastupdated: "2024-05-01"
 
 keywords: 
 
@@ -804,7 +804,9 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit#shared-logging-audit)
 
-* [Setup {{site.data.keyword.atracker_short}}](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit#activity-tracking-setup)
+* [Activity Tracker Event Routing](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit#activity-tracker-event-routing-setup)
+
+* [{{site.data.keyword.at_short}} hosted event search](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit#activity-tracker-hosted-event-search-setup)
 
 * [Related controls in {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit#related-controls)
 
@@ -867,9 +869,11 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [Setting up {{site.data.keyword.hscrypto}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-hpcs)
 
-* [Data encryption at rest in {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#shared-encryption-at-rest-satellite-location)
+    * [Setting up {{site.data.keyword.hscrypto}} with Bring Your Own HSM](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-hpcs-byohsm)
 
-* [Integrating {{site.data.keyword.hscrypto}} with other {{site.data.keyword.cloud_notm}} services](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#related-resources)
+    * [Setting up {{site.data.keyword.keymanagementserviceshort}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#setup-keyprotect)
+
+    * [Data encryption at rest in {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#shared-encryption-at-rest-satellite-location)
 
 * [Related controls in {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#related-controls)
 
