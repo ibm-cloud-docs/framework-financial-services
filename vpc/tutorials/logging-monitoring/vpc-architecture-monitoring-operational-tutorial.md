@@ -1,15 +1,15 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2024
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
 content-type: tutorial
-services: 
+services:
 account-plan: paid
 completion-time: 2h
 
@@ -21,8 +21,8 @@ completion-time: 2h
 
 # Setting up an operational monitoring solution
 {: #vpc-architecture-monitoring-operational-tutorial}
-{: toc-content-type="tutorial"} 
-{: toc-services="openshift, vpc"} 
+{: toc-content-type="tutorial"}
+{: toc-services="openshift, vpc"}
 {: toc-completion-time="2h"}
 
 
@@ -37,7 +37,7 @@ We provide guidance here, but you are solely responsible for installing, configu
 
 The architecture diagram shows a monitoring deployment within a {{site.data.keyword.openshiftshort}} cluster for a single region. The architecture enables gathering metrics for {{site.data.keyword.openshiftshort}} applications and virtual server instances within your VPCs. The label "Prom" in the workload clusters represents Prometheus.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring](../../images/logmon/roks-single-region-log-mon.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring" caption-side="bottom"}
 
 When you configure {{site.data.keyword.openshiftshort}} for both operational logging and operational monitoring, the worker nodes can be shared. You can use the same worker pool for both logging and monitoring. You can use the same taint tag to steer monitoring and logging pods to the shared worker pool.
 {: tip}
@@ -113,7 +113,7 @@ To capture metrics from workloads running outside of {{site.data.keyword.openshi
               operator: "Equal"
               value: "node"
               effect: "NoExecute"
-          prometheusK8s: 
+          prometheusK8s:
             retention: 1y
             volumeClaimTemplate:
               spec:
@@ -228,7 +228,7 @@ You can use the {{site.data.keyword.openshiftshort}} monitoring stack to gather 
       [Unit]
       Description=Node Exporter
       After=network.target
-      
+
       [Service]
       User=node_exporter
       Group=node_exporter
@@ -284,7 +284,7 @@ Your application can also expose an endpoint that you can use to provide metrics
           targetPort: 9100
       ```
       {: codeblock}
-   
+
    1. Apply the *Endpoint* resource:
       ```
       apiVersion: v1
@@ -303,7 +303,7 @@ Your application can also expose an endpoint that you can use to provide metrics
           protocol: TCP
       ```
       {: codeblock}
-   
+
    1. Apply the *ServiceMonitor* resource:
       ```
       apiVersion: monitoring.coreos.com/v1
@@ -345,15 +345,15 @@ Your application can also expose an endpoint that you can use to provide metrics
    1. Click **Continue** to accept the disclaimer and then click **Install**.
    1. Keep the configuration as is and make sure that the Installed Namespace is *grafana*.
 1. Apply the following Grafana resource.  The settings are configurable.
-  
-   ```  
+
+   ```
    apiVersion: integreatly.org/v1alpha1
    kind: Grafana
    metadata:
      name: grafana
      namespace: grafana
    spec:
-     dataStorage: 
+     dataStorage:
        accessModes:
          - ReadWriteOnce
        class: ibmc-vpc-block-metro-10iops-tier
@@ -384,10 +384,10 @@ Your application can also expose an endpoint that you can use to provide metrics
                - grafana
     ```
     {: codeblock}
-    
+
 1. Wait for all pods in the Grafana namespace to be in *Running* state.
 1. Log in to the Grafana instance. The default username and password is *root/secret*. After you are logged in, change the password. You can locate the route by using the following command:
-   ``` 
+   ```
    oc get route
    ```
 1. [Add Grafana users](https://grafana.com/tutorials/create-users-and-teams/){: external}.
@@ -401,7 +401,7 @@ Your application can also expose an endpoint that you can use to provide metrics
       oc serviceaccounts get-token grafana-serviceaccount -n grafana
       ```
    1. Create a [GrafanaDataSource resource](https://github.com/integr8ly/grafana-operator/blob/v3.10.1/documentation/datasources.md){: external}. In the following YAML example, substitute <BEARER_TOKEN> with the output of the previous command.
-    
+
       ```
       apiVersion: integreatly.org/v1alpha1
       kind: GrafanaDataSource
@@ -426,12 +426,12 @@ Your application can also expose an endpoint that you can use to provide metrics
         ```
         {: codeblock}
 
-        You can add another Prometheus for your {{site.data.keyword.openshiftshort}} cluster by including it in the data sources list. You must create a *grafana-serviceaccount* service account within the {{site.data.keyword.openshiftshort}} cluster that you want to connect to and grant the cluster role privileges. Then, you can generate a bearer token.  
+        You can add another Prometheus for your {{site.data.keyword.openshiftshort}} cluster by including it in the data sources list. You must create a *grafana-serviceaccount* service account within the {{site.data.keyword.openshiftshort}} cluster that you want to connect to and grant the cluster role privileges. Then, you can generate a bearer token.
         {: note}
-   
-   2. Create [Grafana Dashboard resources](https://github.com/integr8ly/grafana-operator/blob/v3.10.1/documentation/dashboards.md){: external}. You can also import existing dashboards by using the JSON.  
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+   2. Create [Grafana Dashboard resources](https://github.com/integr8ly/grafana-operator/blob/v3.10.1/documentation/dashboards.md){: external}. You can also import existing dashboards by using the JSON.
+
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 See the [related controls for operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-operational).

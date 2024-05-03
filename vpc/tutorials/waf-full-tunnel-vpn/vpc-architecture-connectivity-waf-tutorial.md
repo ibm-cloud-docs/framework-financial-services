@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-04-30"
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -30,14 +30,14 @@ Guidance is provided, but you are solely responsible for installing, configuring
 
 The following architecture diagram shows a deployment of the VPC reference architecture that uses BIG-IP for WAF.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
 There are two main components to this solution:
 
 * {{site.data.keyword.cis_short_notm}} provides global load balancing and layer 3/4 protection against distributed denial-of-service (DDoS) attacks.
 * BIG-IP that provides WAF protection and layer 7 protection against denial-of-service (DoS) attacks.
 
-{{site.data.keyword.cis_short_notm}} is not Financial Services Validated. Because of this, TLS connections must not be terminated in {{site.data.keyword.cis_short_notm}} and should be configured only for pass-through connections. {{site.data.keyword.cis_short_notm}} global load balancers must be configured with the **proxy** configuration setting value of **off**. {{site.data.keyword.cis_short_notm}} Use range applications sto provide DDoS protection in front of global load balancers. 
+{{site.data.keyword.cis_short_notm}} is not Financial Services Validated. Because of this, TLS connections must not be terminated in {{site.data.keyword.cis_short_notm}} and should be configured only for pass-through connections. {{site.data.keyword.cis_short_notm}} global load balancers must be configured with the **proxy** configuration setting value of **off**. {{site.data.keyword.cis_short_notm}} Use range applications sto provide DDoS protection in front of global load balancers.
 {: note}
 
 ## Network path
@@ -340,7 +340,7 @@ If you have multiple backend pools to which you need to route traffic, you must 
 {: #vs-create}
 
 1. In the console, go to **Local Traffic > Virtual Servers > Virtual Server List**.
-1. Click **Create** 
+1. Click **Create**
 1. In the **General Properties** section, select or input the following fields:
    * **Name**: Name that you want to use for the virtual server
    * **Type**: **Standard**
@@ -387,7 +387,7 @@ If you have multiple backend pools to which you need to route traffic, you must 
 1. Click **Web Application Protocol** and then **Web Application Comprehensive Protection**.
 1. Click **Next**.
 1. Under **Security Layers*** do the following:
-   1. Enter a configuration name.  
+   1. Enter a configuration name.
    1. Enable any security layers that you would like. The security layers of *Security Policy* and *Behavioral Analysis DoS* should at least be enabled.
    1. Click **Save** and **Next**.
 1. Under **Web Application Security Policy Properties**:
@@ -409,7 +409,7 @@ If you have multiple backend pools to which you need to route traffic, you must 
      * Mitigation Mode: **Standard**
    1. Click **Save** and **Next**.
 1. Under **Virtual Server Properties**
-   1. Check **Assign Policy to Virtual Server(s)**. 
+   1. Check **Assign Policy to Virtual Server(s)**.
    1. Under **Virtual Server** select **Use Existing**.
    1. Under **Assign Virtual Servers**, move the virtual server that you created previously over from **Available** to **Selected**.
    1. Click **Save** and **Next**.

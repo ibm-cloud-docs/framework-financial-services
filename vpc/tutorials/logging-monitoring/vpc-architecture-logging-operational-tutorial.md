@@ -1,15 +1,15 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2024
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
 content-type: tutorial
-services: 
+services:
 account-plan: paid
 completion-time: 2h
 
@@ -19,8 +19,8 @@ completion-time: 2h
 
 # Setting up an operational logging solution
 {: #vpc-architecture-logging-operational-tutorial}
-{: toc-content-type="tutorial"} 
-{: toc-services="openshift"} 
+{: toc-content-type="tutorial"}
+{: toc-services="openshift"}
 {: toc-completion-time="2h"}
 
 This tutorial shows you one way that can be used to meet the {{site.data.keyword.framework-fs_notm}} requirements that are related to [operational logging](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-operational). This approach uses [{{site.data.keyword.openshiftshort}} Container Platform Elasticsearch, Fluentd, and Kibana EFK stack](https://docs.openshift.com/container-platform/4.6/logging/cluster-logging.html){: external} by installing the [Cluster Logging Operator](https://docs.openshift.com/container-platform/4.6/logging/cluster-logging.html){: external}. The log data remains within your environment so that you retain full control over it.
@@ -43,7 +43,7 @@ The capability of the [{{site.data.keyword.openshiftshort}} Cluster Logging Oper
 
 When using {{site.data.keyword.openshiftshort}} logging for financial service environments, you must install the Elasticsearch Operator and Cluster Logging Operator in every {{site.data.keyword.openshiftshort}} cluster that requires logging. The logs are retained by the Elasticsearch servers that are running in that cluster and stored on the attached VPC block storage (which must be [encrypted by using keys that are managed by {{site.data.keyword.hscrypto}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-at-rest)). The logs can be searched and viewed by using the Kibana server that is deployed in that cluster. The following diagram shows the Elasticsearch pods that are deployed to three zones within both the management and workload VPCs. Kibana is shown deployed to a single zone.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with logging ](../../images/logmon/roks-single-region-log-mon.svg){: caption="Figure 1. Single-region VPC reference architecture using EFK for logging" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with logging ](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Figure 1. Single-region VPC reference architecture using EFK for logging" caption-side="bottom"}
 
 The {{site.data.keyword.openshiftshort}} pods that are running the Elasticsearch, Kibana, and Fluentd components are assigned to a worker pool that is dedicated to logging. A dedicated worker pool prevents logging operations from stealing resources from pods that are running other applications. Worker pools are not shown in the diagram.
 
@@ -106,7 +106,7 @@ To capture logs from workloads that are running outside of {{site.data.keyword.o
 {: #install-elasticsearch-operator}
 {: step}
 
-The Elasticsearch Operator creates and manages the Elasticsearch cluster that is used by {{site.data.keyword.openshiftshort}} cluster logging. It can be installed from the {{site.data.keyword.openshiftshort}} console.  
+The Elasticsearch Operator creates and manages the Elasticsearch cluster that is used by {{site.data.keyword.openshiftshort}} cluster logging. It can be installed from the {{site.data.keyword.openshiftshort}} console.
 
 1. Install the [Elasticsearch Operator](https://docs.openshift.com/container-platform/4.6/logging/cluster-logging-deploying.html#cluster-logging-deploy-console_cluster-logging-deploying){: external}.
 1. Ensure that the following settings are selected or configured:
@@ -354,7 +354,7 @@ $ systemctl start td-agent.service
 
 The td-agent starts forwarding log messages to the {{site.data.keyword.openshiftshort}} Elasticsearch cluster. You can view them there by using Kibana.
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 See the [related controls for operational logging](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-operational#related-controls).

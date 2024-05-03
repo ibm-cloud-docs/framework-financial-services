@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -55,12 +55,16 @@ So, it is also recommended to establish and configure an alternate processing si
 The diagram below shows an expansion of the VPC reference architecture to use multiple regions. The key to making this work is to use the [global load balancing functionality](/docs/dns-svcs?topic=dns-svcs-global-load-balancers) in {{site.data.keyword.dns_short}}. The global load balancer offers HA and geographical distribution of your traffic, based on the health of your origin servers and the geographical region where the user request originates. So, if one region becomes unhealthy, then traffic would get routed to the next closest healthy region.
 
 
+
 ![VPC architecture in multiple regions](./images/vpc-multi-region/vpc-multi-region-consumer-intranet.svg){: caption="Figure 1. VPC architecture in multiple regions" caption-side="bottom"}
+
+
+
 
 For completeness, the diagram below shows the VPC architecture spread across multiple regions when {{site.data.keyword.openshiftshort}} is used.
 
 
-![{{site.data.keyword.openshiftshort}} on VPC multiple regions](./images/roks-multi-region/roks-multi-region-consumer-intranet.svg){: caption="Figure 2. {{site.data.keyword.openshiftshort}} on VPC multiple regions" caption-side="bottom"}
+![{{site.data.keyword.openshiftshort}} on VPC multiple regions](./images/roks-multi-region/roks-multi-region-consumer-intranet-v2.svg){: caption="Figure 2. {{site.data.keyword.openshiftshort}} on VPC multiple regions" caption-side="bottom"}
 
 See the following tutorials for more information:
 
@@ -81,4 +85,3 @@ See [related controls for high availability](/docs/framework-financial-services?
 {: #next-steps}
 
 - [Development processes and software integrity](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)
-

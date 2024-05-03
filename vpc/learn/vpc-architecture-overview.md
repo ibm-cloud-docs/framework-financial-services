@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -21,7 +21,7 @@ subcollection: framework-financial-services
 ## Architecture diagram
 {: #vpc-arch-diagram}
 
-![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v2.svg){: caption="Figure 1. High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
+![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3.svg){: caption="Figure 1. High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
 Central to the architecture are two VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
@@ -47,7 +47,7 @@ Other key features to note:
 
 The architecture in the previous section is the most secure way of enabling consumers to access the applications that are running in a workload VPC. However, there might be valid cases where it is desirable to allow consumers to access your service through the public internet. The same base architecture can be adapted to securely enable this type of access.
 
-![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v2-with-edge.svg){: caption="Figure 2. High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
+![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3-with-edge.svg){: caption="Figure 2. High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
 
 The revised architecture adds:
 
@@ -65,7 +65,7 @@ Deploying the reference architecture depends upon VPC infrastructure and PaaS se
 
 {{site.data.content.fs-validated-disclaimer-important}}
 
- 
+
 
 | Category | Required services | Optional services |
 |----------|-------------------|-------------------|
@@ -129,7 +129,7 @@ With [Auto Scale for VPC](/docs/vpc?topic=vpc-creating-auto-scale-instance-group
 
 In practice, when you choose {{site.data.keyword.openshiftlong_notm}} for your primary compute, you might also need one or more instances of {{site.data.keyword.vsi_is_short}} for other parts of the reference architecture.
 
-#### {{site.data.keyword.registrylong_notm}}  
+#### {{site.data.keyword.registrylong_notm}} 
 {: #services-containers-registry}
 
 [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_overview) provides a multi-tenant, highly available, scalable, and encrypted private image registry that is hosted and managed by {{site.data.keyword.IBM}}. When you push images to Container Registry, you benefit from the built-in Vulnerability Advisor features that scan for potential security issues and vulnerabilities.
@@ -225,7 +225,7 @@ As the number of your VPCs grow, you need an easy way to manage the interconnect
 #### {{site.data.keyword.compliance_full}}
 {: #services-scc}
 
-With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-getting-started) you can embed security checks into your every day workflows to help monitor for security and compliance. By monitoring for risks, you can identify security vulnerabilities and quickly work to mitigate the impact and fix the issue. By using {{site.data.keyword.compliance_short}} along with [external integrations](/security-compliance/integrations) (such as, OpenShift Compliance Operator (OSCO), Tanium, NeuVector, and so on), you can build a robust approach for monitoring for security and compliance issues. 
+With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-getting-started) you can embed security checks into your every day workflows to help monitor for security and compliance. By monitoring for risks, you can identify security vulnerabilities and quickly work to mitigate the impact and fix the issue. By using {{site.data.keyword.compliance_short}} along with [external integrations](/security-compliance/integrations) (such as, OpenShift Compliance Operator (OSCO), Tanium, NeuVector, and so on), you can build a robust approach for monitoring for security and compliance issues.
 
 #### {{site.data.keyword.cloud_notm}} {{site.data.keyword.alb_full}}
 {: #services-logging-flow-logs}
@@ -260,7 +260,7 @@ The following table provides a summary of the main features of the VPC reference
 | Architectural component | Technology  |
 |-------------------------|---------------------------------------------------|
 | Compute  | {{site.data.keyword.vsi_is_short}} \n Dedicated hosts for VPC |
-| Containers [^component-tabletext-1] | {{site.data.keyword.openshiftlong_notm}} \n {{site.data.keyword.registryshort}} 
+| Containers [^component-tabletext-1] | {{site.data.keyword.openshiftlong_notm}} \n {{site.data.keyword.registryshort}}
 | Inbound connectivity to management VPC | {{site.data.keyword.dl_short}} or \n {{site.data.keyword.vpn_vpc_short}} |
 | Inbound connectivity to workload VPC | {{site.data.keyword.dl_short}} or \n {{site.data.keyword.vpn_vpc_short}} |
 | Virtual network firewall | Install your own software [^component-tabletext-2] |
@@ -302,4 +302,3 @@ The following table provides a summary of the main features of the VPC reference
 * Explore more detailed views of the VPC reference architecture based on compute type:
     * [{{site.data.keyword.vsi_is_short}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi)
     * [{{site.data.keyword.openshiftlong_notm}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift)
-

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -43,7 +43,7 @@ Before you deploy and configure a bastion host into a virtual server instance ru
 * Acquire a Teleport Enterprise Edition license
 * Configure a VPC like *VPC 0 (Edge Network)* in the architecture diagram
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with bastion host](../../images/bastion-host/vpc-single-region-bastion.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with bastion host" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with bastion host](../../images/bastion-host/vpc-single-region-bastion-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with bastion host" caption-side="bottom"}
 
 
 
@@ -91,7 +91,7 @@ Teleport session recordings can contain sensitive information. You should have p
 {: #setup-vsi}
 {: step}
 
-1. [Provision a virtual server instance](https://cloud.ibm.com/vpc-ext/compute/vs){: external} within each zone of the VPC cluster.  
+1. [Provision a virtual server instance](https://cloud.ibm.com/vpc-ext/compute/vs){: external} within each zone of the VPC cluster.
    * Profile: cx2-4x8 with 4 vCPUs, 8 GB RAM, 8 Gbps.
    * Linux-based operating system (CentOS, Debian, RHEL, Ubuntu).
 2. If your identity provider is hosted publicly and not accessible directly from the Teleport virtual server instance in the VPC, you must [provision a public gateway](/docs/vpc?topic=vpc-about-networking-for-vpc#external-connectivity).
@@ -166,7 +166,7 @@ Teleport session recordings can contain sensitive information. You should have p
 {: #setup-install-teleport}
 {: step}
 
-With your virtual server instances provisioned and set-up with a security group and ACL, you can continue configuring the instance and installing Teleport. Then, complete the Teleport configuration for unified access to your infrastructure.  
+With your virtual server instances provisioned and set-up with a security group and ACL, you can continue configuring the instance and installing Teleport. Then, complete the Teleport configuration for unified access to your infrastructure.
 
 1. Connect to your virtual server instance by using [SSH](/docs/vpc?topic=vpc-vsi_is_connecting_linux).
 1. Download [Teleport Enterprise version 7.1.0](https://get.gravitational.com/teleport-ent-v7.1.0-linux-amd64-bin.tar.gz){: external} and extract its contents. Copy the following packages to the `/usr/local/bin` directory:
@@ -175,8 +175,8 @@ With your virtual server instances provisioned and set-up with a security group 
    * `cp <path of extracted contents>/tsh /usr/local/bin`
 1. Create the directory `/var/lib/teleport` on the file system of your virtual server instance. This directory might exist depending on your installation method.
 1. Copy your license file from Teleport Enterprise into the file `/var/lib/teleport/license.pem`.
-1. Copy your SSL certificate for the virtual server instance into `/var/lib/teleport/`. You should have a file for the certificate and key. If you have an intermediate certificate, make sure it is after your certificate. 
-1. Create the file `teleport.yaml` in the directory `/etc` and copy the sample content from the following example into the file. Ensure the appropriate changes where noted with `<variables>`. 
+1. Copy your SSL certificate for the virtual server instance into `/var/lib/teleport/`. You should have a file for the certificate and key. If you have an intermediate certificate, make sure it is after your certificate.
+1. Create the file `teleport.yaml` in the directory `/etc` and copy the sample content from the following example into the file. Ensure the appropriate changes where noted with `<variables>`.
 
    ```
    #teleport.yaml
@@ -185,7 +185,7 @@ With your virtual server instances provisioned and set-up with a security group 
      data_dir: /var/lib/teleport
      log:
        output: stderr
-       severity: DEBUG 
+       severity: DEBUG
      storage:
        audit_sessions_uri: "s3://<Bucket>?endpoint=<COS Endpoint>&region=ibm"
 
@@ -246,10 +246,10 @@ With your virtual server instances provisioned and set-up with a security group 
    sudo systemctl enable teleport
    ```
 1. Some operating systems have open firewalls but if your operating system limits traffic, you must add firewall rules to allow TCP traffic for ports 3023, 3024, 3025, and 3080.  CentOS is an example of an operating system that blocks traffic by default.
-1. Start the Teleport process `systemctl start teleport`.  
+1. Start the Teleport process `systemctl start teleport`.
 1. Create a Teleport Role.  For more information, see [Create Teleport Roles](https://goteleport.com/docs/enterprise/sso/oidc/#create-teleport-roles){: external}. For more information on settings for a Teleport role, see [Teleport Access Control Reference](https://goteleport.com/docs/access-controls/reference/){: external}.
    1. Create the file `role.yaml` within the directory `/var/lib/teleport`. The following sample role provides full access to the system.  You can also create roles within the Teleport web console under *Teams -> Roles*.
-   
+
    ```
    #example role
    kind: "role"
@@ -279,7 +279,7 @@ With your virtual server instances provisioned and set-up with a security group 
    {: codeblock}
 
 1. Create the OIDC connector.
-   1. Create the file `oidc.yaml` within the directory `/var/lib/teleport` by using the following example content. Ensure the appropriate changes where noted with `<variables>`. For more information, see [OIDC Authentication](https://goteleport.com/docs/enterprise/sso/oidc/){: external}.  
+   1. Create the file `oidc.yaml` within the directory `/var/lib/teleport` by using the following example content. Ensure the appropriate changes where noted with `<variables>`. For more information, see [OIDC Authentication](https://goteleport.com/docs/enterprise/sso/oidc/){: external}.
 
    ```
    #oidc connector
@@ -294,7 +294,7 @@ With your virtual server instances provisioned and set-up with a security group 
      client_secret: "<secret from AppID Service Credentials>"
      issuer_url: "<oauthServerUrl from AppID Service Credentials>"
      scope: ["openid", "email"]
-     claims_to_roles: 
+     claims_to_roles:
      - {claim: "email", value: "<Email Address>", roles: ["teleport-admin"]}
    ```
    {: codeblock}
@@ -302,9 +302,9 @@ With your virtual server instances provisioned and set-up with a security group 
    Example claim names can be `email`, `family_name`, `given_name`, or `name`.  The value is what that claims value will be set to.
 
 1. Using the [tctl](https://goteleport.com/docs/cli-docs/){: external} to apply the yamls:
-   * `tctl create /var/lib/teleport/role.yaml` 
-   * `tctl create /var/lib/teleport/oidc.yaml` 
-1. Set up forwarding of Teleport logs and system logs. Teleport logs are located in the directory `/var/lib/teleport` and system logs in `/var/logs`.  
+   * `tctl create /var/lib/teleport/role.yaml`
+   * `tctl create /var/lib/teleport/oidc.yaml`
+1. Set up forwarding of Teleport logs and system logs. Teleport logs are located in the directory `/var/lib/teleport` and system logs in `/var/logs`.
 
 Logs must be forwarded to an operational logging solution. For more information, see [operational logging](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational)
 {: important}
@@ -318,10 +318,10 @@ You can log in to the bastion host through the web console or tsh client as desc
 ### Log in through the the web console
 
 1. Access the web console on port 3080.
-  
+
    `https://<fqdn of node>:3080`
 
-1. Start a terminal session under *Servers*. There should be a single server with a *connect* button. Click *connect* and select the user that you would like to log in with. 
+1. Start a terminal session under *Servers*. There should be a single server with a *connect* button. Click *connect* and select the user that you would like to log in with.
 
 ### Log in through the tsh client
 
@@ -351,9 +351,7 @@ For information on accessing your {{site.data.keyword.openshiftshort}} cluster v
 
 Now that Teleport is installed and setup, remove SSH port 22 from the allowed list of ports within the configured security group and access control list that is assigned to the virtual server and subnet.
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #controls}
 
 See the [related controls for bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion#next-steps).
-
-

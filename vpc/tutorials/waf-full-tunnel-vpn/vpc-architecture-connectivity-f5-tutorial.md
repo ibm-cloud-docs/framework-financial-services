@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-03-15"
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -31,7 +31,7 @@ Guidance is provided here, but you are solely responsible for installing, config
 
 The architecture diagram shows a deployment of the VPC reference architecture with an instance of BIG-IP in the edge/transit VPC.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge-2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
 The architecture diagram shows a BIG-IP installation with four interfaces within 4 different VPC subnets: management, external, workload, and bastion. Depending on the services that you need and how you name your VPC subnets, you must update the values within the tutorial.
 {: tip}
@@ -96,7 +96,7 @@ Access the BIG-IP installation through the IP address only that is contained in 
 {: #f5-configuration-license}
 {: step}
 
-1. Access BIG-IP configuration utility through your web browser, and login by using the *admin* user account.  
+1. Access BIG-IP configuration utility through your web browser, and login by using the *admin* user account.
 1. Click the **Licensing** tab in the left menu, and then click **Activate** to complete licensing.
 1. Provide the registration key, and click **Next**.
 1. Click **Accept**. This restarts the BIG-IP modules and services and redirects to the login page.
@@ -111,7 +111,7 @@ Access the BIG-IP installation through the IP address only that is contained in 
 You are responsible for meeting certain [TLS requirements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-in-transit#vpc-architecture-encryption-in-transit-tls-requirements) along with [acceptable cipher suites](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-in-transit#vpc-architecture-encryption-in-transit-tls-cipher-suites).
 {: important}
 
-Next, configure the management UI to allow the acceptable cipher suites of TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 and TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 only. You can do this configuration only with the command line interface.  
+Next, configure the management UI to allow the acceptable cipher suites of TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 and TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 only. You can do this configuration only with the command line interface.
 
 1. Log on with SSH port 22 to the management IP address of the BIG-IP.
 2. Issue the following commands:
@@ -131,11 +131,11 @@ Next, configure the management UI to allow the acceptable cipher suites of TLS_E
 
 By default, the configuration utility is deployed with a self-signed certificate. You must replace the certificate according to the [TLS requirements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-in-transit#vpc-architecture-encryption-in-transit-tls-requirements).  For more information on replacing the BIG-IP self-signed certificate, see [Replacing the Configuration utility's self-signed device certificate with a CA-signed device certificate](https://support.f5.com/csp/article/K42531434){: external}.
 
-## Accessing the F5 BIG-IP 
+## Accessing the F5 BIG-IP
 {: #f5-access}
 {: step}
 
-All access, whether it is CLI with SSH or the configuration utility, should be through the bastion host. The following example shows how you can connect to the F5 BIG-IP configuration utility by using port forwarding with [Teleport as a bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport). 
+All access, whether it is CLI with SSH or the configuration utility, should be through the bastion host. The following example shows how you can connect to the F5 BIG-IP configuration utility by using port forwarding with [Teleport as a bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport).
 
 1. Create a [Teleport role](https://goteleport.com/docs/setup/reference/resources/#role){: external} with the option **port_forwarding** set to **true**.
 1. [Log in to the bastion host with the tsh client](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport#log-in-via-the-tsh-client).
@@ -158,7 +158,7 @@ Teleport does not provide session recordings through port forwarding. However, T
 
 By default, the audit logging for the GUI is disabled. Perform the following steps to enable it.
 
-1. Access BIG-IP configuration utility through your web browser, and login by using the *admin* user account.  
+1. Access BIG-IP configuration utility through your web browser, and login by using the *admin* user account.
 1. Under **System > Logs > Configuration**, click the **Options**.
 1. Selec **Enable** for the GUI setting in the Audit Logging area.
 1. Click **Update**.
@@ -177,7 +177,7 @@ BIG-IP routes control the flow of traffic and determine which interface to use. 
    * **Destination**: IP prefix of your target workload or application (for example, 10.40.0.0)
    * **Netmask**: Netmask prefix of your target workload or application (for example, 255.255.192.0)
    * **Resource**: `Use Gateway`
-   * **Gateway Address**: Gateway IP address of the interface that is labeled **Workload**. This is the second address in the CIDR range of the subnet labeled **Workload** (for example, 10.5.50.1). 
+   * **Gateway Address**: Gateway IP address of the interface that is labeled **Workload**. This is the second address in the CIDR range of the subnet labeled **Workload** (for example, 10.5.50.1).
 
 Routes are also needed for Bastion connectivity with full tunnel VPN that uses the interface that is labeled **Bastion** and for the F5 management UI that uses the interface that is labeled **MGMT**.
 {: note}
@@ -188,7 +188,7 @@ Routes are also needed for Bastion connectivity with full tunnel VPN that uses t
 
 You are responsible for isolating and controlling traffic from each VPC subnet and interface. By using [access control lists](/docs/vpc?topic=vpc-using-acls) and [security groups](/docs/vpc?topic=vpc-using-security-groups), you can control all incoming and outgoing traffic.
 
-The example security groups and access and control list's based on the architecture diagram and the F5 interfaces (management, external, workload, bastion) in Zone 1 of the edge/transit VPC. The example assumes that the VPN is on port 4443 and your workload target port is 443. Include any other services that the F5 BIG-IP will need connectivity to. It is encouraged to update to meet your needs and architecture.  
+The example security groups and access and control list's based on the architecture diagram and the F5 interfaces (management, external, workload, bastion) in Zone 1 of the edge/transit VPC. The example assumes that the VPN is on port 4443 and your workload target port is 443. Include any other services that the F5 BIG-IP will need connectivity to. It is encouraged to update to meet your needs and architecture.
 {: note}
 
 ### F5 management interface
