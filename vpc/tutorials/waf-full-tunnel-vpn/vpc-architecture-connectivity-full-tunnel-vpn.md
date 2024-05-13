@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-03-23"
+  years: 2020, 2024
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -27,7 +27,7 @@ One of the approaches for [enabling connectivity to the management VPC](/docs/fr
 
 The following diagram shows a deployment of the VPC reference architecture with a BIG-IP full tunnel VPN deployment.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP full Tunnel VPN host ](../../images/f5-bigip/vpc-single-region-edge.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP full tunnel VPN host" caption-side="bottom"}
+<![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP full Tunnel VPN host ](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP full tunnel VPN host" caption-side="bottom"}
 
 ## Objectives
 {: #full-tunnel-vpn-solution-objectives}
@@ -113,7 +113,7 @@ If you have set up and configured the [web application firewall](/docs/framework
 
 1. After the creation of VPN, navigate to **Local Traffic > Virtual Servers** and click the name of the virtual server that is associated with the VPN.
 1. If you are using the web application service, under **Service Port**, change the port number to another number other than 443 (for example, 4443).
-1. Under **SSL Profile (Client)**, move the client SSL profile that you created to the section labeled **Selected** and move any other ones out from under it to the section labeled **Available**. 
+1. Under **SSL Profile (Client)**, move the client SSL profile that you created to the section labeled **Selected** and move any other ones out from under it to the section labeled **Available**.
 1. Click **Update**.
 
 ## Test the BIG-IP VPN

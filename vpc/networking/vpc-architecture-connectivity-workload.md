@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-05-03"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -23,7 +23,7 @@ Previously, we saw how administrative access to the workload VPC can be accompli
 
 If the consumer is in the same organization that you are (such as the same financial institution), then the connection options are much the same as they are when you connect to the management VPC. That is, the consumer can connect to the workload VPC with either [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) or [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn). This is shown in the diagram below.
 
-![Connecting to workload VPC from on-premises with consumer in same organization as application provider](../images/vpc-single-region/vpc-single-region-consumer-intranet.svg){: caption="Figure 1. Connecting to workload VPC from on-prem with consumer in same organization as application provider" caption-side="bottom"}
+![Connecting to workload VPC from on-premises with consumer in same organization as application provider](../images/vpc-single-region/vpc-single-region-consumer-intranet-v2.svg){: caption="Figure 1. Connecting to workload VPC from on-prem with consumer in same organization as application provider" caption-side="bottom"}
 
 
 ### {{site.data.keyword.dl_short}}
@@ -66,7 +66,7 @@ For more information, see:
 
 There are many valid cases where you might want to allow consumers to access your service through the public internet. The base architecture can be adapted to securely enable this type of access as shown in the following diagram which introduces a new edge VPC. The request from the consumer gets routed through a global load balancer outside of the edge VPC, through a web application firewall (WAF) in the edge VPC, and then to the public application load balancer within the workload VPC. This is shown in the following diagram.
 
-![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/vpc-single-region-edge.svg){: caption="Figure 5. Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
+![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Figure 5. Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
 
 #### Global load balancer
 {: #consumer-provider-public-internet-glb}
@@ -105,7 +105,7 @@ Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribu
 * [About {{site.data.keyword.cloud_notm}} {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers&interface=ui)
 * [Creating an {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancer)
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 {{site.data.content.related-controls-disclaimer}}
@@ -119,4 +119,3 @@ Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribu
 {: #next-steps}
 
 * [Connectivity to {{site.data.keyword.cloud_notm}} services with private endpoints](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-services)
-
