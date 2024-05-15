@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-01"
+lastupdated: "2024-05-14"
 
 keywords: 
 
@@ -1033,13 +1033,20 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Responsibilities for Financial Services Validated services](/docs/framework-financial-services?topic=framework-financial-services-shared-responsibilities#related-resources)
 
 
-## Onboarding to the {{site.data.keyword.cloud_notm}} catalog
-{: #sitemap_onboarding_to_the_catalog}
+## IBM Cloud for Financial Services Validation Process for Partners
+{: #sitemap_ibm_cloud_for_financial_services_validation_process_for_partners}
 
 
-[Onboarding to the {{site.data.keyword.cloud_notm}} catalog](/docs/framework-financial-services?topic=framework-financial-services-onboarding-to-catalog#onboarding-to-catalog)
+[IBM Cloud for Financial Services Validation Process for Partners](/docs/framework-financial-services?topic=framework-financial-services-fs-validated-partner-process#fs-validated-partner-process)
 
-* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-onboarding-to-catalog#next-steps)
+
+## IBM Cloud for Financial Services Validated Partner Offerings
+{: #sitemap_ibm_cloud_for_financial_services_validated_partner_offerings}
+
+
+[IBM Cloud for Financial Services Validated Partner Offerings](/docs/framework-financial-services?topic=framework-financial-services-fs-validated-partner-offerings#fs-validated-partner-offerings)
+
+* [List of FS Validated ISV Offerings](/docs/framework-financial-services?topic=framework-financial-services-fs-validated-partner-offerings#list-of-fs-validated-isv-offerings)
 
 
 ## FAQs for {{site.data.keyword.cloud_notm}} for Financial Services

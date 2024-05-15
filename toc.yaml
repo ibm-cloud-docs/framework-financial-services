@@ -146,7 +146,8 @@ toc:
   - navgroup:
       id: reference
       topics:
-      - onboarding-to-catalog.md
+      - fs-validation-partner-process.md
+      - fs-validated-partner-offerings.md
   - navgroup:
       id: help
       topics:
