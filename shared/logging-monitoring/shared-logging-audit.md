@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-01"
+lastupdated: "2024-05-23"
 
 keywords:
 
@@ -70,8 +70,8 @@ As the service doesn't have Financial Services Validation, we don’t recommend 
 
 You will find further information on {{site.data.keyword.at_short}} hosted event search in the cloud documentation:
 
-* A description of [Activity Tracker hosted event search](docs/activity-tracker)
-* Provisioning [an instance of Activity Tracker](docs/activity-tracker?topic=activity-tracker-provision)
+* A description of [Activity Tracker hosted event search](/docs/activity-tracker)
+* Provisioning [an instance of Activity Tracker](/docs/activity-tracker?topic=activity-tracker-provision)
 * The Cloud services [generating audit events](/docs/activity-tracker?topic=activity-tracker-cloud_services)
 
 You must:
