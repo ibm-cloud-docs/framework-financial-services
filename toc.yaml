@@ -35,6 +35,8 @@ toc:
           - vpc/learn/vpc-architecture-concepts.md
           - topic: vpc/learn/vpc-architecture-detailed-vsi.md
             navtitle: VPC with virtual servers reference architecture
+          - topic: vpc/learn/vpc-architecture-w-powervs.md
+            navtitle: VPC virtual servers and Power virtual servers reference architecture
           - topic: vpc/learn/vpc-architecture-detailed-openshift.md
             navtitle: VPC with Red Hat OpenShift on IBM Cloud reference architecture
       - topicgroup:
