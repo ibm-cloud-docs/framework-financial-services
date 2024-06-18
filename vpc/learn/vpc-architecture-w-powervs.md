@@ -30,20 +30,12 @@ content-type: reference-architecture
 {: toc-version="1.0"}
 
 
-This reference architecture summarizes how to extend VSI on VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services to include {{site.data.keyword.powerSys_notm}} workloads.
+This solution pattern contains the design and architecture decisions for cloud native and {{site.data.keyword.powerSys_notm}} workloads in {{site.data.keyword.cloud_notm}} for Financial Services.
 {: shortdesc}
 
-IBM Power is a family of high-performance servers that are designed for running large-scale data-driven and mission-critical workloads and are known for their scalability, reliability, sustainability, and performance. {{site.data.keyword.powerSysFull}} is a Power Systems offering in IBM Cloud. As stated in the documentation, [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started) are located in the IBM data centers, distinct from the IBM Cloud servers with separate networks and direct-attached storage. The internal networks are fenced but offer connectivity options to IBM Cloud infrastructure or on-premises environments. This infrastructure design enables {{site.data.keyword.powerSys_notm}} to maintain key enterprise software certification and support as the {{site.data.keyword.powerSys_notm}} architecture is identical to certified on-premises infrastructure.
+IBM Power is a family of high-performance servers that are designed for running large-scale data-driven and mission-critical workloads and are known for their scalability, reliability, sustainability, and performance. {{site.data.keyword.powerSysFull}} is a Power Systems offering in IBM Cloud. As stated in the documentation, [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started) are located in the IBM data centers, distinct from the IBM Cloud servers with separate networks and direct-attached storage. The internal networks are fenced but offer connectivity options to IBM Cloud infrastructure or on-premises environments. This infrastructure design enables {{site.data.keyword.powerSys_notm}} to maintain key enterprise software certification and support as the {{site.data.keyword.powerSys_notm}} architecture is identical to certified on-premises infrastructure. This [documentation page](https://www.ibm.com/products/power-virtual-server) discusses benefits, use cases, workloads and other information on {{site.data.keyword.powerSys_notm}}.
 
 The {{site.data.keyword.framework-fs_notm}} provides different flavors of [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) to be used as the basis for meeting the security and regulatory requirements defined in the framework. This document extends the {{site.data.keyword.vsi_is_short}} based reference architecture and provides a solution design for deploying sensitive enterprise workloads on {{site.data.keyword.powerSys_notm}} in cloud, especially for financial and regulated industries, by adopting the {{site.data.keyword.cloud_notm}} for Financial Services Framework and follow the principals and best practices of the framework.
-
-There are different scenarios that client may want to deploy workloads on {{site.data.keyword.powerSys_notm}} in cloud, and here are some examples:
-* With Power 8 and earlier versions reach End of Support (EoS), client may want to exit on-prem data center and deploy workloads to {{site.data.keyword.powerSys_notm}} in cloud, and get benefits from cloud;
-* Client may have Power on-prem, but want to have dev/test environment in cloud;
-* Client may have Power on-prem, but want to have HA/DR environment in cloud;
-* Client may have Power on-prem, but want to burst workloads to {{site.data.keyword.powerSys_notm}} in cloud;
-* New client may want to take advantages of the scalability, reliability, sustainability, and performance that Power can offer, and pay for only what they need with {{site.data.keyword.powerSys_notm}} in cloud.
-
 
 
 ## Architecture diagram
