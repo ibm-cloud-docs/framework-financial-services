@@ -43,9 +43,9 @@ The {{site.data.keyword.framework-fs_notm}} provides different flavors of [refer
 
 The diagram below represents the architecture for secure {{site.data.keyword.powerSys_notm}} workloads in IBM Cloud and is an extension of the [{{site.data.keyword.vsi_is_short}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi) for {{site.data.keyword.cloud_notm}} for Financial Services.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}](../images/vpc-powervs/ra-fs-powervs.svg){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}](../images/vpc-powervs/ra-fs-powervs-single-region.svg){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}" caption-side="bottom"}
 
-Central to the architecture are three VPCs, which provide for separation of concerns for edge traffic control, management functionality, and consumer workloads.
+Central to the architecture are three VPCs, which provide segmentation for edge traffic control, management functionality, and consumer workloads.
 
 Management VPC
 :    Provides compute, storage, and network services to enable the client or service provider's administrators to monitor, operate, and maintain the environment.
@@ -60,7 +60,7 @@ This reference architecture is an extension of the VPC reference architecture fo
 
 
 * Supports a single tenant.
-* Resides in one or more multizone regions.
+* Resides in one or more multizone regions. When resources are deployed in multiple regions for resiliency purpose, Global Transit Gateway can be used to connect traffic across regions.
 * Enables access to the management VPC from the application provider's enterprise environment through {{site.data.keyword.dl_full}} or {{site.data.keyword.vpn_full}}.
 * Manages traffic flow from outside IBM Cloud via Edge VPC.
 * Supports multiple subnets, ACLs and Security Groups to manage traffic flow to the subnets and to the instances. Load balancers can be used.
@@ -72,7 +72,7 @@ This reference architecture is an extension of the VPC reference architecture fo
 * Power workloads can be deployed on {{site.data.keyword.powerSys_notm}} instances, cloud native workloads can be deployed in VPC, and {{site.data.keyword.tg_short}} can be used to define and control communication between resources on the IBM Cloud network. Separates enterprise traffic and IBM Cloud internal traffic via different {{site.data.keyword.tg_short}}.
 * Power workloads can be deployed on {{site.data.keyword.powerSys_notm}} instances in different regions. Global {{site.data.keyword.tg_short}} can be used in this case.
 * [{{site.data.keyword.hscrypto}}](/docs/power-iaas?topic=power-iaas-integrate-hpcs) or {{site.data.keyword.keymanagementserviceshort}} can be integrated with {{site.data.keyword.powerSys_notm}}.
-* FS validated services are used. {{site.data.keyword.compliance_short}} provides security and compliance support.
+* IBM Cloud for Financial Services Validated services are used. {{site.data.keyword.compliance_short}} provides security and compliance support.
 
 
 ## Design concepts
