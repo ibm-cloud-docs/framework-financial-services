@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-14"
+lastupdated: "2024-07-02"
 
 keywords: 
 
@@ -246,6 +246,16 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Variation with edge/transit VPC for public internet access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#next-steps)
+
+[VPC virtual servers and Power virtual servers reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi-w-powervs#vpc-architecture-detailed-vsi-w-powervs)
+
+* [Architecture diagram](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi-w-powervs#architecture-diagram)
+
+* [Design concepts](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi-w-powervs#design-concepts)
+
+* [Requirements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi-w-powervs#requirements)
+
+* [Components](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi-w-powervs#components)
 
 [VPC with Red Hat OpenShift on IBM Cloud reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-openshift#vpc-architecture-detailed-openshift)
 
