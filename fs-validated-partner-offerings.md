@@ -38,6 +38,7 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | Adobe     | Adobe Experience Manager |
 | Circeo      | The Loan Factory      |
 | Dizzion      | [Desktop-as-a-Service (DaaS)](https://cloud.ibm.com/catalog/services/dizzion-daas)    |
+| EIS | EIS Suite  |
 | F5 | [F5 BIG-IP](https://cloud.ibm.com/catalog/content/ibmcloud_schematics_bigip_multinic_declared-1.0)      |
 | Kanexa/Marco Polo Network     | Supplier Pay      |
 | Liferay     | DXP     |
