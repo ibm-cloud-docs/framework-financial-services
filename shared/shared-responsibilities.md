@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -51,7 +51,7 @@ The following table provides references that describe your responsibilities for 
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-shared-responsibilities) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-shared-responsibilities) | - {{site.data.keyword.appid_short_notm}} [^tabletext-no-specific-link-appid] |
 | Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-responsibilities-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} |  |
 | Integration  | |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-event_streams_responsibilities) |
-{: caption="Table 1. Your responsibilities for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
+{: caption="Your responsibilities for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -60,4 +60,3 @@ The following table provides references that describe your responsibilities for 
 [^tabletext-no-specific-link-appid]: There is not a specific shared responsibility article for {{site.data.keyword.appid_short_notm}}.
 
 [^tabletext-no-specific-link-container-registry]: There is not a specific shared responsibility article for {{site.data.keyword.registryshort}}.
-

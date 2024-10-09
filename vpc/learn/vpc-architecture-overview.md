@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-03"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -21,7 +21,7 @@ subcollection: framework-financial-services
 ## Architecture diagram
 {: #vpc-arch-diagram}
 
-![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3.svg){: caption="Figure 1. High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
+![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3.svg){: caption="High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
 Central to the architecture are two VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
@@ -47,7 +47,7 @@ Other key features to note:
 
 The architecture in the previous section is the most secure way of enabling consumers to access the applications that are running in a workload VPC. However, there might be valid cases where it is desirable to allow consumers to access your service through the public internet. The same base architecture can be adapted to securely enable this type of access.
 
-![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3-with-edge.svg){: caption="Figure 2. High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
+![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3-with-edge.svg){: caption="High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
 
 The revised architecture adds:
 
@@ -78,7 +78,7 @@ Deploying the reference architecture depends upon VPC infrastructure and PaaS se
 | Logging and monitoring  | - [{{site.data.keyword.atracker_full_notm}}](#services-logging-platform-events) [^fs-validated-table-5] \n - [{{site.data.keyword.compliance_long}}](#services-scc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.fl_full}}](#services-logging-flow-logs) [^fs-validated-table-1-2]  |  |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams) |
 | Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) |
-{: caption="Table 1. Required and optional services for VPC reference architecture" caption-side="top"}
+{: caption="Required and optional services for VPC reference architecture" caption-side="top"}
 
 [^fs-validated-table-1-1]: {{site.data.content.only-required-virtual-servers}}
 
@@ -287,7 +287,7 @@ The following table provides a summary of the main features of the VPC reference
 | Endpoint protection  | Install your own software |
 | Event queues | {{site.data.keyword.messagehub}} or \n Install your own software |
 | Databases | Install your own software |
-{: caption="Table 2. Services needed for different parts of the VPC reference architecture" caption-side="top"}
+{: caption="Services needed for different parts of the VPC reference architecture" caption-side="top"}
 
 [^component-tabletext-1]: {{site.data.content.only-required-openshift}}
 

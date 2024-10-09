@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -44,10 +44,9 @@ The following table provides a summary of how the {{site.data.keyword.satellites
 | [Secure and manage secrets and certificates](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-secrets-management) | - Securely protect secrets through their entire lifecycle using tools like Hashicorp Vault. For more information, see [Handling and securing secrets](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets). | - Securely protect secrets that are needed in your IaaS / data center environment through their entire lifecycle by using tools like Hashicorp Vault. |
 | [Tag all {{site.data.keyword.cloud_notm}} resources with security attributes](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-security-attributes) | - Tag all {{site.data.keyword.cloud_notm}} resources in your account should be tagged with security attributes you define. For more information, see [Tagging {{site.data.keyword.cloud_notm}} resources and managing access with tags](/docs/framework-financial-services?topic=framework-financial-services-shared-tagging-resources). | - Tag all resources in your IaaS / data center environment based on security attributes that you define. Use tools of your choosing. |
 | [Monitor for security and compliance against a baseline configuration](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-security-compliance-monitoring) | - Deploy and use tools for monitoring and reporting of security and compliance. Maintain a baseline configuration for your service that consists of automated mechanisms to facilitate information system baseline management. See [Compliance monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance) for more details. | - Deploy and use tools for monitoring and reporting of security and compliance within your IaaS / data center environment. Maintain a baseline configuration for your service that consists of automated mechanisms to facilitate information system baseline management. |
-{: caption="Table 1. Technical principles and component requirements for the {{site.data.keyword.satelliteshort}} reference architecture" caption-side="top"}
+{: caption="Technical principles and component requirements for the {{site.data.keyword.satelliteshort}} reference architecture" caption-side="top"}
 
 ## Next steps
 {: #next-steps}
 
 - [Set up environment for deployment and configuration](/docs/framework-financial-services?topic=framework-financial-services-shared-deployment-setup-environment#shared-deployment-setup-environment)
-

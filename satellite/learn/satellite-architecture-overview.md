@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -25,7 +25,7 @@ With [{{site.data.keyword.satellitelong_notm}}](/docs/satellite), you can create
 
 When combined with other {{site.data.keyword.cloud_notm}} services that run in the cloud and other applications in your on-premises environment, the hybrid architecture of {{site.data.keyword.satelliteshort}} can be used to build robust solutions that are appropriate for financial and other regulated workloads. This hybrid architecture is shown in the following diagram.
 
-![High-level {{site.data.keyword.satelliteshort}} reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/satellite-crawl/Satellite_FS_Cloud_draft_04-06_with_Labels_beta2.svg){: caption="Figure 1. High-level {{site.data.keyword.satelliteshort}} reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
+![High-level {{site.data.keyword.satelliteshort}} reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/satellite-crawl/Satellite_FS_Cloud_draft_04-06_with_Labels_beta2.svg){: caption="High-level {{site.data.keyword.satelliteshort}} reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
 The following table provides an index to the components in the diagram.
 
@@ -41,7 +41,7 @@ The following table provides an index to the components in the diagram.
 |                                                                      | &#8291;9. [Cluster 1 master](#components-satellite-location-control-plane-workers) \n &#8291;9. [Cluster 2 master](#components-satellite-location-control-plane-workers) | |
 |                                                                      | &#8291;10. [Workload cluster 1](#components-satellite-location-workload-clusters) \n &#8291;10. [Workload cluster 2](#components-satellite-location-workload-clusters) | |
 {: summary="Index of components in the {{site.data.keyword.satelliteshort}} reference architecture diagram"}
-{: caption="Table 2. Index of components in the {{site.data.keyword.satelliteshort}} reference architecture diagram" caption-side="top"}
+{: caption="Index of components in the {{site.data.keyword.satelliteshort}} reference architecture diagram" caption-side="top"}
 
 {{site.data.keyword.satelliteshort}} also supports deployments to other public cloud providers. However, we do not explore that feature in this reference architecture.
 {: note}
@@ -68,7 +68,7 @@ When properly configured and managed, services that are Financial Services Valid
 | Logging and monitoring  | - [{{site.data.keyword.atracker_full}}](#services-logging-platform-events)[^tabletext] \n - [{{site.data.keyword.compliance_full}}](#services-scc) | |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams)       |
 | Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) |
-{: caption="Table 2. Required and optional services for {{site.data.keyword.satelliteshort}} reference architecture" caption-side="top"}
+{: caption="Required and optional services for {{site.data.keyword.satelliteshort}} reference architecture" caption-side="top"}
 
 [^tabletext]: {{site.data.content.event-routing-fs-validation}}
 
@@ -89,7 +89,7 @@ Most of the services that are mentioned run entirely in {{site.data.keyword.clou
 
 These exceptions have implications for what it means to be Financial Services Validated and that is represented in the following diagram and details. 
 
-![Financial Services Validated components in the {{site.data.keyword.satelliteshort}} reference architecture](../images/satellite-fs-validated-definition/satellite-fs-validated-definition.png){: caption="Figure 2. Financial Services Validated components in the {{site.data.keyword.satelliteshort}} reference architecture" caption-side="bottom"}
+![Financial Services Validated components in the {{site.data.keyword.satelliteshort}} reference architecture](../images/satellite-fs-validated-definition/satellite-fs-validated-definition.png){: caption="Financial Services Validated components in the {{site.data.keyword.satelliteshort}} reference architecture" caption-side="bottom"}
 
 - {{site.data.keyword.satelliteshort}} components that run in {{site.data.keyword.cloud_notm}} are validated to the same {{site.data.keyword.framework-fs_notm}} controls as any other Financial Services Validated product.
 - {{site.data.keyword.satelliteshort}} components and {{site.data.keyword.cloud_notm}} services that run in your on-premises environment that do not have a dependency on your configuration or underlying internal network and infrastructure components, are also validated to the applicable controls that were validated for these components in {{site.data.keyword.cloud_notm}}.
@@ -181,7 +181,7 @@ When you provision the {{site.data.keyword.satelliteshort}} service, the {{site.
 | {{site.data.keyword.monitoringfull_notm}} | The {{site.data.keyword.monitoringfull_notm}} component monitors the compute capacity in your {{site.data.keyword.satelliteshort}} location and the components that run in your {{site.data.keyword.satelliteshort}} control plane to detect issues and automatically resolve them if possible. These actions can include assigning more hosts to the control plane or restart components that keep on failing. For issues that cannot be resolved, {{site.data.keyword.IBM_notm}} Site Reliability Engineers are automatically informed for further investigation. |
 | {{site.data.keyword.satelliteshort}} Config | Based on the [Razee open source project](https://github.com/razee-io/Razee){: external}, {{site.data.keyword.satelliteshort}} Config is a continuous delivery tool that you can use to consistently roll out versions of your apps across {{site.data.keyword.openshiftshort}} clusters in {{site.data.keyword.satelliteshort}} locations. For more information, see [Deploying {{site.data.keyword.openshiftshort}} resources across clusters with {{site.data.keyword.satelliteshort}} configurations](/docs/satellite?topic=satellite-setup-clusters-satconfig). |
 {: summary="Overview of the {{site.data.keyword.satelliteshort}} control plane master components"}
-{: caption="Table 3. Overview of {{site.data.keyword.satelliteshort}} control plane master components" caption-side="top"}
+{: caption="Overview of {{site.data.keyword.satelliteshort}} control plane master components" caption-side="top"}
 
 ## {{site.data.keyword.satelliteshort}} location components
 {: #components-satellite-location}
@@ -217,7 +217,7 @@ The following table describes {{site.data.keyword.satelliteshort}} infrastructur
 | Hosts | Hosts are machines that reside in your infrastructure provider, across at least three separate zones, and must [meet the minimum host requirements](/docs/satellite?topic=satellite-host-reqs). After attaching the hosts to a {{site.data.keyword.satelliteshort}} location, you assign the hosts to the {{site.data.keyword.satelliteshort}} clusters to provide the computing power to run your application workloads. For more information, see [Setting up {{site.data.keyword.satelliteshort}} hosts](/docs/satellite?topic=satellite-host-concept). |
 | Storage | {{site.data.keyword.satelliteshort}} storage uses {{site.data.keyword.satelliteshort}} Config to provide a convenient way to install various storage drivers in {{site.data.keyword.openshiftlong_notm}} clusters across your {{site.data.keyword.satelliteshort}} locations, by using storage templates. The storage templates are provided and tested by the vendors. After you install {{site.data.keyword.satelliteshort}} storage, your cluster users can use Kubernetes persistent volume claims (PVCs) to order and save their application data in persistent storage. For more information, see [Understanding {{site.data.keyword.satelliteshort}} storage templates](/docs/satellite?topic=satellite-sat-storage-template-ov). |
 {: summary="Overview of the {{site.data.keyword.satelliteshort}} location infrastructure components"}
-{: caption="Table 4. Overview of the {{site.data.keyword.satelliteshort}} location infrastructure components" caption-side="top"}
+{: caption="Overview of the {{site.data.keyword.satelliteshort}} location infrastructure components" caption-side="top"}
 
 
 
@@ -234,7 +234,7 @@ The following table describes the components that run as {{site.data.keyword.sat
 | {{site.data.keyword.monitoringfull_notm}} | The {{site.data.keyword.monitoringfull_notm}} component monitors the compute capacity in your {{site.data.keyword.satelliteshort}} location and the components that run in your {{site.data.keyword.satelliteshort}} control plane to detect issues and automatically resolve them if possible. These actions can include assigning more hosts to the control plane or restart components that keep on failing. For issues that cannot be resolved, {{site.data.keyword.IBM_notm}} Site Reliability Engineers are automatically informed for further investigation. |
 | Cluster master | When you create a {{site.data.keyword.satelliteshort}} cluster in your location, the master of this cluster is deployed onto your {{site.data.keyword.satelliteshort}} control plane worker nodes to allow communication to {{site.data.keyword.cloud_notm}} and monitoring through {{site.data.keyword.IBM_notm}}. For more information, see [Creating {{site.data.keyword.satelliteshort}} clusters](/docs/openshift?topic=openshift-satellite-clusters).|
 {: summary="Overview of the {{site.data.keyword.satelliteshort}} control plane worker node components"}
-{: caption="Table 5. Overview of {{site.data.keyword.satelliteshort}} control plane worker node components" caption-side="top"}
+{: caption="Overview of {{site.data.keyword.satelliteshort}} control plane worker node components" caption-side="top"}
 
 ### Workload clusters
 {: #components-satellite-location-workload-clusters}
@@ -254,7 +254,7 @@ The following table describes these components in more detail.
 | Management plane | - Provides separation between your workloads and management operations. \n - Includes a bastion host and tools like CI/CD, logging, and monitoring. |
 | Other application services (optional) | - Provides any other on-premises services that are needed by your workloads, such as databases and APIs. |
 {: summary="Overview of other on-premises components outside of {{site.data.keyword.satelliteshort}} location"}
-{: caption="Table 6. Overview of other on-premises components outside of {{site.data.keyword.satelliteshort}} location" caption-side="top"}
+{: caption="Overview of other on-premises components outside of {{site.data.keyword.satelliteshort}} location" caption-side="top"}
 
 ## Next steps
 {: #next-steps}
@@ -262,4 +262,3 @@ The following table describes these components in more detail.
 - [{{site.data.keyword.satelliteshort}} use cases](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-use-cases)
 - [{{site.data.keyword.satelliteshort}} shared responsibility model](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-shared-responsibilities)
 - [{{site.data.keyword.satelliteshort}} architecture best practices](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices)
-

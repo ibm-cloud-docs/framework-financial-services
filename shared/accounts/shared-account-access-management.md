@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -51,7 +51,7 @@ For illustration, the following table shows one possible setup that provides for
 | cloud-billing-admins | Responsible for setting up billing accounts and monitoring their usage. |
 | cloud-devops | DevOps practitioners create or manage end-to-end pipelines that support continuous integration and delivery, monitoring, and system provisioning. |
 | cloud-developers | Developers are responsible for designing, coding, and testing applications. |
-{: caption="Table 1. Access groups" caption-side="bottom"}
+{: caption="Access groups" caption-side="bottom"}
 
 After the access groups are created, you can assign roles to them.
 
@@ -105,7 +105,7 @@ The following table provides references to additional information for managing a
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-access) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-access)  | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-service-access-management) |
 | Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-iam) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-iam) \n [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) |  |
 | Integration  | | | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-security) |
-{: caption="Table 1. Managing access for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
+{: caption="Managing access for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -119,10 +119,9 @@ The following table provides references to additional information for managing a
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-3 Access Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-3) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6) |
-{: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}
 
 * [Handling and securing secrets](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets)
-

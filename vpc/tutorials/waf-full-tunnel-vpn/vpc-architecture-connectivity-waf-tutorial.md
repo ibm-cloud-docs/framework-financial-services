@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-03"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -30,7 +30,7 @@ Guidance is provided, but you are solely responsible for installing, configuring
 
 The following architecture diagram shows a deployment of the VPC reference architecture that uses BIG-IP for WAF.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
 There are two main components to this solution:
 
@@ -45,7 +45,7 @@ There are two main components to this solution:
 
 The following diagram shows the flow of network traffic from a client application passing through {{site.data.keyword.cis_short_notm}} and BIG-IP to server-side applications running in {{site.data.keyword.openshiftshort}}.
 
-![{{site.data.keyword.cloud_notm}} Network path from client application through {{site.data.keyword.cis_short_notm}} and BIG-IP to provider's {{site.data.keyword.openshiftshort}} application](../../images/f5-bigip/cis-flow.svg){: caption="Figure 2. Network path from client application to {{site.data.keyword.openshiftshort}} application passing through {{site.data.keyword.cis_short_notm}} and BIG-IP." caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} Network path from client application through {{site.data.keyword.cis_short_notm}} and BIG-IP to provider's {{site.data.keyword.openshiftshort}} application](../../images/f5-bigip/cis-flow.svg){: caption="Network path from client application to {{site.data.keyword.openshiftshort}} application passing through {{site.data.keyword.cis_short_notm}} and BIG-IP." caption-side="bottom"}
 
 The network flow goes through the following steps:
 

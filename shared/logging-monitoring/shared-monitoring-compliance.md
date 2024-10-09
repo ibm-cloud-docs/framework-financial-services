@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -52,7 +52,7 @@ The following table provides references to additional information for managing s
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-manage-security-compliance) |
 | Logging and monitoring   | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-manage-security-compliance)  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} | |
 | Integration  | |   | - {{site.data.keyword.messagehub}} |
-{: caption="Table 1. Managing security and compliance for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
+{: caption="Managing security and compliance for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -73,10 +73,9 @@ For more information, see:
 | Maintenance (MA) | [MA-2 Controlled Maintenance](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ma-2)   |
 | System and Information Integrity (SI) | [SI-2 (2) Flaw Remediation &#124; Central Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-2.2) \n [SI-6 Security Functionality Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-6)   |
 | Security Assessment and Authorization (CA) | [CA-7 Continuous Monitoring](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-7)    |
-{: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}
 
 * [Operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-operational)
-

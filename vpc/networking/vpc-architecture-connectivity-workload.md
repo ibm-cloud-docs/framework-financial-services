@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-03"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -23,7 +23,7 @@ Previously, we saw how administrative access to the workload VPC can be accompli
 
 If the consumer is in the same organization that you are (such as the same financial institution), then the connection options are much the same as they are when you connect to the management VPC. That is, the consumer can connect to the workload VPC with either [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) or [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn). This is shown in the diagram below.
 
-![Connecting to workload VPC from on-premises with consumer in same organization as application provider](../images/vpc-single-region/vpc-single-region-consumer-intranet-v2.svg){: caption="Figure 1. Connecting to workload VPC from on-prem with consumer in same organization as application provider" caption-side="bottom"}
+![Connecting to workload VPC from on-premises with consumer in same organization as application provider](../images/vpc-single-region/vpc-single-region-consumer-intranet-v2.svg){: caption="Connecting to workload VPC from on-prem with consumer in same organization as application provider" caption-side="bottom"}
 
 
 ### {{site.data.keyword.dl_short}}
@@ -33,7 +33,7 @@ If the consumer is in the same organization that you are (such as the same finan
 
 The following diagram shows the {{site.data.keyword.dl_short}} connection pattern.
 
-![Consumer on-premises to workload VPC by using {{site.data.keyword.dl_short}}](../images/network-connectivity/consumer-to-workload-same-account/vpc-architecture-consumer-on-prem-to-provider-same-account-DL.svg){: caption="Figure 2. Consumer on-prem to workload VPC using {{site.data.keyword.dl_short}}" caption-side="bottom"}
+![Consumer on-premises to workload VPC by using {{site.data.keyword.dl_short}}](../images/network-connectivity/consumer-to-workload-same-account/vpc-architecture-consumer-on-prem-to-provider-same-account-DL.svg){: caption="Consumer on-prem to workload VPC using {{site.data.keyword.dl_short}}" caption-side="bottom"}
 
 For more information, see:
 
@@ -49,7 +49,7 @@ An alternative connectivity pattern requires using the {{site.data.keyword.vpn_v
 
 The following diagram shows the {{site.data.keyword.vpn_vpc_short}} connection pattern.
 
-![Consumer on-premises to workload VPC using {{site.data.keyword.vpn_vpc_short}}](../images/network-connectivity/consumer-to-workload-same-account/vpc-architecture-consumer-on-prem-to-provider-same-account-VPN.svg){: caption="Figure 3. Consumer on-prem to workload VPC using {{site.data.keyword.vpn_vpc_short}}" caption-side="bottom"}
+![Consumer on-premises to workload VPC using {{site.data.keyword.vpn_vpc_short}}](../images/network-connectivity/consumer-to-workload-same-account/vpc-architecture-consumer-on-prem-to-provider-same-account-VPN.svg){: caption="Consumer on-prem to workload VPC using {{site.data.keyword.vpn_vpc_short}}" caption-side="bottom"}
 
 For more information, see:
 
@@ -66,7 +66,7 @@ For more information, see:
 
 There are many valid cases where you might want to allow consumers to access your service through the public internet. The base architecture can be adapted to securely enable this type of access as shown in the following diagram which introduces a new edge VPC. The request from the consumer gets routed through a global load balancer outside of the edge VPC, through a web application firewall (WAF) in the edge VPC, and then to the public application load balancer within the workload VPC. This is shown in the following diagram.
 
-![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Figure 5. Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
+![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
 
 #### Global load balancer
 {: #consumer-provider-public-internet-glb}
@@ -113,7 +113,7 @@ Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribu
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | System and Communications Protection (SC)  | [SC-5 Denial of Service Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-5)    \n [SC-7 Boundary Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) \n [SC-7(4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-11)  |
-{: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}

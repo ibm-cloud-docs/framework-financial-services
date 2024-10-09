@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-03"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -37,7 +37,7 @@ We provide guidance here, but you are solely responsible for installing, configu
 
 The architecture diagram shows a monitoring deployment within a {{site.data.keyword.openshiftshort}} cluster for a single region. The architecture enables gathering metrics for {{site.data.keyword.openshiftshort}} applications and virtual server instances within your VPCs. The label "Prom" in the workload clusters represents Prometheus.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring" caption-side="bottom"}
 
 When you configure {{site.data.keyword.openshiftshort}} for both operational logging and operational monitoring, the worker nodes can be shared. You can use the same worker pool for both logging and monitoring. You can use the same taint tag to steer monitoring and logging pods to the shared worker pool.
 {: tip}

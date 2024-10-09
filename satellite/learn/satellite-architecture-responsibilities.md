@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-29"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -35,14 +35,14 @@ For all products, these responsibilities cut across the following five task area
 | [Security and regulation compliance](/docs/satellite?topic=satellite-responsibilities#security-compliance) | Includes tasks such as security controls implementation and compliance certification. |
 | [Disaster Recovery](/docs/satellite?topic=satellite-responsibilities#disaster-recovery) | Includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events. |
 {: summary="The rows are read from left to right. The first column is the title for the set of tasks. The next column describe the tasks."}
-{: caption="Table 1. Tasks areas in {{site.data.keyword.cloud_notm}} shared responsibility model" caption-side="top"}
+{: caption="Tasks areas in {{site.data.keyword.cloud_notm}} shared responsibility model" caption-side="top"}
 
 ## Additional roles for shared responsibility matrix
 {: #satellite-architecture-shared-responsibilities-roles}
 
 The two-party view of responsibility doesn't adequately account for the broader set of roles (often represented by teams or even different companies) that need to collaborate to ensure that the overall solution provides a secure platform for workloads and data. In the following diagram and table, a broader set of roles is defined.
 
-![Roles for {{site.data.keyword.satelliteshort}} reference architecture RACI matrix](../images/satellite-raci-roles/satellite_raci_roles_05_17_beta2.svg){: caption="Figure 1. Roles for {{site.data.keyword.satelliteshort}} reference architecture RACI matrix" caption-side="bottom"}
+![Roles for {{site.data.keyword.satelliteshort}} reference architecture RACI matrix](../images/satellite-raci-roles/satellite_raci_roles_05_17_beta2.svg){: caption="Roles for {{site.data.keyword.satelliteshort}} reference architecture RACI matrix" caption-side="bottom"}
 
 | Role | Description |
 | - | - |
@@ -52,7 +52,7 @@ The two-party view of responsibility doesn't adequately account for the broader 
 | On-premises IaaS / data center provider | Client IT operations and facilities teams responsible for the data center, networking, hardware, and virtualization that supports the on-premises PaaS and workload. |
 | {{site.data.keyword.cloud_notm}} IaaS / data center provider | {{site.data.keyword.cloud_notm}} development and operations teams responsible for the direct {{site.data.keyword.satelliteshort}} management capabilities and supporting services that run in {{site.data.keyword.cloud_notm}}. |
 {: summary="The rows are read from left to right. The first column is the title for the role. The next columns describe the role."}
-{: caption="Table 2. Roles for deploying, managing, and operating all components of the Satellite reference architecture" caption-side="top"}
+{: caption="Roles for deploying, managing, and operating all components of the Satellite reference architecture" caption-side="top"}
 
 
 
@@ -82,7 +82,7 @@ Review the following table of who is responsible for particular cloud resources 
 | Physical network and devices | On-prem IaaS / data center provider | On-prem IaaS / data center provider | On-prem IaaS / data center provider | On-prem IaaS / data center provider | On-prem IaaS / data center provider |
 | Facilities and data centers | On-prem IaaS / data center provider | On-prem IaaS / data center provider | On-prem IaaS / data center provider | On-prem IaaS / data center provider | On-prem IaaS / data center provider |
 {: summary="The rows are read from left to right. The resource area of comparing responsibilities is in the first column. The next five columns describe whether you, {{site.data.keyword.IBM_notm}} , or both have shared responsibilities for a particular area."}
-{: caption="Table 3. Overview of shared responsibilities." caption-side="top"}
+{: caption="Overview of shared responsibilities." caption-side="top"}
 
 ## {{site.data.keyword.satelliteshort}} location control plane and workload clusters
 {: #satellite-location-control-plane-workload-clusters}
@@ -111,7 +111,7 @@ The following table goes a level deeper and shows the shared responsibilities fo
 | Physical network and devices | On-premises IaaS / data center provider | On-premises IaaS / data center provider |
 | Facilities and data centers | On-premises IaaS / data center provider | On-premises IaaS / data center provider |
 {: summary="The rows are read from left to right. The resource area for comparing responsibilities in the {{site.data.keyword.satelliteshort}} location is in the first column. The next two columns describe whether you, {{site.data.keyword.IBM_notm}}, or both have shared responsibilities for a particular area."}
-{: caption="Table 4. Overview of shared responsibilities in {{site.data.keyword.satelliteshort}} location." caption-side="top"}
+{: caption="Overview of shared responsibilities in {{site.data.keyword.satelliteshort}} location." caption-side="top"}
 
 [^tabletext-1]: {{site.data.content.workload-provider-responsibilities-link}}
 

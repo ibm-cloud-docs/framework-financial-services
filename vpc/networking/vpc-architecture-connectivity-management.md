@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -28,7 +28,7 @@ Operators who are connecting to the on-premises enterprise network from offsite 
 
 The following diagram shows the {{site.data.keyword.dl_short}} connection pattern.
 
-![Application provider on-premises to management VPC by using {{site.data.keyword.dl_short}}](../images/network-connectivity/provider-to-management-vpc/vpc-architecture-provider-on-prem-to-management-vpc-DL.svg){: caption="Figure 1. Application provider on-prem to management VPC using {{site.data.keyword.dl_short}}" caption-side="bottom"}
+![Application provider on-premises to management VPC by using {{site.data.keyword.dl_short}}](../images/network-connectivity/provider-to-management-vpc/vpc-architecture-provider-on-prem-to-management-vpc-DL.svg){: caption="Application provider on-prem to management VPC using {{site.data.keyword.dl_short}}" caption-side="bottom"}
 
 For more information, see:
 
@@ -46,7 +46,7 @@ An alternative connectivity pattern is to use the {{site.data.keyword.vpn_vpc_sh
 
 The following diagram shows the {{site.data.keyword.vpn_vpc_short}} connection pattern.
 
-![Application provider on-premises to management VPC by using {{site.data.keyword.vpn_vpc_short}}](../images/network-connectivity/provider-to-management-vpc/vpc-architecture-provider-on-prem-to-management-vpc-VPN.svg){: caption="Figure 2. Application provider on-prem to management VPC using {{site.data.keyword.vpn_vpc_short}}" caption-side="bottom"}
+![Application provider on-premises to management VPC by using {{site.data.keyword.vpn_vpc_short}}](../images/network-connectivity/provider-to-management-vpc/vpc-architecture-provider-on-prem-to-management-vpc-VPN.svg){: caption="Application provider on-prem to management VPC using {{site.data.keyword.vpn_vpc_short}}" caption-side="bottom"}
 
 For more information, see:
 
@@ -71,10 +71,9 @@ The third option for connectivity for your operators is to use a full tunnel cli
 | Audit and Accountability (AU) | [AU-10 Non-repudiation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-10)  |
 | Security Assessment and Authorization (CA)  | [CA-3 Information Exchange](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3)  |
 | System and Communications Protection (SC)  | [SC-7 Boundary Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) \n [SC-7 (4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-10 Network Disconnect](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-10) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-11)  |
-{: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}
 
 * [Performing operator actions through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion)
-

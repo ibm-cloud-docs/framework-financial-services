@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-03"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -43,7 +43,7 @@ The capability of the [{{site.data.keyword.openshiftshort}} Cluster Logging Oper
 
 When using {{site.data.keyword.openshiftshort}} logging for financial service environments, you must install the Elasticsearch Operator and Cluster Logging Operator in every {{site.data.keyword.openshiftshort}} cluster that requires logging. The logs are retained by the Elasticsearch servers that are running in that cluster and stored on the attached VPC block storage (which must be [encrypted by using keys that are managed by {{site.data.keyword.hscrypto}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-at-rest)). The logs can be searched and viewed by using the Kibana server that is deployed in that cluster. The following diagram shows the Elasticsearch pods that are deployed to three zones within both the management and workload VPCs. Kibana is shown deployed to a single zone.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with logging ](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Figure 1. Single-region VPC reference architecture using EFK for logging" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with logging ](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Single-region VPC reference architecture using EFK for logging" caption-side="bottom"}
 
 The {{site.data.keyword.openshiftshort}} pods that are running the Elasticsearch, Kibana, and Fluentd components are assigned to a worker pool that is dedicated to logging. A dedicated worker pool prevents logging operations from stealing resources from pods that are running other applications. Worker pools are not shown in the diagram.
 
