@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-11-01"
 
 keywords: 
 
@@ -32,8 +32,7 @@ Subnets consist of a specified IP address range (CIDR block). Subnets are bound 
 
 For more information, see [About networking](/docs/vpc?topic=vpc-about-networking-for-vpc).
 
-{{site.data.keyword.cloud_notm}} for Financial Services that stuff in About networking like
-Public Gateway and Floating IPs should not generally be used. -->
+
 
 ### Access control lists and security groups
 {: #security-groups-access-control-lists}
@@ -81,4 +80,3 @@ See [About Block Storage for VPC](/docs/vpc?topic=vpc-block-storage-about) for m
 {: #next-steps}
 
 * Take a deeper look at the [VPC reference architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi).
-
