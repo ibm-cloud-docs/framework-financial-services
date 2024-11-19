@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -41,7 +41,7 @@ With [Auto Scale for VPC](/docs/vpc?topic=vpc-creating-auto-scale-instance-group
 ##### Containers
 {: #your-workloads-multizone-scaling-containers}
 
-For {{site.data.keyword.openshiftshort}}, you can use the `cluster-autoscaler` add-on to scale the worker pools in your cluster automatically to increase or decrease the number of worker nodes in the worker pool based on the sizing needs of your scheduled workloads. The `cluster-autoscaler` add-on is based on the [Kubernetes Cluster-Autoscaler project](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler). See [Autoscaling clusters](/docs/openshift?topic=openshift-ca) for more information.
+For {{site.data.keyword.openshiftshort}}, you can use the `cluster-autoscaler` add-on to scale the worker pools in your cluster automatically to increase or decrease the number of worker nodes in the worker pool based on the sizing needs of your scheduled workloads. The `cluster-autoscaler` add-on is based on the [Kubernetes Cluster-Autoscaler project](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler). See [Autoscaling clusters](/docs/openshift?topic=openshift-cluster-scaling-classic-vpc&interface=ui) for more information.
 
 In addition, it is possible to autoscale your pods. See [Scaling apps](/docs/openshift?topic=openshift-update_app#app_scaling) for more information.
 
@@ -68,7 +68,7 @@ For completeness, the diagram below shows the VPC architecture spread across mul
 
 See the following tutorials for more information:
 
-* [Strategies for resilient applications](/docs/solution-tutorials?topic=solution-tutorials-strategies-for-resilient-applications)
+* [Strategies for resilient applications](/docs/overview?topic=overview-bcdr-app-recovery)
 * [Deploy isolated workloads across multiple locations and zones](/docs/solution-tutorials?topic=solution-tutorials-vpc-multi-region)
 
 ## HA for {{site.data.keyword.cloud_notm}} services

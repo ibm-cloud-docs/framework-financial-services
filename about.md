@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-01"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -94,7 +94,7 @@ Through the shared responsibility model of the {{site.data.keyword.framework-fs_
 * Reduction in the time and effort by financial institutions to ensure the compliance of third-party vendors, and more time spent delivering new, innovative services to their customers.
 * Streamlined procurement, contracting, and onboarding within the ecosystem that leads to reduced time to market for all parties.
 
-In addition, ecosystem partners (even those who are not yet {{site.data.keyword.cloud_notm}} for Financial Services Validated) are encouraged to [onboard to the {{site.data.keyword.cloud_notm}} catalog](/docs/framework-financial-services?topic=framework-financial-services-onboarding-to-catalog).
+In addition, ecosystem partners (even those who are not yet {{site.data.keyword.cloud_notm}} for Financial Services Validated) are encouraged to [onboard to the {{site.data.keyword.cloud_notm}} catalog](/docs/sell?topic=sell-selling-clouds).
 
 ## Next steps
 {: #next-steps}

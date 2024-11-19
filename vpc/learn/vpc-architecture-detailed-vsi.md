@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}
 {: #vpc-architecture-detailed-vsi}
 
-Now that you've seen the [high-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about) and looked at some [VPC concepts](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about), we will take a deeper look at some of the details of a reference architecture that uses virtual servers.
+Now that you've seen the [high-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about) and looked at some [VPC concepts](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-concepts), we will take a deeper look at some of the details of a reference architecture that uses virtual servers.
 {: shortdesc}
 
 This architecture shows a deployment of the VPC that uses {{site.data.keyword.vsi_is_short}} as the primary compute.

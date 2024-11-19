@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -79,7 +79,7 @@ For more information, see the following resources:
 
 * [Getting started with {{site.data.keyword.cis_short_notm}}](/docs/cis?topic=cis-getting-started)
 * [Configuring a global load balancer](/docs/cis?topic=cis-global-load-balancer-glb-concepts)
-* [Protecting TCP traffic (Range)](/docs/cis?topic=cis-configure-glb)
+* [Protecting TCP traffic (Range)](/docs/cis?topic=cis-cis-range&interface=ui)
 
 #### Edge VPC with web application firewall
 {: #consumer-provider-public-internet-waf}
@@ -103,7 +103,7 @@ Finally, the bastion can be put either in the edge VPC or the management VPC. If
 Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribute traffic among multiple server instances within the same region of your VPC. For more information, see the following resources:
 
 * [About {{site.data.keyword.cloud_notm}} {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers&interface=ui)
-* [Creating an {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancer)
+* [Creating an {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers&interface=ui)
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}

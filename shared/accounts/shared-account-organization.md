@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -98,7 +98,7 @@ For the {{site.data.keyword.satelliteshort}} reference architecture, we still ha
 ### Rationale for using an enterprise
 {: #enterprises-rationale}
 
-Unless you have a limited number of deployments and accounts, it is highly recommended that you use an [enterprise](/docs/account?topic=account-what-is-enterprise). Large enterprises that allow an account structure, cross account networking, resource deployment, and billing to develop organically run the risk of encountering governance, scaling, security, and accounting issues. See [Enterprise account architecture](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-about) for recommendations on how to address these concerns across accounts so that a robust, compliant, and scalable solution can be achieved.
+Unless you have a limited number of deployments and accounts, it is highly recommended that you use an [enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise). Large enterprises that allow an account structure, cross account networking, resource deployment, and billing to develop organically run the risk of encountering governance, scaling, security, and accounting issues. See [Enterprise account architecture](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-about) for recommendations on how to address these concerns across accounts so that a robust, compliant, and scalable solution can be achieved.
 
 ### Organizing your enterprise
 {: #enterprises-organization}

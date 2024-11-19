@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -50,7 +50,7 @@ See the following for more information on {{site.data.keyword.registryshort}} an
 
 * [About {{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_overview)
 * [Setting up {{site.data.keyword.registryshort}} as a private registry on {{site.data.keyword.openshiftlong_notm}}](/docs/Registry?topic=Registry-registry_rhos)
-* [Managing image security with Vulnerability Advisor](/docs/Registry?topic=va-va_index)
+* [Managing image security with Vulnerability Advisor](/docs/Registry?topic=Registry-va_index&interface=ui)
 * [Signing images for trusted content](/docs/Registry?topic=Registry-registry_trustedcontent)
 * [{{site.data.keyword.registryshort}} and Vulnerability Advisor workflow tutorial](/docs/Registry?topic=Registry-registry_tutorial_workflow)
 

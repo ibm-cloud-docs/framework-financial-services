@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -41,7 +41,7 @@ Aside from backing up data from the {{site.data.keyword.satelliteshort}} locatio
 ## Storage in {{site.data.keyword.satelliteshort}} location
 {: #satellite-architecture-storage-satellite-location}
 
-Within the {{site.data.keyword.satelliteshort}} location, {{site.data.keyword.satelliteshort}} storage uses {{site.data.keyword.satelliteshort}} Config to provide a convenient way to install various storage drivers in {{site.data.keyword.openshiftshort}} clusters, by using storage templates. The storage templates are provided and tested by the vendors. After you install {{site.data.keyword.satelliteshort}} storage, your cluster users can use Kubernetes persistent volume claims (PVCs) to order and save their application data in persistent storage. For more information, see [Understanding {{site.data.keyword.satelliteshort}} storage](/docs/satellite?topic=satellite-sat-storage-template-ov).
+Within the {{site.data.keyword.satelliteshort}} location, {{site.data.keyword.satelliteshort}} storage uses {{site.data.keyword.satelliteshort}} Config to provide a convenient way to install various storage drivers in {{site.data.keyword.openshiftshort}} clusters, by using storage templates. The storage templates are provided and tested by the vendors. After you install {{site.data.keyword.satelliteshort}} storage, your cluster users can use Kubernetes persistent volume claims (PVCs) to order and save their application data in persistent storage. For more information, see [Understanding {{site.data.keyword.satelliteshort}} storage](/docs/satellite?topic=satellite-storage-template-ov).
 
 {{site.data.content.encryption-at-rest-in-satellite-location-important}}
 
@@ -57,4 +57,3 @@ More details on some of the major {{site.data.keyword.framework-fs_notm}} contro
 {: #next-steps}
 
 * [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit)
-

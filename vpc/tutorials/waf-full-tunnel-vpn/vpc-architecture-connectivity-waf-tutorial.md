@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -22,7 +22,7 @@ completion-time: 4h
 {: toc-services="cis, vpc, f5"}
 {: toc-completion-time="4h"}
 
-There are several architectural approaches to enabling [consumer connectivity to the workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload). When using [public internet access to the workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload), a web application firewall (WAF) is required. A WAF helps protect web applications by filtering and monitoring internet traffic. This tutorial guides you through one approach to enabling WAF by using [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) and [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external}. Global load balancing along with a WAF forms the basis for you to meet {{site.data.keyword.framework-fs_notm}} requirements for boundary protection.
+There are several architectural approaches to enabling [consumer connectivity to the workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload). When using [public internet access to the workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet), a web application firewall (WAF) is required. A WAF helps protect web applications by filtering and monitoring internet traffic. This tutorial guides you through one approach to enabling WAF by using [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) and [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external}. Global load balancing along with a WAF forms the basis for you to meet {{site.data.keyword.framework-fs_notm}} requirements for boundary protection.
 {: shortdesc}
 
 Guidance is provided, but you are solely responsible for installing, configuring, and operating {{site.data.keyword.IBM_notm}} third-party software in a way that satisfies {{site.data.keyword.framework-fs_notm}} requirements. In addition, {{site.data.keyword.IBM_notm}} does not provide support for third-party software.
@@ -195,7 +195,7 @@ For each server certificate that you have, complete the following actions:
 
 In this step, you create a cipher policy and group to limit the ciphers that are able to be used for a secure connection.
 
-For more information on TLS requirements and acceptable cipher suites, see [Data encryption in transit](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-in-transit).
+For more information on TLS requirements and acceptable cipher suites, see [Data encryption in transit](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit).
 {: important}
 
 ### Create a cipher policy

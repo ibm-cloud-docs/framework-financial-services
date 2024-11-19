@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -42,7 +42,7 @@ We recommend that you use a Web Application Firewall (WAF) in your edge plane fo
 - External IP
 - NodePort
 
-For more information, see [Exposing apps in Satellite clusters](/docs/openshift?topic=openshift-sat-expose-apps) and [Ingress traffic configuration](https://docs.openshift.com/container-platform/4.10/networking/configuring_ingress_cluster_traffic/overview-traffic.html){: external}.
+For more information, see [Exposing apps in Satellite clusters](/docs/openshift?topic=openshift-sat-expose-apps), [About Ingress](/docs/openshift?topic=openshift-ingress-about-roks4), and [Ingress traffic configuration](https://docs.openshift.com/container-platform/4.10/networking/configuring_ingress_cluster_traffic/overview-traffic.html){: external}.
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}

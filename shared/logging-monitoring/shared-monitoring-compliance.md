@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -30,7 +30,7 @@ Running a scan against a specific profile does not ensure regulatory compliance.
 
 The {{site.data.keyword.cloud_notm}} for Financial Services profile provides a tailored set of goals that are mapped to the [{{site.data.keyword.framework-fs_notm}} control requirements](/docs/framework-financial-services?topic=framework-financial-services-about#framework-control-requirements). This profile should always be used when leveraging the [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
 
-In addition, if you are using {{site.data.keyword.openshiftshort}} (whether in the VPC reference architecture or the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)), then you should leverage the [{{site.data.keyword.openshiftshort}} Compliance Operator (OSCO) (OSCO)](https://github.com/openshift/compliance-operator){: external} via the [OSCO integration](/docs/security-compliance?topic=security-compliance-setup-osco) with SCC.
+In addition, if you are using {{site.data.keyword.openshiftshort}} (whether in the VPC reference architecture or the [{{site.data.keyword.satelliteshort}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about)), then you should leverage the [{{site.data.keyword.openshiftshort}} Compliance Operator (OSCO) (OSCO)](https://github.com/openshift/compliance-operator){: external} via the [OSCO integration](/docs/security-compliance?topic=security-compliance-osco-scan) with SCC.
 
 To start evaluating your resources, see the [Getting started with {{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-getting-started)
 
@@ -45,12 +45,12 @@ The following table provides references to additional information for managing s
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
-| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-manage-security-compliance) [^tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-compliance#platform-compliance) | |
-| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-manage-security-compliance) \n - [{{site.data.keyword.registryshort}}](/docs/openshift?topic=openshift-manage-security-compliance) | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-manage-security-compliance) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/openshift?topic=openshift-manage-security-compliance) |  |
-| Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-manage-security-compliance) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-manage-security-compliance) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-manage-security-compliance) |  |  |
-| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-manage-security-compliance) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-manage-security-compliance) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-manage-security-compliance) |  |
-| Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-manage-security-compliance) |
-| Logging and monitoring   | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-manage-security-compliance)  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} | |
+| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-responsibilities-vpc#security-compliance) [^tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-compliance#platform-compliance) | |
+| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-responsibilities_iks#security-compliance) \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_responsibilities#security-compliance) | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-satellite-responsibilities#security-compliance-sat) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_responsibilities#security-compliance) |  |
+| Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-responsibilities-vpc#security-compliance) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-responsibilities#security-compliance) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-tg-responsibilities#security-rich-environment) |  |  |
+| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-responsibilities-vpc#security-compliance) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-responsibilities#responsibilities-security) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-responsibilities#responsibilities-security) |  |
+| Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-security-compliance) | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-faq#faq-keycloak) |
+| Logging and monitoring   | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-responsibilities-vpc#security-compliance)  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} | |
 | Integration  | |   | - {{site.data.keyword.messagehub}} |
 {: caption="Managing security and compliance for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
@@ -60,7 +60,7 @@ The following table provides references to additional information for managing s
 
 For more information, see:
 
-* [Managing security and compliance in {{site.data.keyword.cloud_notm}}](/docs/overview?topic=overview-manage-security-compliance) - provides details on security and compliance within platform services.
+* [Understanding compliance in {{site.data.keyword.cloud_notm}}](/docs/overview?topic=overview-compliance) - provides details on compliance within platform services.
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}

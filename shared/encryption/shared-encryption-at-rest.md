@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -27,7 +27,7 @@ With {{site.data.keyword.hscrypto}} you can take ownership of the cloud HSM to f
 
 Some organizations require the use of a dedicated HSM where the device can be initialized by their cryptography specialists. We offer [{{site.data.keyword.hscrypto}} with Bring Your Own HSM](/docs/hs-crypto?topic=hs-crypto-introduce-bring-your-own-hsm) to enable those organizations to manage their HSM over the network at a remote location. This solution does uses the {{site.data.keyword.hscrypto}} key manager that has been Financial Services Validated but as IBM has no control over the Bring Your Own HSM, this solution as a whole isn't Financial Services Validated.
 
-Where you have systems not requiring a [high security categorization](/docs/framework-financial-services?topic=security-system-categorization), you have the option of using {{site.data.keyword.keymanagementservicefull}} for your key management. {{site.data.keyword.keymanagementserviceshort}} is a multi-tenant cloud service using the [Bring Your Own Key (BYOK)](/docs/key-protect?topic=key-protect-manage-secrets-ibm-cloud#key-features) concept. Many capabilities are common between {{site.data.keyword.hscrypto}} and {{site.data.keyword.keymanagementserviceshort}} but the underlying security implementation is different as shown in Table 1.
+Where you have systems not requiring a [high security categorization](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization), you have the option of using {{site.data.keyword.keymanagementservicefull}} for your key management. {{site.data.keyword.keymanagementserviceshort}} is a multi-tenant cloud service using the [Bring Your Own Key (BYOK)](/docs/key-protect?topic=key-protect-manage-secrets-ibm-cloud#key-features) concept. Many capabilities are common between {{site.data.keyword.hscrypto}} and {{site.data.keyword.keymanagementserviceshort}} but the underlying security implementation is different as shown in Table 1.
 
 | | {{site.data.keyword.hscrypto}} | {{site.data.keyword.hscrypto}} with Bring Your Own HSM [^kms-byohsm] | {{site.data.keyword.keymanagementserviceshort}} |
 |----|----|------|----|

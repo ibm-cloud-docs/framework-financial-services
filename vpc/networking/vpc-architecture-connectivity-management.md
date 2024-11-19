@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -35,7 +35,7 @@ For more information, see:
 * [Interconnecting your VPC that uses {{site.data.keyword.cloud_notm}} offerings](/docs/vpc?topic=vpc-interconnectivity)
 * [Getting started with {{site.data.keyword.dl_short}}](/docs/dl/getting-started?topic=dl-get-started-with-ibm-cloud-dl)
 * [Ordering {{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-dedicated)
-* [Integrating with Virtual Private Endpoint for VPC](/docs/dl?topic=dl-vpe-for-ibm-cloud-direct-link)
+* [Integrating with Virtual Private Endpoint for VPC](/docs/dl?topic=dl-vpe-connection&interface=cli)
 
 
 

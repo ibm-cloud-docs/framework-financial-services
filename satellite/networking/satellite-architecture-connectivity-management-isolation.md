@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -22,7 +22,7 @@ Network flow rule design should follow the {{site.data.keyword.framework-fs_notm
 
 ## Before you begin
 
-1. Complete the work for [account setup and management](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-account-setup).
+1. Complete the work for [account setup and management](/docs/framework-financial-services?topic=framework-financial-services-shared-account-setup).
 2. Complete [{{site.data.keyword.satelliteshort}} location setup](/docs/satellite?topic=satellite-locations).
 
 ## Identify network areas for control plane hosts and workload hosts
@@ -67,7 +67,7 @@ The following rules for workload hosts must be implemented within the networking
 ## (Optional) Configure virtual network flow rules within {{site.data.keyword.openshiftshort}}
 {: #security-groups-workload}
 
-1. Configure virtual network flow rules within {{site.data.keyword.openshiftshort}}. In addition to the network flow controls implemented within the IaaS layer of the {{site.data.keyword.satelliteshort}} location, you can use virtual networking features of {{site.data.keyword.openshiftshort}} to control network flows within and into your cluster. You can use [Kubernetes network policies](/docs/openshift?topic=openshift-vpc-kube-policies) or [Calico network policies](https://projectcalico.docs.tigera.io/security/protect-hosts){: external} to define network flow restrictions for each workload deployed on your {{site.data.keyword.openshiftshort}} cluster.
+1. Configure virtual network flow rules within {{site.data.keyword.openshiftshort}}. In addition to the network flow controls implemented within the IaaS layer of the {{site.data.keyword.satelliteshort}} location, you can use virtual networking features of {{site.data.keyword.openshiftshort}} to control network flows within and into your cluster. You can use [Kubernetes network policies](/docs/openshift?topic=openshift-vpc-kube-policies) or [Calico network policies](/docs/openshift?topic=openshift-policy_tutorial){: external} to define network flow restrictions for each workload deployed on your {{site.data.keyword.openshiftshort}} cluster.
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -41,7 +41,7 @@ The final result is a general logging solution that can be used for:
 
 The capability of the [{{site.data.keyword.openshiftshort}} Cluster Logging Operator](https://docs.openshift.com/container-platform/4.6/logging/cluster-logging.html){: external} allows administrators to aggregate logs across a {{site.data.keyword.openshiftshort}} cluster. These logs include application container logs, infrastructure component logs, and system audit logs. Administrators deploy cluster logging by deploying the Elasticsearch Operator and the Cluster Logging Operator. These operators deploy Elasticsearch servers for collecting and indexing logs, Fluentd for sending logs from worker nodes, and Kibana for searching and displaying the logs.
 
-When using {{site.data.keyword.openshiftshort}} logging for financial service environments, you must install the Elasticsearch Operator and Cluster Logging Operator in every {{site.data.keyword.openshiftshort}} cluster that requires logging. The logs are retained by the Elasticsearch servers that are running in that cluster and stored on the attached VPC block storage (which must be [encrypted by using keys that are managed by {{site.data.keyword.hscrypto}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-at-rest)). The logs can be searched and viewed by using the Kibana server that is deployed in that cluster. The following diagram shows the Elasticsearch pods that are deployed to three zones within both the management and workload VPCs. Kibana is shown deployed to a single zone.
+When using {{site.data.keyword.openshiftshort}} logging for financial service environments, you must install the Elasticsearch Operator and Cluster Logging Operator in every {{site.data.keyword.openshiftshort}} cluster that requires logging. The logs are retained by the Elasticsearch servers that are running in that cluster and stored on the attached VPC block storage (which must be [encrypted by using keys that are managed by {{site.data.keyword.hscrypto}}](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest)). The logs can be searched and viewed by using the Kibana server that is deployed in that cluster. The following diagram shows the Elasticsearch pods that are deployed to three zones within both the management and workload VPCs. Kibana is shown deployed to a single zone.
 
 ![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with logging ](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Single-region VPC reference architecture using EFK for logging" caption-side="bottom"}
 

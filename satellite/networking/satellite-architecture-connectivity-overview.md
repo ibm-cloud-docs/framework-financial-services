@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -24,7 +24,7 @@ Properly setting up and managing your networking components is critical to build
 Walk through the topics for how to build out your networking solution:
 
 * [Ensuring isolation between {{site.data.keyword.satelliteshort}} management functions and workload functions](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-management-isolation)
-* [Accessing external resources from the {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-internet)
+* [Accessing external resources from the {{site.data.keyword.satelliteshort}} location](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-external)
 * [Workload operator actions through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-bastion)
-* [Connectivity to {{site.data.keyword.cloud_notm}} services with Satellite Link](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-ibm-services)
+* [Connectivity to {{site.data.keyword.cloud_notm}} services with Satellite Link](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-to-services)
 * [Consumer connectivity to workload resources](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-connectivity-workload)
