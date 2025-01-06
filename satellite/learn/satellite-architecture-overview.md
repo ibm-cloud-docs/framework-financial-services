@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-01-06"
 
 keywords: 
 
@@ -55,7 +55,11 @@ When properly configured and managed, services that are Financial Services Valid
 
 {{site.data.content.fs-validated-disclaimer-important}}
 
+<!-- 
+  TODO: Pulling out Direct Link from relevant services until we have publicly documented support for it.
 
+  | Networking on-premises to {{site.data.keyword.cloud_notm}}  | - [{{site.data.keyword.dl_full}} (2.0)](#services-networking-direct-link) |  |
+-->
 
 
 
@@ -219,7 +223,13 @@ The following table describes {{site.data.keyword.satelliteshort}} infrastructur
 {: summary="Overview of the {{site.data.keyword.satelliteshort}} location infrastructure components"}
 {: caption="Overview of the {{site.data.keyword.satelliteshort}} location infrastructure components" caption-side="top"}
 
+<!-- 
 
+- TODO: Will want to mention these things that I removed from the table as they become available:
+
+| {{site.data.keyword.satelliteshort}} Mesh | **Not available yet.** This feature is offering Istio-as-a-Service for traffic management in a {{site.data.keyword.satelliteshort}} location. |
+| [{{site.data.keyword.satelliteshort}}-enabled {{site.data.keyword.cloud_notm}} service](/docs/satellite?topic=satellite-managed-services) | An {{site.data.keyword.cloud_notm}} service that you can set up in a {{site.data.keyword.satelliteshort}} location, such as a {{site.data.keyword.openshiftlong_notm}} cluster. The service is managed from the {{site.data.keyword.cloud_notm}} region that your location is managed from, but you provide the infrastructure hosts to run the service's resources in your location. For more information, see [What {{site.data.keyword.cloud_notm}} services can I use with my {{site.data.keyword.satelliteshort}} location?](/docs/satellite?topic=satellite-faqs#supported-services). |
+-->
 
 ### {{site.data.keyword.satelliteshort}} control plane worker nodes
 {: #components-satellite-location-control-plane-workers}

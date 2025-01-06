@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-01"
+  years: 2020, 2025
+lastupdated: "2025-01-06"
 
 keywords: 
 
@@ -32,7 +32,8 @@ Subnets consist of a specified IP address range (CIDR block). Subnets are bound 
 
 For more information, see [About networking](/docs/vpc?topic=vpc-about-networking-for-vpc).
 
-
+<!-- Might want to note for {[fs-cloud-notm]} that stuff in About networking like
+Public Gateway and Floating IPs should not generally be used. -->
 
 ### Access control lists and security groups
 {: #security-groups-access-control-lists}

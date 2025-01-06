@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-01-06"
 
 keywords: 
 
@@ -91,7 +91,10 @@ VPE is an evolution of the private connectivity to {{site.data.keyword.cloud_not
 
 ### Direct Link
 
-
+<!-- TODO: Moved this to phrases.json so I could use in table cells.
+Use [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) to seamlessly connect your on-premises resources to your cloud resources. The speed and reliability of {{site.data.keyword.dl_short}} extends your organization’s data center network and offers more consistent, higher-throughput connectivity, keeping traffic within the {{site.data.keyword.cloud_notm}} network. {{site.data.keyword.dl_short}} is the most secure way to enable connectivity from on-premises environments to {{site.data.keyword.cloud_notm}}.
+{: #service-description-direct-link}
+-->
 
 ### Block Storage for VPC
 
@@ -109,7 +112,10 @@ To learn more and to start creating {{site.data.keyword.block_storage_is_short}}
 
 ### Cloud Object Storage
 
-
+<!-- TODO: Moved this to phrases.json so I could use in table cells.
+[{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage) stores encrypted and dispersed data across multiple geographic locations. {{site.data.keyword.cos_short}} is available with three types of resiliency: Cross Region, Regional, and Single Data Center. Cross Region provides higher durability and availability than using a single region at the cost of slightly higher latency. Regional service reverses those tradeoffs, and distributes objects across multiple availability zones within a single region. If a given region or availability zone is unavailable, the object store continues to function without impediment. Single Data Center distributes objects across multiple machines within the same physical location.
+{: #service-description-cloud-object-storage-1}
+-->
 
 Users of {{site.data.keyword.cos_short}} refer to their binary data, such as files, images, media, archives, or even entire databases as objects. Objects are stored in a bucket, the container for their unstructured data. Buckets contain both inherent and user-defined metadata. Finally, objects are defined by a globally unique combination of the bucket name and the object key, or name.
 {: #service-description-cloud-object-storage-2}
@@ -129,11 +135,17 @@ To start working with {{site.data.keyword.cos_short}}, see the following instruc
 
 ### Hyper Protect Crypto Services
 
-
+<!-- TODO: Moved this to phrases.json so I could use in table cells.
+[{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-overview) is a dedicated key management service and hardware security module (HSM) based on {{site.data.keyword.cloud_notm}}. This service allows you to take the ownership of the cloud HSM to fully manage your encryption keys and to perform cryptographic operations using Keep Your Own Key (KYOK). {{site.data.keyword.hscrypto}} is also the only service in the cloud industry that is built on FIPS 140-2 Level 4-certified hardware.
+{: #service-description-hpcs}
+-->
 
 ### App ID
 
-
+<!-- TODO: Moved this to phrases.json so I could use in table cells.
+[{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-about) helps developers to easily add authentication to their web and mobile apps with few lines of code, and secure their cloud-native applications and services on {{site.data.keyword.cloud_notm}}.
+{: #service-description-app-id}
+-->
 
 ### Activity Tracker Event Routing
 
@@ -149,7 +161,10 @@ To start working with {{site.data.keyword.cos_short}}, see the following instruc
 
 ### Event Streams
 
-
+<!-- TODO: Moved these to phrases.json so I could use in table cells.
+[{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-about) is a high-throughput message bus built with Apache Kafka. It is optimized for event ingestion into {{site.data.keyword.cloud_notm}} and event stream distribution between your services and applications.
+{: #service-description-event-streams-1}
+-->
 
 You can use {{site.data.keyword.messagehub}} to complete the following tasks:
 {: #service-description-event-streams-2}
@@ -161,7 +176,10 @@ You can use {{site.data.keyword.messagehub}} to complete the following tasks:
 
 ### Security and Compliance Center
 
-
+<!-- TODO: Moved this to phrases.json so I could use in table cells.
+With [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) you can embed security checks into your every day workflows to help monitor for security and compliance. By monitoring for risks, you can identify security vulnerabilities and quickly work to mitigate the impact and fix the issue. By using {{site.data.keyword.compliance_short}} along with [external integrations](/security-compliance/integrations) (such as, OpenShift Compliance Operator (OSCO), Tanium, NeuVector, and so on), you can build a robust approach for monitoring for security and compliance issues.
+{: #service-description-scc}
+-->
 
 ## Bastion host requirements
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-09"
+  years: 2020, 2025
+lastupdated: "2025-01-06"
 
 keywords:
 
@@ -125,7 +125,7 @@ With [Auto Scale for VPC](/docs/vpc?topic=vpc-creating-auto-scale-instance-group
 #### {{site.data.keyword.openshiftlong_notm}} 
 {: #services-containers-openshift}
 
-[{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-roks-overview) is a managed offering to create your own {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.openshiftlong_notm}} provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and rollbacks, and secret and configuration management for your apps. Combined with an intuitive user experience, built-in security and isolation, and advanced tools to secure, manage, and monitor your cluster workloads, you can rapidly deliver highly available and secure containerized apps in the public cloud.
+[{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-getting-started) is a managed offering to create your own {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.openshiftlong_notm}} provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and rollbacks, and secret and configuration management for your apps. Combined with an intuitive user experience, built-in security and isolation, and advanced tools to secure, manage, and monitor your cluster workloads, you can rapidly deliver highly available and secure containerized apps in the public cloud.
 
 In practice, when you choose {{site.data.keyword.openshiftlong_notm}} for your primary compute, you might also need one or more instances of {{site.data.keyword.vsi_is_short}} for other parts of the reference architecture.
 
