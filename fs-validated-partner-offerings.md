@@ -37,7 +37,7 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | :------------- |:-------------|
 | Adobe     | Adobe Experience Manager |
 | Circeo      | The Loan Factory      |
-| Dizzion      | [Desktop-as-a-Service (DaaS)](https://cloud.ibm.com/catalog/services/dizzion-complete-fs---horizon)    |
+| Dizzion      | [Dizzion Complete FS - Horizon](https://cloud.ibm.com/catalog/services/dizzion-complete-fs---horizon)    |
 | EIS | EIS Suite  |
 | EpositBox | EpositBox  |
 | F5 | [F5 BIG-IP](https://cloud.ibm.com/catalog/content/ibmcloud_schematics_bigip_multinic_declared-1.0)      |
