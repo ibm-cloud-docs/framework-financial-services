@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-05-03"
+  years: 2020, 2025
+lastupdated: "2025-01-06"
 
 keywords:
 
@@ -21,7 +21,7 @@ subcollection: framework-financial-services
 ## Architecture diagram
 {: #vpc-arch-diagram}
 
-![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3.svg){: caption="Figure 1. High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
+![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3.svg){: caption="High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
 Central to the architecture are two VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
@@ -47,7 +47,7 @@ Other key features to note:
 
 The architecture in the previous section is the most secure way of enabling consumers to access the applications that are running in a workload VPC. However, there might be valid cases where it is desirable to allow consumers to access your service through the public internet. The same base architecture can be adapted to securely enable this type of access.
 
-![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3-with-edge.svg){: caption="Figure 2. High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
+![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3-with-edge.svg){: caption="High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
 
 The revised architecture adds:
 
@@ -78,7 +78,7 @@ Deploying the reference architecture depends upon VPC infrastructure and PaaS se
 | Logging and monitoring  | - [{{site.data.keyword.atracker_full_notm}}](#services-logging-platform-events) [^fs-validated-table-5] \n - [{{site.data.keyword.compliance_long}}](#services-scc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.fl_full}}](#services-logging-flow-logs) [^fs-validated-table-1-2]  |  |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams) |
 | Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) |
-{: caption="Table 1. Required and optional services for VPC reference architecture" caption-side="top"}
+{: caption="Required and optional services for VPC reference architecture" caption-side="top"}
 
 [^fs-validated-table-1-1]: {{site.data.content.only-required-virtual-servers}}
 
@@ -125,7 +125,7 @@ With [Auto Scale for VPC](/docs/vpc?topic=vpc-creating-auto-scale-instance-group
 #### {{site.data.keyword.openshiftlong_notm}} 
 {: #services-containers-openshift}
 
-[{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-roks-overview) is a managed offering to create your own {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.openshiftlong_notm}} provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and rollbacks, and secret and configuration management for your apps. Combined with an intuitive user experience, built-in security and isolation, and advanced tools to secure, manage, and monitor your cluster workloads, you can rapidly deliver highly available and secure containerized apps in the public cloud.
+[{{site.data.keyword.openshiftlong_notm}}](/docs/openshift?topic=openshift-getting-started) is a managed offering to create your own {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. {{site.data.keyword.openshiftlong_notm}} provides intelligent scheduling, self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and rollbacks, and secret and configuration management for your apps. Combined with an intuitive user experience, built-in security and isolation, and advanced tools to secure, manage, and monitor your cluster workloads, you can rapidly deliver highly available and secure containerized apps in the public cloud.
 
 In practice, when you choose {{site.data.keyword.openshiftlong_notm}} for your primary compute, you might also need one or more instances of {{site.data.keyword.vsi_is_short}} for other parts of the reference architecture.
 
@@ -287,7 +287,7 @@ The following table provides a summary of the main features of the VPC reference
 | Endpoint protection  | Install your own software |
 | Event queues | {{site.data.keyword.messagehub}} or \n Install your own software |
 | Databases | Install your own software |
-{: caption="Table 2. Services needed for different parts of the VPC reference architecture" caption-side="top"}
+{: caption="Services needed for different parts of the VPC reference architecture" caption-side="top"}
 
 [^component-tabletext-1]: {{site.data.content.only-required-openshift}}
 

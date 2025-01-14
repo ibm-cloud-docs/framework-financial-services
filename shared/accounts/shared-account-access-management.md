@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -17,7 +17,7 @@ subcollection: framework-financial-services
 
 
 
-After deciding how to [organize your accounts and resources](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization), you will need to properly manage access for deployments of the reference architectures that will help achieve [separation of duties and least privilege](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-least-privilege).
+After deciding how to [organize your accounts and resources](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization), you will need to properly manage access for deployments of the reference architectures that will help achieve [separation of duties and least privilege](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-zero-trust).
 {: shortdesc}
 
 ## Managing access with access groups
@@ -51,7 +51,7 @@ For illustration, the following table shows one possible setup that provides for
 | cloud-billing-admins | Responsible for setting up billing accounts and monitoring their usage. |
 | cloud-devops | DevOps practitioners create or manage end-to-end pipelines that support continuous integration and delivery, monitoring, and system provisioning. |
 | cloud-developers | Developers are responsible for designing, coding, and testing applications. |
-{: caption="Table 1. Access groups" caption-side="bottom"}
+{: caption="Access groups" caption-side="bottom"}
 
 After the access groups are created, you can assign roles to them.
 
@@ -82,14 +82,13 @@ If you're using an external identity provider, dynamic rules allow you to automa
 For more information see:
 
 1. [Creating dynamic rules for access groups](/docs/account?topic=account-rules)
-2. [Control access to cloud resources](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/){: external} - See the section "Background information about access groups and dynamic rules"
 
 ## Considerations for enterprises
 {: #enterprise}
 
 If you're using an enterprise, these resources provide additional information:
 
-* [Setting up an enterprise](/docs/account?topic=account-enterprise-tutorial)
+* [Setting up an enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-tutorial)
 
 ## Required permissions for services in reference architecture
 {: #required-permissions}
@@ -98,14 +97,14 @@ The following table provides references to additional information for managing a
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
-| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) [^tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-iam) |  |
-| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-access_reference) \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam) | - [{{site.data.keyword.openshiftshort}}](/docs/satellite?topic=satellite-iam#iam-roles-clusters) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam) |  |
-| Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-iam) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-iam)| |  |
-| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-iam) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-iam) |  |
+| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-iam-getting-started&interface=ui) [^tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-iam) |  |
+| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-iam-platform-access-roles) \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam) | - [{{site.data.keyword.openshiftshort}}](/docs/satellite?topic=satellite-iam#iam-roles-clusters) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam) |  |
+| Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-iam-getting-started&interface=ui) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-iam) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-iam)| |  |
+| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-iam-getting-started&interface=ui) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-iam) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-iam) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-access) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-manage-access)  | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-service-access-management) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-iam) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-iam) \n [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-iam) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-iam-getting-started&interface=ui) | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-iam) \n [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-access-management) |  |
 | Integration  | | | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-security) |
-{: caption="Table 1. Managing access for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
+{: caption="Managing access for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -119,10 +118,9 @@ The following table provides references to additional information for managing a
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-3 Access Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-3) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6) |
-{: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}
 
 * [Handling and securing secrets](/docs/framework-financial-services?topic=framework-financial-services-shared-secrets)
-

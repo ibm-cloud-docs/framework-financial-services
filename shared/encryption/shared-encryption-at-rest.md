@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-01"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -27,7 +27,7 @@ With {{site.data.keyword.hscrypto}} you can take ownership of the cloud HSM to f
 
 Some organizations require the use of a dedicated HSM where the device can be initialized by their cryptography specialists. We offer [{{site.data.keyword.hscrypto}} with Bring Your Own HSM](/docs/hs-crypto?topic=hs-crypto-introduce-bring-your-own-hsm) to enable those organizations to manage their HSM over the network at a remote location. This solution does uses the {{site.data.keyword.hscrypto}} key manager that has been Financial Services Validated but as IBM has no control over the Bring Your Own HSM, this solution as a whole isn't Financial Services Validated.
 
-Where you have systems not requiring a [high security categorization](/docs/framework-financial-services?topic=security-system-categorization), you have the option of using {{site.data.keyword.keymanagementservicefull}} for your key management. {{site.data.keyword.keymanagementserviceshort}} is a multi-tenant cloud service using the [Bring Your Own Key (BYOK)](/docs/key-protect?topic=key-protect-manage-secrets-ibm-cloud#key-features) concept. Many capabilities are common between {{site.data.keyword.hscrypto}} and {{site.data.keyword.keymanagementserviceshort}} but the underlying security implementation is different as shown in Table 1.
+Where you have systems not requiring a [high security categorization](/docs/framework-financial-services?topic=framework-financial-services-system-security-categorization), you have the option of using {{site.data.keyword.keymanagementservicefull}} for your key management. {{site.data.keyword.keymanagementserviceshort}} is a multi-tenant cloud service using the [Bring Your Own Key (BYOK)](/docs/key-protect?topic=key-protect-manage-secrets-ibm-cloud#key-features) concept. Many capabilities are common between {{site.data.keyword.hscrypto}} and {{site.data.keyword.keymanagementserviceshort}} but the underlying security implementation is different as shown in Table 1.
 
 | | {{site.data.keyword.hscrypto}} | {{site.data.keyword.hscrypto}} with Bring Your Own HSM [^kms-byohsm] | {{site.data.keyword.keymanagementserviceshort}} |
 |----|----|------|----|
@@ -43,7 +43,7 @@ Where you have systems not requiring a [high security categorization](/docs/fram
 | MZR Availability | [Selected](https://cloud.ibm.com/docs/hs-crypto?topic=hs-crypto-regions) | [Selected](https://cloud.ibm.com/docs/hs-crypto?topic=hs-crypto-regions) | All |
 | Support for {{site.data.keyword.satelliteshort}} location | | | X |
 | UKO Key Generation [^kms-uko] | X | | |
-{: caption="Table 1. Key Features for {{site.data.keyword.cloud_notm}} Key Management}
+{: caption="Key Features for {{site.data.keyword.cloud_notm}} Key Management}
 
 Note 1: Capability depends on functionality of Bring Your Own HSM.
 
@@ -138,7 +138,7 @@ In an {{site.data.keyword.cloud_notm}} {{site.data.keyword.satelliteshort}} loca
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | System and Communications Protection (SC) | [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-13) \n [SC-28 Protection of Information At Rest](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28) \n [SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28.1)  |
-{: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 In addition, you must follow the guidance found in Appendix A: Cryptographic Requirements within the "Control Implementation Overview Template for Application Providers Using {{site.data.keyword.vpc_full}}".
 

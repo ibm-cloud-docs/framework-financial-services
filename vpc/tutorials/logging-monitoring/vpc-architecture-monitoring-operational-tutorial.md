@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-03"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -26,7 +26,7 @@ completion-time: 2h
 {: toc-completion-time="2h"}
 
 
-This tutorial shows you one way that can be used to meet the {{site.data.keyword.framework-fs_notm}} requirements that are related to [operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial) by using [Prometheus and Grafana](https://docs.openshift.com/container-platform/4.5/monitoring/cluster_monitoring/about-cluster-monitoring.html){: external} on {{site.data.keyword.openshiftshort}}. This approach can be used to can gain insight into the health and performance of the provisioned infrastructure and the workloads that are running on the infrastructure -- all while keeping your monitoring data safe within your environment.
+This tutorial shows you one way that can be used to meet the {{site.data.keyword.framework-fs_notm}} requirements that are related to [operational monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-operational) by using [Prometheus and Grafana](https://docs.openshift.com/container-platform/4.6/monitoring/monitoring-overview.html){: external} on {{site.data.keyword.openshiftshort}}. This approach can be used to can gain insight into the health and performance of the provisioned infrastructure and the workloads that are running on the infrastructure -- all while keeping your monitoring data safe within your environment.
 {: shortdesc}
 
 We provide guidance here, but you are solely responsible for installing, configuring, and operating {{site.data.keyword.IBM_notm}} third-party software in a way that satisfies {{site.data.keyword.framework-fs_notm}} requirements. In addition, {{site.data.keyword.IBM_notm}} does not provide support for third-party software.
@@ -37,12 +37,12 @@ We provide guidance here, but you are solely responsible for installing, configu
 
 The architecture diagram shows a monitoring deployment within a {{site.data.keyword.openshiftshort}} cluster for a single region. The architecture enables gathering metrics for {{site.data.keyword.openshiftshort}} applications and virtual server instances within your VPCs. The label "Prom" in the workload clusters represents Prometheus.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring](../../images/logmon/roks-single-region-log-mon-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture with operational monitoring" caption-side="bottom"}
 
 When you configure {{site.data.keyword.openshiftshort}} for both operational logging and operational monitoring, the worker nodes can be shared. You can use the same worker pool for both logging and monitoring. You can use the same taint tag to steer monitoring and logging pods to the shared worker pool.
 {: tip}
 
-{{site.data.keyword.openshiftshort}} provides a built-in monitoring stack. This stack is used to set up monitoring and default alerting. For more information, see [Understanding the monitoring stack](https://docs.openshift.com/container-platform/4.6/monitoring/understanding-the-monitoring-stack.html){: external}
+{{site.data.keyword.openshiftshort}} provides a built-in monitoring stack. This stack is used to set up monitoring and default alerting. For more information, see [Understanding the monitoring stack](https://docs.openshift.com/container-platform/4.6/monitoring/monitoring-overview.html#understanding-the-monitoring-stack_monitoring-overview){: external}
 
 To implement your operational monitoring solution, you need to complete the following high-level steps:
 
@@ -65,7 +65,7 @@ To implement your operational monitoring solution, you need to complete the foll
 
 To capture metrics from workloads running outside of {{site.data.keyword.openshiftshort}} (such as a virtual server instance), you need to provision an instance of {{site.data.keyword.openshiftlong_notm}} if you don't already have one.
 
-1.  [Provision {{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-openshift_tutorial) within the workload VPC where you plan to install the monitoring service. Use the following configuration:
+1.  [Provision {{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-vpc_rh_tutorial) within the workload VPC where you plan to install the monitoring service. Use the following configuration:
    * {{site.data.keyword.openshiftshort}} version: `4.6.x`
    * Worker zones: `User defined subnet in each zone of the region`
    * Worker nodes per zone: `1`
@@ -76,7 +76,7 @@ To capture metrics from workloads running outside of {{site.data.keyword.openshi
 {: #step2-provision-worker-pool}
 {: step}
 
-1. Use a separate worker pool for the monitoring stack to keep the monitoring stack resources distinct from other workload resources. [Provision a new worker pool](/docs/openshift?topic=openshift-add_workers#vpc_pools) with the following configuration:
+1. Use a separate worker pool for the monitoring stack to keep the monitoring stack resources distinct from other workload resources. [Provision a new worker pool](/docs/openshift?topic=openshift-add-workers-vpc) with the following configuration:
    * Worker zones: `User defined subnet in each zone of the region`
    * Worker nodes per zone: `1`
    * Flavor: `mx2.4x32 - 4 vCPU, 32 GB Memory`
@@ -96,7 +96,7 @@ To capture metrics from workloads running outside of {{site.data.keyword.openshi
 {: #step3-configure-monitoring-stack}
 {: step}
 
-1. For conceptual information about the monitoring stack, see [Understanding the monitoring stack](https://docs.openshift.com/container-platform/4.6/monitoring/understanding-the-monitoring-stack.html){: external}.
+1. For conceptual information about the monitoring stack, see [Understanding the monitoring stack](https://docs.openshift.com/container-platform/4.6/monitoring/monitoring-overview.html#understanding-the-monitoring-stack_monitoring-overview){: external}.
 2. To configure the monitoring stack with supported options, see [Maintenance and support for monitoring](https://docs.openshift.com/container-platform/4.6/monitoring/configuring-the-monitoring-stack.html#maintenance-and-support_configuring-the-monitoring-stack){: external}.
    1. Create and edit the `cluster-monitoring-config` ConfigMap in the *openshift-monitoring* project with the following configuration.  For more information, see the [Configuring the monitoring stack](https://docs.openshift.com/container-platform/4.6/monitoring/configuring-the-monitoring-stack.html#configuring-the-monitoring-stack_configuring-the-monitoring-stack){: external}.  The sample code configures the monitoring stack to complete the following tasks:
      * Run the monitoring stack on the provisioned worker pool.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -20,7 +20,7 @@ Data in transit must always be encrypted. Cryptographic controls must be in plac
 
 As an application provider, you must:
 
-* Ensure that all traffic, tunneling, and other protection of data in transit is encrypted by using TLS 1.2 at a minimum. You must disable the SSL/TLS 1.0/TLS 1.1 protocols on all software that is deployed in your VPCs. See the following [TLS requirements](#vpc-architecture-encryption-in-transit-tls-requirements) section for more details.
+* Ensure that all traffic, tunneling, and other protection of data in transit is encrypted by using TLS 1.2 at a minimum. You must disable the SSL/TLS 1.0/TLS 1.1 protocols on all software that is deployed in your VPCs. See the following [TLS requirements](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit#shared-encryption-in-transit-tls-requirements) section for more details.
 * Use {{site.data.keyword.hscrypto}} for TLS offload for all data that is requested from outside of {{site.data.keyword.cloud_notm}} (inbound traffic to {{site.data.keyword.cloud_notm}}) and protected by a certificate that is signed by a public certificate authority. In this scenario, you should configure any web servers to use TLS offload to set up the session so that the private key never leaves {{site.data.keyword.hscrypto}}. See [Use {{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}} to offload NGINX TLS](https://developer.ibm.com/tutorials/use-hyper-protect-crypto-services-to-offload-nginx-tls/){: external} for an example.
 * Enforce encryption that uses directives like HTTP Strict Transport Security (HSTS).
 * Disable caching for responses that contain sensitive data.
@@ -96,7 +96,7 @@ For TLS 1.2, the acceptable cipher suites are as follows:
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | System and Communications Protection (SC) | [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-13)  |
-{: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 In addition, you must follow the guidance found in Appendix A: Cryptographic Requirements within the Control Implementation Overview Template for Application Providers Using {{site.data.keyword.vpc_full}}.
 
@@ -104,4 +104,3 @@ In addition, you must follow the guidance found in Appendix A: Cryptographic Req
 {: #shared-encryption-in-transit-next-steps}
 
 * [Business continuity and disaster recovery](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr)
-

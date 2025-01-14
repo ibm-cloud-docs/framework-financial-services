@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -34,14 +34,14 @@ Your HA strategy needs to consider all of the {{site.data.keyword.cloud_notm}} s
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
-| Core  | - [VPC infrastructure services](/vpc?topic=vpc-ha-dr-vpc) [^tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-ha) |  |
-| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-ha) \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-ha-dr) | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-ha) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-ha-dr) |  |
-| Networking | - [VPC infrastructure services](/vpc?topic=vpc-ha-dr-vpc) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-ha-dr) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-ha-dr#high-availability) |  |  |
-| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/vpc?topic=vpc-ha-dr-vpc) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) |  |
+| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-ha-dr-vpc) [^tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-ha) |  |
+| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-strategy) \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-ha-dr) | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-strategy) [^tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-ha-dr) |  |
+| Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-ha-dr-vpc) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-ha-dr) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-ha-dr#high-availability) |  |  |
+| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-ha-dr-vpc) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-ha-dr) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-ha-dr) | - [{{site.data.keyword.appid_short_notm}}](/docs/appid?topic=appid-ha-dr) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) \n - [{{site.data.keyword.fl_full}}](/vpc?topic=vpc-ha-dr-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-ha-dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha-dr) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-ha_dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-ha-dr-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-ha_dr) \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-ha) |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-sla) |
-{: caption="Table 1. High availability information for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
+{: caption="High availability information for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -63,10 +63,9 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 |---------------------|---------------------------------------------------|
 | Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) |
 | System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-6) |
-{: caption="Table 2. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}
 
 * [Development processes and software integrity](/docs/framework-financial-services?topic=framework-financial-services-shared-development-processes)
-

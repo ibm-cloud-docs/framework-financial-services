@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -28,7 +28,7 @@ Use cases for the [{{site.data.keyword.satelliteshort}} reference architecture](
 | Data residency| Manage local data requirements &mdash; storage (residency) and legal protections (sovereignty) &mdash; by keeping data in-country and accessing public cloud services. Improve data privacy (cybersecurity) for regulated data with industry-leading Keep Your Own Key encryption. |
 | AI and automation | Gain new insights and process automation by enhancing databases on-premises with {{site.data.keyword.cloud_notm}} Pak AI and automation services that are deployed with {{site.data.keyword.openshiftshort}}. Maintain control of data on-premises for performance, sovereignty, and regulatory requirements. |
 {: summary="The rows are read from left to right. The use case title is in the first column. The second columns describes the use case referenced in the first column."}
-{: caption="Table 1. Overview of use cases for the {{site.data.keyword.satelliteshort}} reference architecture" caption-side="top"}
+{: caption="Overview of use cases for the {{site.data.keyword.satelliteshort}} reference architecture" caption-side="top"}
 
 Two uses cases from real financial institutions are presented in the following sections.
 
@@ -39,7 +39,7 @@ During a time-sensitive merger, a US regional bank needed to integrate two entit
 
 The following diagram shows a high-level overview of the architecture that is used by this financial institution.
 
-![High-level modification of {{site.data.keyword.satelliteshort}} reference architecture for the first institution](../images/satellite-use-cases/satellite_use_case_1_beta2_04_06.svg){: caption="Figure 1. High-level modification of {{site.data.keyword.satelliteshort}} reference architecture for the first institution" caption-side="bottom"}
+![High-level modification of {{site.data.keyword.satelliteshort}} reference architecture for the first institution](../images/satellite-use-cases/satellite_use_case_1_beta2_04_06.svg){: caption="High-level modification of {{site.data.keyword.satelliteshort}} reference architecture for the first institution" caption-side="bottom"}
 
 Key features of their approach include:
  
@@ -60,7 +60,7 @@ A multinational bank wanted to ensure they were following local requirements for
 
 The following diagram shows a high-level overview of the architecture that is used by this second institution.
 
-![High-level modification of {{site.data.keyword.satelliteshort}} reference architecture for the second institution](../images/satellite-use-cases/satellite_use_case_2_beta2_04_06.svg){: caption="Figure 2. High-level modification of {{site.data.keyword.satelliteshort}} reference architecture for the second institution" caption-side="bottom"}
+![High-level modification of {{site.data.keyword.satelliteshort}} reference architecture for the second institution](../images/satellite-use-cases/satellite_use_case_2_beta2_04_06.svg){: caption="High-level modification of {{site.data.keyword.satelliteshort}} reference architecture for the second institution" caption-side="bottom"}
 
 Highlights of their architecture include the following:
 
@@ -78,4 +78,3 @@ Highlights of their architecture include the following:
 
 - [{{site.data.keyword.satelliteshort}} shared responsibility model](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-shared-responsibilities)
 - [{{site.data.keyword.satelliteshort}} architecture best practices](/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-best-practices)
-

@@ -43,7 +43,7 @@ The {{site.data.keyword.framework-fs_notm}} provides different flavors of [refer
 
 The diagram below represents the architecture for secure {{site.data.keyword.powerSys_notm}} workloads in IBM Cloud and is an extension of the [{{site.data.keyword.vsi_is_short}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi) for {{site.data.keyword.cloud_notm}} for Financial Services.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}](../images/vpc-powervs/ra-fs-powervs-single-region.svg){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}](../images/vpc-powervs/ra-fs-powervs-single-region.svg){: caption="{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide segmentation for edge traffic control, management functionality, and consumer workloads.
 
@@ -80,7 +80,7 @@ This reference architecture is an extension of the VPC reference architecture fo
 
 Following the [Architecture Framework](/docs/architecture-framework?topic=architecture-framework-intro), this document covers the following solution aspects and domains:
 
-![heatmap](../images/vpc-powervs/heat-map-fs-powervs.svg "Current diagram"){: caption="Figure 2. Architecture design scope" caption-side="bottom"}
+![heatmap](../images/vpc-powervs/heat-map-fs-powervs.svg "Current diagram"){: caption="Architecture design scope" caption-side="bottom"}
 
 
 ## Requirements
@@ -97,7 +97,7 @@ The following table outlines the requirements that are addressed in this archite
 | DevOps            | Delivering software and services at the speed the market demands requires teams to iterate and experiment rapidly. They must deploy new versions frequently, driven by feedback and data. |
 | Resiliency         | Support application availability targets and business continuity policies. \n Ensure availability of the application in the event of planned and unplanned outages. \n Backup application data to enable recovery in the event of unplanned outages. \n Provide highly available storage for security data (logs) and backup data. |
 | Service Management | Monitor system and application health metrics and logs to detect issues that might impact the availability of the application. \n Generate alerts/notifications about issues that might impact the availability of applications to trigger appropriate responses to minimize down time. \n Monitor audit logs to track changes and detect potential security problems. \n Provide a mechanism to identify and send notifications about issues found in audit logs. |
-{: caption="Table 1. Requirements" caption-side="bottom"}
+{: caption="Requirements" caption-side="bottom"}
 
 
 ## Components
@@ -131,10 +131,10 @@ The following table outlines the products or services used in the architecture f
 |  | [{{site.data.keyword.keymanagementservicelong}}](https://cloud.ibm.com/docs/key-protect/index.html) | Create or manage cryptographic keys in the cloud or in Satellite to protect data at rest |
 |  | [{{site.data.keyword.secrets-manager_full}}](https://cloud.ibm.com/docs/secrets-manager?topic=secrets-manager-getting-started#getting-started) | Create, lease, and centrally manage secrets that are used in your apps and services |
 | DevOps | [{{site.data.keyword.contdelivery_full}}](https://cloud.ibm.com/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | Support DevOps best practices by using Git, issue tracking, source code vulnerability analysis, and CI/CD pipelines in the Cloud |
-|  | [Toolchain](https://cloud.ibm.com/docs/apps?topic=apps-devops-toolchains) | Automates the tasks of developing and deploying your app |
+|  | [Toolchain](https://cloud.ibm.com/docs/ContinuousDelivery?topic=ContinuousDelivery-toolchains_getting_started) | Automates the tasks of developing and deploying your app |
 | Resiliency | [IBM Cloud Backup for VPC](https://cloud.ibm.com/docs/vpc?topic=vpc-backup-service-about&interface=ui) | Provides the ability to schedule VPC block storage snapshot backups and manage retention through backup policies |
 |  | [Block Storage Snapshots for VPC](https://cloud.ibm.com/docs/vpc?topic=vpc-snapshots-vpc-create&interface=ui) | Back up block storage volumes to IBM Cloud Object Storage with this regional snapshot service |
 | Service management | [IBM Cloud Activity Tracker Event Routing ](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#services-logging-platform-events) | Collect auditable platform events that are generated by services in your IBM Cloud account |
 |  | [{{site.data.keyword.compliance_full}}](https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-getting-started) | Manage your security and compliance posture |
 |  | [{{site.data.keyword.fl_full}}](https://cloud.ibm.com/docs/vpc?topic=vpc-flow-logs) | enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic going to and from network interfaces within your Virtual Private Cloud (VPC) |
-{: caption="Table 2. Components" caption-side="bottom"}
+{: caption="Components" caption-side="bottom"}

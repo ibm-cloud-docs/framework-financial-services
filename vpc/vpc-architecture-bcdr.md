@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -25,7 +25,7 @@ As described in [Business continuity and disaster recovery (BCDR) overview](/doc
 
 If you are running virtual server instances and _not_ trying to get your application designated as Financial Services Validated, then you can consider [Snapshots for VPC](/docs/vpc?topic=vpc-snapshots-vpc-about). Snapshots for VPC is a regional offering that lets you create a point-in-time copy of your block storage boot or data volumes. The initial snapshot you take is a full backup of the volume. Subsequent snapshots of the same volume are incremental; only the changes since the last snapshot are captured. You can select a snapshot during instance provisioning, and restore a new, fully-provisioned boot volume to start the instance. You can also create and attach a data volume from a snapshot within a running virtual server instance.
 
-For more information, see [General procedure for creating and using snapshots](/docs/vpc?topic=vpc-snapshots-vpc-about#snapshots-vpc-procedure-overview).
+For more information, see [General procedure for creating and using snapshots](/docs/vpc?topic=vpc-snapshots-vpc-planning&interface=ui).
 
 ### Workloads on {{site.data.keyword.openshiftshort}}
 {: #your-workloads-openshift}

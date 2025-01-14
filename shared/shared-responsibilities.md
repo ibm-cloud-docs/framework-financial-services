@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -45,13 +45,13 @@ The following table provides references that describe your responsibilities for 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
 | Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-responsibilities-vpc) [^tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-responsibilities) |  |
-| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-responsibilities_iks) \n - {{site.data.keyword.registryshort}} [^tabletext-no-specific-link-container-registry] | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-responsibilities_iks) [^tabletext-satellite-enabled-openshift] \n - {{site.data.keyword.registryshort}} |  |
+| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-responsibilities_iks) \n - {{site.data.keyword.registryshort}} [^tabletext-no-specific-link-container-registry] | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-satellite-responsibilities) [^tabletext-satellite-enabled-openshift] \n - {{site.data.keyword.registryshort}} |  |
 | Networking | - [VPC infrastructure services](/docs/vpc?topic=vpc-responsibilities-vpc) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-responsibilities) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-tg-responsibilities) | | |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-responsibilities-vpc) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-responsibilities) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-responsibilities) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-shared-responsibilities) | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-shared-responsibilities) | - {{site.data.keyword.appid_short_notm}} [^tabletext-no-specific-link-appid] |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-responsibilities-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-responsibilities-vpc)  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-shared-responsibilities) \n - {{site.data.keyword.compliance_short}} |  |
 | Integration  | |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-event_streams_responsibilities) |
-{: caption="Table 1. Your responsibilities for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
+{: caption="Your responsibilities for {{site.data.keyword.cloud_notm}} services in the reference architectures" caption-side="top"}
 
 [^tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -60,4 +60,3 @@ The following table provides references that describe your responsibilities for 
 [^tabletext-no-specific-link-appid]: There is not a specific shared responsibility article for {{site.data.keyword.appid_short_notm}}.
 
 [^tabletext-no-specific-link-container-registry]: There is not a specific shared responsibility article for {{site.data.keyword.registryshort}}.
-

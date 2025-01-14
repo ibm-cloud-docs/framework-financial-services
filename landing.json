@@ -1,0 +1,66 @@
+{
+    "version": 2,
+    "title": "IBM Cloud Framework for Financial Services",
+    "introduction": "IBM Cloud for Financial Services is a first-of-its-kind cloud, designed to protect even your most sensitive data and AI workloads. With built-in security and controls informed by the industry, IBM Cloud for Financial Services can help you optimize your infrastructure and demonstrate compliance so you can focus on what matters most: delivering value for your clients.",
+    "product_page": "https://www.ibm.com/cloud/financial-services",
+    "section_topics": {
+      "links": [
+        {
+          "title": "Getting started with IBM Cloud for Financial Services",
+          "href": "/docs/framework-financial-services?topic=framework-financial-services-about"
+        },
+        {
+          "title": "Best practices and requirements for software as a service",
+          "href": "/docs/framework-financial-services?topic=framework-financial-services-best-practices"
+        },
+        {
+          "title": "Best practices and requirements for software",
+          "href": "/docs/framework-financial-services?topic=framework-financial-services-best-practices-software"
+        },
+        {
+          "title": "Reference architecture overview",
+          "href": "/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview"
+        }
+      ]
+    },
+    "section_highlights": [
+      {
+        "title": "Built for the Financial Services industry",
+        "description": "This guide introduces how IBM Cloud for Financial Services helps client mitigate risk and accelerate cloud adoption for even the most sensitive workloads.",
+        "href": "https://www.ibm.com/resources/guides/speed-innovation-financial-services-industry",
+        "type": "white-paper"
+      },
+      {
+        "title": "Financial services industry transformation",
+        "description": "This article discusses how you can future-proof your digital ecosystem with scalable AI and automation technology.",
+        "href": "https://www.ibm.com/industries/financial-services",
+        "type": "white-paper"
+      }
+    ],
+    "section_architectures": [
+      {
+        "title": "VPC reference architecture for IBM Cloud for Financial Services",
+        "href": "/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about",
+        "deployable": true
+      },
+      {
+        "title": "Satellite reference architecture for IBM Cloud for Financial Services",
+        "href": "/docs/framework-financial-services?topic=framework-financial-services-satellite-architecture-about",
+        "deployable": true
+      },
+      {
+        "title": "IBM Cloud for VMware Regulated Workloads architecture",
+        "href": "/docs/framework-financial-services?topic=framework-financial-services-vmware-overview",
+        "deployable": true
+      }
+    ],
+    "section_updates": {
+      "view_more": "/docs/framework-financial-services?topic=framework-financial-services-release-notes",
+      "tiles": [
+        {
+          "date": "30 April 2023",
+          "title": "Updated Infrastructure as Code (IaC) article to point at new deployable architectures"
+        }
+      ]
+    }
+  }

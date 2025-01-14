@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-01-24"
+  years: 2020, 2024
+lastupdated: "2024-10-09"
 
 keywords: 
 
@@ -44,7 +44,7 @@ The following table lists the different solutions that you can use to protect yo
 | You need to generate, renew, and manage TLS/SSL certificates for your deployments. | Use [{{site.data.keyword.secrets-manager_full_notm}}](/docs/secrets-manager?topic=secrets-manager-getting-started). |
 | You need to create and manage encryption keys. | Use [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-overview) to manage encryption keys in a single-tenant service with dedicated hardware. |
 | You need secrets in your {{site.data.keyword.openshiftshort}} environment for microservices to connect to system resources. | Use [Kubernetes secrets](https://kubernetes.io/docs/concepts/configuration/secret/){: external} encrypted using [{{site.data.keyword.hscrypto}}](/docs/openshift?topic=openshift-encryption#keyprotect) as your Key Management Service (KMS) provider. |
-{: caption="Table 1. Secrets management and data protection scenarios" caption-side="top"}
+{: caption="Secrets management and data protection scenarios" caption-side="top"}
 
 [^tabletext-1]: {{site.data.content.fs-validated-disclaimer}}
 
@@ -61,7 +61,7 @@ The following table lists the different solutions that you can use to protect yo
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2)  |
 | Identification and Authentication (IA)  | [IA-2 User Identification and Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5)  |
-{: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}

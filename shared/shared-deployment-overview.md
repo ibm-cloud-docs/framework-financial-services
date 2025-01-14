@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-09-18"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -39,14 +39,14 @@ The following table provides links for the CLI extensions for each service in th
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
-| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment) [^cli-tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-setup-cli) |  |
-| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-openshift-cli) \n - [{{site.data.keyword.registryshort}}](/docs/container-registry-cli-plugin?topic=container-registry-cli-plugin-containerregcli) | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-openshift-cli) [^cli-tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/container-registry-cli-plugin?topic=container-registry-cli-plugin-containerregcli) |  |
-| Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-cli-plugin-dl-cli) \n - [{{site.data.keyword.tg_short}}](/docs/tg-cli-plugin?topic=tg-cli-plugin-transit-gateway-cli)  |  |  |
-| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-cli-plugin-ic-cos-cli) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-cli-plugin-ic-cos-cli) |  |
-| Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-cli-plugin-hpcs-cli-plugin)  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-cli-plugin-hpcs-cli-plugin)  | - {{site.data.keyword.appid_short_notm}} [^cli-tabletext-no-cli-information-app-id] |
+| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment) [^cli-tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-satellite-cli-reference) |  |
+| Containers  | - [{{site.data.keyword.openshiftshort}}](docs/openshift?topic=openshift-kubernetes-service-cli) \n - [{{site.data.keyword.registryshort}}](/docs/container-registry-cli-plugin?topic=container-registry-cli-plugin-containerregcli) | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-kubernetes-service-cli) [^cli-tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/container-registry-cli-plugin?topic=container-registry-cli-plugin-containerregcli) |  |
+| Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-cli) \n - [{{site.data.keyword.tg_short}}](/docs/tg-cli-plugin?topic=tg-cli-plugin-transit-gateway-cli)  |  |  |
+| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli) |  |
+| Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-hpcs-cli-plugin)  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-hpcs-cli-plugin)  | - {{site.data.keyword.appid_short_notm}} [^cli-tabletext-no-cli-information-app-id] |
 | Logging and monitoring  | - {{site.data.keyword.atracker_short}} [^cli-tabletext-no-cli-information-atracker]  \n - {{site.data.keyword.compliance_short}} [^cli-tabletext-no-cli-information-scc] \n - {{site.data.keyword.fl_full}} [^cli-tabletext-no-cli-information-flow-logs]  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-cli#cli) |
-{: caption="Table 2. CLI information for services in reference architectures" caption-side="top"}
+{: caption="CLI information for services in reference architectures" caption-side="top"}
 
 [^cli-tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -67,14 +67,14 @@ The following table provides links for the CLI extensions for each service in th
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
-| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment&interface=api) [^api-tabletext] | - [{{site.data.keyword.satelliteshort}}](https://containers.cloud.ibm.com/global/swagger-global-api/#/satellite-cluster){: external} |  |
+| Core  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment&interface=api) [^api-tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-api_setup) |  |
 | Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-cs_api_install) \n - [{{site.data.keyword.registryshort}}](/apidocs/container-registry){: external} | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-cs_api_install) [^api-tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/apidocs/container-registry){: external} |  |
 | Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment&interface=api) \n - [{{site.data.keyword.dl_short}}](/apidocs/direct_link){: external} \n - [{{site.data.keyword.tg_short}}](/apidocs/transit-gateway){: external}  |  |  |
-| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api) |  |
-| Security  | - [{{site.data.keyword.hscrypto}}](/apidocs/hs-crypto){: external}  | - [{{site.data.keyword.hscrypto}}](/apidocs/hs-crypto){: external}  | - [{{site.data.keyword.appid_short_notm}}](https://us-south.appid.cloud.ibm.com/swagger-ui/#/){: external} |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-set-up-environment&interface=api)  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) |  |
+| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-set-up-environment&interface=api) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api) |  |
+| Security  | - [{{site.data.keyword.hscrypto}}](/apidocs/hs-crypto){: external}  | - [{{site.data.keyword.hscrypto}}](/apidocs/hs-crypto){: external}  | - [{{site.data.keyword.appid_short_notm}}](/apidocs/app-id/management){: external} |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/apidocs/security-compliance){: external} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-set-up-environment&interface=api)  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/apidocs/security-compliance){: external} |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-admin_api) |
-{: caption="Table 3. API information for services in reference architectures" caption-side="top"}
+{: caption="API information for services in reference architectures" caption-side="top"}
 
 [^api-tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -88,14 +88,14 @@ The following table provides links for the CLI extensions for each service in th
 
 | Category | VPC reference architecture | {{site.data.keyword.satelliteshort}} reference architecture | Optional for both |
 |----------|-------------------|-------------------|-------------------|
-| Core  | - [VPC infrastructure services](/docs/vpc?topic=ibm-cloud-provider-for-terraform-getting-started) [^terraform-tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/openshift?topic=openshift-terraform-setup) |  |
-| Containers  | - [{{site.data.keyword.openshiftshort}}](https://github.com/terraform-ibm-modules/terraform-ibm-cluster/tree/master/examples/secure-roks-cluster){: external} \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_terraform-setup&interface=ui) | - [{{site.data.keyword.openshiftshort}}](https://github.com/terraform-ibm-modules/terraform-ibm-cluster/tree/master/examples/secure-roks-cluster){: external} [^terraform-tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_terraform-setup&interface=ui) |  |
-| Networking  | - [VPC infrastructure services](/docs/vpc?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-terraform-setup-dl) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-terraform-setup-tgw)  |  |  |
-| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-terraform) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-terraform) |  |
-| Security  | - [{{site.data.keyword.hscrypto}}](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/hpcs){: external}  | - [{{site.data.keyword.hscrypto}}](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/hpcs){: external}  | - [{{site.data.keyword.appid_short_notm}}](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/appid_action_url){: external} |
-| Logging and monitoring  | - {{site.data.keyword.atracker_short}} [^terraform-tabletext-no-cli-information-atracker]  \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-api-setup) \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=ibm-cloud-provider-for-terraform-getting-started)  | - {{site.data.keyword.atracker_short}} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) |  |
+| Core  | - [VPC infrastructure services](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) [^terraform-tabletext] | - [{{site.data.keyword.satelliteshort}}](/docs/satellite?topic=satellite-terraform) |  |
+| Containers  | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-cluster-create-vpc-gen2&interface=terraform){: external} \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_terraform-setup&interface=ui) | - [{{site.data.keyword.openshiftshort}}](/docs/openshift?topic=openshift-cluster-create-vpc-gen2&interface=terraform){: external} [^terraform-tabletext-satellite-enabled-openshift] \n - [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-registry_terraform-setup&interface=ui) |  |
+| Networking  | - [VPC infrastructure services](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-terraform-setup-dl) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-terraform-setup-tgw)  |  |  |
+| Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-terraform) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-terraform) |  |
+| Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-terraform-setup-for-hpcs){: external}  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-terraform-setup-for-hpcs){: external}  | - [{{site.data.keyword.appid_short_notm}}](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/appid_action_url){: external} |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-atracker-tf-config){: external} [^terraform-tabletext-no-cli-information-atracker]  \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) \n - [{{site.data.keyword.fl_full}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started)  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-atracker-tf-config){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-template#event-stream-snippet)
-{: caption="Table 3. Terraform information for services in reference architectures" caption-side="top"}
+{: caption="Terraform information for services in reference architectures" caption-side="top"}
 
 [^terraform-tabletext]: {{site.data.content.vpc-infrastructure-services-content}}
 
@@ -107,4 +107,3 @@ The following table provides links for the CLI extensions for each service in th
 {: #next-steps}
 
 * [Deploy infrastructure as code for reference architectures](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code)
-

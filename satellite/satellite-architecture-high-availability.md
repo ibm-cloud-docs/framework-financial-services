@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -36,7 +36,7 @@ In addition, you own all of the underlying infrastructure that the {{site.data.k
 ### Your workloads in {{site.data.keyword.openshiftshort}}
 {: #your-workloads-multizone-scaling}
 
-After you have your underlying infrastructure in place, begin deploying your workloads in your on-premises {{site.data.keyword.openshiftshort}} workload clusters. You can use the `cluster-autoscaler` add-on to scale the worker pools in your cluster automatically to increase or decrease the number of worker nodes in the worker pool based on the sizing needs of your scheduled workloads. The `cluster-autoscaler` add-on is based on the [Kubernetes Cluster-Autoscaler project](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler). For more information, see [Autoscaling clusters](/docs/openshift?topic=openshift-ca).
+After you have your underlying infrastructure in place, begin deploying your workloads in your on-premises {{site.data.keyword.openshiftshort}} workload clusters. You can use the `cluster-autoscaler` add-on to scale the worker pools in your cluster automatically to increase or decrease the number of worker nodes in the worker pool based on the sizing needs of your scheduled workloads. The `cluster-autoscaler` add-on is based on the [Kubernetes Cluster-Autoscaler project](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler). For more information, see [Autoscaling clusters](/docs/openshift?topic=openshift-cluster-scaling-classic-vpc&interface=ui).
 
 In addition, it is possible to autoscale your pods. For more information, see [Scaling apps](/docs/openshift?topic=openshift-update_app#app_scaling).
 

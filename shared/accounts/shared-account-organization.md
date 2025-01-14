@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-03-31"
+  years: 2020, 2024
+lastupdated: "2024-11-19"
 
 keywords: 
 
@@ -40,7 +40,7 @@ For the VPC reference architecture, it is recommended that you use two resource 
 
 This creates a clean separation between the layers. The following diagram shows such a layout.
 
-![Account with two resource groups for management and workload VPCs](../../vpc/images/resource-organization/vpc-accounts-single-with-two-resource-groups-beta2.drawio.svg){: caption="Figure 1. Account with two resource groups for management and workload VPCs" caption-side="bottom"}
+![Account with two resource groups for management and workload VPCs](../../vpc/images/resource-organization/vpc-accounts-single-with-two-resource-groups-beta2.drawio.svg){: caption="Account with two resource groups for management and workload VPCs" caption-side="bottom"}
 
 While not shown in the diagram, it is also permissable to take isolation a step further and place your management VPC in one account and your workload VPC in another account.
 {: note}
@@ -50,7 +50,7 @@ While not shown in the diagram, it is also permissable to take isolation a step 
 
 For the {{site.data.keyword.satelliteshort}} reference architecture, you can put all of your {{site.data.keyword.cloud_notm}} resources that are related to a single {{site.data.keyword.satelliteshort}} deployment into one resource group.
 
-![Account with one resource group for {{site.data.keyword.satelliteshort}}-related resources](../../satellite/images/resource-organization/satellite-accounts-single-with-one-resource-group-beta2.drawio.svg){: caption="Figure 2. Account with one resource group for {{site.data.keyword.satelliteshort}}-related resources" caption-side="bottom"}
+![Account with one resource group for {{site.data.keyword.satelliteshort}}-related resources](../../satellite/images/resource-organization/satellite-accounts-single-with-one-resource-group-beta2.drawio.svg){: caption="Account with one resource group for {{site.data.keyword.satelliteshort}}-related resources" caption-side="bottom"}
 
 ## Organization for multiple deployments
 {: #multiple-deployments}
@@ -62,14 +62,14 @@ It is required that you have [separate test and production deployments](/docs/fr
 
 The following diagram shows a depiction of this organization for the VPC reference architecture.
 
-![Multiple accounts for VPC reference architecture with two resource groups](../../vpc/images/resource-organization/vpc-accounts-multiple-with-two-resource-groups-beta2.drawio.svg){: caption="Figure 3. Multiple accounts for VPC reference architecture with two resource groups" caption-side="bottom"}
+![Multiple accounts for VPC reference architecture with two resource groups](../../vpc/images/resource-organization/vpc-accounts-multiple-with-two-resource-groups-beta2.drawio.svg){: caption="Multiple accounts for VPC reference architecture with two resource groups" caption-side="bottom"}
 
 ### {{site.data.keyword.satelliteshort}} reference architecture
 {: #multiple-deployments-satellite}
 
 The following diagram shows a depiction of this organization for the {{site.data.keyword.satelliteshort}} reference architecture.
 
-![Multiple accounts for Satellite reference architecture](../../satellite/images/resource-organization/satellite-accounts-multiple-with-one-resource-group-beta2.drawio.svg){: caption="Figure 4. Multiple accounts for Satellite reference architecture" caption-side="bottom"}
+![Multiple accounts for Satellite reference architecture](../../satellite/images/resource-organization/satellite-accounts-multiple-with-one-resource-group-beta2.drawio.svg){: caption="Multiple accounts for Satellite reference architecture" caption-side="bottom"}
 
 ## Scaling the number of deployments within an account
 {: #scaling-deployments}
@@ -81,7 +81,7 @@ If for some reason you do not want to use an [enterprise account](#enterprises) 
 
 For the VPC reference architecture, this variation is shown in the following diagram. In this case, we still have a test and production account, but we create two new resource groups for each deployment.
 
-![Using two accounts with multiple resource groups for VPC reference architecture](../../vpc/images/resource-organization/vpc-accounts-two-with-multiple-resource-groups-beta2.drawio.svg){: caption="Figure 5. Using two accounts with multiple resource groups for VPC reference architecture" caption-side="bottom"}
+![Using two accounts with multiple resource groups for VPC reference architecture](../../vpc/images/resource-organization/vpc-accounts-two-with-multiple-resource-groups-beta2.drawio.svg){: caption="Using two accounts with multiple resource groups for VPC reference architecture" caption-side="bottom"}
 
 While this reduces the number of accounts you need, it can also become problematic because each account is subject to [quotas and service limits](/docs/vpc?topic=vpc-quotas) for VPC.
 
@@ -90,7 +90,7 @@ While this reduces the number of accounts you need, it can also become problemat
 
 For the {{site.data.keyword.satelliteshort}} reference architecture, we still have a test and production account. We then create one new resource group for each deployment as shown in the following diagram.
 
-![Using two accounts with multiple resource groups for {{site.data.keyword.satelliteshort}} reference architecture](../../satellite/images/resource-organization/satellite-accounts-two-with-multiple-resource-groups-beta2.drawio.svg){: caption="Figure 6. Using two accounts with multiple resource groups for {{site.data.keyword.satelliteshort}} reference architecture" caption-side="bottom"}
+![Using two accounts with multiple resource groups for {{site.data.keyword.satelliteshort}} reference architecture](../../satellite/images/resource-organization/satellite-accounts-two-with-multiple-resource-groups-beta2.drawio.svg){: caption="Using two accounts with multiple resource groups for {{site.data.keyword.satelliteshort}} reference architecture" caption-side="bottom"}
 
 ## Managing scalability with an enterprise
 {: #enterprises}
@@ -98,7 +98,7 @@ For the {{site.data.keyword.satelliteshort}} reference architecture, we still ha
 ### Rationale for using an enterprise
 {: #enterprises-rationale}
 
-Unless you have a limited number of deployments and accounts, it is highly recommended that you use an [enterprise](/docs/account?topic=account-what-is-enterprise). Large enterprises that allow an account structure, cross account networking, resource deployment, and billing to develop organically run the risk of encountering governance, scaling, security, and accounting issues. See [Enterprise account architecture](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-about) for recommendations on how to address these concerns across accounts so that a robust, compliant, and scalable solution can be achieved.
+Unless you have a limited number of deployments and accounts, it is highly recommended that you use an [enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise). Large enterprises that allow an account structure, cross account networking, resource deployment, and billing to develop organically run the risk of encountering governance, scaling, security, and accounting issues. See [Enterprise account architecture](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-about) for recommendations on how to address these concerns across accounts so that a robust, compliant, and scalable solution can be achieved.
 
 ### Organizing your enterprise
 {: #enterprises-organization}
@@ -110,7 +110,7 @@ Within an enterprise, you can create multiple accounts and account groups. With 
 
 The following diagram shows a single enterprise with one account group that contains separate accounts for each deployment of the VPC reference architecture.
 
-![Enterprise account organization with VPC reference architecture](../../vpc/images/resource-organization/vpc-enterprise-account-organization-beta2.drawio.svg){: caption="Figure 7. Enterprise account organization with VPC reference architecture" caption-side="bottom"}
+![Enterprise account organization with VPC reference architecture](../../vpc/images/resource-organization/vpc-enterprise-account-organization-beta2.drawio.svg){: caption="Enterprise account organization with VPC reference architecture" caption-side="bottom"}
 
 When using enterprise accounts, it is recommended that you use one enterprise account for production and another enterprise account for development. See [Planning your enterprise account structure](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-account-structure) for more information.
 
@@ -119,7 +119,7 @@ When using enterprise accounts, it is recommended that you use one enterprise ac
 
 The following diagram shows an enterprise with one account group that contains separate accounts for each deployment of the {{site.data.keyword.satelliteshort}} reference architecture.
 
-![Enterprise account organization with {{site.data.keyword.satelliteshort}} reference architecture](../../satellite/images/resource-organization/satellite-enterprise-account-organization-beta2.drawio.svg){: caption="Figure 8. Enterprise account organization" caption-side="bottom"}
+![Enterprise account organization with {{site.data.keyword.satelliteshort}} reference architecture](../../satellite/images/resource-organization/satellite-enterprise-account-organization-beta2.drawio.svg){: caption="Enterprise account organization" caption-side="bottom"}
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}} 
 {: #related-controls}
@@ -129,7 +129,7 @@ The following diagram shows an enterprise with one account group that contains s
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6) |
-{: caption="Table 1. Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
 
 ## Next steps
 {: #next-steps}

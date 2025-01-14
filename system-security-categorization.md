@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-01"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -157,7 +157,7 @@ The following table refines the results from the previous table. It shows the hi
 
 Traditionally, security has been divided into two perspectives: functionality and assurance. Functionality is the security capabilities described by a policy, control framework, or security target.
 
-Assurance is a set of activities that give confidence in the implementation and operation of control requirements. The type of assurance can vary depending on the scope of the control framework and the amount of effort put into confirming the implementation and operation of the control requirements. In this case, the [Financial Services Validation process](/docs/framework-financial-services?topic=framework-financial-services-about) performs assurance activities to enable confidence in the implementation of the controls.
+Assurance is a set of activities that give confidence in the implementation and operation of control requirements. The type of assurance can vary depending on the scope of the control framework and the amount of effort put into confirming the implementation and operation of the control requirements. In this case, the [Financial Services Validation process](/docs/framework-financial-services?topic=framework-financial-services-fs-validated-partner-process) performs assurance activities to enable confidence in the implementation of the controls.
 
 The overall security categorization of the data will guide the functionality and assurance required from a cloud service being used to protect the data. For example, while {{site.data.keyword.hscrypto}} and {{site.data.keyword.keymanagementserviceshort}} have received the same level of assurance, both being Financial Services Validated, they each provide different security functionality. They may be used to protect data with a different security categorization. For a further discussion on the differences, read [Data encryption at rest in IBM Cloud](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-at-rest#shared-encryption-at-rest-ibm-cloud) for a comparison of functionality.
 

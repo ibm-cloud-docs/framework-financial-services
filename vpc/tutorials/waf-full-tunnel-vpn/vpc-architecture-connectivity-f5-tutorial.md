@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-13"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -23,7 +23,7 @@ completion-time: 2h
 {: toc-services="f5"}
 {: toc-completion-time="2h"}
 
-If you want to use a client to site full tunnel VPN to [connect to your management VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management) or need a web application firewall (WAF) to enable consumers to [connect to your workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload) over the public internet, you need to install your own software solution. One approach is to use [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external}. In this tutorial, you will learn how to provision an instance of BIG-IP. This is a prerequisite for using BIG-IP to [set up a full tunnel client-to-site VPN](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-f5-tutorial) or [enable a WAF](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial) in a way that meets {{site.data.keyword.framework-fs_notm}} requirements.
+If you want to use a client to site full tunnel VPN to [connect to your management VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management) or need a web application firewall (WAF) to enable consumers to [connect to your workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload) over the public internet, you need to install your own software solution. One approach is to use [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external}. In this tutorial, you will learn how to provision an instance of BIG-IP. This is a prerequisite for using BIG-IP to [set up a full tunnel client-to-site VPN](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-full-tunnel-vpn) or [enable a WAF](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial) in a way that meets {{site.data.keyword.framework-fs_notm}} requirements.
 {: shortdesc}
 
 Guidance is provided here, but you are solely responsible for installing, configuring, and operating {{site.data.keyword.IBM_notm}} third-party software in a way that satisfies {{site.data.keyword.framework-fs_notm}} requirements. In addition, {{site.data.keyword.IBM_notm}} does not provide support for third-party software.
@@ -31,7 +31,7 @@ Guidance is provided here, but you are solely responsible for installing, config
 
 The architecture diagram shows a deployment of the VPC reference architecture with an instance of BIG-IP in the edge/transit VPC.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
 The architecture diagram shows a BIG-IP installation with four interfaces within 4 different VPC subnets: management, external, workload, and bastion. Depending on the services that you need and how you name your VPC subnets, you must update the values within the tutorial.
 {: tip}
@@ -56,7 +56,7 @@ You need the following items to deploy and configure this reference architecture
     * 3 subnets: If you are using only the BIG-IP WAF (external, management, workload)
     * 4 subnets: If you are using the BIG-IP full tunnel VPN and WAF service (external, management, workload, bastion)
 * [VPC SSH key](/docs/vpc?topic=vpc-ssh-keys)
-* Following best practices for [access management](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-account-access-management) and create an access group with minimum access policies for VPC Infrastructure Services:
+* Following best practices for [access management](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-zero-trust) and create an access group with minimum access policies for VPC Infrastructure Services:
     * Platform access: Editor
     * Service access: Writer and IP spoofing operator
 
@@ -108,7 +108,7 @@ Access the BIG-IP installation through the IP address only that is contained in 
 {: #f5-management-ciphersuite}
 {: step}
 
-You are responsible for meeting certain [TLS requirements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-in-transit#vpc-architecture-encryption-in-transit-tls-requirements) along with [acceptable cipher suites](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-in-transit#vpc-architecture-encryption-in-transit-tls-cipher-suites).
+You are responsible for meeting certain [TLS requirements](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit#shared-encryption-in-transit-tls-requirements) along with [acceptable cipher suites](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit#shared-encryption-in-transit-tls-cipher-suites).
 {: important}
 
 Next, configure the management UI to allow the acceptable cipher suites of TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 and TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 only. You can do this configuration only with the command line interface.
@@ -129,7 +129,7 @@ Next, configure the management UI to allow the acceptable cipher suites of TLS_E
 {: #f5-configuration-ssl-cert}
 {: step}
 
-By default, the configuration utility is deployed with a self-signed certificate. You must replace the certificate according to the [TLS requirements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-encryption-in-transit#vpc-architecture-encryption-in-transit-tls-requirements).  For more information on replacing the BIG-IP self-signed certificate, see [Replacing the Configuration utility's self-signed device certificate with a CA-signed device certificate](https://support.f5.com/csp/article/K42531434){: external}.
+By default, the configuration utility is deployed with a self-signed certificate. You must replace the certificate according to the [TLS requirements](/docs/framework-financial-services?topic=framework-financial-services-shared-encryption-in-transit#shared-encryption-in-transit-tls-requirements).  For more information on replacing the BIG-IP self-signed certificate, see [Replacing the Configuration utility's self-signed device certificate with a CA-signed device certificate](https://support.f5.com/csp/article/K42531434){: external}.
 
 ## Accessing the F5 BIG-IP
 {: #f5-access}
@@ -137,9 +137,9 @@ By default, the configuration utility is deployed with a self-signed certificate
 
 All access, whether it is CLI with SSH or the configuration utility, should be through the bastion host. The following example shows how you can connect to the F5 BIG-IP configuration utility by using port forwarding with [Teleport as a bastion host](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport).
 
-1. Create a [Teleport role](https://goteleport.com/docs/setup/reference/resources/#role){: external} with the option **port_forwarding** set to **true**.
+1. Create a [Teleport role](https://goteleport.com/docs/reference/access-controls/roles/#role-options){: external} with the option **port_forwarding** set to **true**.
 1. [Log in to the bastion host with the tsh client](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport#log-in-via-the-tsh-client).
-1. Set up a [port forwarding connection with the tsh client](https://goteleport.com/docs/user-manual/#port-forwarding){: external}. The following example binds port 5000 on your local machine and allows access to the BIG-IP through the browser at *https://127.0.0.1:5000*.
+1. Set up a [port forwarding connection with the tsh client](https://goteleport.com/docs/connect-your-client/tsh/#port-forwarding){: external}. The following example binds port 5000 on your local machine and allows access to the BIG-IP through the browser at *https://127.0.0.1:5000*.
    ```
    tsh ssh -L 5000:<IP ADDRESS OF BIG-IP MANAGEMENT INTERFACE>:443 [user@]bastion_host
    ```
@@ -369,5 +369,5 @@ Restrict incoming traffic on port 443 to CIS global load balancers allowlisted I
 
 ## Next steps
 
-* [Set up a full tunnel client-to-site VPN with BIG-IP](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-f5-tutorial)
+* [Set up a full tunnel client-to-site VPN with BIG-IP](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-full-tunnel-vpn)
 * [Enable a WAF with BIG-IP](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial)

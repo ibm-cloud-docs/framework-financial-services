@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-03"
+lastupdated: "2024-11-19"
 
 keywords:
 
@@ -43,7 +43,7 @@ Before you deploy and configure a bastion host into a virtual server instance ru
 * Acquire a Teleport Enterprise Edition license
 * Configure a VPC like *VPC 0 (Edge Network)* in the architecture diagram
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with bastion host](../../images/bastion-host/vpc-single-region-bastion-v2.svg){: caption="Figure 1. Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with bastion host" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with bastion host](../../images/bastion-host/vpc-single-region-bastion-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with bastion host" caption-side="bottom"}
 
 
 
@@ -169,7 +169,7 @@ Teleport session recordings can contain sensitive information. You should have p
 With your virtual server instances provisioned and set-up with a security group and ACL, you can continue configuring the instance and installing Teleport. Then, complete the Teleport configuration for unified access to your infrastructure.
 
 1. Connect to your virtual server instance by using [SSH](/docs/vpc?topic=vpc-vsi_is_connecting_linux).
-1. Download [Teleport Enterprise version 7.1.0](https://get.gravitational.com/teleport-ent-v7.1.0-linux-amd64-bin.tar.gz){: external} and extract its contents. Copy the following packages to the `/usr/local/bin` directory:
+1. Download [Teleport Enterprise version 7.1.0](https://get.gravitational.com/teleport-ent-v7.1.0-linux-amd64-bin.tar.gz){: external} and extract its contents. (Optionally, you can follow the instructions to download the [TAR file for the latest Teleport Enterprise version](https://goteleport.com/docs/installation/#tar-archives-self-hosted-only){: external}). Copy the following packages to the `/usr/local/bin` directory:
    * `cp <path of extracted contents>/teleport /usr/local/bin`
    * `cp <path of extracted contents>/tctl /usr/local/bin`
    * `cp <path of extracted contents>/tsh /usr/local/bin`
@@ -218,7 +218,7 @@ With your virtual server instances provisioned and set-up with a security group 
    ```
    {: codeblock}
 
-1. Create the file `/etc/systemd/system/teleport.service` with the following example content.  Make sure to enter your HMAC credentials that you generated previously in this procedure. For more information, see [Systemd Unit File](https://goteleport.com/docs/admin-guide/#systemd-unit-file){: external}. Ensure the appropriate changes where noted with `<variables>`.
+1. Create the file `/etc/systemd/system/teleport.service` with the following example content.  Make sure to enter your HMAC credentials that you generated previously in this procedure. For more information, see [Systemd Unit File](https://goteleport.com/docs/admin-guides/management/admin/daemon/#step-23-create-and-configure-a-systemd-service){: external}. Ensure the appropriate changes where noted with `<variables>`.
 
    ```
    [Unit]
@@ -247,7 +247,7 @@ With your virtual server instances provisioned and set-up with a security group 
    ```
 1. Some operating systems have open firewalls but if your operating system limits traffic, you must add firewall rules to allow TCP traffic for ports 3023, 3024, 3025, and 3080.  CentOS is an example of an operating system that blocks traffic by default.
 1. Start the Teleport process `systemctl start teleport`.
-1. Create a Teleport Role.  For more information, see [Create Teleport Roles](https://goteleport.com/docs/enterprise/sso/oidc/#create-teleport-roles){: external}. For more information on settings for a Teleport role, see [Teleport Access Control Reference](https://goteleport.com/docs/access-controls/reference/){: external}.
+1. Create a Teleport Role.  For more information, see [Create Teleport Roles](https://goteleport.com/docs/admin-guides/access-controls/guides/role-templates/){: external}. For more information on settings for a Teleport role, see [Teleport Access Control Reference](https://goteleport.com/docs/access-controls/reference/){: external}.
    1. Create the file `role.yaml` within the directory `/var/lib/teleport`. The following sample role provides full access to the system.  You can also create roles within the Teleport web console under *Teams -> Roles*.
 
    ```
@@ -301,12 +301,12 @@ With your virtual server instances provisioned and set-up with a security group 
 
    Example claim names can be `email`, `family_name`, `given_name`, or `name`.  The value is what that claims value will be set to.
 
-1. Using the [tctl](https://goteleport.com/docs/cli-docs/){: external} to apply the yamls:
+1. Using the [tctl](https://goteleport.com/docs/reference/cli/tctl/){: external} to apply the yamls:
    * `tctl create /var/lib/teleport/role.yaml`
    * `tctl create /var/lib/teleport/oidc.yaml`
 1. Set up forwarding of Teleport logs and system logs. Teleport logs are located in the directory `/var/lib/teleport` and system logs in `/var/logs`.
 
-Logs must be forwarded to an operational logging solution. For more information, see [operational logging](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational)
+Logs must be forwarded to an operational logging solution. For more information, see [operational logging](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-operational)
 {: important}
 
 ## Log in to the bastion host
@@ -325,12 +325,12 @@ You can log in to the bastion host through the web console or tsh client as desc
 
 ### Log in through the tsh client
 
-1. Install the [Teleport client tool tsh](https://goteleport.com/docs/user-manual/#installing-tsh){: external}.
-1. [Log in using tsh](https://goteleport.com/docs/user-manual/#logging-in){: external}.
+1. Install the [Teleport client tool tsh](https://goteleport.com/docs/installation/){: external}.
+1. [Log in using tsh](https://goteleport.com/docs/reference/cli/tsh/#tsh-login){: external}.
 
     `tsh login --proxy=<fqdn of telport server>:3080`
 
-1. Run shell or execute a command on a remote SSH node by using the [tsh ssh command](https://goteleport.com/docs/cli-docs/#tsh-ssh){: external}
+1. Run shell or execute a command on a remote SSH node by using the [tsh ssh command](https://goteleport.com/docs/reference/cli/tsh/#tsh-ssh){: external}
 
     `tsh ssh <[user@]host>`
 
@@ -341,7 +341,7 @@ You can log in to the bastion host through the web console or tsh client as desc
 Now that the bastion host is set up and configured, you can install the tools that are needed to interact with your infrastructure, such as:
 
 1. [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli) and associated [plug-ins](/docs/cli?topic=cli-plug-ins).
-1. [OpenShift Origin CLI](/docs/openshift?topic=openshift-openshift-cli).
+1. [OpenShift Origin CLI](/docs/openshift?topic=openshift-cli-install).
 
 For information on accessing your {{site.data.keyword.openshiftshort}} cluster via the tools above, see accessing [{{site.data.keyword.redhat_openshift_notm}} clusters](/docs/openshift?topic=openshift-access_cluster#access_oc_cl).
 {: note}
