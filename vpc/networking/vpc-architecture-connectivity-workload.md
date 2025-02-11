@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-02-11"
 
 keywords:
 
@@ -72,8 +72,6 @@ There are many valid cases where you might want to allow consumers to access you
 {: #consumer-provider-public-internet-glb}
 
 One option for global load balancing outside of the edge VPC is {{site.data.keyword.cis_full}} ({{site.data.keyword.cis_short_notm}}), powered with Cloudflare. {{site.data.keyword.cis_short_notm}} provides a fast, highly performant, reliable, and secure internet service for customers running their business on {{site.data.keyword.cloud_notm}}.
-
-{{site.data.keyword.cis_short_notm}} is not Financial Services Validated. Because of this, TLS connections must _not_ be terminated in {{site.data.keyword.cis_short_notm}} and should be configured only for pass-through connections. {{site.data.keyword.cis_short_notm}} global load balancers must be configured with the **proxy** configuration setting value of **off**. {{site.data.keyword.cis_short_notm}} Range applications should be used to provide DDoS protection in front of global load balancers. {: note}
 
 For more information, see the following resources:
 
