@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-09"
+  years: 2020, 2025
+lastupdated: "2025-02-20"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -50,8 +50,22 @@ Ideally, you should support integration with an external (to the application) id
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2) \n [AC-3 Access Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-3) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6) \n [AC-14 Permitted Actions without Identification or Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-14) |
-{: caption="Related controls for zero trust" caption-side="top"}
-{: #related-controls-zero-trust}
+{: caption="Related controls for zero trust [FSv2.0]" caption-side="top"}
+{: #related-controls-zero-trust-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-2"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-2) \n [AC-3 Access Enforcement](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-3) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-6) \n [AC-14 Permitted Actions without Identification or Authentication](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-14) |
+{: caption="Related controls for zero trust [FSv1.1]" caption-side="top"}
+{: #related-controls-zero-trust-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-2"}
+{: class="simple-tab-table"}
+
 
 ## 3. Enable ability to capture audit events
 {: #best-practices-audit-logs}
@@ -79,10 +93,24 @@ You must provide the technical capability to ensure only permitted users have ac
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Audit and Accountability (AU) | [AU-2 Audit Events](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-2) \n [AU-3 Content of Audit Records](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-3) \n [AU-5 Response to Audit Processing Failures](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-5) \n [AU-8 Time Stamps](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-8) \n [AU-9 Protection of Audit Information](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-9) \n [AU-10 Non-repudiation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-10) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-11) \n [AU-12 Audit Generation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-12) |
-{: caption="Related controls for audit logs" caption-side="top"}
-{: #related-controls-audit-logs}
+{: caption="Related controls for audit logs [FSv2.0]" caption-side="top"}
+{: #related-controls-audit-logs-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-3"}
+{: class="simple-tab-table"}
 
-## 4. Follow secure development processes and ensure software integrity 
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Audit and Accountability (AU) | [AU-2 Audit Events](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-2) \n [AU-3 Content of Audit Records](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-3) \n [AU-5 Response to Audit Processing Failures](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-5) \n [AU-8 Time Stamps](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-8) \n [AU-9 Protection of Audit Information](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-9) \n [AU-10 Non-repudiation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-10) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-11) \n [AU-12 Audit Generation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-12) |
+{: caption="Related controls for audit logs [FSv1.1]" caption-side="top"}
+{: #related-controls-audit-logs-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-3"}
+{: class="simple-tab-table"}
+
+
+## 4. Follow secure development processes and ensure software integrity
 {: #best-practices-development-processes}
 
 **Requirement:** Ensure that security engineering principles are applied in the design, development, implementation, and modification of your software. Maintain software integrity by using signed images, applying security patches, doing vulnerability scans, etc.
@@ -96,8 +124,22 @@ Lack of software integrity leaves your operator vulnerable to security problems.
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | System and Services Acquisition (SA) | [SA-8 Security Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-11 Developer Security Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-12 Supply Chain Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-12) \n [SA-14 Criticality Analysis](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-14) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15)
-{: caption="Related controls for development processes" caption-side="top"}
-{: #related-controls-development-processes}
+{: caption="Related controls for development processes [FSv2.0]" caption-side="top"}
+{: #related-controls-development-processes-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-4"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| System and Services Acquisition (SA) | [SA-8 Security Engineering Principles](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sa-8) \n [SA-11 Developer Security Testing and Evaluation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sa-11) \n [SA-12 Supply Chain Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sa-12) \n [SA-14 Criticality Analysis](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sa-14) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sa-15)
+{: caption="Related controls for development processes [FSv1.1]" caption-side="top"}
+{: #related-controls-development-processes-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-4"}
+{: class="simple-tab-table"}
+
 
 ## 5. Ensure consumer data can be encrypted at rest and in transit
 {: #best-practices-encryption}
@@ -116,8 +158,22 @@ Lack of software integrity leaves your operator vulnerable to security problems.
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | System and Communications Protection (SC) | [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-13) \n [SC-28 Protection of Information At Rest](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28) \n [SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28.1)  |
-{: caption="Related controls for data encryption" caption-side="top"}
-{: #related-controls-encryption}
+{: caption="Related controls for data encryption [FSv2.0]" caption-side="top"}
+{: #related-controls-encryption-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-5"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| System and Communications Protection (SC) | [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-8.1) \n [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-13) \n [SC-28 Protection of Information At Rest](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-28) \n [SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-28.1)  |
+{: caption="Related controls for data encryption [FSv1.1]" caption-side="top"}
+{: #related-controls-encryption-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-5"}
+{: class="simple-tab-table"}
+
 
 ## 6. Enable software to be run in a highly available manner
 {: #best-practices-high-availability}
@@ -131,8 +187,22 @@ Lack of software integrity leaves your operator vulnerable to security problems.
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-6) |
-{: caption="Related controls for high-availability" caption-side="top"}
-{: #related-controls-high-availability}
+{: caption="Related controls for high-availability [FSv2.0]" caption-side="top"}
+{: #related-controls-high-availability-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-6"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-6) |
+{: caption="Related controls for high-availability [FSv1.1]" caption-side="top"}
+{: #related-controls-high-availability-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-6"}
+{: class="simple-tab-table"}
+
 
 
 
