@@ -37,7 +37,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
    | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
-   | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-2)  |
+   | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2)  |
    {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} for account creation [FSv1.1]" caption-side="top"}
    {: #related-controls-fsv1.1}
    {: tab-title="FSv1.1"}
@@ -62,8 +62,8 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
    | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
-   | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-2) \n [AC-2 (1) Account Management &#124; Automated System Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-2.1) \n [AC-2 (4) Account Management &#124; Automated Audit Actions](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-2.4) \n [AC-2 (7) Account Management &#124; Privileged User Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-2.7) |
-   | Audit and Accountability (AU) | [AU-3 Content of Audit Records](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-3) \n [AU-4 Audit Log Storage Capacity](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-4) \n [AU-5 Response to Audit Processing Failures](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-5) \n [AU-6 Audit Record Review, Analysis. and Reporting](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-6) \n [AU-6 (1) Audit Record Review, Analysis. and Reporting &#124; Automated Process Integration](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-6.1) \n [AU-7 Audit Record Reduction and Report Generation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-7) \n [AU-10 Non-repudiation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-10) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-11) |
+   | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2) \n [AC-2 (1) Account Management &#124; Automated System Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2.1) \n [AC-2 (4) Account Management &#124; Automated Audit Actions](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2.4) \n [AC-2 (7) Account Management &#124; Privileged User Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2.7) |
+   | Audit and Accountability (AU) | [AU-3 Content of Audit Records](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-3) \n [AU-4 Audit Log Storage Capacity](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-4) \n [AU-5 Response to Audit Processing Failures](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-5) \n [AU-6 Audit Record Review, Analysis. and Reporting](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-6) \n [AU-6 (1) Audit Record Review, Analysis. and Reporting &#124; Automated Process Integration](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-6.1) \n [AU-7 Audit Record Reduction and Report Generation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-7) \n [AU-10 Non-repudiation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-10) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-11) |
    {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} for audit logging [FSv1.1]" caption-side="top"}
    {: #related-controls-fsv1.1}
    {: tab-title="FSv1.1"}
@@ -92,7 +92,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
       | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
-   | Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Multi-factor Authentication To Privileged Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ia-2.1) \n [IA-2 (11) Identification and Authentication (Organizational Users) &#124; Remote Access - Separate Device](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ia-2.11) |
+   | Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Multi-factor Authentication To Privileged Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-2.1) \n [IA-2 (11) Identification and Authentication (Organizational Users) &#124; Remote Access - Separate Device](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-2.11) |
    {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} for multi-factor authentication [FSv1.1]" caption-side="top"}
    {: #related-controls-fsv1.1}
    {: tab-title="FSv1.1"}
@@ -118,8 +118,8 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
    | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
-   | Access Control (AC) | [AC-4 Information Flow Enforcement](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-4) |
-   | System and Communications Protection (SC)  | [SC-7 Boundary Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-7) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-7.5) |
+   | Access Control (AC) | [AC-4 Information Flow Enforcement](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-4) |
+   | System and Communications Protection (SC)  | [SC-7 Boundary Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-7) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-7.5) |
    {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} for restricting IP addresses [FSv1.1]" caption-side="top"}
    {: #related-controls-fsv1.1}
    {: tab-title="FSv1.1"}
@@ -148,10 +148,10 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
    | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
-   | Access Control (AC) | [AC-20 Use of External Information Systems](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-20) |
-   | System and Services Acquisition (SA) | [SA-4 Acquisitions Process](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sa-4) \n [SA-9 External Information System Services](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sa-9) |
-   | Enterprise System and Services Acquisition (ESA) | [ESA-5 Subcontractor Risk Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-esa-5) |
-   | Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ca-3) |
+   | Access Control (AC) | [AC-20 Use of External Information Systems](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-20) |
+   | System and Services Acquisition (SA) | [SA-4 Acquisitions Process](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-4) \n [SA-9 External Information System Services](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-9) |
+   | Enterprise System and Services Acquisition (ESA) | [ESA-5 Subcontractor Risk Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-esa-5) |
+   | Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ca-3) |
    {: caption="Related controls  in {{site.data.keyword.framework-fs_notm}} for using only Financial Services Validated services [FSv1.1]" caption-side="top"}
    {: #related-controls-fsv1.1}
    {: tab-title="FSv1.1"}
@@ -175,7 +175,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
    | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
-   | Access Control (AC) | [AC-11 Session Lock](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-11) |
+   | Access Control (AC) | [AC-11 Session Lock](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-11) |
    {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} for using only session inactivity timeout [FSv1.1]" caption-side="top"}
    {: #related-controls-fsv1.1}
    {: tab-title="FSv1.1"}
@@ -199,7 +199,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
    | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
-   | Configuration Management (CM) | [CM-8 (4) Information System Component Inventory &#124; Accountability Information](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-cm-8.4) |
+   | Configuration Management (CM) | [CM-8 (4) Information System Component Inventory &#124; Accountability Information](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cm-8.4) |
    {: caption="Related {{site.data.keyword.framework-fs_notm}} controls for updating company profile details [FSv1.1]" caption-side="top"}
    {: #related-controls-fsv1.1}
    {: tab-title="FSv1.1"}
@@ -223,7 +223,7 @@ An [{{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-overvi
 
    | Family              | Control                                           |
    |---------------------|---------------------------------------------------|
-   | System and Information Integrity (SI) |  [SI-2 Flaw Remediation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-si-2) \n [SI-5 Security Alerts & Advisories](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-si-5) |
+   | System and Information Integrity (SI) |  [SI-2 Flaw Remediation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-si-2) \n [SI-5 Security Alerts & Advisories](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-si-5) |
    {: caption="Related {{site.data.keyword.framework-fs_notm}} controls for configuring notifications [FSv1.1]" caption-side="top"}
    {: #related-controls-fsv1.1}
    {: tab-title="FSv1.1"}

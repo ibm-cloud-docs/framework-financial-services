@@ -50,9 +50,9 @@ You need to install and manage your own bastion solution within your management 
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Audit and Accountability (AU) | [AU-14 Session Audit](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-au-14)  |
-| Access Control (AC) | [AC-6 (9) Least Privilege &#124; Auditing Use of Privileged Functions](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-6.9) \n [AC-17 Remote Access](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-17)  |
-| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ia-2.1) |
+| Audit and Accountability (AU) | [AU-14 Session Audit](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-14)  |
+| Access Control (AC) | [AC-6 (9) Least Privilege &#124; Auditing Use of Privileged Functions](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-6.9) \n [AC-17 Remote Access](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-17)  |
+| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-2.1) |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
 {: #related-controls-fsv1.1}
 {: tab-title="FSv1.1"}

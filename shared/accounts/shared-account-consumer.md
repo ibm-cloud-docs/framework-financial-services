@@ -49,8 +49,8 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 
 | Family | Control |
 |----------------------------------------|------------------------------------------|
-| Access Control (AC)  | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-2) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-6)  |
-| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-Based Authentication](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ia-5.1) |
+| Access Control (AC)  | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-6)  |
+| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-Based Authentication](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-5.1) |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
 {: #related-controls-fsv1.1}
 {: tab-title="FSv1.1"}

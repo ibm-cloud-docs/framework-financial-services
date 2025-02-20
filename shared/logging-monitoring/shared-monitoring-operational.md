@@ -51,7 +51,7 @@ You need to install your own software solution for monitoring in virtual server 
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Essential Missions / Business Functions](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-cp-6) \n [CP-7	Alternate Processing Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-cp-7) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-cp-10)  |
+| Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Essential Missions / Business Functions](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-6) \n [CP-7	Alternate Processing Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-7) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-10)  |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
 {: #related-controls-fsv1.1}
 {: tab-title="FSv1.1"}

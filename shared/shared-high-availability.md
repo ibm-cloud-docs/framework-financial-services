@@ -72,8 +72,8 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-cp-2) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-cp-7) |
-| System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-6) |
+| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-2) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-7) |
+| System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-6) |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
 {: #related-controls-fsv1.1}
 {: tab-title="FSv1.1"}

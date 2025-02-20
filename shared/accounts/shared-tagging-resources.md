@@ -60,8 +60,8 @@ In addition, for services that store data, it is suggested that you use one or m
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-16 Security Attributes](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ac-16) |
-| System and Communications Protection (SC) | [SC-16 Transmission of Security Attributes](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-16) |
+| Access Control (AC) | [AC-16 Security Attributes](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-16) |
+| System and Communications Protection (SC) | [SC-16 Transmission of Security Attributes](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-16) |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
 {: #related-controls-fsv1.1}
 {: tab-title="FSv1.1"}

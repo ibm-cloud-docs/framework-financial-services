@@ -52,6 +52,7 @@ The architecture in the previous section is the most secure way of enabling cons
 The revised architecture adds:
 
 * [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) to provide global load balancing and layer 3/4 protection against distributed denial-of-service (DDoS) attacks. It also includes a web application firewall (WAF) protection and layer 7 protection against denial-of-service (DoS) attacks.
+* As an alternative to CIS WAF capabilities, when advanced firewall functionalities are required, a Virtual Network Firewall software in the edge VPC can be deployed to provide web application firewall (WAF) protection and layer 7 protection against denial-of-service (DoS) attacks. The VNF will need to meet the required Financial Services controls.
 
 See [VPC architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture) for more details on this variation.
 

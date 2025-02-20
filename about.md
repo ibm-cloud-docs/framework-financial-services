@@ -37,7 +37,7 @@ The technology-agnostic control requirements defined in the framework were built
 
 See [{{site.data.keyword.framework-fs_full}} - Control Requirements](/docs/framework-financial-services-controls) for a complete description of all control requirements. Or, if you prefer, there is a [downloadable spreadsheet](https://cloud.ibm.com/media/docs/downloads/framework-financial-services/IBM_Cloud_Framework_for_Financial_Services-Control_Requirements_v2.0.0.xlsx){: external} available as well.
 
-The control requirements mentioned in this documentation by default is IBM Cloud Framework for Financial Services v2.0. For v1.1, refer to[{{site.data.keyword.framework-fs_full}} - Control Requirements v1.1](/docs/framework-financial-services-controls-fsv1-1). [downloadable spreadsheet for v1.1](https://cloud.ibm.com/media/docs/downloads/framework-financial-services/IBM_Cloud_Framework_for_Financial_Services_-_Control_Requirements_v1.1.0.xlsx){: external} is available as well.
+The control requirements mentioned in this documentation by default is IBM Cloud Framework for Financial Services v2.0. For v1.1, refer to [{{site.data.keyword.framework-fs_full}} - Control Requirements v1.1](/docs/framework-financial-services-controls-fsv1-1). [Downloadable spreadsheet for v1.1](https://cloud.ibm.com/media/docs/downloads/framework-financial-services/IBM_Cloud_Framework_for_Financial_Services_-_Control_Requirements_v1.1.0.xlsx){: external} is available as well.
 {: note}
 
 ### Framework guidance and reference architectures

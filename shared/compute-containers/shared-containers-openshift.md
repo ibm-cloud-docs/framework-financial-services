@@ -70,8 +70,8 @@ If you want to use containers in either either the VPC or {{site.data.keyword.sa
 
 | Family | Control |
 |--------|---------|
-| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-ia-2.1) |
-| System and Communications Protection (SC) | [SC-7 (5) Boundary Protection &#124; Deny by Default / Allow by Exception](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-7.5) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-sc-8) |
+| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-2.1) |
+| System and Communications Protection (SC) | [SC-7 (5) Boundary Protection &#124; Deny by Default / Allow by Exception](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-7.5) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-8) |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
 {: #related-controls-fsv1.1}
 {: tab-title="FSv1.1"}
