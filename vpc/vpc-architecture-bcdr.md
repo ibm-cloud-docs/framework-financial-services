@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-02-25"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Business continuity and disaster recovery for VPC reference architecture
 {: #vpc-architecture-bcdr}
 
-As described in [Business continuity and disaster recovery (BCDR) overview](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr), BCDR is important for all cloud-based applications. In this article, you will learn about specifics of BCDR in the {{site.data.keyword.satelliteshort}} reference architecture.
+As described in [Business continuity and disaster recovery (BCDR) overview](/docs/framework-financial-services?topic=framework-financial-services-shared-bcdr), BCDR is important for all cloud-based applications. In this article, you will learn about specifics of BCDR in the reference architecture.
 
 ## Workloads in VPC reference architecture
 {: #your-workloads}
@@ -23,14 +23,14 @@ As described in [Business continuity and disaster recovery (BCDR) overview](/doc
 ### Workloads on virtual server instances
 {: #your-workloads-snapshots-for-vpc}
 
-If you are running virtual server instances and _not_ trying to get your application designated as Financial Services Validated, then you can consider [Snapshots for VPC](/docs/vpc?topic=vpc-snapshots-vpc-about). Snapshots for VPC is a regional offering that lets you create a point-in-time copy of your block storage boot or data volumes. The initial snapshot you take is a full backup of the volume. Subsequent snapshots of the same volume are incremental; only the changes since the last snapshot are captured. You can select a snapshot during instance provisioning, and restore a new, fully-provisioned boot volume to start the instance. You can also create and attach a data volume from a snapshot within a running virtual server instance.
+If you are running virtual server instances, then you can consider [Snapshots for VPC](/docs/vpc?topic=vpc-snapshots-vpc-about). Snapshots for VPC is a regional offering that lets you create a point-in-time copy of your block storage boot or data volumes. The initial snapshot you take is a full backup of the volume. Subsequent snapshots of the same volume are incremental; only the changes since the last snapshot are captured. You can select a snapshot during instance provisioning, and restore a new, fully-provisioned boot volume to start the instance. You can also create and attach a data volume from a snapshot within a running virtual server instance.
 
 For more information, see [General procedure for creating and using snapshots](/docs/vpc?topic=vpc-snapshots-vpc-planning&interface=ui).
 
 ### Workloads on {{site.data.keyword.openshiftshort}}
 {: #your-workloads-openshift}
 
-If you are running {{site.data.keyword.openshiftshort}} and not trying to get your application designated as Financial Services Validated, then you can consider [Portworx](https://portworx.com/products/portworx-enterprise//){: external}. Portworx is a highly available software-defined storage solution that you can use to manage local persistent storage for your containerized databases and other stateful apps, or to share data between pods across multiple zones.
+If you are running {{site.data.keyword.openshiftshort}}, then you can consider [Portworx](https://portworx.com/products/portworx-enterprise//){: external}. Portworx is a highly available software-defined storage solution that you can use to manage local persistent storage for your containerized databases and other stateful apps, or to share data between pods across multiple zones.
 
 See [Storing data on software-defined storage (SDS) with Portworx](/docs/openshift?topic=openshift-portworx) for more information.
 
