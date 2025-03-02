@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-03-02"
 
 keywords:
 
@@ -49,8 +49,8 @@ In addition, for services that store data, it is suggested that you use one or m
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-16 Security Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-16) |
-| System and Communications Protection (SC) | [SC-16 Transmission of Security Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-16) |
+| Access Control (AC) | [AC-16 Security and Privacy Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-16) |
+| System and Communications Protection (SC) | [SC-16 Transmission of Security and Privacy Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-16) |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
 {: #related-controls-fsv2.0}
 {: tab-title="FSv2.0"}

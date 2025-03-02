@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-03-02"
 
 keywords:
 
@@ -39,7 +39,7 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 | Family | Control |
 |----------------------------------------|------------------------------------------|
 | Access Control (AC)  | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6)  |
-| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-Based Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5.1) |
+| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-based Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5.1) |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
 {: #related-controls-fsv2.0}
 {: tab-title="FSv2.0"}

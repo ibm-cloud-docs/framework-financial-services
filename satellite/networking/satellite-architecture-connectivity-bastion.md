@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-03-02"
 
 keywords:
 
@@ -56,8 +56,8 @@ You need to install and manage your own bastion solution within your management 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Audit and Accountability (AU) | [AU-14 Session Audit](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-14)  |
-| Access Control (AC) | [AC-6 (9) Least Privilege &#124; Auditing Use of Privileged Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6.9) \n [AC-17 Remote Access](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-17)  |
-| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2.1) |
+| Access Control (AC) | [AC-6 (9) Least Privilege &#124; Log Use of Privileged Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6.9) \n [AC-17 Remote Access](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-17)  |
+| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (organizational Users) &#124; Multi-factor Authentication to Privileged Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2.1) |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
 {: #related-controls-fsv2.0}
 {: tab-title="FSv2.0"}

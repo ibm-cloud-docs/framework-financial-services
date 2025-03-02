@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-03-02"
 
 keywords:
 
@@ -60,7 +60,7 @@ The following table lists the different solutions that you can use to protect yo
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2)  |
-| Identification and Authentication (IA)  | [IA-2 User Identification and Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5)  |
+| Identification and Authentication (IA)  | [IA-2 Identification and Authentication (organizational Users)](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5)  |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
 {: #related-controls-fsv2.0}
 {: tab-title="FSv2.0"}

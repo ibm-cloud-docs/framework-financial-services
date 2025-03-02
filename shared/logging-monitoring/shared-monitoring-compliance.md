@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-03-02"
 
 keywords:
 
@@ -71,7 +71,7 @@ For more information, see:
 |---------------------|---------------------------------------------------|
 | Change Management (CM) | [CM-2 (2) Baseline Configuration &#124; Automation Support for Accuracy and Currency](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-2.2) \n [CM-6 Configuration Settings](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-6) \n [CM-6 (1) Configuration Settings &#124; Automated Management, Application, and Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-6.1)   |
 | Maintenance (MA) | [MA-2 Controlled Maintenance](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ma-2)   |
-| System and Information Integrity (SI) | [SI-2 (2) Flaw Remediation &#124; Central Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-2.2) \n [SI-6 Security Functionality Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-6)   |
+| System and Information Integrity (SI) | [SI-2 (2) Flaw Remediation &#124; Automated Flaw Remediation Status](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-2.2) \n [SI-6 Security and Privacy Function Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-6)   |
 | Security Assessment and Authorization (CA) | [CA-7 Continuous Monitoring](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-7)    |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
 {: #related-controls-fsv2.0}

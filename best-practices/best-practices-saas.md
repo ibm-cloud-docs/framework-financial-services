@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-03-02"
 
 keywords:
 
@@ -38,7 +38,7 @@ A key aspect of the framework is to separate user workloads from system manageme
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Communications Protection (SC) | [SC-2 Application Partitioning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-3) |
+| System and Communications Protection (SC) | [SC-2 Separation of System and User Functionality](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-3) |
 {: caption="Related controls for use of reference architecture [FSv2.0]" caption-side="top"}
 {: #related-controls-reference-architecture-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -80,10 +80,10 @@ For technology vendors:
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-20 Use of External Information Systems](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-20) |
-| System and Services Acquisition (SA) | [SA-4 Acquisitions Process](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-4) \n [SA-9 External Information System Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-9) |
+| Access Control (AC) | [AC-20 Use of External Systems](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-20) |
+| System and Services Acquisition (SA) | [SA-4 Acquisition Process](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-4) \n [SA-9 External System Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-9) |
 | Enterprise System and Services Acquisition (ESA) | [ESA-5 Subcontractor Risk Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-esa-5) |
-| Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
+| Security Assessment and Authorization (CA) | [CA-3 Information Exchange](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
 {: caption="Related controls for using only Financial Services Validated services [FSv2.0]" caption-side="top"}
 {: #related-controls-financial-services-validated-services-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -146,8 +146,8 @@ Individuals should be able to request access to resources, and they should be gr
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2) \n [AC-3 Access Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-3) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6) \n [AC-14 Permitted Actions without Identification or Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-14) |
-| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-Based Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5.1) |
+| Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2) \n [AC-3 Access Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-3) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6) \n [AC-14 Permitted Actions Without Identification or Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-14) |
+| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-based Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5.1) |
 {: caption="Related controls for zero trust [FSv2.0]" caption-side="top"}
 {: #related-controls-zero-trust-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -185,9 +185,9 @@ It is permissible to run a "pre-production" environment in your production accou
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Configuration Management (CM) | [CM-3 (2) Configuration Change Control &#124; Testing, Validation, and Documentation Of Changes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-3.2) \n [CM-4 (1) Impact Analyses &#124; Separate Test Environments](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-4.1) |
-| System and Services Acquisition (SA) | [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-15 (9) Development Process, Standards, and Tools &#124; Use of Live Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15.9) |
-| System and Communications Protection (SC) | [SC-2 Application Partitioning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-3) |
+| Configuration Management (CM) | [CM-3 (2) Configuration Change Control &#124; Testing, Validation, and Documentation of Changes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-3.2) \n [CM-4 (1) Impact Analyses &#124; Separate Test Environments](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-4.1) |
+| System and Services Acquisition (SA) | [SA-3 (2) System Development Life Cycle &#124; Use of Live or Operational Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3.2) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10)  |
+| System and Communications Protection (SC) | [SC-2 Separation of System and User Functionality](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-3) |
 {: caption="Related controls for non-production environments [FSv2.0]" caption-side="top"}
 {: #related-controls-non-production-environments-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -226,9 +226,9 @@ Boundary protection increases security by monitoring and restricting communicati
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-4 Information Flow Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4) \n [AC-4 (5) Information Flow Enforcement &#124; Embedded Data Types](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4.5) \n [AC-4 (6) Information Flow Enforcement &#124; Metadata](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4.6) \n [AC-4 (14) Information Flow Enforcement &#124; Security Policy Filter Constraints](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4.14) \n [AC-4 (21) Information Flow Enforcement &#124; Physical / Logical Separation of Information Flows](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4.21) \n [AC-20 Use of External Information Systems](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-20) |
-| Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
-| System and Communications Protection (SC)  | [SC-5 Denial of Service Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-5) \n [SC-7 Boundary Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) \n [SC-7(4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-11)  |
+| Access Control (AC) | [AC-4 Information Flow Enforcement](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4) \n [AC-4 (5) Information Flow Enforcement &#124; Embedded Data Types](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4.5) \n [AC-4 (6) Information Flow Enforcement &#124; Metadata](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4.6) \n [AC-4 (14) Information Flow Enforcement &#124; Security or Privacy Policy Filter Constraints](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4.14) \n [AC-4 (21) Information Flow Enforcement &#124; Physical or Logical Separation of Information Flows](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-4.21) \n [AC-20 Use of External Systems](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-20) |
+| Security Assessment and Authorization (CA) | [CA-3 Information Exchange](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
+| System and Communications Protection (SC)  | [SC-5 Denial-of-service Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-5) \n [SC-7 Boundary Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) \n [SC-7 (4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny by Default - Allow by Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-11)  |
 {: caption="Related controls for boundary protection [FSv2.0]" caption-side="top"}
 {: #related-controls-boundary-protection-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -265,9 +265,9 @@ Boundary protection increases security by monitoring and restricting communicati
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-6 (9) Least Privilege &#124; Auditing Use of Privileged Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6.9) \n [AC-17 Remote Access](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-17) |
+| Access Control (AC) | [AC-6 (9) Least Privilege &#124; Log Use of Privileged Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6.9) \n [AC-17 Remote Access](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-17) |
 | Audit and Accountability (AU) | [AU-14 Session Audit](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-14) |
-| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (Organizational Users) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2.1) |
+| Identification and Authentication (IA) | [IA-2 (1) Identification and Authentication (organizational Users) &#124; Multi-factor Authentication to Privileged Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2.1) |
 {: caption="Related controls for bastion host [FSv2.0]" caption-side="top"}
 {: #related-controls-bastion-host-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -311,8 +311,8 @@ Your software components (whether written by you or a third-party) should be ena
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Audit and Accountability (AU) | [AU-1 Audit and Accountability Policy and Procedures) &#124; Network Access to Privileged Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-1) \n [AU-2 Audit Events](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-2) \n [AU-3 Content of Audit Records](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-3) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-11) |
-| System and Information Integrity (SI) | [SI-4 Information System Monitoring](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-4) |
+| Audit and Accountability (AU) | [AU-1 Policy and Procedures](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-1) \n [AU-2 Event Logging](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-2) \n [AU-3 Content of Audit Records](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-3) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-11) |
+| System and Information Integrity (SI) | [SI-4 System Monitoring](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-4) |
 {: caption="Related controls for audit logs [FSv2.0]" caption-side="top"}
 {: #related-controls-audit-logs-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -353,7 +353,7 @@ Operational monitoring for gauging system health is a very important complement 
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Essential Missions / Business Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10)  |
+| Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Mission and Business Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-10 System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10)  |
 | System and Information Integrity (SI) | [SI-11 Error Handling](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-11)    |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
 {: #related-controls-operational-logging-and-monitoring-fsv2.0}
@@ -392,9 +392,9 @@ Lack of software integrity leaves you vulnerable to security problems. So, it is
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Information Integrity (SI) | [SI-7 Software & Information Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-7)   |
-| System and Services Acquisition (SA) | [SA-3 System Development Life Cycle](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3) \n [SA-8 Security Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-10 (1) Developer Configuration Management &#124; Software and Firmware Integrity Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10.1) \n [SA-11 Developer Security Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15) \n [SA-15 (9) Development Process, Standards, and Tools &#124; Use of Live Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15.9) |
-| Risk Assessment (RA) | [RA-5 Vulnerability Scanning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ra-5)  |
+| System and Information Integrity (SI) | [SI-7 Software, Firmware, and Information Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-7)   |
+| System and Services Acquisition (SA) | [SA-3 System Development Life Cycle](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3) \n [SA-3 (2) System Development Life Cycle &#124; Use of Live or Operational Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3.2) \n [SA-8 Security and Privacy Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-10 (1) Developer Configuration Management &#124; Software and Firmware Integrity Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10.1) \n [SA-11 Developer Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15) |
+| Risk Assessment (RA) | [RA-5 Vulnerability Monitoring and Scanning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ra-5)  |
 {: caption="Related controls for development processes [FSv2.0]" caption-side="top"}
 {: #related-controls-development-processes-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -442,7 +442,7 @@ More detailed guidance can be found in the Cryptographic Requirements appendix o
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Communications Protection (SC) | [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-13) \n [SC-28 Protection of Information At Rest](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28) \n [SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28.1)  |
+| System and Communications Protection (SC) | [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-12 Cryptographic Key Establishment and Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12) \n [SC-12 (2) Cryptographic Key Establishment and Management &#124; Symmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.2) \n [SC-12 (3) Cryptographic Key Establishment and Management &#124; Asymmetric Keys](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-12.3) \n [SC-13 Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-13) \n [SC-28 Protection of Information at Rest](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28) \n [SC-28 (1) Protection of Information at Rest &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-28.1)  |
 {: caption="Related controls for data encryption [FSv2.0]" caption-side="top"}
 {: #related-controls-encryption-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -479,7 +479,7 @@ In addition, you must follow best practices for BCDR as defined by the specific 
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-9 Information System Backup](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-9) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10) \n [CP-10 (2) System Recovery and Reconstitution &#124; Transaction Recovery](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10.2) |
+| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-9 System Backup](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-9) \n [CP-10 System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10) \n [CP-10 (2) Information System Recovery and Reconstitution &#124; Transaction Recovery](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10.2) |
 {: caption="Related controls for business continuity and disaster recovery [FSv2.0]" caption-side="top"}
 {: #related-controls-bcdr-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -591,7 +591,7 @@ There are many EDR solutions for virtual server instances such as CrowdStrike an
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Configuration Management (CM) | [CM-7 Least Functionality](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-7) \n [CM-7 (1)Least Functionality &#124; Periodic Review](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-7.1) |
+| Configuration Management (CM) | [CM-7 Least Functionality](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-7) \n [CM-7 (1) Least Functionality &#124; Periodic Review](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cm-7.1) |
 {: caption="Related controls for port scanning [FSv2.0]" caption-side="top"}
 {: #related-controls-network-threat-detection-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -640,7 +640,7 @@ You should should ensure:
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2)  |
-| Identification and Authentication (IA)  | [IA-2 User Identification and Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2) \n [IA-3 Device Identification and Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-3) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5)  |
+| Identification and Authentication (IA)  | [IA-2 Identification and Authentication (organizational Users)](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2) \n [IA-3 Device Identification and Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-3) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5)  |
 {: caption="Related controls for secrets management [FSv2.0]" caption-side="top"}
 {: #related-controls-secrets-management-fsv2.0}
 {: tab-title="FSv2.0"}
@@ -675,8 +675,8 @@ You should should ensure:
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-16 Security Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-16)  |
-| System and Communications Protection (SC) | [SC-16 Transmission of Security Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-16) |
+| Access Control (AC) | [AC-16 Security and Privacy Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-16)  |
+| System and Communications Protection (SC) | [SC-16 Transmission of Security and Privacy Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-16) |
 {: caption="Related controls for non-production environments [FSv2.0]" caption-side="top"}
 {: #related-controls-security-attributes-fsv2.0}
 {: tab-title="FSv2.0"}

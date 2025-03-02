@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-03-02"
 
 keywords:
 
@@ -68,9 +68,9 @@ There is not a Financial Services Validated solution for scanning virtual server
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Information Integrity (SI) | [SI-7 Software & Information Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-7) |
-| System and Services Acquisition (SA) | [SA-3 System Development Life Cycle](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3) \n [SA-8 Security Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-10 (1) Developer Configuration Management &#124; Software and Firmware Integrity Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10.1) \n [SA-11 Developer Security Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15) \n [SA-15 (9) Development Process, Standards, and Tools &#124; Use of Live Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15.9) |
-| Risk Assessment (RA) | [RA-5 Vulnerability Scanning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ra-5)  |
+| System and Information Integrity (SI) | [SI-7 Software, Firmware, and Information Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-7) |
+| System and Services Acquisition (SA) | [SA-3 System Development Life Cycle](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3) \n [SA-3 (2) System Development Life Cycle &#124; Use of Live or Operational Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3.2) \n [SA-8 Security and Privacy Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-10 (1) Developer Configuration Management &#124; Software and Firmware Integrity Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10.1) \n [SA-11 Developer Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15) |
+| Risk Assessment (RA) | [RA-5 Vulnerability Monitoring and Scanning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ra-5)  |
 {: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
 {: #related-controls-fsv2.0}
 {: tab-title="FSv2.0"}
