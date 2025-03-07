@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2021, 2023
-lastupdated: "2023-09-21"
+  years: 2021, 2025
+lastupdated: "2025-03-07"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -20,6 +20,11 @@ Use the release notes to learn about the latest changes to the documentation for
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
+
+## 06 March 2025
+{: #06-march-2025}
+
+* Updated IBM Cloud Framework with changes for FS 2.0.
 
 ## 30 April 2023
 {: #30-april-2023}

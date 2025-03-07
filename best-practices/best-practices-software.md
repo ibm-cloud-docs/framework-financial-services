@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-02"
+lastupdated: "2025-03-07"
 
 keywords:
 
@@ -24,7 +24,7 @@ If you're a SaaS provider, see [Best practices for software as a service](/docs/
 ## 1. Enable operators to properly configure your application to meet the controls
 {: #best-practices-reference-architecture}
 
-**Requirement:** Enable and organization operating your software to meet the controls of the {{site.data.keyword.framework-fs_notm}}.
+**Requirement:** Enable organization operating your software to meet the controls of the {{site.data.keyword.framework-fs_notm}}.
 
 **Purpose & value:** An operator is responsible for the {{site.data.keyword.framework-fs_notm}} controls for every piece of software they run in their management or workload VPCs, whether running in a virtual server instance or in {{site.data.keyword.openshiftshort}} containers. So, the overarching principle for a software provider is to enable their software to be deployed, configured, and managed in a way that could be Financial Services Validated.
 

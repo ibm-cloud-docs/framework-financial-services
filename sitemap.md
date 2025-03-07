@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-07-02"
+  years: 2020, 2025
+lastupdated: "2025-03-07"
 
 keywords: 
 
@@ -84,7 +84,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 * [6. Enforce information flow policies and protect the boundaries of your application](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-boundary-protection)
 
-* [7. Ensure all operator actions are executed through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-bastion-host)
+* [7. Ensure all interactive operator actions are executed through a bastion host](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-bastion-host)
 
 * [8. Capture audit events and forward to a SIEM](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-audit-logs)
 
@@ -132,6 +132,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 [Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
+
+* [06 March 2025](/docs/framework-financial-services?topic=framework-financial-services-release-notes#06-march-2025)
 
 * [30 April 2023](/docs/framework-financial-services?topic=framework-financial-services-release-notes#30-april-2023)
 
@@ -1074,4 +1076,3 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Should I only use {{site.data.keyword.IBM_notm}} or third-party managed services that are {{site.data.keyword.cloud_notm}} for Financial Services Validated?](/docs/framework-financial-services?topic=framework-financial-services-faqs-framework#not-financial-services-validated)
 
 * [What if I don't want to use managed services, but I want to install and manage my own software?](/docs/framework-financial-services?topic=framework-financial-services-faqs-framework#self-installed-software)
-

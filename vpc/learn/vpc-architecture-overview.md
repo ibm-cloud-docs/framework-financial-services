@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-25"
+lastupdated: "2025-03-07"
 
 keywords:
 
@@ -37,7 +37,7 @@ Other key features to note:
 * Resides in one or more [multizone regions](/docs/overview?topic=overview-locations).
 * Gives two options for compute that can be mixed and matched: [{{site.data.keyword.vsi_is_full}}](#services-compute-vsi) and [{{site.data.keyword.openshiftlong}}](#services-containers-openshift).
 * Enables access to the management VPC from the application provider's enterprise environment through [{{site.data.keyword.dl_full}}](#services-networking-direct-link) or [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpn_vpc_full}}](#services-networking-vpn).
-* Provides connectivity from the consumer's enterprise environment to the workload VPC through {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}.
+* Provides connectivity from the consumer's enterprise environment to the workload VPC through {{site.data.keyword.dl_short}}, {{site.data.keyword.vpn_vpc_short}}, or directly through the internet.
 * Connects management VPC and workload VPC by using [{{site.data.keyword.tg_full}}](#services-networking-transit-gateway).
 * Allows connectivity to {{site.data.keyword.cloud_notm}} services that use [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](#services-networking-vpe).
 * Encrypts data by using [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](#services-security-hpcs), which enables keep your own key (KYOK) functionality which provides technical assurance that {{site.data.keyword.IBM_notm}} cannot access your keys.
@@ -75,7 +75,7 @@ Deploying the reference architecture depends upon VPC infrastructure and PaaS se
 | Networking - interconnectivity  | - [{{site.data.keyword.dl_full}} (2.0)](#services-networking-direct-link)[^fs-validated-table-4-2] \n - [{{site.data.keyword.tg_full}}](#services-networking-transit-gateway) |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_full}}](#services-storage-block) \n - [{{site.data.keyword.cos_full}}](#services-storage-cos) |  |
 | Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n - [{{site.data.keyword.appid_full}}](#services-security-app-id) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_full_notm}}](#services-logging-platform-events) [^fs-validated-table-5] \n - [{{site.data.keyword.compliance_long}}](#services-scc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.fl_full}}](#services-logging-flow-logs) [^fs-validated-table-1-2]  |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_full_notm}}](#services-logging-platform-events) [^fs-validated-table-5] \n - [{{site.data.keyword.compliance_long}}](#services-scc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.fl_full}}](#services-logging-flow-logs) [^fs-validated-table-1-2]  \n - [{{site.data.keyword.logs_full_notm}}](#services-logging-cloud-logs)|  |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams) |
 | Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) |
 {: caption="Required and optional services for VPC reference architecture" caption-side="top"}
@@ -149,6 +149,8 @@ Use [{{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers) (ALB) t
 {: #services-networking-vpn}
 
 Use the [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn) service to securely connect your VPC to another private network. Use a static, route-based VPN or a policy-based VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premises private network, or another VPC.
+
+ [Client {{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-vpn-client-to-site-overview) provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network using an OpenVPN software client. This solution is useful for telecommuters who want to connect to {{site.data.keyword.cloud_notm}} from a remote location, such as a home office, while still maintaining secure connectivity. To meet the control requirements, you should use full-tunnel mode. In full-tunnel mode, all traffic from a VPN client is routed to the VPN server, which is more secure (especially if connecting from an untrusted network).
 
 {{site.data.keyword.vpn_vpc_short}} is required to connect to the management VPC if not using {{site.data.keyword.dl_short}}.
 
@@ -227,7 +229,7 @@ As the number of your VPCs grow, you need an easy way to manage the interconnect
 
 With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-getting-started) you can embed security checks into your every day workflows to help monitor for security and compliance. By monitoring for risks, you can identify security vulnerabilities and quickly work to mitigate the impact and fix the issue. By using {{site.data.keyword.compliance_short}} along with [external integrations](/security-compliance/integrations) (such as, OpenShift Compliance Operator (OSCO), Tanium, NeuVector, and so on), you can build a robust approach for monitoring for security and compliance issues.
 
-#### {{site.data.keyword.cloud_notm}} {{site.data.keyword.alb_full}}
+#### {{site.data.keyword.cloud_notm}} {{site.data.keyword.fl_full}}
 {: #services-logging-flow-logs}
 
 [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-flow-logs) enables the collection, storage, and presentation of information about the Internet Protocol (IP) traffic flowing to and from network interfaces within your VPC.
@@ -239,6 +241,11 @@ With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=se
 * Determining source and destination traffic from the network interfaces
 * Adhering to compliance regulations
 * Assisting with root cause analysis
+
+#### {{site.data.keyword.logs_full_notm}}
+{: #services-logging-cloud-logs}
+
+[cloud-logs-full-notm](/docs/cloud-logs) is a scalable logging service that persists logs and provides users with capabilities for querying, tailing, and visualizing logs. The [cloud-logs-full-notm] service can manage general purpose application logs, platform logs, or structured audit events. [cloud-logs-full-notm] can be used with logs from both IBM Cloud services and customer applications.
 
 ### Integration
 {: #vpc-architecture-optional-services-integration}
@@ -261,7 +268,7 @@ The following table provides a summary of the main features of the VPC reference
 |-------------------------|---------------------------------------------------|
 | Compute  | {{site.data.keyword.vsi_is_short}} \n Dedicated hosts for VPC |
 | Containers [^component-tabletext-1] | {{site.data.keyword.openshiftlong_notm}} \n {{site.data.keyword.registryshort}}
-| Inbound connectivity to management VPC | {{site.data.keyword.dl_short}} or \n {{site.data.keyword.vpn_vpc_short}} |
+| Inbound connectivity to management VPC | {{site.data.keyword.dl_short}} \n {{site.data.keyword.vpn_vpc_short}} \n {{site.data.keyword.vpn_vpc_short}} |
 | Inbound connectivity to workload VPC | {{site.data.keyword.dl_short}} or \n {{site.data.keyword.vpn_vpc_short}} |
 | Virtual network firewall | Install your own software [^component-tabletext-2] |
 | Connectivity between VPCs  | {{site.data.keyword.tg_short}} |
@@ -286,7 +293,7 @@ The following table provides a summary of the main features of the VPC reference
 | Developer tools  | {{site.data.keyword.contdelivery_short}} or \n Install your own software |
 | Endpoint protection  | Install your own software |
 | Event queues | {{site.data.keyword.messagehub}} or \n Install your own software |
-| Databases | Install your own software |
+| Databases | {{site.data.keyword.databases-for-mongodb}} \n {{site.data.keyword.databases-for-postgresql}} \n Install your own software |
 {: caption="Services needed for different parts of the VPC reference architecture" caption-side="top"}
 
 [^component-tabletext-1]: {{site.data.content.only-required-openshift}}

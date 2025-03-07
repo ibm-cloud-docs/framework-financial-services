@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-02-26"
+lastupdated: "2025-03-07"
 
 keywords:
 
@@ -33,7 +33,7 @@ The {{site.data.keyword.framework-fs_notm}} consists of:
 ### Control requirements
 {: #framework-control-requirements}
 
-The technology-agnostic control requirements defined in the framework were built by the industry for the industry. The framework contains 565 control requirements that span 7 focus areas and 21 control families. The control requirements were initially based on [NIST 800-53 Rev 5](https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home){: external} and have been enhanced based on feedback from leading industry partners.
+The technology-agnostic control requirements defined in the framework were built by the industry for the industry. The framework contains 608 control requirements that span 7 focus areas and 21 control families. The control requirements were initially based on NIST 800-53 and have been enhanced based on feedback from leading industry partners.
 
 See [{{site.data.keyword.framework-fs_full}} - Control Requirements](/docs/framework-financial-services-controls) for a complete description of all control requirements. Or, if you prefer, there is a [downloadable spreadsheet](https://cloud.ibm.com/media/docs/downloads/framework-financial-services/IBM_Cloud_Framework_for_Financial_Services-Control_Requirements_v2.0.0.xlsx){: external} available as well.
 

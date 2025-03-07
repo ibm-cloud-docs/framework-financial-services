@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-02"
+lastupdated: "2025-03-07"
 
 keywords:
 
@@ -125,7 +125,6 @@ You will be expected to provide appropriate evidence for all software as part of
 
 Not only do these principles apply to {{site.data.keyword.cloud_notm}} accounts and resources, but they also apply to accounts and resources that are not managed by {{site.data.keyword.cloud_notm}}. For example, your operators will need credentials and proper authorizations to resources such as (but not limited to):
 
-* Virtual servers in your VPCs
 * Self-installed software (such as databases, firewalls, etc.)
 * Source code control systems
 * External identity providers and user directories
@@ -248,7 +247,7 @@ Boundary protection increases security by monitoring and restricting communicati
 {: class="simple-tab-table"}
 
 
-## 7. Ensure all operator actions are executed through a bastion host
+## 7. Ensure all interactive operator actions are executed through a bastion host
 {: #best-practices-bastion-host}
 
 **Requirement:** Ensure all interactive operator actions can only be run through a bastion host in your dedicated edge or management plane which is properly isolated from your workload plane. Enable recording of bastion sessions for auditing.
@@ -412,9 +411,6 @@ Lack of software integrity leaves you vulnerable to security problems. So, it is
 {: tab-title="FSv1.1"}
 {: tab-group="RelatedControls-10"}
 {: class="simple-tab-table"}
-
-
-
 
 
 ## 11. Encrypt consumer data at rest and in transit
@@ -730,8 +726,6 @@ With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=se
 {: tab-title="FSv1.1"}
 {: tab-group="RelatedControls-18"}
 {: class="simple-tab-table"}
-
-
 
 
 
