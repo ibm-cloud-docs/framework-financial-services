@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-07"
+lastupdated: "2025-03-11"
 
 keywords:
 
@@ -37,7 +37,7 @@ Other key features to note:
 * Resides in one or more [multizone regions](/docs/overview?topic=overview-locations).
 * Gives two options for compute that can be mixed and matched: [{{site.data.keyword.vsi_is_full}}](#services-compute-vsi) and [{{site.data.keyword.openshiftlong}}](#services-containers-openshift).
 * Enables access to the management VPC from the application provider's enterprise environment through [{{site.data.keyword.dl_full}}](#services-networking-direct-link) or [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpn_vpc_full}}](#services-networking-vpn).
-* Provides connectivity from the consumer's enterprise environment to the workload VPC through {{site.data.keyword.dl_short}}, {{site.data.keyword.vpn_vpc_short}}, or directly through the internet.
+* Provides connectivity from the consumer's enterprise environment to the workload VPC through {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}.
 * Connects management VPC and workload VPC by using [{{site.data.keyword.tg_full}}](#services-networking-transit-gateway).
 * Allows connectivity to {{site.data.keyword.cloud_notm}} services that use [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](#services-networking-vpe).
 * Encrypts data by using [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](#services-security-hpcs), which enables keep your own key (KYOK) functionality which provides technical assurance that {{site.data.keyword.IBM_notm}} cannot access your keys.
@@ -245,7 +245,7 @@ With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=se
 #### {{site.data.keyword.logs_full_notm}}
 {: #services-logging-cloud-logs}
 
-[cloud-logs-full-notm](/docs/cloud-logs) is a scalable logging service that persists logs and provides users with capabilities for querying, tailing, and visualizing logs. The [cloud-logs-full-notm] service can manage general purpose application logs, platform logs, or structured audit events. [cloud-logs-full-notm] can be used with logs from both IBM Cloud services and customer applications.
+[{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs) is a scalable logging service that persists logs and provides users with capabilities for querying, tailing, and visualizing logs. The [{{site.data.keyword.logs_full_notm}}] service can manage general purpose application logs, platform logs, or structured audit events. [{{site.data.keyword.logs_full_notm}}] can be used with logs from both IBM Cloud services and customer applications.
 
 ### Integration
 {: #vpc-architecture-optional-services-integration}
@@ -268,7 +268,7 @@ The following table provides a summary of the main features of the VPC reference
 |-------------------------|---------------------------------------------------|
 | Compute  | {{site.data.keyword.vsi_is_short}} \n Dedicated hosts for VPC |
 | Containers [^component-tabletext-1] | {{site.data.keyword.openshiftlong_notm}} \n {{site.data.keyword.registryshort}}
-| Inbound connectivity to management VPC | {{site.data.keyword.dl_short}} \n {{site.data.keyword.vpn_vpc_short}} \n {{site.data.keyword.vpn_vpc_short}} |
+| Inbound connectivity to management VPC | {{site.data.keyword.dl_short}} \n {{site.data.keyword.vpn_vpc_short}} |
 | Inbound connectivity to workload VPC | {{site.data.keyword.dl_short}} or \n {{site.data.keyword.vpn_vpc_short}} |
 | Virtual network firewall | Install your own software [^component-tabletext-2] |
 | Connectivity between VPCs  | {{site.data.keyword.tg_short}} |

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-02"
+lastupdated: "2025-03-11"
 
 keywords:
 
@@ -82,10 +82,7 @@ For more information, see the following resources:
 #### Edge VPC with web application firewall
 {: #consumer-provider-public-internet-waf}
 
-The edge VPC is used to enhance boundary protection for both the management VPC and the workload VPC. For public internet access to the workload VPC, a WAF in the edge VPC is use to protect web applications by filtering and monitoring internet web traffic. A WAF can prevent attacks exploiting a web application's known vulnerabilities.
-
-{{site.data.keyword.IBM_notm}} does not currently offer a Financial Services Validated solution for WAF. So, you need to install and manage your own WAF within your edge VPC. One option for WAF is to use F5 BIG-IP. See the tutorial [Setup WAF with F5 BIG-IP](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial) for more details.
-{: tip}
+The edge VPC is used to enhance boundary protection for both the management VPC and the workload VPC. For public internet access to the workload VPC, a WAF in the edge VPC is use to protect web applications by filtering and monitoring internet web traffic. A WAF can prevent attacks exploiting a web application's known vulnerabilities, and [{{site.data.keyword.cis_full_notm}} ({{site.data.keyword.cis_short_notm}})](/docs/cis?topic=cis-getting-started) can be used as WAF.
 
 For [management VPC connectivity](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management), your operators can connect to the environment from your on-premises network (with {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}) or through a full-tunnel client-to-site VPN. In practice, all three zones in the edge VPC would be the same, but for illustrative purposes, each zone in the edge VPC box depicts one of the three scenarios for operator connectivity:
 

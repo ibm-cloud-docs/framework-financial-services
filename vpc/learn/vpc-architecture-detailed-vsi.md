@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-07"
+lastupdated: "2025-03-11"
 
 keywords:
 
@@ -39,7 +39,9 @@ The management VPC is distributed across three zones in one [multizone region (M
 {: #vpc-architecture-detailed-management-subnets}
 
 
-The top subnet in each zone is part of the default security group for the VPC. And, each of those subnets contains an arbitrary number of virtual server instances that use {{site.data.keyword.block_storage_is_short}}. These instances are where your management tools run. 
+There could be multiple subnets with different ACLs and multiple security groups in the VPC.
+
+The top subnet in each zone contains an arbitrary number of virtual server instances that use {{site.data.keyword.block_storage_is_short}}. Security group is used to control the access to these instances, and they are where your management tools run. 
 
 The lower subnets in the diagram relate to inbound connectivity, and we'll cover more about that in the next sections.
 
