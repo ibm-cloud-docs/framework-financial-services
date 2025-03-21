@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-21"
 
 keywords:
 
@@ -22,7 +22,7 @@ completion-time: 4h
 {: toc-services="cis, vpc, f5"}
 {: toc-completion-time="4h"}
 
-There are several architectural approaches to enabling [consumer connectivity to the workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload). When using [public internet access to the workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet), a web application firewall (WAF) is required. A WAF helps protect web applications by filtering and monitoring internet traffic. This tutorial guides you through one approach to enabling WAF by using [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) and [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external}. Global load balancing along with a WAF forms the basis for you to meet {{site.data.keyword.framework-fs_notm}} requirements for boundary protection.
+There are several architectural approaches to enabling [consumer connectivity to the workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload). When using [public internet access to the workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet), a web application firewall (WAF) is required. A WAF helps protect web applications by filtering and monitoring internet traffic. This tutorial guides you through one approach to enabling WAF by using [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) and [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external}. Global load balancing along with a WAF forms the basis for you to meet {{site.data.keyword.framework-fs_notm}} requirements for boundary protection. Alternatively, [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) can independently fulfill the WAF requirements of the {{site.data.keyword.framework-fs_notm}}.
 {: shortdesc}
 
 Guidance is provided, but you are solely responsible for installing, configuring, and operating {{site.data.keyword.IBM_notm}} third-party software in a way that satisfies {{site.data.keyword.framework-fs_notm}} requirements. In addition, {{site.data.keyword.IBM_notm}} does not provide support for third-party software.

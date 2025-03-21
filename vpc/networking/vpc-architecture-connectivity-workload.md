@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-11"
+lastupdated: "2025-03-21"
 
 keywords:
 
@@ -64,7 +64,7 @@ For more information, see:
 ### Connecting from public internet
 {: #consumer-provider-public-internet}
 
-There are many valid cases where you might want to allow consumers to access your service through the public internet. The base architecture can be adapted to securely enable this type of access as shown in the following diagram which introduces a new edge VPC. The request from the consumer gets routed through a global load balancer outside of the edge VPC, through a web application firewall (WAF) in the edge VPC, and then to the public application load balancer within the workload VPC. This is shown in the following diagram.
+There are many valid cases where you might want to allow consumers to access your service through the public internet. The base architecture can be adapted to securely enable this type of access as shown in the following diagram which introduces a new edge VPC. The request from the consumer gets routed through Cloud Internet Service's global load balancer, through a public load balancer in the edge VPC, and then to the private load balancer within the workload VPC. This is shown in the following diagram.
 
 ![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
 
@@ -82,13 +82,12 @@ For more information, see the following resources:
 #### Edge VPC with web application firewall
 {: #consumer-provider-public-internet-waf}
 
-The edge VPC is used to enhance boundary protection for both the management VPC and the workload VPC. For public internet access to the workload VPC, a WAF in the edge VPC is use to protect web applications by filtering and monitoring internet web traffic. A WAF can prevent attacks exploiting a web application's known vulnerabilities, and [{{site.data.keyword.cis_full_notm}} ({{site.data.keyword.cis_short_notm}})](/docs/cis?topic=cis-getting-started) can be used as WAF.
+The edge VPC is used to enhance boundary protection for both the management VPC and the workload VPC. For public internet access to the workload VPC, a WAF in the ({{site.data.keyword.cis_short_notm}})](/docs/cis?topic=cis-getting-started) is used to protect web applications by filtering and monitoring internet web traffic. A WAF can prevent attacks exploiting a web application's known vulnerabilities.
 
-For [management VPC connectivity](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management), your operators can connect to the environment from your on-premises network (with {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}) or through a full-tunnel client-to-site VPN. In practice, all three zones in the edge VPC would be the same, but for illustrative purposes, each zone in the edge VPC box depicts one of the three scenarios for operator connectivity:
+For [management VPC connectivity](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management), your operators can connect to the environment from your on-premises network (with {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}). In practice, all three zones in the edge VPC would be the same, but for illustrative purposes, each of the first and second zone in the edge VPC box depicts one of the two scenarios for operator connectivity:
 
-* Zone 1 - Connectivity with {{site.data.keyword.dl_short}}, so neither a full-tunnel client-to-site VPN nor {{site.data.keyword.vpn_vpc_short}} is needed.
-* Zone 2 - Connectivity from the application provider is with {{site.data.keyword.vpn_vpc_short}}, so a full-tunnel client-to-site VPN is not needed.
-* Zone 3 - Connectivity from the application provider is through a full-tunnel client-to-site VPN, so {{site.data.keyword.vpn_vpc_short}} is not needed.
+* Zone 1 - Connectivity with {{site.data.keyword.dl_short}}, so a {{site.data.keyword.vpn_vpc_short}} is not needed.
+* Zone 2 - Connectivity from the application provider is with {{site.data.keyword.vpn_vpc_short}}, so a {{site.data.keyword.dl_short}} is not needed.
 
 Finally, the bastion can be put either in the edge VPC or the management VPC. If you place it in the edge VPC, then the management VPC becomes optional if you are not deploying any other management tools.
 

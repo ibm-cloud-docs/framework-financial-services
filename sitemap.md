@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-07"
+lastupdated: "2025-03-21"
 
 keywords: 
 
@@ -174,6 +174,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
 [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-architecture-about)
 
 * [Architecture diagram](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-arch-diagram)
+
+* [VPC reference architecture with only private access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#edge-vpc-architecture)
 
 * [Variation with edge or transit VPC for public internet access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#edge-vpc-architecture)
 
@@ -452,65 +454,6 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Configure the VPN virtual server](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-full-tunnel-vpn#f5-vpn-vs-setup)
 
 * [Test the BIG-IP VPN](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-full-tunnel-vpn#f5-vpn-test)
-
-
-### Logging and monitoring
-{: #sitemap_logging_and_monitoring}
-
-
-[Setting up an operational logging solution](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#vpc-architecture-logging-operational-tutorial)
-
-* [Logging solution architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#arch-overview)
-
-* [Before you begin](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#openshift-cluster-logging-prerequisites)
-
-* [Provision {{site.data.keyword.openshiftlong}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#setup-openshift)
-
-* [Provision a {{site.data.keyword.openshiftshort}} worker pool](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#provision-worker-pool)
-
-* [Install the Elasticsearch Operator](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#install-elasticsearch-operator)
-
-* [Install the Cluster Logging Operator](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#install-logging-operator)
-
-* [Create a cluster logging instance](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#create-logging-instance)
-
-    * [Starting Kibana](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#launching-kibana)
-
-* [Set up virtual server instance logging with Fluentd](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#setting-up-vsi-logging-with-fluentd)
-
-    * [Preparing the Elasticsearch cluster to receive logs](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#preparing-elasticsearch-cluster-receive-logs)
-
-    * [Retrieving the bearer token for Elasticsearch](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#retrieving-the-bearer-token-for-elasticsearch)
-
-    * [Installing Fluentd on a virtual server instance](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#installing-fluentd-on-a-virtual-server-instance)
-
-* [Related controls in {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-logging-operational-tutorial#related-controls)
-
-[Setting up an operational monitoring solution](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#vpc-architecture-monitoring-operational-tutorial)
-
-* [Monitoring solution architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#arch-overview)
-
-* [Before you begin](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#monitoring-prereqs)
-
-* [Provision {{site.data.keyword.openshiftlong}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step1-setup-openshift)
-
-* [Provision a {{site.data.keyword.openshiftshort}} worker pool](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step2-provision-worker-pool)
-
-* [Configure the {{site.data.keyword.openshiftshort}} monitoring stack](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step3-configure-monitoring-stack)
-
-* [Configure monitoring for a user-defined {{site.data.keyword.openshiftshort}} project](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step4-configure-monitoring-user-defined-project)
-
-* [Step 5: Configure monitoring for a virtual server instance](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step5-configure-monitoring-virtual-server-instance)
-
-    * [Linux](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step5-configure-monitoring-virtual-server-instance-linux)
-
-    * [Windows](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step5-configure-monitoring-virtual-server-instance-windows)
-
-    * [Custom endpoint for exposing-metrics](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step5-configure-monitoring-virtual-server-instance-custom-endpoint)
-
-* [Set up a custom Grafana dashboard](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#step6-set-up-a-custom-grafana-dashboard)
-
-* [Related controls in {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial#related-controls)
 
 
 ### Bastion host
@@ -836,7 +779,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 ## Logging and monitoring
-{: #sitemap_logging_and_monitoring1}
+{: #sitemap_logging_and_monitoring}
 
 
 [Audit logging of {{site.data.keyword.cloud_notm}} events](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-audit#shared-logging-audit)

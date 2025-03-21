@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-02"
+lastupdated: "2025-03-21"
 
 keywords:
 
@@ -27,6 +27,9 @@ Floating IP addresses are IP addresses that are provided by the system and are r
 
 If you are an application provider from a technology vendor interested in becoming [{{site.data.keyword.cloud_notm}} for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-about#becoming-fs-validated) and want to enable outbound connectivity to the internet, then you will need to make sure you document the data flows and provide evidence that shows how any consumer data that might be leaving the boundary is secured. Similarly, for inbound connectivity, you will need to provide evidence demonstrating how your infrastructure cannot be compromised.
 {: importamt}
+
+In cases where the IP address of the external service on the internet is not fixed and hence cannot be defined, suggestion is to use a proxy enabled with domain based filtering. Such a proxy needs to reside in an isolated network segment and will be the only component.
+
 
 See [External connectivity](/docs/vpc?topic=vpc-about-networking-for-vpc#external-connectivity) for more details on public gateways and floating IP addresses.
 

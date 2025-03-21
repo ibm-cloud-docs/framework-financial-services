@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-11"
+lastupdated: "2025-03-21"
 
 keywords:
 
@@ -21,12 +21,15 @@ subcollection: framework-financial-services
 ## Architecture diagram
 {: #vpc-arch-diagram}
 
+## VPC reference architecture with only private access
+{: #edge-vpc-architecture}
+
 ![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-fsv2.0.1.svg){: caption="High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
 Central to the architecture are two VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
 Management VPC
-:   Provides compute, storage, and network services to enable the application application provider's administrators to monitor, operate, and maintain the environment.
+:   Provides compute, storage, and network services to enable the application provider's administrators to monitor, operate, and maintain the environment.
 
 Workload VPC
 :   Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
