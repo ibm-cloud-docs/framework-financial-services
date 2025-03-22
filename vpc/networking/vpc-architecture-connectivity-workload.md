@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-22"
 
 keywords:
 
@@ -23,7 +23,7 @@ Previously, we saw how administrative access to the workload VPC can be accompli
 
 If the consumer is in the same organization that you are (such as the same financial institution), then the connection options are much the same as they are when you connect to the management VPC. That is, the consumer can connect to the workload VPC with either [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) or [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn). This is shown in the diagram below.
 
-![Connecting to workload VPC from on-premises with consumer in same organization as application provider](../images/vpc-single-region/vpc-single-region-consumer-intranet-v2.svg){: caption="Connecting to workload VPC from on-prem with consumer in same organization as application provider" caption-side="bottom"}
+![Connecting to workload VPC from on-premises with consumer in same organization as application provider](../images/vpc-single-region/fsv2.0/vpc-single-region-vsi-w-edge-fsv2.0.1.svg){: caption="Connecting to workload VPC from on-prem with consumer in same organization as application provider" caption-side="bottom"}
 
 
 ### {{site.data.keyword.dl_short}}
@@ -66,7 +66,7 @@ For more information, see:
 
 There are many valid cases where you might want to allow consumers to access your service through the public internet. The base architecture can be adapted to securely enable this type of access as shown in the following diagram which introduces a new edge VPC. The request from the consumer gets routed through Cloud Internet Service's global load balancer, through a public load balancer in the edge VPC, and then to the private load balancer within the workload VPC. This is shown in the following diagram.
 
-![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
+![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/fsv2.0/vpc-single-region-f5-fsv2.0.svg){: caption="Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
 
 #### Global load balancer
 {: #consumer-provider-public-internet-glb}
