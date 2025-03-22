@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-02"
+lastupdated: "2025-03-22"
 
 keywords:
 
@@ -28,7 +28,7 @@ Operators who are connecting to the on-premises enterprise network from offsite 
 
 The following diagram shows the {{site.data.keyword.dl_short}} connection pattern.
 
-![Application provider on-premises to management VPC by using {{site.data.keyword.dl_short}}](../images/network-connectivity/provider-to-management-vpc/vpc-architecture-provider-on-prem-to-management-vpc-DL.svg){: caption="Application provider on-prem to management VPC using {{site.data.keyword.dl_short}}" caption-side="bottom"}
+![Application provider on-premises to management VPC by using {{site.data.keyword.dl_short}}](../images/network-connectivity/provider-to-management-vpc/vpc-architecture-provider-on-prem-to-management-vpc-DL-fsv2.0.1.svg){: caption="Application provider on-prem to management VPC using {{site.data.keyword.dl_short}}" caption-side="bottom"}
 
 For more information, see:
 

@@ -33,7 +33,7 @@ If the consumer is in the same organization that you are (such as the same finan
 
 The following diagram shows the {{site.data.keyword.dl_short}} connection pattern.
 
-![Consumer on-premises to workload VPC by using {{site.data.keyword.dl_short}}](../images/network-connectivity/consumer-to-workload-same-account/vpc-architecture-consumer-on-prem-to-provider-same-account-DL.svg){: caption="Consumer on-prem to workload VPC using {{site.data.keyword.dl_short}}" caption-side="bottom"}
+![Consumer on-premises to workload VPC by using {{site.data.keyword.dl_short}}](../images/network-connectivity/consumer-to-workload-same-account/vpc-architecture-consumer-on-prem-to-provider-same-account-DL-fsv2.0.1.svg){: caption="Consumer on-prem to workload VPC using {{site.data.keyword.dl_short}}" caption-side="bottom"}
 
 For more information, see:
 
@@ -49,7 +49,7 @@ An alternative connectivity pattern requires using the {{site.data.keyword.vpn_v
 
 The following diagram shows the {{site.data.keyword.vpn_vpc_short}} connection pattern.
 
-![Consumer on-premises to workload VPC using {{site.data.keyword.vpn_vpc_short}}](../images/network-connectivity/consumer-to-workload-same-account/vpc-architecture-consumer-on-prem-to-provider-same-account-VPN.svg){: caption="Consumer on-prem to workload VPC using {{site.data.keyword.vpn_vpc_short}}" caption-side="bottom"}
+![Consumer on-premises to workload VPC using {{site.data.keyword.vpn_vpc_short}}](../images/network-connectivity/consumer-to-workload-same-account/vpc-architecture-consumer-on-prem-to-provider-same-account-VPN-fsv2.0.1.svg){: caption="Consumer on-prem to workload VPC using {{site.data.keyword.vpn_vpc_short}}" caption-side="bottom"}
 
 For more information, see:
 
@@ -66,7 +66,7 @@ For more information, see:
 
 There are many valid cases where you might want to allow consumers to access your service through the public internet. The base architecture can be adapted to securely enable this type of access as shown in the following diagram which introduces a new edge VPC. The request from the consumer gets routed through Cloud Internet Service's global load balancer, through a public load balancer in the edge VPC, and then to the private load balancer within the workload VPC. This is shown in the following diagram.
 
-![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/fsv2.0/vpc-single-region-f5-fsv2.0.svg){: caption="Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
+![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/fsv2.0/vpc-single-region-f5-fsv2.0.1.svg){: caption="Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
 
 #### Global load balancer
 {: #consumer-provider-public-internet-glb}

@@ -45,7 +45,7 @@ There are two main components to this solution:
 
 The following diagram shows the flow of network traffic from a client application passing through {{site.data.keyword.cis_short_notm}} and BIG-IP to server-side applications running in {{site.data.keyword.openshiftshort}}.
 
-![{{site.data.keyword.cloud_notm}} Network path from client application through {{site.data.keyword.cis_short_notm}} and BIG-IP to provider's {{site.data.keyword.openshiftshort}} application](../../images/f5-bigip/cis-flow.svg){: caption="Network path from client application to {{site.data.keyword.openshiftshort}} application passing through {{site.data.keyword.cis_short_notm}} and BIG-IP." caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} Network path from client application through {{site.data.keyword.cis_short_notm}} and BIG-IP to provider's {{site.data.keyword.openshiftshort}} application](../../images/f5-bigip/cis-flow-fsv2.0.1.svg){: caption="Network path from client application to {{site.data.keyword.openshiftshort}} application passing through {{site.data.keyword.cis_short_notm}} and BIG-IP." caption-side="bottom"}
 
 The network flow goes through the following steps:
 
