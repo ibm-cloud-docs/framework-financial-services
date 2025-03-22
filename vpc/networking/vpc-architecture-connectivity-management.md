@@ -46,7 +46,7 @@ An alternative connectivity pattern is to use the {{site.data.keyword.vpn_vpc_sh
 
 The following diagram shows the {{site.data.keyword.vpn_vpc_short}} connection pattern.
 
-![Application provider on-premises to management VPC by using {{site.data.keyword.vpn_vpc_short}}](../images/network-connectivity/provider-to-management-vpc/vpc-architecture-provider-on-prem-to-management-vpc-VPN.svg){: caption="Application provider on-prem to management VPC using {{site.data.keyword.vpn_vpc_short}}" caption-side="bottom"}
+![Application provider on-premises to management VPC by using {{site.data.keyword.vpn_vpc_short}}](../images/network-connectivity/provider-to-management-vpc/vpc-architecture-provider-on-prem-to-management-vpc-VPN-fsv2.0.1.svg){: caption="Application provider on-prem to management VPC using {{site.data.keyword.vpn_vpc_short}}" caption-side="bottom"}
 
 For more information, see:
 

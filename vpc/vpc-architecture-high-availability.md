@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-22"
 
 keywords:
 
@@ -56,15 +56,13 @@ The diagram below shows an expansion of the VPC reference architecture to use mu
 
 
 
-![VPC architecture in multiple regions](./images/vpc-multi-region/vpc-multi-region-consumer-intranet.svg){: caption="VPC architecture in multiple regions" caption-side="bottom"}
-
-
+![VPC architecture in multiple regions](./images/vpc-multi-region/fsv2.0/vpc-multi-region-vsi-fsv2.0.1.svg){: caption="VPC architecture in multiple regions" caption-side="bottom"}
 
 
 For completeness, the diagram below shows the VPC architecture spread across multiple regions when {{site.data.keyword.openshiftshort}} is used.
 
 
-![{{site.data.keyword.openshiftshort}} on VPC multiple regions](./images/roks-multi-region/roks-multi-region-consumer-intranet-v2.svg){: caption="{{site.data.keyword.openshiftshort}} on VPC multiple regions" caption-side="bottom"}
+![{{site.data.keyword.openshiftshort}} on VPC multiple regions](./images/roks-multi-region/fsv2.0/roks-multi-region-fsv2.0.1.svg){: caption="{{site.data.keyword.openshiftshort}} on VPC multiple regions" caption-side="bottom"}
 
 See the following tutorials for more information:
 

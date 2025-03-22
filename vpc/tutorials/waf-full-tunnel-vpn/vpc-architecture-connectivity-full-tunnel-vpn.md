@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-22"
 
 keywords:
 
@@ -27,7 +27,7 @@ One of the approaches for [enabling connectivity to the management VPC](/docs/fr
 
 The following diagram shows a deployment of the VPC reference architecture with a BIG-IP full tunnel VPN deployment.
 
-<![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP full Tunnel VPN host ](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP full tunnel VPN host" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP full Tunnel VPN host ](../../images/f5-bigip/fsv2.0/vpc-single-region-f5-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP full tunnel VPN host" caption-side="bottom"}
 
 ## Objectives
 {: #full-tunnel-vpn-solution-objectives}
