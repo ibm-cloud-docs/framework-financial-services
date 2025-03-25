@@ -1,14 +1,14 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-06-05"
+  years: 2020, 2025
+lastupdated: "2025-03-25"
 
 keywords:
 
 subcollection: framework-financial-services
 
-version: 1.0
+version: 2.0.1
 
 deployment-url:
 
@@ -32,6 +32,7 @@ content-type: reference-architecture
 
 This solution pattern contains the design and architecture decisions for cloud native and {{site.data.keyword.powerSys_notm}} workloads in {{site.data.keyword.cloud_notm}} for Financial Services.
 {: shortdesc}
+
 
 IBM Power is a family of high-performance servers that are designed for running large-scale data-driven and mission-critical workloads and are known for their scalability, reliability, sustainability, and performance. {{site.data.keyword.powerSysFull}} is a Power Systems offering in IBM Cloud. As stated in the documentation, [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started) are located in the IBM data centers, distinct from the IBM Cloud servers with separate networks and direct-attached storage. The internal networks are fenced but offer connectivity options to IBM Cloud infrastructure or on-premises environments. This infrastructure design enables {{site.data.keyword.powerSys_notm}} to maintain key enterprise software certification and support as the {{site.data.keyword.powerSys_notm}} architecture is identical to certified on-premises infrastructure. This [documentation page](https://www.ibm.com/products/power-virtual-server) discusses benefits, use cases, workloads and other information on {{site.data.keyword.powerSys_notm}}.
 
