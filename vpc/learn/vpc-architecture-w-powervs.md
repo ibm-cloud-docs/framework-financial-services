@@ -1,14 +1,14 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-06-05"
+  years: 2020, 2025
+lastupdated: "2025-03-25"
 
 keywords:
 
 subcollection: framework-financial-services
 
-version: 1.0
+version: 2.0.1
 
 deployment-url:
 
