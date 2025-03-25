@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-02"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -15,7 +15,7 @@ subcollection: framework-financial-services
 # Ensuring isolation between {{site.data.keyword.satelliteshort}} management functions and workload functions
 {: #satellite-architecture-connectivity-management-isolation}
 
-A key aspect of the {{site.data.keyword.framework-fs_notm}} is to separate user workloads from system management functions and isolate security functions from nonsecurity functions. The network infrastructure of the {{site.data.keyword.satelliteshort}} location can be used to provide physical and logical separation between the {{site.data.keyword.satelliteshort}} management control plane and your workloads. 
+A key aspect of the {{site.data.keyword.framework-fs_notm}} is to separate user workloads from system management functions and isolate security functions from nonsecurity functions. The network infrastructure of the {{site.data.keyword.satelliteshort}} location can be used to provide physical and logical separation between the {{site.data.keyword.satelliteshort}} management control plane and your workloads.
 {: shortdesc}
 
 Network flow rule design should follow the {{site.data.keyword.framework-fs_notm}}'s [information flow guidelines](/docs/framework-financial-services?topic=framework-financial-services-best-practices#best-practices-boundary-protection) by using a "deny by default" approach.
@@ -69,17 +69,34 @@ The following rules for workload hosts must be implemented within the networking
 
 1. Configure virtual network flow rules within {{site.data.keyword.openshiftshort}}. In addition to the network flow controls implemented within the IaaS layer of the {{site.data.keyword.satelliteshort}} location, you can use virtual networking features of {{site.data.keyword.openshiftshort}} to control network flows within and into your cluster. You can use [Kubernetes network policies](/docs/openshift?topic=openshift-vpc-kube-policies) or [Calico network policies](/docs/openshift?topic=openshift-policy_tutorial){: external} to define network flow restrictions for each workload deployed on your {{site.data.keyword.openshiftshort}} cluster.
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 The following {{site.data.keyword.framework-fs_notm}} controls below are most related to this guidance. However, in addition to following the guidance here, do your own due diligence to ensure you meet the requirements.
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-20 Use of External Information Systems](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-20) |
-| Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
-| System and Communications Protection (SC)  | [SC-2 Application Partitioning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-3) \n [SC-5 Denial of Service Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-5) \n [SC-7 Boundary Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) \n [SC-7(4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-11)  |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+| Access Control (AC) | [AC-20 Use of External Systems](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-20) |
+| Security Assessment and Authorization (CA) | [CA-3 Information Exchange](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ca-3) |
+| System and Communications Protection (SC)  | [SC-2 Separation of System and User Functionality](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-3) \n [SC-5 Denial-of-service Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-5) \n [SC-7 Boundary Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) \n [SC-7 (4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny by Default - Allow by Exception](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-8.1) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-11)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Access Control (AC) | [AC-20 Use of External Information Systems](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-20) |
+| Security Assessment and Authorization (CA) | [CA-3 System Interconnections](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ca-3) |
+| System and Communications Protection (SC)  | [SC-2 Application Partitioning](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-2) \n [SC-3 Security Function Isolation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-3) \n [SC-5 Denial of Service Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-5) \n [SC-7 Boundary Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-7) \n [SC-7(4) Boundary Protection &#124; External Telecommunications Services](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-7.4) \n [SC-7 (5) Boundary Protection &#124; Deny By Default - Allow By Exception](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-7.5) \n [SC-7 (10) Boundary Protection &#124; Prevent Exfiltration](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-7.10) \n [SC-8 Transmission Confidentiality and Integrity](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-8) \n [SC-8 (1) Transmission Confidentiality and Integrity &#124; Cryptographic Protection](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-8.1) \n [SC-11 Trusted Path](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-11)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #next-steps}

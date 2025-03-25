@@ -43,7 +43,7 @@ The {{site.data.keyword.framework-fs_notm}} provides different flavors of [refer
 
 The diagram below represents the architecture for secure {{site.data.keyword.powerSys_notm}} workloads in IBM Cloud and is an extension of the [{{site.data.keyword.vsi_is_short}} reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi) for {{site.data.keyword.cloud_notm}} for Financial Services.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}](../images/vpc-powervs/ra-fs-powervs-single-region.svg){: caption="{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}](../images/vpc-powervs/ra-fs-powervs-single-region-fsv2.0.1.svg){: caption="{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC and {{site.data.keyword.powerSys_notm}}" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide segmentation for edge traffic control, management functionality, and consumer workloads.
 

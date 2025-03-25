@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-09"
+  years: 2020, 2025
+lastupdated: "2025-03-02"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -31,7 +31,7 @@ You can choose between several identity providers. For more information, see [Ma
 
 You can use {{site.data.keyword.appid_short_notm}} with other {{site.data.keyword.cloud_notm}} offerings. For example, if you're using {{site.data.keyword.openshiftshort}}, you can configure Ingress in your cluster to secure your apps at the cluster level. For more details, see [Setting up Ingress](/docs/openshift?topic=openshift-ingress-roks4) and [{{site.data.keyword.appid_short_notm}} authentication Ingress annotation](/docs/containers?topic=containers-comm-ingress-annotations#app-id-authenticationh) to get started.
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 The following {{site.data.keyword.framework-fs_notm}} controls are most related to this guidance. However, in addition to following the guidance here, do your own due diligence to ensure you have met the requirements.
@@ -39,8 +39,24 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 | Family | Control |
 |----------------------------------------|------------------------------------------|
 | Access Control (AC)  | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-6)  |
-| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-Based Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5.1) |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-based Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5.1) |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family | Control |
+|----------------------------------------|------------------------------------------|
+| Access Control (AC)  | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2) \n [AC-5 Separation of Duties](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-5) \n [AC-6 Least Privilege](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-6)  |
+| Identification and Authentication (IA) | [IA-5 Authenticator Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-5) \n [IA-5 (1) Authenticator Management &#124; Password-Based Authentication](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-5.1) |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #next-steps}

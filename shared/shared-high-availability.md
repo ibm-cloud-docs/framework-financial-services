@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-02-20"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -63,7 +63,23 @@ The following {{site.data.keyword.framework-fs_notm}} controls are most related 
 |---------------------|---------------------------------------------------|
 | Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) |
 | System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-6) |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-2) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-7) |
+| System and Communications Protection (SC) | [SC-6 Resource Availability](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-6) |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #next-steps}

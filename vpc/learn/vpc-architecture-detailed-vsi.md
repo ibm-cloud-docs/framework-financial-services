@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-22"
 
 keywords:
 
@@ -23,7 +23,7 @@ This architecture shows a deployment of the VPC that uses {{site.data.keyword.vs
 ## Architecture diagram
 {: #vpc-vsi-diagram}
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}](../images/vpc-single-region/vpc-single-region-consumer-intranet-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}](../images/vpc-single-region/fsv2.0/vpc-single-region-vsi-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}" caption-side="bottom"}
 
 ## Management VPC
 {: #vpc-architecture-detailed-management}
@@ -33,13 +33,15 @@ This architecture shows a deployment of the VPC that uses {{site.data.keyword.vs
 
 The management VPC provides compute, storage, and network services to enable application provider administrators to monitor, operate, and maintain the environment. The intent is to completely isolate management operations from the VPC running consumer workloads.
 
-The management VPC is distributed across three zones in one [multizone region (MZR)](/docs/overview?topic=overview-locations#mzr-table). Each zone contains two subnets that are protected by different ACLs.
+The management VPC is distributed across three zones in one [multizone region (MZR)](/docs/overview?topic=overview-locations#mzr-table).
 
 ### Subnets for management tools
 {: #vpc-architecture-detailed-management-subnets}
 
 
-The top subnet in each zone is part of the default security group for the VPC. And, each of those subnets contains an arbitrary number of virtual server instances that use {{site.data.keyword.block_storage_is_short}}. These instances are where your management tools run. 
+There could be multiple subnets with different ACLs and multiple security groups in the VPC.
+
+The top subnet in each zone contains an arbitrary number of virtual server instances that use {{site.data.keyword.block_storage_is_short}}. Security group is used to control the access to these instances, and they are where your management tools run. 
 
 The lower subnets in the diagram relate to inbound connectivity, and we'll cover more about that in the next sections.
 
@@ -53,6 +55,8 @@ Connectivity from your application provider's enterprise environment to the mana
 [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-about) is the most secure way to enable connectivity from the application provider's on-premises environment to the management VPC. The speed and reliability of {{site.data.keyword.dl_short}} extends your organization’s data center network and offers more consistent, higher-throughput connectivity, keeping traffic within the {{site.data.keyword.cloud_notm}} network. When using {{site.data.keyword.dl_short}}, a private [{{site.data.keyword.alb_full}} (ALB)](/docs/vpc?topic=vpc-load-balancers) is used to distribute traffic among multiple server instances within the same region of your VPC.
 
 An alternative connectivity pattern requires use of the [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn) service to securely connect from your private network to the management VPC. {{site.data.keyword.vpn_vpc_short}} can be used as a static, route-based VPN or a policy-based VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premises private network, or another VPC. When using {{site.data.keyword.vpn_vpc_short}}, you need to place the gateway in a subnet (shown in the lower left subnet in the diagram).
+
+ [Client {{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-vpn-client-to-site-overview) provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network using an OpenVPN software client. This solution is useful for telecommuters who want to connect to {{site.data.keyword.cloud_notm}} from a remote location, such as a home office, while still maintaining secure connectivity. To meet the control requirements, you should use full-tunnel mode. In full-tunnel mode, all traffic from a VPN client is routed to the VPN server, which is more secure (especially if connecting from an untrusted network).
 
 ### Bastion host
 {: #vpc-architecture-detailed-management-connectivity-vpn}
@@ -77,7 +81,7 @@ Just like the management VPC, the workload VPC is spread across three zones. The
 ### Connectivity to workload VPC
 {: #vpc-architecture-detailed-workload-connectivity}
 
-If the consumer is in the same organization as the application provider, then just like for the management VPC, {{site.data.keyword.dl_short}} can provide access to the workload VPC. Alternatively, {{site.data.keyword.vpn_vpc_short}} can be used for site-to-site VPN connectivity.
+If the consumer is in the same organization as the application provider, then just like for the management VPC, {{site.data.keyword.dl_short}} can provide access to the workload VPC. Alternatively, {{site.data.keyword.vpn_vpc_short}} can be used for site-to-site or client-to-site VPN connectivity.
 
 ### Storage and encryption
 {: #vpc-architecture-detailed-services-encryption}
@@ -111,9 +115,9 @@ With [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](/docs/vpc
 ## Variation with edge/transit VPC for public internet access
 {: #edge-vpc-architecture}
 
-You might want to allow consumers to access your service through the public internet. This base architecture can be adapted to securely enable this type of access as shown in the following diagram, which introduces a new edge VPC. The request from the consumer gets routed through a global load balancer, through a web application firewall in the edge VPC, and then to the public application load balancer within the workload VPC.
+You might want to allow consumers to access your service through the public internet. This base architecture can be adapted to securely enable this type of access as shown in the following diagram, which introduces a new edge VPC. The request from the consumer gets routed through Cloud Internet Service's global load balancer, through a public load balancer in the edge VPC, and then to the private load balancer within the workload VPC. {{site.data.keyword.cis_full_notm}} provides Domain Name Service (DNS), Global Load Balancer (GLB), DDoS protection, Web Application Firewall (WAF), Transport Layer Security (TLS), Rate Limiting, Smart Routing, and Caching, and can be used for public internet traffic.
 
-![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-single-region/vpc-single-region-edge.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-single-region/fsv2.0/vpc-single-region-vsi-w-edge-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
 For complete details on this variation of the architecture, see [Consumer connectivity to workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet).
 

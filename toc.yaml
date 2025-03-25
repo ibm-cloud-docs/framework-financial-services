@@ -61,11 +61,6 @@ toc:
               - vpc/tutorials/waf-full-tunnel-vpn/vpc-architecture-connectivity-waf-tutorial.md
               - vpc/tutorials/waf-full-tunnel-vpn/vpc-architecture-connectivity-full-tunnel-vpn.md
           - topicgroup:
-              label: Logging and monitoring
-              topics:
-              - vpc/tutorials/logging-monitoring/vpc-architecture-logging-operational-tutorial.md
-              - vpc/tutorials/logging-monitoring/vpc-architecture-monitoring-operational-tutorial.md
-          - topicgroup:
               label: Bastion host
               topics:
               - vpc/tutorials/bastion-host/vpc-architecture-connectivity-bastion-tutorial-teleport.md

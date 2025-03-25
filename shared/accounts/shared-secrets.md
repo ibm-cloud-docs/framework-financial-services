@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-09"
+  years: 2020, 2025
+lastupdated: "2025-03-02"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -52,7 +52,7 @@ The following table lists the different solutions that you can use to protect yo
 
 
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 {{site.data.content.related-controls-disclaimer}}
@@ -60,8 +60,24 @@ The following table lists the different solutions that you can use to protect yo
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2)  |
-| Identification and Authentication (IA)  | [IA-2 User Identification and Authentication](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5)  |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+| Identification and Authentication (IA)  | [IA-2 Identification and Authentication (organizational Users)](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-2) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ia-5)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2)  |
+| Identification and Authentication (IA)  | [IA-2 User Identification and Authentication](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-2) \n [IA-5 Authenticator Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ia-5)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #next-steps}

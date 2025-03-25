@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-02"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -34,15 +34,30 @@ You need to install your own software solution for monitoring in {{site.data.key
 
 You need to install your own software solution for monitoring in virtual server instances. See [Setting up an operational monitoring solution](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-monitoring-operational-tutorial) for one example of sending virtual server instance metrics with [Prometheus Node Exporter](https://prometheus.io/docs/guides/node-exporter/){: external} to {{site.data.keyword.openshiftshort}} [Prometheus and Grafana](https://docs.openshift.com/container-platform/4.6/monitoring/monitoring-overview.html){: external}.
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 {{site.data.content.related-controls-disclaimer}}
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Essential Missions / Business Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7	Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10)  |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+| Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Mission and Business Functions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7	Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-10 System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Contingency Planning (CP) | [CP-2 (3) Contingency Plan &#124; Resume Essential Missions / Business Functions](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-2.3) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-6) \n [CP-7	Alternate Processing Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-7) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-10)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #next-steps}

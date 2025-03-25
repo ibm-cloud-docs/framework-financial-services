@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-09"
+  years: 2020, 2025
+lastupdated: "2025-03-22"
 
 keywords:
 
@@ -22,12 +22,12 @@ completion-time: 2h
 {: toc-services="f5"}
 {: toc-completion-time="2h"}
 
-One of the approaches for [enabling connectivity to the management VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management) is with a client to site full tunnel VPN. Application providers who want to use this option must deploy their own solution. This tutorial shows one approach that uses [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external} that can be used to meet {{site.data.keyword.framework-fs_notm}} requirements.
+One of the approaches for [enabling connectivity to the management VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management) is with a client to site full tunnel VPN. Application providers who want to use this option must deploy their own solution. This tutorial shows one approach that uses [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external} that can be used to meet {{site.data.keyword.framework-fs_notm}} requirements. Alternatively, [Client {{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-vpn-client-to-site-overview) can be used which also meets the requirements of the {{site.data.keyword.framework-fs_notm}}.
 {: shortdesc}
 
 The following diagram shows a deployment of the VPC reference architecture with a BIG-IP full tunnel VPN deployment.
 
-<![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP full Tunnel VPN host ](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP full tunnel VPN host" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP full Tunnel VPN host ](../../images/f5-bigip/fsv2.0/vpc-single-region-f5-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP full tunnel VPN host" caption-side="bottom"}
 
 ## Objectives
 {: #full-tunnel-vpn-solution-objectives}

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-11"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -12,7 +12,7 @@ subcollection: framework-financial-services
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Set up environment for deployment and configuration 
+# Set up environment for deployment and configuration
 {: #shared-deployment-setup-environment}
 
 Automation is an important part of any cloud solution, and it's even more so in regulated industries. You want to ensure that your deployment, operations, and management procedures are secure and repeatable. Manual activities can be error prone and lead to the introduction of vulnerabilities. So, as you work with the [reference architectures](/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview) for the {{site.data.keyword.cloud_notm}} for Financial Services, you will want to take advantage of the tools that {{site.data.keyword.cloud_notm}} provides to make automation possible.
@@ -33,7 +33,7 @@ Use private routes to {{site.data.keyword.cloud_notm}} service endpoints to enha
 ## {{site.data.keyword.cloud_notm}} Command Line Interface
 {: #shared-deployment-setup-environment-cli}
 
-The [CLI](/docs/cli?topic=cli-getting-started) offers a powerful set of commands to work with your resources. Most of the services that are part of the reference architectures have [specific plug-ins](/docs/cli?topic=cli-plug-ins) that you can use to extend the base CLI experience. 
+The [CLI](/docs/cli?topic=cli-getting-started) offers a powerful set of commands to work with your resources. Most of the services that are part of the reference architectures have [specific plug-ins](/docs/cli?topic=cli-plug-ins) that you can use to extend the base CLI experience.
 
 The following table provides links for the CLI extensions for each service in the reference architectures that has one.
 
@@ -44,7 +44,7 @@ The following table provides links for the CLI extensions for each service in th
 | Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-dl-cli) \n - [{{site.data.keyword.tg_short}}](/docs/tg-cli-plugin?topic=tg-cli-plugin-transit-gateway-cli)  |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-set-up-environment) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-hpcs-cli-plugin)  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-hpcs-cli-plugin)  | - {{site.data.keyword.appid_short_notm}} [^cli-tabletext-no-cli-information-app-id] |
-| Logging and monitoring  | - {{site.data.keyword.atracker_short}} [^cli-tabletext-no-cli-information-atracker]  \n - {{site.data.keyword.compliance_short}} [^cli-tabletext-no-cli-information-scc] \n - {{site.data.keyword.fl_full}} [^cli-tabletext-no-cli-information-flow-logs]  | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} |  |
+| Logging and monitoring  | - {{site.data.keyword.atracker_short}} [^cli-tabletext-no-cli-information-atracker]  \n - {{site.data.keyword.compliance_short}} [^cli-tabletext-no-cli-information-scc] \n - {{site.data.keyword.fl_full}} [^cli-tabletext-no-cli-information-flow-logs] \n - [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs-cli-plugin?topic=cloud-logs-cli-plugin-cloud-logs-cli) | - {{site.data.keyword.atracker_short}} \n - {{site.data.keyword.compliance_short}} \n - [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs-cli-plugin?topic=cloud-logs-cli-plugin-cloud-logs-cli) |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-cli#cli) |
 {: caption="CLI information for services in reference architectures" caption-side="top"}
 
@@ -72,7 +72,7 @@ The following table provides links for the CLI extensions for each service in th
 | Networking  | - [VPC infrastructure services](/docs/vpc?topic=vpc-set-up-environment&interface=api) \n - [{{site.data.keyword.dl_short}}](/apidocs/direct_link){: external} \n - [{{site.data.keyword.tg_short}}](/apidocs/transit-gateway){: external}  |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/vpc?topic=vpc-set-up-environment&interface=api) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/apidocs/hs-crypto){: external}  | - [{{site.data.keyword.hscrypto}}](/apidocs/hs-crypto){: external}  | - [{{site.data.keyword.appid_short_notm}}](/apidocs/app-id/management){: external} |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/apidocs/security-compliance){: external} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-set-up-environment&interface=api)  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/apidocs/security-compliance){: external} |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/apidocs/security-compliance){: external} \n - [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-set-up-environment&interface=api) \n - [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-send-logs-api) | - [{{site.data.keyword.atracker_short}}](/apidocs/atracker/atracker-v2){: external} \n - [{{site.data.keyword.compliance_short}}](/apidocs/security-compliance){: external} \n - [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-send-logs-api) |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-admin_api) |
 {: caption="API information for services in reference architectures" caption-side="top"}
 
@@ -81,7 +81,7 @@ The following table provides links for the CLI extensions for each service in th
 [^api-tabletext-satellite-enabled-openshift]: {{site.data.content.satellite-enabled-openshift}}
 
 
-## Terraform for {{site.data.keyword.cloud_notm}} 
+## Terraform for {{site.data.keyword.cloud_notm}}
 {: #shared-deployment-setup-environment-terraform}
 
 [Terraform on {{site.data.keyword.cloud_notm}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about) enables predictable and consistent provisioning of {{site.data.keyword.cloud_notm}} resources so that you can rapidly build IaC to deploy complex cloud environments. The following table contains links about the Terraform capabilities for each service in the reference architectures.
@@ -93,7 +93,7 @@ The following table provides links for the CLI extensions for each service in th
 | Networking  | - [VPC infrastructure services](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-terraform-setup-dl) \n - [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-terraform-setup-tgw)  |  |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_short}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-terraform) | - [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-terraform) |  |
 | Security  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-terraform-setup-for-hpcs){: external}  | - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-terraform-setup-for-hpcs){: external}  | - [{{site.data.keyword.appid_short_notm}}](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/appid_action_url){: external} |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-atracker-tf-config){: external} [^terraform-tabletext-no-cli-information-atracker]  \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) \n - [{{site.data.keyword.fl_full}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started)  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-atracker-tf-config){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-atracker-tf-config){: external} [^terraform-tabletext-no-cli-information-atracker]  \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) \n - [{{site.data.keyword.fl_full}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) \n - [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-terraform-setup) | - [{{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-atracker-tf-config){: external} \n - [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-terraform-setup) \n - [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-terraform-setup) |  |
 | Integration  |  |  | - [{{site.data.keyword.messagehub}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-template#event-stream-snippet)
 {: caption="Terraform information for services in reference architectures" caption-side="top"}
 

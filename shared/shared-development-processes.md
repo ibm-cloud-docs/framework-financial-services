@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-02"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -24,7 +24,7 @@ You must ensure that developers:
 
 * Perform configuration management during system/component/service development, implementation, and operation.
 * Document change approvals and security impact analyses for all system changes.
-* Perform unit, integration, system, regression testing/evaluation.  
+* Perform unit, integration, system, regression testing/evaluation.
 * Perform static and dynamic code analysis.
 * Use development testing processes that provide coverage for the entire component and explicitly reviews, evaluates, and tests all security functions.
 * Control consumer data so that it is never placed into nonproduction environments. Consumer data must not be consumed or used for the purposes of testing services.
@@ -68,10 +68,27 @@ There is not a Financial Services Validated solution for scanning virtual server
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| System and Information Integrity (SI) | [SI-7 Software & Information Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-7) |
-| System and Services Acquisition (SA) | [SA-3 System Development Life Cycle](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3) \n [SA-8 Security Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-10 (1) Developer Configuration Management &#124; Software and Firmware Integrity Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10.1) \n [SA-11 Developer Security Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15) \n [SA-15 (9) Development Process, Standards, and Tools &#124; Use of Live Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15.9) |
-| Risk Assessment (RA) | [RA-5 Vulnerability Scanning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ra-5)  |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+| System and Information Integrity (SI) | [SI-7 Software, Firmware, and Information Integrity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-si-7) |
+| System and Services Acquisition (SA) | [SA-3 System Development Life Cycle](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3) \n [SA-3 (2) System Development Life Cycle &#124; Use of Live or Operational Data](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-3.2) \n [SA-8 Security and Privacy Engineering Principles](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-8) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10) \n [SA-10 (1) Developer Configuration Management &#124; Software and Firmware Integrity Verification](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-10.1) \n [SA-11 Developer Testing and Evaluation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-11) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sa-15) |
+| Risk Assessment (RA) | [RA-5 Vulnerability Monitoring and Scanning](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ra-5)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| System and Information Integrity (SI) | [SI-7 Software & Information Integrity](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-si-7) |
+| System and Services Acquisition (SA) | [SA-3 System Development Life Cycle](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-3) \n [SA-8 Security Engineering Principles](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-8) \n [SA-10 Developer Configuration Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-10) \n [SA-10 (1) Developer Configuration Management &#124; Software and Firmware Integrity Verification](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-10.1) \n [SA-11 Developer Security Testing and Evaluation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-11) \n [SA-15 Development Process, Standards, and Tools](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-15) \n [SA-15 (9) Development Process, Standards, and Tools &#124; Use of Live Data](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sa-15.9) |
+| Risk Assessment (RA) | [RA-5 Vulnerability Scanning](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ra-5)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #next-steps}

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-02"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -23,7 +23,7 @@ Business continuity and disaster recovery (BCDR) is important for all cloud-base
 
 The following sections describe some of the requirements that you must follow for BCDR of your workloads.
 
-### Alternative storage site 
+### Alternative storage site
 {: #your-workloads-requirements-alternate-storage-site}
 
 You must establish and configure an alternative storage site in at least one geographically separate {{site.data.keyword.cloud_notm}} multizone region. So, if the storage in one region becomes unavailable, you can use storage from another region.
@@ -38,7 +38,7 @@ As the provider, you must:
 * Conduct backups of user-level information contained in the information system
 * Conduct backups of system-level information contained in the information system
 * Conduct backups of information system documentation, including security-related documentation
-* Protect the confidentiality, integrity, and availability of backup information at storage locations  
+* Protect the confidentiality, integrity, and availability of backup information at storage locations
 
 The different levels of information are defined as follows:
 
@@ -94,7 +94,7 @@ In addition to the Financial Services Validated services in the reference archit
 * [High availability](/docs/framework-financial-services?topic=framework-financial-services-shared-high-availability) in the VPC reference architecture
 * [Responsibilities for operating services in your deployment](/docs/framework-financial-services?topic=framework-financial-services-shared-responsibilities) of the VPC reference architecture
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
 
 {{site.data.content.related-controls-disclaimer}}
@@ -102,8 +102,23 @@ In addition to the Financial Services Validated services in the reference archit
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-9 Information System Backup](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-9) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10) \n [CP-10 (2) System Recovery and Reconstitution &#124; Transaction Recovery](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10.2)  |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-2) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-7) \n [CP-9 System Backup](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-9) \n [CP-10 System Recovery and Reconstitution](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10) \n [CP-10 (2) Information System Recovery and Reconstitution &#124; Transaction Recovery](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-cp-10.2)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Contingency Planning (CP) | [CP-2 Contingency Plan](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-2) \n [CP-6 Alternate Storage Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-6) \n [CP-7 Alternate Processing Site](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-7) \n [CP-9 Information System Backup](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-9) \n [CP-10 Information System Recovery and Reconstitution](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-10) \n [CP-10 (2) System Recovery and Reconstitution &#124; Transaction Recovery](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-cp-10.2)  |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #next-steps}

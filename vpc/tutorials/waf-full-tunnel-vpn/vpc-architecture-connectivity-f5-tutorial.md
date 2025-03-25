@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-11-19"
+  years: 2020, 2025
+lastupdated: "2025-03-22"
 
 keywords:
 
@@ -23,7 +23,7 @@ completion-time: 2h
 {: toc-services="f5"}
 {: toc-completion-time="2h"}
 
-If you want to use a client to site full tunnel VPN to [connect to your management VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management) or need a web application firewall (WAF) to enable consumers to [connect to your workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload) over the public internet, you need to install your own software solution. One approach is to use [F5 BIG-IP Virtual Edition](https://www.f5.com/trials/big-ip-virtual-edition){: external}. In this tutorial, you will learn how to provision an instance of BIG-IP. This is a prerequisite for using BIG-IP to [set up a full tunnel client-to-site VPN](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-full-tunnel-vpn) or [enable a WAF](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial) in a way that meets {{site.data.keyword.framework-fs_notm}} requirements.
+If you need to have a firewall within the VPC, it can be achieved using [F5 BIG-IP](https://www.f5.com/trials/big-ip-virtual-edition){: external}. In this tutorial, you will learn how to provision an instance of BIG-IP. This is a prerequisite for using BIG-IP to [set up a full tunnel client-to-site VPN](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-full-tunnel-vpn) or [enable a WAF](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-waf-tutorial) in a way that meets {{site.data.keyword.framework-fs_notm}} requirements.
 {: shortdesc}
 
 Guidance is provided here, but you are solely responsible for installing, configuring, and operating {{site.data.keyword.IBM_notm}} third-party software in a way that satisfies {{site.data.keyword.framework-fs_notm}} requirements. In addition, {{site.data.keyword.IBM_notm}} does not provide support for third-party software.
@@ -31,7 +31,7 @@ Guidance is provided here, but you are solely responsible for installing, config
 
 The architecture diagram shows a deployment of the VPC reference architecture with an instance of BIG-IP in the edge/transit VPC.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/vpc-single-region-edge-v2.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/fsv2.0/vpc-single-region-f5-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
 The architecture diagram shows a BIG-IP installation with four interfaces within 4 different VPC subnets: management, external, workload, and bastion. Depending on the services that you need and how you name your VPC subnets, you must update the values within the tutorial.
 {: tip}

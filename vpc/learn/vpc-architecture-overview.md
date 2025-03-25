@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-01-06"
+lastupdated: "2025-03-22"
 
 keywords:
 
@@ -21,12 +21,15 @@ subcollection: framework-financial-services
 ## Architecture diagram
 {: #vpc-arch-diagram}
 
-![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3.svg){: caption="High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
+## VPC reference architecture with only private access
+{: #edge-vpc-architecture}
+
+![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/fsv2.0/vpc-high-level-fsv2.0.1.svg){: caption="High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
 Central to the architecture are two VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
 Management VPC
-:   Provides compute, storage, and network services to enable the application application provider's administrators to monitor, operate, and maintain the environment.
+:   Provides compute, storage, and network services to enable the application provider's administrators to monitor, operate, and maintain the environment.
 
 Workload VPC
 :   Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
@@ -47,12 +50,12 @@ Other key features to note:
 
 The architecture in the previous section is the most secure way of enabling consumers to access the applications that are running in a workload VPC. However, there might be valid cases where it is desirable to allow consumers to access your service through the public internet. The same base architecture can be adapted to securely enable this type of access.
 
-![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/vpc-high-level-v3-with-edge.svg){: caption="High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
+![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/fsv2.0/vpc-high-level-w-edge-fsv2.0.1.svg){: caption="High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
 
 The revised architecture adds:
 
-* [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) to provide global load balancing and layer 3/4 protection against distributed denial-of-service (DDoS) attacks.
-* Virtual network firewall software in the workload VPC to provide web application firewall (WAF) protection and layer 7 protection against denial-of-service (DoS) attacks.
+* [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) to provide global load balancing and layer 3/4 protection against distributed denial-of-service (DDoS) attacks. It also includes a web application firewall (WAF) protection and layer 7 protection against denial-of-service (DoS) attacks.
+* As an alternative to CIS WAF capabilities, when advanced firewall functionalities are required, a Virtual Network Firewall software in the edge VPC can be deployed to provide web application firewall (WAF) protection and layer 7 protection against denial-of-service (DoS) attacks. The VNF will need to meet the required Financial Services controls.
 
 See [VPC architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture) for more details on this variation.
 
@@ -75,7 +78,7 @@ Deploying the reference architecture depends upon VPC infrastructure and PaaS se
 | Networking - interconnectivity  | - [{{site.data.keyword.dl_full}} (2.0)](#services-networking-direct-link)[^fs-validated-table-4-2] \n - [{{site.data.keyword.tg_full}}](#services-networking-transit-gateway) |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_full}}](#services-storage-block) \n - [{{site.data.keyword.cos_full}}](#services-storage-cos) |  |
 | Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n - [{{site.data.keyword.appid_full}}](#services-security-app-id) |
-| Logging and monitoring  | - [{{site.data.keyword.atracker_full_notm}}](#services-logging-platform-events) [^fs-validated-table-5] \n - [{{site.data.keyword.compliance_long}}](#services-scc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.fl_full}}](#services-logging-flow-logs) [^fs-validated-table-1-2]  |  |
+| Logging and monitoring  | - [{{site.data.keyword.atracker_full_notm}}](#services-logging-platform-events) [^fs-validated-table-5] \n - [{{site.data.keyword.compliance_long}}](#services-scc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.fl_full}}](#services-logging-flow-logs) [^fs-validated-table-1-2]  \n - [{{site.data.keyword.logs_full_notm}}](#services-logging-cloud-logs)|  |
 | Integration  |  | - [{{site.data.keyword.messagehub_full}}](#services-integration-event-streams) |
 | Developer tools  |  | - [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) |
 {: caption="Required and optional services for VPC reference architecture" caption-side="top"}
@@ -149,6 +152,8 @@ Use [{{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers) (ALB) t
 {: #services-networking-vpn}
 
 Use the [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn) service to securely connect your VPC to another private network. Use a static, route-based VPN or a policy-based VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premises private network, or another VPC.
+
+ [Client {{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-vpn-client-to-site-overview) provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network using an OpenVPN software client. This solution is useful for telecommuters who want to connect to {{site.data.keyword.cloud_notm}} from a remote location, such as a home office, while still maintaining secure connectivity. To meet the control requirements, you should use full-tunnel mode. In full-tunnel mode, all traffic from a VPN client is routed to the VPN server, which is more secure (especially if connecting from an untrusted network).
 
 {{site.data.keyword.vpn_vpc_short}} is required to connect to the management VPC if not using {{site.data.keyword.dl_short}}.
 
@@ -227,7 +232,7 @@ As the number of your VPCs grow, you need an easy way to manage the interconnect
 
 With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-getting-started) you can embed security checks into your every day workflows to help monitor for security and compliance. By monitoring for risks, you can identify security vulnerabilities and quickly work to mitigate the impact and fix the issue. By using {{site.data.keyword.compliance_short}} along with [external integrations](/security-compliance/integrations) (such as, OpenShift Compliance Operator (OSCO), Tanium, NeuVector, and so on), you can build a robust approach for monitoring for security and compliance issues.
 
-#### {{site.data.keyword.cloud_notm}} {{site.data.keyword.alb_full}}
+#### {{site.data.keyword.cloud_notm}} {{site.data.keyword.fl_full}}
 {: #services-logging-flow-logs}
 
 [{{site.data.keyword.fl_full}}](/docs/vpc?topic=vpc-flow-logs) enables the collection, storage, and presentation of information about the Internet Protocol (IP) traffic flowing to and from network interfaces within your VPC.
@@ -239,6 +244,11 @@ With [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=se
 * Determining source and destination traffic from the network interfaces
 * Adhering to compliance regulations
 * Assisting with root cause analysis
+
+#### {{site.data.keyword.logs_full_notm}}
+{: #services-logging-cloud-logs}
+
+[{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs) is a scalable logging service that persists logs and provides users with capabilities for querying, tailing, and visualizing logs. The [{{site.data.keyword.logs_full_notm}}] service can manage general purpose application logs, platform logs, or structured audit events. [{{site.data.keyword.logs_full_notm}}] can be used with logs from both IBM Cloud services and customer applications.
 
 ### Integration
 {: #vpc-architecture-optional-services-integration}
@@ -261,7 +271,7 @@ The following table provides a summary of the main features of the VPC reference
 |-------------------------|---------------------------------------------------|
 | Compute  | {{site.data.keyword.vsi_is_short}} \n Dedicated hosts for VPC |
 | Containers [^component-tabletext-1] | {{site.data.keyword.openshiftlong_notm}} \n {{site.data.keyword.registryshort}}
-| Inbound connectivity to management VPC | {{site.data.keyword.dl_short}} or \n {{site.data.keyword.vpn_vpc_short}} |
+| Inbound connectivity to management VPC | {{site.data.keyword.dl_short}} \n {{site.data.keyword.vpn_vpc_short}} |
 | Inbound connectivity to workload VPC | {{site.data.keyword.dl_short}} or \n {{site.data.keyword.vpn_vpc_short}} |
 | Virtual network firewall | Install your own software [^component-tabletext-2] |
 | Connectivity between VPCs  | {{site.data.keyword.tg_short}} |
@@ -286,7 +296,7 @@ The following table provides a summary of the main features of the VPC reference
 | Developer tools  | {{site.data.keyword.contdelivery_short}} or \n Install your own software |
 | Endpoint protection  | Install your own software |
 | Event queues | {{site.data.keyword.messagehub}} or \n Install your own software |
-| Databases | Install your own software |
+| Databases | {{site.data.keyword.databases-for-mongodb}} \n {{site.data.keyword.databases-for-postgresql}} \n Install your own software |
 {: caption="Services needed for different parts of the VPC reference architecture" caption-side="top"}
 
 [^component-tabletext-1]: {{site.data.content.only-required-openshift}}

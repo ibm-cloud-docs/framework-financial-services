@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-09"
+  years: 2020, 2025
+lastupdated: "2025-03-02"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -42,16 +42,32 @@ In addition, for services that store data, it is suggested that you use one or m
 * `consumer-metadata`: Metadata owned by the consumer
 * `regulated-data`: Data that is regulated
 
-## Related controls in {{site.data.keyword.framework-fs_notm}} 
+## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #shared-tagging-resources-related-controls}
 
 {{site.data.content.related-controls-disclaimer}}
 
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
-| Access Control (AC) | [AC-16 Security Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-16) |
-| System and Communications Protection (SC) | [SC-16 Transmission of Security Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-16) |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+| Access Control (AC) | [AC-16 Security and Privacy Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-16) |
+| System and Communications Protection (SC) | [SC-16 Transmission of Security and Privacy Attributes](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-16) |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Access Control (AC) | [AC-16 Security Attributes](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-16) |
+| System and Communications Protection (SC) | [SC-16 Transmission of Security Attributes](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-sc-16) |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #shared-tagging-resources-next-steps}

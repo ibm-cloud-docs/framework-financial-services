@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-09"
+  years: 2020, 2025
+lastupdated: "2025-03-02"
 
-keywords: 
+keywords:
 
 subcollection: framework-financial-services
 
@@ -57,7 +57,7 @@ The events that are collected should comply with the Cloud Auditing Data Federat
 ## Storing events in a SIEM
 {: #siem}
 
-A SIEM system provides the ability to gather security data from information system components and presents that data as actionable information through a single interface. Events of the type in the previous section should be stored in a SIEM. You need to install your own software solution within your VPC for SIEM. 
+A SIEM system provides the ability to gather security data from information system components and presents that data as actionable information through a single interface. Events of the type in the previous section should be stored in a SIEM. You need to install your own software solution within your VPC for SIEM.
 
 ## Related {{site.data.keyword.cloud_notm}} for Financial Services controls
 {: #related-controls}
@@ -67,8 +67,24 @@ A SIEM system provides the ability to gather security data from information syst
 | Family              | Control                                           |
 |---------------------|---------------------------------------------------|
 | Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2) \n [AC-2 (1) Account Management &#124; Automated System Account Management](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2.1) \n [AC-2 (4) Account Management &#124; Automated Audit Actions](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2.4) \n [AC-2 (7) Account Management &#124; Privileged User Accounts](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-ac-2.7) |
-| Audit and Accountability (AU) | [AU-3 Content of Audit Records](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-3) \n [AU-4 Audit Log Storage Capacity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-4) \n [AU-5 Response to Audit Processing Failures](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-5) \n [AU-6 Audit Record Review, Analysis. and Reporting](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-6) \n [AU-6 (1) Audit Record Review, Analysis. and Reporting &#124; Automated Process Integration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-6.1) \n [AU-7 Audit Record Reduction and Report Generation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-7) \n [AU-10 Non-repudiation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-10) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-11) |
-{: caption="Related controls in {{site.data.keyword.framework-fs_notm}}" caption-side="top"}
+| Audit and Accountability (AU) | [AU-3 Content of Audit Records](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-3) \n [AU-4 Audit Log Storage Capacity](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-4) \n [AU-5 Response to Audit Logging Process Failures](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-5) \n [AU-6 Audit Record Review, Analysis, and Reporting](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-6) \n [AU-6 (1) Audit Record Review, Analysis, and Reporting &#124; Automated Process Integration](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-6.1) \n [AU-7 Audit Record Reduction and Report Generation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-7) \n [AU-10 Non-repudiation](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-10) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-au-11) |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv2.0]" caption-side="top"}
+{: #related-controls-fsv2.0}
+{: tab-title="FSv2.0"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
+
+| Family              | Control                                           |
+|---------------------|---------------------------------------------------|
+| Access Control (AC) | [AC-2 Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2) \n [AC-2 (1) Account Management &#124; Automated System Account Management](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2.1) \n [AC-2 (4) Account Management &#124; Automated Audit Actions](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2.4) \n [AC-2 (7) Account Management &#124; Privileged User Accounts](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-ac-2.7) |
+| Audit and Accountability (AU) | [AU-3 Content of Audit Records](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-3) \n [AU-4 Audit Log Storage Capacity](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-4) \n [AU-5 Response to Audit Processing Failures](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-5) \n [AU-6 Audit Record Review, Analysis. and Reporting](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-6) \n [AU-6 (1) Audit Record Review, Analysis. and Reporting &#124; Automated Process Integration](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-6.1) \n [AU-7 Audit Record Reduction and Report Generation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-7) \n [AU-10 Non-repudiation](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-10) \n [AU-11 Audit Record Retention](/docs/framework-financial-services-controls-fsv1-1?topic=framework-financial-services-controls-fsv1-1-au-11) |
+{: caption="Related controls in {{site.data.keyword.framework-fs_notm}} [FSv1.1]" caption-side="top"}
+{: #related-controls-fsv1.1}
+{: tab-title="FSv1.1"}
+{: tab-group="RelatedControls-1"}
+{: class="simple-tab-table"}
+
 
 ## Next steps
 {: #next-steps}
