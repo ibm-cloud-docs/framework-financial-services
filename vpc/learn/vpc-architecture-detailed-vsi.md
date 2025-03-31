@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-22"
+lastupdated: "2025-03-31"
 
 keywords:
 
@@ -23,7 +23,7 @@ This architecture shows a deployment of the VPC that uses {{site.data.keyword.vs
 ## Architecture diagram
 {: #vpc-vsi-diagram}
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}](../images/vpc-single-region/fsv2.0/vpc-single-region-vsi-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}](../images/vpc-single-region/fsv2-0/vpc-single-region-vsi-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}" caption-side="bottom"}
 
 ## Management VPC
 {: #vpc-architecture-detailed-management}
@@ -117,7 +117,7 @@ With [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](/docs/vpc
 
 You might want to allow consumers to access your service through the public internet. This base architecture can be adapted to securely enable this type of access as shown in the following diagram, which introduces a new edge VPC. The request from the consumer gets routed through Cloud Internet Service's global load balancer, through a public load balancer in the edge VPC, and then to the private load balancer within the workload VPC. {{site.data.keyword.cis_full_notm}} provides Domain Name Service (DNS), Global Load Balancer (GLB), DDoS protection, Web Application Firewall (WAF), Transport Layer Security (TLS), Rate Limiting, Smart Routing, and Caching, and can be used for public internet traffic.
 
-![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-single-region/fsv2.0/vpc-single-region-vsi-w-edge-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-single-region/fsv2-0/vpc-single-region-vsi-w-edge-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
 For complete details on this variation of the architecture, see [Consumer connectivity to workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet).
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-22"
+lastupdated: "2025-03-31"
 
 keywords:
 
@@ -30,7 +30,7 @@ Guidance is provided, but you are solely responsible for installing, configuring
 
 The following architecture diagram shows a deployment of the VPC reference architecture that uses BIG-IP for WAF.
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/fsv2.0/vpc-single-region-f5-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with BIG-IP WAF](../../images/f5-bigip/fsv2-0/vpc-single-region-f5-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
 
 There are two main components to this solution:
 

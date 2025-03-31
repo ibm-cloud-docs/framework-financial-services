@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-22"
+lastupdated: "2025-03-31"
 
 keywords:
 
@@ -43,7 +43,7 @@ Before you deploy and configure a bastion host into a virtual server instance ru
 * Acquire a Teleport Enterprise Edition license
 * Configure a VPC like *VPC 0 (Edge Network)* in the architecture diagram
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with bastion host](../../images/bastion-host/fsv2.0/vpc-single-region-bastion-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with bastion host" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture with bastion host](../../images/bastion-host/fsv2-0/vpc-single-region-bastion-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with bastion host" caption-side="bottom"}
 
 
 

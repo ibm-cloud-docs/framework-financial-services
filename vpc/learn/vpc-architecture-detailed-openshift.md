@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-22"
+lastupdated: "2025-03-31"
 
 keywords:
 
@@ -23,7 +23,7 @@ The following diagram shows a more detailed view of both the management and work
 ## Architecture diagram
 {: #vpc-openshift-diagram}
 
-![Single region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.openshiftshort}}](../images/roks-single-region/fsv2.0/roks-single-region-fsv2.0.1.svg){: caption="Single region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.openshiftshort}}" caption-side="bottom"}
+![Single region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.openshiftshort}}](../images/roks-single-region/fsv2-0/roks-single-region-fsv2.0.1.svg){: caption="Single region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.openshiftshort}}" caption-side="bottom"}
 
 You can choose to use {{site.data.keyword.openshiftshort}} alongside (or instead of) virtual servers in either or both VPCs. Even though it is shown in the diagram as an option, it is not required to put {{site.data.keyword.openshiftshort}} in your management VPC.
 
