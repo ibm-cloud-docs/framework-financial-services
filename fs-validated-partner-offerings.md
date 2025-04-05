@@ -46,9 +46,11 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | Liferay     | DXP     |
 | NexJ SYSTEMS      |  Customer Relationship Management for Wealth Management   |
 | Palo Alto networks      | [Prisma Cloud Compute Edition](https://cloud.ibm.com/catalog/content/prisma-cloud-compute-console-operator-808cf452-b9f9-4a62-bcd7-abb36e53ff1a-global), [VM-Series Firewall](https://cloud.ibm.com/catalog/content/ibmcloud-vmseries-1.9)      |
+| Platform.sh     | Platform.sh     |
 | Portworx      | [PX-Backup for Kubernetes](https://cloud.ibm.com/catalog/services/px-backup-for-kubernetes), [Portworx Enterprise](https://cloud.ibm.com/catalog/services/portworx-enterprise)   |
 | QuickSign     | QuickSign     |
 | Quid     | Qinetic    |
+| Ridecell     | Rideval Fleet Optimizer     |
 | SAP       | [SAP S/4 HANA](https://cloud.ibm.com/catalog/content/content-ibm-sap-vpc-automation-s4hana-ec60f4ee-c27d-4bcb-8aef-dee83a3f2659-global), ASE (Sybase), SAP RISE      |
 | SAS     |  Viya     |
 | ServiceNow      | ServiceNow Managed Service  |
