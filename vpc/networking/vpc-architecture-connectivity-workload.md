@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-06-10"
 
 keywords:
 
@@ -59,6 +59,11 @@ For more information, see:
 ## Consumer in different organization than application provider
 {: #consumer-provider-different-org}
 
+
+
+### Connecting from private intranet
+
+Workloads may need to be accessed from private intranets using VPN or Direct Link connectivity setups. While Client-to-Site VPN and Site-to-Site VPN can handle NATing, using Direct Link to provide access to the workload requires special considerations to avoid IP space conflicts. Both parties—the consumer and the provider—need to coordinate the appropriate IP ranges for the VPC. The recommended approach is to connect the consumer's Direct Link to a Transit VPC, which hosts a firewall device that provides NATing capabilities, thereby enabling access to the workload.
 
 
 ### Connecting from public internet
