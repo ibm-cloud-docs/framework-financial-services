@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-03-24"
+lastupdated: "2025-06-10"
 
 keywords: 
 
@@ -637,6 +637,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
     * [{{site.data.keyword.vpn_vpc_short}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#vpc-architecture-connectivity-management-vpn)
 
 * [Consumer in different organization than application provider](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-different-org)
+
+    * [Connecting from private intranet](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#connecting-from-private-intranet)
 
     * [Connecting from public internet](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet)
 
