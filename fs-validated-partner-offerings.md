@@ -36,12 +36,14 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | ISV        | Offering |
 | :------------- |:-------------|
 | Adobe     | Adobe Experience Manager |
+| Appian     | Platform |
 | Circeo      | The Loan Factory      |
 | Dizzion      | [Dizzion Complete FS - Horizon](https://cloud.ibm.com/catalog/services/dizzion-complete-fs---horizon)    |
 | EIS | EIS Suite  |
 | EpositBox | EpositBox  |
 | F5 | [F5 BIG-IP](https://cloud.ibm.com/catalog/content/ibmcloud_schematics_bigip_multinic_declared-1.0)      |
 | Gambit | Wealth as a Service |
+| InvestSuite | Wealth as a Service |
 | Kanexa/Marco Polo Network     | Supplier Pay      |
 | Liferay     | DXP     |
 | NexJ SYSTEMS      |  Customer Relationship Management for Wealth Management   |
@@ -51,10 +53,12 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | QuickSign     | QuickSign     |
 | Quid     | Qinetic    |
 | Ridecell     | Rideval Fleet Optimizer     |
+| Ripjar     | Labyrinth     |
 | SAP       | [SAP S/4 HANA](https://cloud.ibm.com/catalog/content/content-ibm-sap-vpc-automation-s4hana-ec60f4ee-c27d-4bcb-8aef-dee83a3f2659-global), ASE (Sybase), SAP RISE      |
 | SAS     |  Viya     |
 | ServiceNow      | ServiceNow Managed Service  |
 | Sopra Banking Software    | Software for Lending    |
+| Tagetik    | CCH Tagetik Intelligent Platform    |
 | Tanium      | [Tanium Cloud Appliance](https://cloud.ibm.com/catalog/content/tan-pycatalog-1.0-82ac26b1-d93e-4a11-98c9-d1fc0e09921e-global)      |
 | Temenos     | Data Hub, Financial Crime Mitigation (FCM), Payment Hub, Transact, WealthSuite   |
 | Topaz     |  Core Banking  |
