@@ -36,7 +36,7 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | ISV        | Offering |
 | :------------- |:-------------|
 | Adobe     | Adobe Experience Manager |
-| Appian     | Platform |
+| Appian     | Appian Platform |
 | Circeo      | The Loan Factory      |
 | Dizzion      | [Dizzion Complete FS - Horizon](https://cloud.ibm.com/catalog/services/dizzion-complete-fs---horizon)    |
 | EIS | EIS Suite  |
