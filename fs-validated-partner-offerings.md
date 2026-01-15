@@ -48,7 +48,7 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | Liferay     | DXP     |
 | NexJ SYSTEMS      |  Customer Relationship Management for Wealth Management   |
 | Palo Alto networks      | [Prisma Cloud Compute Edition](https://cloud.ibm.com/catalog/content/prisma-cloud-compute-console-operator-808cf452-b9f9-4a62-bcd7-abb36e53ff1a-global), [VM-Series Firewall](https://cloud.ibm.com/catalog/content/ibmcloud-vmseries-1.9)      |
-| Platform.sh     | Platform.sh     |
+| Upsun     | [Upsun Fixed](https://cloud.ibm.com/catalog/services/upsun-fixed?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjaGlnaGxpZ2h0cw%3D%3D)     |
 | Portworx      | [PX-Backup for Kubernetes](https://cloud.ibm.com/catalog/services/px-backup-for-kubernetes), [Portworx Enterprise](https://cloud.ibm.com/catalog/services/portworx-enterprise)   |
 | QuickSign     | QuickSign     |
 | Quid     | Qinetic    |
