@@ -36,30 +36,34 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | ISV        | Offering |
 | :------------- |:-------------|
 | Adobe     | Adobe Experience Manager |
+| Appian     | Appian Platform |
 | Circeo      | The Loan Factory      |
 | Dizzion      | [Dizzion Complete FS - Horizon](https://cloud.ibm.com/catalog/services/dizzion-complete-fs---horizon)    |
 | EIS | EIS Suite  |
 | EpositBox | EpositBox  |
 | F5 | [F5 BIG-IP](https://cloud.ibm.com/catalog/content/ibmcloud_schematics_bigip_multinic_declared-1.0)      |
 | Gambit | Wealth as a Service |
+| InvestSuite | Wealth as a Service |
 | Kanexa/Marco Polo Network     | Supplier Pay      |
 | Liferay     | DXP     |
 | NexJ SYSTEMS      |  Customer Relationship Management for Wealth Management   |
 | Palo Alto networks      | [Prisma Cloud Compute Edition](https://cloud.ibm.com/catalog/content/prisma-cloud-compute-console-operator-808cf452-b9f9-4a62-bcd7-abb36e53ff1a-global), [VM-Series Firewall](https://cloud.ibm.com/catalog/content/ibmcloud-vmseries-1.9)      |
-| Platform.sh     | Platform.sh     |
 | Portworx      | [PX-Backup for Kubernetes](https://cloud.ibm.com/catalog/services/px-backup-for-kubernetes), [Portworx Enterprise](https://cloud.ibm.com/catalog/services/portworx-enterprise)   |
 | QuickSign     | QuickSign     |
 | Quid     | Qinetic    |
 | Ridecell     | Rideval Fleet Optimizer     |
+| Ripjar     | Labyrinth     |
 | SAP       | [SAP S/4 HANA](https://cloud.ibm.com/catalog/content/content-ibm-sap-vpc-automation-s4hana-ec60f4ee-c27d-4bcb-8aef-dee83a3f2659-global), ASE (Sybase), SAP RISE      |
 | SAS     |  Viya     |
 | ServiceNow      | ServiceNow Managed Service  |
 | Sopra Banking Software    | Software for Lending    |
+| Tagetik    | CCH Tagetik Intelligent Platform    |
 | Tanium      | [Tanium Cloud Appliance](https://cloud.ibm.com/catalog/content/tan-pycatalog-1.0-82ac26b1-d93e-4a11-98c9-d1fc0e09921e-global)      |
 | Temenos     | Data Hub, Financial Crime Mitigation (FCM), Payment Hub, Transact, WealthSuite   |
 | Topaz     |  Core Banking  |
 | Tovie.ai   |  Conversational AI Solutions  |
 | Unblu   | Unblu   |
+| Upsun     | [Upsun Fixed](https://cloud.ibm.com/catalog/services/upsun-fixed?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjaGlnaGxpZ2h0cw%3D%3D)     |
 | Veeam   | [Veeam Availability Suite](https://cloud.ibm.com/infrastructure/vmware-solutions/console/newserviceentry/VeeamVM/vcs_nsx_t)   |
 | WorkFusion   | Intelligent Automation of Customer Lifecycle   |
 | Yields.io   | Chiron/MRM   |
