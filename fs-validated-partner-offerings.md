@@ -39,6 +39,7 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | Appian     | Appian Platform |
 | Circeo      | The Loan Factory      |
 | Dizzion      | [Dizzion Complete FS - Horizon](https://cloud.ibm.com/catalog/services/dizzion-complete-fs---horizon)    |
+| Effyis | P2S Platform  |
 | EIS | EIS Suite  |
 | EpositBox | EpositBox  |
 | F5 | [F5 BIG-IP](https://cloud.ibm.com/catalog/content/ibmcloud_schematics_bigip_multinic_declared-1.0)      |
@@ -56,7 +57,7 @@ Contact IBM Sales or open a support case if you are interested in any of these o
 | SAP       | [SAP S/4 HANA](https://cloud.ibm.com/catalog/content/content-ibm-sap-vpc-automation-s4hana-ec60f4ee-c27d-4bcb-8aef-dee83a3f2659-global), ASE (Sybase), SAP RISE      |
 | SAS     |  Viya     |
 | ServiceNow      | ServiceNow Managed Service  |
-| Sopra Banking Software    | Software for Lending    |
+| Sopra Banking Software    | Sopra Banking Software for Lending, CMS Card Management Solution    |
 | Tagetik    | CCH Tagetik Intelligent Platform    |
 | Tanium      | [Tanium Cloud Appliance](https://cloud.ibm.com/catalog/content/tan-pycatalog-1.0-82ac26b1-d93e-4a11-98c9-d1fc0e09921e-global)      |
 | Temenos     | Data Hub, Financial Crime Mitigation (FCM), Payment Hub, Transact, WealthSuite   |
