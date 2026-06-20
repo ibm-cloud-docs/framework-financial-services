@@ -72,6 +72,7 @@ toc:
           topics:
           - shared/shared-deployment-overview.md
           - shared/shared-infrastructure-as-code.md
+          - shared/shared-multitenancy-summary.md
       - topicgroup:
           label: Accounts, identity management, and access control
           topics:
@@ -94,6 +95,9 @@ toc:
               - vpc/networking/vpc-architecture-connectivity-workload.md
               - vpc/networking/vpc-architecture-connectivity-to-ibm-services.md
               - vpc/networking/vpc-architecture-connectivity-to-internet.md
+              - vpc/networking/vpc-architecture-egress-proxy.md
+              - vpc/networking/vpc-architecture-connectivity-direct-link.md
+              - vpc/networking/vpc-architecture-connectivity-dlp.md
           - topicgroup:
               label: Networking for Satellite reference architecture
               topics:
@@ -108,6 +112,19 @@ toc:
           topics:
           - vpc/compute-containers/vpc-architecture-compute-vsi.md
           - shared/compute-containers/shared-containers-openshift.md
+          - topicgroup:
+              label: Container image management
+              topics:
+              - shared/compute-containers/image-management/ocp-image-mgmt-overview.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-planning-guidance.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-planning-considerations.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-icr-configuration.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-copying-images-oc-mirror.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-registry-mirroring-config.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-operator-mirroring.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-image-acceptance-policies.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-vulnerability-scanning.md
+              - shared/compute-containers/image-management/ocp-image-mgmt-references.md
       - topicgroup:
           label: Storage
           topics:

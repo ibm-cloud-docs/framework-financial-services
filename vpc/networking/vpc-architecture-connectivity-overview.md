@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-07-28"
+  years: 2020, 2026
+lastupdated: "2026-06-16"
 
 keywords: 
 
@@ -29,3 +29,5 @@ Walk through the topics for how to build out your networking solution:
 * [Consumer connectivity to workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload)
 * [Connectivity to {{site.data.keyword.cloud_notm}} services with private endpoints](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-services)
 * [Accessing the public internet](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet)
+* [FQDN based egress proxy in IBM Cloud VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy)
+* [Connecting on prem environment with service providers on IBM Cloud with {{site.data.keyword.dl_short}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link)

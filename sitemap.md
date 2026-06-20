@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-06-10"
+  years: 2020, 2026
+lastupdated: "2026-06-18"
 
 keywords: 
 
@@ -132,6 +132,14 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 [Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
+
+* [17 June 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#17-june-2026)
+
+* [15 June 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#15-june-2026)
+
+* [10 June 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#10-june-2026)
+
+* [2 June 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#02-june-2026)
 
 * [24 March 2025](/docs/framework-financial-services?topic=framework-financial-services-release-notes#24-march-2025)
 
@@ -509,6 +517,10 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-shared-deploy-infrastructure-as-code#next-steps)
 
+[Intra Organization Multitenancy Architecture Reference](/docs/framework-financial-services?topic=framework-financial-services-shared-multitenancy-summary#shared-multitenancy-summary)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-shared-multitenancy-summary#next-steps)
+
 
 ## Accounts, identity management, and access control
 {: #sitemap_accounts_identity_management_and_access_control}
@@ -662,6 +674,162 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-to-internet#next-steps)
 
+[FQDN based egress proxy in IBM Cloud VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#vpc-architecture-egress-proxy)
+
+* [Problem statement](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#problem-statement)
+
+* [Assumptions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#problem-statement)
+
+* [Scope and goals](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#scope-and-goals)
+
+* [Workload to Internet Connectivity – The BYO Proxy Approach for Services with dynamic IPs](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#byo-proxy)
+
+* [Alternatives to BYO proxy](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#alternatives)
+
+* [High level architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#high-level-architecture)
+
+    * [HAproxy configuration example](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#haproxy-example)
+
+* [Private DNS configuration](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#private-dns)
+
+* [HA considerations](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#ha-considerations)
+
+    * [HA Deployment with VPC Application Load Balancers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#ha-deployment)
+
+* [Networking configuration examples](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#network-flow-controls)
+
+    * [Access control lists](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#acls)
+
+    * [Security groups](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#security-groups)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#next-steps)
+
+[Connecting on-prem environment with service providers on IBM Cloud with {{site.data.keyword.dl_short}}](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#vpc-architecture-connectivity-direct-link)
+
+* [Assumptions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#assumptions)
+
+* [Alternatives](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#alternatives)
+
+* [One {{site.data.keyword.dl_short}} per VPC/environment](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#dl-per-vpc)
+
+* [One {{site.data.keyword.dl_short}} per provider connected through Transit Gateway to multiple VPCs](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#dl-per-provider)
+
+* [One {{site.data.keyword.dl_short}} per provider to Transit VPC managed by provider](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#dl-per-tgw-provider)
+
+* [Overall one {{site.data.keyword.dl_short}} to Transit VPC managed by consumer](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#dl-per-tgw-consumer)
+
+* [One {{site.data.keyword.dl_short}} per provider to Private Path managed by provider](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#dl-per-provider-ppnlb)
+
+* [Overall one {{site.data.keyword.dl_short}} to Private Path managed by consumer](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#dl-consumer-ppnlb)
+
+* [Comparison Summary](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#comparison)
+
+* [FS guidance for accessing workloads from private intranet](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#fs-guidance)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link#next-steps)
+
+[Data loss prevention and perimeter access patterns](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#vpc-architecture-connectivity-dlp)
+
+* [Overview](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#perimeter-access-overview)
+
+* [ISV actors and access patterns](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#isv-actors)
+
+* [Use cases](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#use-cases)
+
+* [Reference deployment architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#reference-architecture)
+
+* [Application user access (non-privileged)](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#application-user-access)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-user-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-user-threats)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-user-decisions)
+
+* [Cloud administrator access (privileged)](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#cloud-admin-access)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#cloud-admin-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#cloud-admin-threats)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#cloud-admin-decisions)
+
+* [Application administrator access (privileged)](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-admin-access)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-admin-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-admin-threats)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-admin-decisions)
+
+* [Cloud console access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#cloud-console-access)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#console-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#console-threats)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#console-decisions)
+
+* [Transit Gateway connectivity (same account)](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#transit-gateway-same-account)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#tgw-same-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#tgw-same-threats)
+
+* [Transit Gateway connectivity (cross-account)](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#transit-gateway-cross-account)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#tgw-cross-enforcements)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#tgw-cross-decisions)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#tgw-cross-threats)
+
+* [Public Gateway access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#public-gateway-access)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#pgw-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#pgw-threats)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#pgw-decisions)
+
+* [Client-to-site VPN access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#client-to-site-vpn)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#c2s-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#c2s-threats)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#c2s-decisions)
+
+* [Site-to-site VPN access (ISV to cloud)](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#site-to-site-vpn-isv)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#s2s-isv-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#s2s-isv-threats)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#s2s-isv-decisions)
+
+* [Site-to-site VPN access (service consumer to cloud)](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#site-to-site-vpn-customer)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#s2s-customer-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#s2s-customer-threats)
+
+* [{{site.data.keyword.dl_short}} connectivity](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#direct-link)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#dl-enforcements)
+
+    * [Threat mitigation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#dl-threats)
+
+    * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#dl-decisions)
+
+* [ISV - Application Deployment](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-deployment)
+
+    * [High availability considerations](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#high-availability)
+
+    * [Cloud service access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#cloud-service-access)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#next-steps)
+
 
 ### Networking for Satellite reference architecture
 {: #sitemap_networking_for_satellite_reference_architecture}
@@ -751,6 +919,205 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Related controls in {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-containers-openshift#related-controls)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-shared-containers-openshift#next-steps)
+
+
+### Container image management
+{: #sitemap_container_image_management}
+
+
+[Image management in {{site.data.keyword.openshiftshort}} clusters](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#ocp-image-mgmt-overview)
+
+* [Scope](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#scope)
+
+    * [Repository access](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#repository-access)
+
+    * [Image acceptance policies](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#image-acceptance-policies)
+
+    * [Vulnerability scanning](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#vulnerability-scanning)
+
+    * [Out of scope](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#out-of-scope)
+
+* [Approaches and recommendations](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#approaches)
+
+    * [Explicit references to images in {{site.data.keyword.registryshort}} private namespaces](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#explicit-references)
+
+    * [Image mirroring to {{site.data.keyword.registryshort}} for transparent image reference resolution](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#image-mirroring)
+
+    * [Operator index and bundle image mirroring to {{site.data.keyword.registryshort}} for operator deployments](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#operator-mirroring)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview#next-steps)
+
+[Guidance for {{site.data.keyword.openshiftshort}} administrators](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#ocp-image-mgmt-planning-guidance)
+
+* [Outbound traffic protection and external registries](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#outbound-traffic)
+
+* [Container image integrity](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#image-integrity)
+
+* [Operator deployment](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#operator-deployment)
+
+* [Image mirroring](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#image-mirroring-process)
+
+    * [Option 1: Code Engine job to run the mirroring process](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#option-code-engine)
+
+    * [Option 2: Mirroring process on a VSI in Management VPC](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#option-vsi)
+
+    * [Option 3: Mirroring process running within an enterprise environment outside of IBM Cloud](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#option-enterprise)
+
+* [Image and operator update strategy](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#update-strategy)
+
+    * [Operator updates](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#operator-updates)
+
+    * [Image updates](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#image-updates)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-guidance#next-steps)
+
+[Key considerations for evaluating image management options](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-considerations#ocp-image-mgmt-planning-considerations)
+
+* [Security and compliance](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-considerations#security-compliance)
+
+* [Auditability](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-considerations#auditability)
+
+* [Mitigating security concerns](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-considerations#security-concerns)
+
+* [Secure software development](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-considerations#secure-development)
+
+* [Decision matrix](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-considerations#decision-matrix)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-planning-considerations#next-steps)
+
+[Configuring IBM Cloud Container Registry](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#ocp-image-mgmt-icr-configuration)
+
+* [Before you begin](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#before-you-begin)
+
+* [Creating and organizing {{site.data.keyword.registryshort}} namespaces](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#create-namespaces)
+
+* [Setting up staging and production namespaces](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#staging-production)
+
+* [Configuring access control](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#access-control)
+
+    * [Creating Service IDs for image pulling](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#service-ids-pull)
+
+    * [Creating Service IDs for image mirroring](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#service-ids-push)
+
+* [Setting up network access](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#network-access)
+
+    * [Creating Virtual Private Endpoints](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#create-vpe)
+
+    * [Configuring Context Based Restrictions](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#configure-cbr)
+
+* [Using {{site.data.keyword.registryshort}} with OpenShift](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#using-icr-openshift)
+
+* [Managing images in {{site.data.keyword.registryshort}}](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#managing-images)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-icr-configuration#next-steps)
+
+[Copying images to {{site.data.keyword.registryshort}} with oc-mirror CLI](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#ocp-image-mgmt-copying-images-oc-mirror)
+
+* [Before you begin](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#before-you-begin)
+
+* [Option 1: Running oc-mirror plugin using a VSI](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#option-vsi)
+
+    * [Installing the oc-mirror plugin](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#install-plugin-vsi)
+
+    * [Setting up authentication](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#setup-auth-vsi)
+
+    * [Creating ImageSetConfiguration](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#create-imageset-vsi)
+
+    * [Running oc-mirror](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#run-oc-mirror-vsi)
+
+* [Option 2: Running oc-mirror plugin as a Code Engine job](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#option-code-engine)
+
+    * [Creating a Code Engine project](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#create-ce-project)
+
+    * [Creating a registry secret](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#create-registry-secret)
+
+    * [Setting up the build configuration](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#setup-build-config)
+
+    * [Building the custom image](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#build-custom-image)
+
+    * [Creating authentication secret](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#create-auth-secret)
+
+    * [Creating ConfigMap for ImageSetConfiguration](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#create-configmap)
+
+    * [Creating the Code Engine job](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#create-ce-job)
+
+    * [Setting up persistent storage](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#setup-persistent-storage)
+
+    * [Running the job](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#run-ce-job)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-copying-images-oc-mirror#next-steps)
+
+[Configuring registry mirroring on {{site.data.keyword.openshiftshort}} nodes](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#ocp-image-mgmt-registry-mirroring-config)
+
+* [Understanding registry mirroring](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#understanding-mirroring)
+
+* [Before you begin](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#before-you-begin)
+
+* [Creating a DaemonSet for registry configuration update](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#create-registry-daemonset)
+
+    * [Creating the mapping file](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#create-mapping-file)
+
+    * [Creating the ConfigMap](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#create-configmap)
+
+    * [Deploying the DaemonSet](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#deploy-registry-daemonset)
+
+* [Creating a DaemonSet for updating node level {{site.data.keyword.registryshort}} pull secret](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#create-pullsecret-daemonset)
+
+    * [Creating the pull secret](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#create-pull-secret)
+
+    * [Deploying the DaemonSet](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#deploy-pullsecret-daemonset)
+
+* [Updating DaemonSets](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#updating-daemonsets)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-registry-mirroring-config#next-steps)
+
+[Configuring operator mirroring and catalog sources](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-operator-mirroring#ocp-image-mgmt-operator-mirroring)
+
+* [Understanding operator mirroring](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-operator-mirroring#understanding-operator-mirroring)
+
+* [Creating CatalogSource resources](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-operator-mirroring#create-catalogsource)
+
+* [Applying the CatalogSource](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-operator-mirroring#apply-catalogsource)
+
+* [Verifying operator availability](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-operator-mirroring#verify-operators)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-operator-mirroring#next-steps)
+
+[Configuring image acceptance policies](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-image-acceptance-policies#ocp-image-mgmt-image-acceptance-policies)
+
+* [Installing Portieris](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-image-acceptance-policies#install-portieris)
+
+* [Understanding policy types](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-image-acceptance-policies#policy-types)
+
+* [Creating a default deny-all cluster policy](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-image-acceptance-policies#create-deny-all-policy)
+
+* [Creating namespace-specific image policies](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-image-acceptance-policies#create-namespace-policies)
+
+* [Verifying image signatures](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-image-acceptance-policies#verify-signatures)
+
+* [Example: Allowing Sysdig agent for Security and Compliance Center Workload Protection](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-image-acceptance-policies#example-sysdig-policy)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-image-acceptance-policies#next-steps)
+
+[Scanning container images for vulnerabilities in IBM Cloud](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-vulnerability-scanning#ocp-image-mgmt-vulnerability-scanning)
+
+* [SCC WP registry scanning](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-vulnerability-scanning#scc-wp-registry-scanning)
+
+* [SCC WP agent for scanning of images deployed on a cluster](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-vulnerability-scanning#scc-wp-agent-scanning)
+
+* [{{site.data.keyword.registryshort}} scanning](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-vulnerability-scanning#icr-scanning)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-vulnerability-scanning#next-steps)
+
+[Container image management references](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-references#ocp-image-mgmt-references)
+
+* [IBM Cloud documentation](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-references#ibm-cloud-docs)
+
+* [Red Hat {{site.data.keyword.openshiftshort}} documentation](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-references#openshift-docs)
+
+* [IBM Cloud for Financial Services](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-references#financial-services)
+
+* [Additional resources](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-references#additional-resources)
 
 
 ## Storage

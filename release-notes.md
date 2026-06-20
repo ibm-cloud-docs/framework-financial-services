@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2025
-lastupdated: "2025-03-24"
+  years: 2021, 2026
+lastupdated: "2026-06-17"
 
 keywords:
 
@@ -20,6 +20,38 @@ Use the release notes to learn about the latest changes to the documentation for
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
+
+## 17 June 2026
+{: #17-june-2026}
+
+* Added guidance for [data loss prevention and perimeter acccess patterns](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp)
+
+  Learn about the data loss prevention strategies with a focus on perimeter access patterns for Independent Software Vendor (ISV) deployments in {{site.data.keyword.cloud_notm}} for Financial Services, including security enforcements, architectural decisions, and threat mitigations.
+
+## 15 June 2026
+{: #15-june-2026}
+
+* Added guidance for [Direct Link for on prem connectivity](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-direct-link)
+
+  {{site.data.keyword.dl_short}} can provide a secure and dedicated netowork connection between on-prem environment ("Bank") and ISV Cloud account for the ISV to access on-prem services (Bank information systems).
+
+* Added link to [multi-tenant solution guidance](/docs/framework-financial-services?topic=framework-financial-services-shared-multitenancy-summary)
+
+  The guide provides different deployment models focused mostly on multitenancy for container-based solutions.
+
+## 10 June 2026
+{: #10-june-2026}
+
+* Added guidance for [egress proxy](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy)
+
+FS controls require SG and ACL to not have 0.0.0.0/0 for egress rules. In high security environments, having an egress for 0.0.0.0/0 is not acceptable. The solution architecture must provide a way to access public services on the internet which do not publish IP Address from isolated secured environments on cloud and still be able to meet FS controls with minimal exceptions.
+
+## 2 June 2026
+{: #02-june-2026}
+
+* Added guidance for [container image management](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview)
+
+This pattern presents a set of architectural alternatives for controlling access to container images used in workload deployments on {{site.data.keyword.openshiftshort}} clusters. The result is an approach that enables secure workload deployment with required controls over software supply chain elements.
 
 ## 24 March 2025
 {: #24-march-2025}
