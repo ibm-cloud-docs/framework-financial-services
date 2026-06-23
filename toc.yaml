@@ -136,6 +136,7 @@ toc:
           - shared/logging-monitoring/shared-logging-audit.md
           - shared/logging-monitoring/shared-logging-audit-provider.md
           - shared/logging-monitoring/shared-logging-operational.md
+          - shared/logging-monitoring/shared-logging-best-practices.md
           - shared/logging-monitoring/shared-monitoring-compliance.md
           - shared/logging-monitoring/shared-monitoring-operational.md
       - topicgroup:

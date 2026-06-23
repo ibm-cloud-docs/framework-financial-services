@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-06-18"
+lastupdated: "2026-06-22"
 
 keywords: 
 
@@ -132,6 +132,8 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 
 [Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
+
+* [23 June 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#23-june-2026)
 
 * [17 June 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#17-june-2026)
 
@@ -1186,6 +1188,44 @@ Find what you are looking for in the topics that are available for {{site.data.k
 * [Related controls in {{site.data.keyword.framework-fs_notm}}](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-operational#related-controls)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-operational#next-steps)
+
+[{{site.data.keyword.logs_full_notm}} best practices for Financial Services](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#shared-logging-best-practices)
+
+* [Understanding data retention](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#data-retention)
+
+    * [Recommended retention period](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#recommended-retention)
+
+* [Configuring IBM Cloud Logs storage](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#configure-storage)
+
+    * [Creating storage buckets](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#create-buckets)
+
+    * [Connecting buckets to IBM Cloud Logs](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#connect-buckets)
+
+* [Understanding data tiers](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#data-tiers)
+
+    * [Data pipeline flow](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#pipeline-flow)
+
+* [Sending logs to IBM Cloud Logs](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#sending-logs)
+
+    * [Activity Tracker event routing (required)](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#activity-tracker-routing)
+
+    * [Application logs (required)](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#application-logs)
+
+    * [IBM Cloud service logs (required)](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#service-logs)
+
+    * [IBM Cloud Logs extensions (optional)](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#logs-extensions)
+
+* [Using the TCO Optimizer](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#tco-optimizer)
+
+    * [Recommended TCO policies](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#recommended-policies)
+
+    * [Accessing the TCO Optimizer](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#access-tco-optimizer)
+
+    * [Creating a TCO policy](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#create-tco-policy)
+
+* [Next steps](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#next-steps)
+
+* [Related information](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices#related-info)
 
 [Compliance monitoring](/docs/framework-financial-services?topic=framework-financial-services-shared-monitoring-compliance#shared-monitoring-compliance)
 

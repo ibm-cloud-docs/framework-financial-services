@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2026
-lastupdated: "2026-06-17"
+lastupdated: "2026-06-22"
 
 keywords:
 
@@ -20,6 +20,13 @@ Use the release notes to learn about the latest changes to the documentation for
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
+
+## 23 June 2026
+{: #23-june-2026}
+
+* Added guidance for [Cloud Logs best practices](/docs/framework-financial-services?topic=framework-financial-services-shared-logging-best-practices)
+
+  Learn to use {{site.data.keyword.logs_full}} features while maintaining Financial Services compliance and reducing costs.
 
 ## 17 June 2026
 {: #17-june-2026}
@@ -44,14 +51,14 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, sec
 
 * Added guidance for [egress proxy](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy)
 
-FS controls require SG and ACL to not have 0.0.0.0/0 for egress rules. In high security environments, having an egress for 0.0.0.0/0 is not acceptable. The solution architecture must provide a way to access public services on the internet which do not publish IP Address from isolated secured environments on cloud and still be able to meet FS controls with minimal exceptions.
+  FS controls require SG and ACL to not have 0.0.0.0/0 for egress rules. In high security environments, having an egress for 0.0.0.0/0 is not acceptable. The solution architecture must provide a way to access public services on the internet which do not publish IP Address from isolated secured environments on cloud and still be able to meet FS controls with minimal exceptions.
 
 ## 2 June 2026
 {: #02-june-2026}
 
 * Added guidance for [container image management](/docs/framework-financial-services?topic=framework-financial-services-ocp-image-mgmt-overview)
 
-This pattern presents a set of architectural alternatives for controlling access to container images used in workload deployments on {{site.data.keyword.openshiftshort}} clusters. The result is an approach that enables secure workload deployment with required controls over software supply chain elements.
+  This pattern presents a set of architectural alternatives for controlling access to container images used in workload deployments on {{site.data.keyword.openshiftshort}} clusters. The result is an approach that enables secure workload deployment with required controls over software supply chain elements.
 
 ## 24 March 2025
 {: #24-march-2025}
