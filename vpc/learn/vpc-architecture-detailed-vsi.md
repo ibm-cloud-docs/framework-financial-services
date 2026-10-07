@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-03-31"
+  years: 2020, 2026
+lastupdated: "2026-10-06"
 
 keywords:
 
@@ -20,10 +20,12 @@ Now that you've seen the [high-level VPC reference architecture for {{site.data.
 
 This architecture shows a deployment of the VPC that uses {{site.data.keyword.vsi_is_short}} as the primary compute.
 
-## Architecture diagram
+## Architecture diagram for public ingress scenario with edge/transit VPC
 {: #vpc-vsi-diagram}
 
-![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}](../images/vpc-single-region/fsv2-0/vpc-single-region-vsi-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}" caption-side="bottom"}
+In this scenario you might need to allow consumers to access your service through the public internet. This variation of the reference architecture is designed to securely enable this type of access as shown in the following diagram, which includes an [edge VPC](#edge-vpc-architecture). 
+
+![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-single-region/fsv2-0/vpc-single-region-vsi-w-edge-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with Edge VPC" caption-side="bottom"}
 
 ## Management VPC
 {: #vpc-architecture-detailed-management}
@@ -35,11 +37,20 @@ The management VPC provides compute, storage, and network services to enable app
 
 The management VPC is distributed across three zones in one [multizone region (MZR)](/docs/overview?topic=overview-locations#mzr-table).
 
+Management VPC can be shared to manage multiple workload environments. One Management VPC can be used to manage multiple Workload VPCs within an account.
+
+The tools within the Management VPC can be shared between multiple Workload VPCs. 
+
+Optionally, production / non-production environments can have their separate Management VPCs.
+
+
 ### Subnets for management tools
 {: #vpc-architecture-detailed-management-subnets}
 
 
 There could be multiple subnets with different ACLs and multiple security groups in the VPC.
+
+Within the Management VPC, isolate different types of tools (monitoring, provisioning) into their own subnets
 
 The top subnet in each zone contains an arbitrary number of virtual server instances that use {{site.data.keyword.block_storage_is_short}}. Security group is used to control the access to these instances, and they are where your management tools run. 
 
@@ -57,6 +68,8 @@ Connectivity from your application provider's enterprise environment to the mana
 An alternative connectivity pattern requires use of the [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn) service to securely connect from your private network to the management VPC. {{site.data.keyword.vpn_vpc_short}} can be used as a static, route-based VPN or a policy-based VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premises private network, or another VPC. When using {{site.data.keyword.vpn_vpc_short}}, you need to place the gateway in a subnet (shown in the lower left subnet in the diagram).
 
  [Client {{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-vpn-client-to-site-overview) provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network using an OpenVPN software client. This solution is useful for telecommuters who want to connect to {{site.data.keyword.cloud_notm}} from a remote location, such as a home office, while still maintaining secure connectivity. To meet the control requirements, you should use full-tunnel mode. In full-tunnel mode, all traffic from a VPN client is routed to the VPN server, which is more secure (especially if connecting from an untrusted network).
+
+In a scenario where the Edge VPC is implemented, the ACLs should be setup to allow access to the Management VPC only from the Edge VPC.
 
 ### Bastion host
 {: #vpc-architecture-detailed-management-connectivity-vpn}
@@ -112,14 +125,47 @@ With [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](/docs/vpc
 
 {{site.data.content.service-description-vpe-2}}
 
-## Variation with edge/transit VPC for public internet access
+### Isolation
+{: #vpc-architecture-workload-isolation}
+Within the Workload VPC, isolate different types of components (Application servers, Databases, etc.) into their own subnets.
+
+
+## Edge VPC
 {: #edge-vpc-architecture}
 
-You might want to allow consumers to access your service through the public internet. This base architecture can be adapted to securely enable this type of access as shown in the following diagram, which introduces a new edge VPC. The request from the consumer gets routed through Cloud Internet Service's global load balancer, through a public load balancer in the edge VPC, and then to the private load balancer within the workload VPC. {{site.data.keyword.cis_full_notm}} provides Domain Name Service (DNS), Global Load Balancer (GLB), DDoS protection, Web Application Firewall (WAF), Transport Layer Security (TLS), Rate Limiting, Smart Routing, and Caching, and can be used for public internet traffic.
+The request from the consumer gets routed through Cloud Internet Service's global load balancer, through a public load balancer in the edge VPC, and then to the private load balancer within the workload VPC. {{site.data.keyword.cis_full_notm}} provides Domain Name Service (DNS), Global Load Balancer (GLB), DDoS protection, Web Application Firewall (WAF), Transport Layer Security (TLS), Rate Limiting, Smart Routing, and Caching, and can be used for public internet traffic.
 
-![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-single-region/fsv2-0/vpc-single-region-vsi-w-edge-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with BIG-IP" caption-side="bottom"}
+Application Load Balancers are deployed in Edge VPC in Active-Active mode to ensure high availability.
 
-For complete details on this variation of the architecture, see [Consumer connectivity to workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet).
+Other components deployed to the Edge VPC include VPN gateways, Client-to-Site VPN, and Bastion.
+
+### Sharing
+{: #edge-vpc-sharing}
+
+* Edge VPC can be shared across multiple workload environments.
+* The components in the Edge VPC can be shared among the workload environments.
+
+### Access
+{: #edge-vpc-access}
+
+* Access to the application for end users will be provided only through the Edge VPC.
+* Operations on the components within the Edge VPC must be done through the tools in the management VPC.
+
+### Isolation
+{: #edge-vpc-isolation}
+
+* Within the Edge VPC, isolate different types of tools (WAF, Bastion) into their own subnets. Have dedicated subnet(s) for WAF and VPN.
+
+* Optionally, production / non-production environments can have their own Edge VPCs.
+
+For complete details on this scenario, see [Consumer connectivity to workload VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-public-internet).
+
+## Access via private network only scenario
+{: #private-only-vpc-architecture}
+
+In case where the service consumers are located in a secure enterprise network and only access the workload services and application via secure network connections, the Management VPC may house the resources used for secure access such as VPN services for operator access and bastion hosts. This results in a simplified VPC layout without the Edge VPC.
+
+![{{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}}](../images/vpc-single-region/fsv2-0/vpc-single-region-vsi-fsv2.0.1.svg){: caption="Single-region {{site.data.keyword.cloud_notm}} for Financial Services reference architecture for VPC with {{site.data.keyword.vsi_is_short}} without public ingress" caption-side="bottom"}
 
 ## Next steps
 {: #next-steps}

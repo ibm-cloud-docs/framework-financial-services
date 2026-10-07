@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-03-31"
+  years: 2020, 2026
+lastupdated: "2026-10-06"
 
 keywords:
 
@@ -18,13 +18,8 @@ subcollection: framework-financial-services
 [{{site.data.keyword.vpc_full}} (VPC)](/docs/vpc?topic=vpc-about-vpc#about-vpc) is a public cloud offering that lets an enterprise establish its own private cloud-like computing environment on shared public cloud infrastructure. A VPC gives an enterprise the ability to define and control a virtual network that is logically isolated from all other public cloud tenants, creating a private, secure place on the public cloud. The VPC reference architecture for the {{site.data.keyword.cloud_notm}} for Financial Services is designed to provide a framework for building a VPC-based offering according to the [best practices and requirements](/docs/framework-financial-services?topic=framework-financial-services-best-practices) of the {{site.data.keyword.framework-fs_notm}}. We detail this architecture and provide guidance for deploying, configuring, and managing it.
 {: shortdesc}
 
-## Architecture diagram
+## Architecture overview
 {: #vpc-arch-diagram}
-
-## VPC reference architecture with only private access
-{: #edge-vpc-architecture}
-
-![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/fsv2-0/vpc-high-level-fsv2.0.1.svg){: caption="High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
 Central to the architecture are two VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
@@ -34,7 +29,7 @@ Management VPC
 Workload VPC
 :   Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
 
-Other key features to note:
+Key features:
 
 * Supports a single tenant.
 * Resides in one or more [multizone regions](/docs/overview?topic=overview-locations).
@@ -45,19 +40,28 @@ Other key features to note:
 * Allows connectivity to {{site.data.keyword.cloud_notm}} services that use [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](#services-networking-vpe).
 * Encrypts data by using [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](#services-security-hpcs), which enables keep your own key (KYOK) functionality which provides technical assurance that {{site.data.keyword.IBM_notm}} cannot access your keys.
 
-## Variation with edge or transit VPC for public internet access
+
+## Scenario 1: VPC reference architecture with edge or transit VPC for public internet access
 {: #edge-vpc-architecture}
 
-The architecture in the previous section is the most secure way of enabling consumers to access the applications that are running in a workload VPC. However, there might be valid cases where it is desirable to allow consumers to access your service through the public internet. The same base architecture can be adapted to securely enable this type of access.
+When the services provided by the workload require access by consumers through the public internet, the solution architechture has to address the increased risk related to the boundary protection.
 
-![High-level VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/fsv2-0/vpc-high-level-w-edge-fsv2.0.1.svg){: caption="High-level VPC reference architecture with edge/transit VPC" caption-side="bottom"}
+![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/fsv2-0/vpc-high-level-w-edge-fsv2.0.1.svg){: caption="High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
-The revised architecture adds:
+The ingress security is implemented via a dedicated Edge VPC and additional services:
 
 * [{{site.data.keyword.cis_full}}](/docs/cis?topic=cis-getting-started) ({{site.data.keyword.cis_short_notm}}) to provide global load balancing and layer 3/4 protection against distributed denial-of-service (DDoS) attacks. It also includes a web application firewall (WAF) protection and layer 7 protection against denial-of-service (DoS) attacks.
 * As an alternative to CIS WAF capabilities, when advanced firewall functionalities are required, a Virtual Network Firewall software in the edge VPC can be deployed to provide web application firewall (WAF) protection and layer 7 protection against denial-of-service (DoS) attacks. The VNF will need to meet the required Financial Services controls.
 
 See [VPC architecture with virtual servers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture) for more details on this variation.
+
+
+## Scenario 2: VPC reference architecture with only private access
+{: #vpc-architecture-private-only}
+
+In case where the service consumers are located in a secure enterprise network and only access the workload services and application via secure network connections, the Management VPC may house the resources used for secure access such as VPN services for operator access and bastion hosts. This results in a simplified VPC layout without the Edge VPC.
+
+![High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-high-level/fsv2-0/vpc-high-level-fsv2.0.1.svg){: caption="High-level VPC reference architecture for {{site.data.keyword.cloud_notm}} for Financial Services" caption-side="bottom"}
 
 
 
@@ -74,7 +78,7 @@ Deploying the reference architecture depends upon VPC infrastructure and PaaS se
 |----------|-------------------|-------------------|
 | Compute [^fs-validated-table-1-1]  | - [{{site.data.keyword.vsi_is_full}}](#services-compute-vsi)  | - [Dedicated hosts for VPC](#services-compute-dedicated-hosts) [^fs-validated-table-2-1] \n - [{{site.data.keyword.cloud_notm}} Auto Scale for VPC](#services-compute-auto-scale) [^fs-validated-table-2-2] |
 | Containers [^fs-validated-table-3]  | - [{{site.data.keyword.openshiftlong}}](#services-containers-openshift) \n - [{{site.data.keyword.registrylong}}](#services-containers-registry) |  |
-| Networking - VPC infrastructure  | - [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-about-vpc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.alb_full}}](#services-networking-alb) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.vpn_vpc_full}}](#services-networking-vpn) [^fs-validated-table-4-1] \n - [{{site.data.keyword.dns_full}}](#services-networking-dns-services) \n - [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](#services-networking-vpe) |  |
+| Networking - VPC infrastructure  | - [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-about-vpc) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.alb_full}}](#services-networking-alb) \n - [{{site.data.keyword.cloud}} {{site.data.keyword.vpn_vpc_full}}](#services-networking-vpn) [^fs-validated-table-4-1] \n - [{{site.data.keyword.dns_full}}](#services-networking-dns-services) \n - [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](#services-networking-vpe) | - [{{site.data.keyword.cloud_notm}} Private Path service for VPC](#services-networking-pps) |
 | Networking - interconnectivity  | - [{{site.data.keyword.dl_full}} (2.0)](#services-networking-direct-link)[^fs-validated-table-4-2] \n - [{{site.data.keyword.tg_full}}](#services-networking-transit-gateway) |  |
 | Storage  | - [{{site.data.keyword.block_storage_is_full}}](#services-storage-block) \n - [{{site.data.keyword.cos_full}}](#services-storage-cos) |  |
 | Security  | - [{{site.data.keyword.cloud}} {{site.data.keyword.hscrypto}}](#services-security-hpcs)  | - [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) \n - [{{site.data.keyword.appid_full}}](#services-security-app-id) |
@@ -169,6 +173,11 @@ Use the [{{site.data.keyword.vpn_vpc_short}}](/docs/vpc?topic=vpc-using-vpn) ser
 With [{{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}}](/docs/vpc?topic=vpc-about-vpe) you can connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network by using the IP addresses of your choosing, which is allocated from a subnet within your VPC.
 
 {{site.data.content.service-description-vpe-2}}
+
+#### {{site.data.keyword.cloud_notm}} Private Path service for VPC 
+{: #services-networking-pps}
+
+[Private Path services](/docs/vpc?topic=vpc-private-path-service-intro) provide private connectivity for {{site.data.keyword.cloud_notm}} and third-party services. A Private Path service requires a Private Path network load balancer (NLB) to deploy a service on {{site.data.keyword.cloud_notm}} and a {{site.data.keyword.cloud_notm}} {{site.data.keyword.vpe_full}} for consumers to connect to the service. Traffic stays on the {{site.data.keyword.IBM_notm}} backbone without traversing the internet.
 
 ### Networking - Interconnectivity
 {: #services-networking-interconnectivity}

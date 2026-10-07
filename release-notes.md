@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2026
-lastupdated: "2026-06-22"
+lastupdated: "2026-10-06"
 
 keywords:
 
@@ -20,6 +20,16 @@ Use the release notes to learn about the latest changes to the documentation for
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform release notes, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status){: external}.
 {: note}
+
+## 6 October 2026
+{: #06-october-2026}
+
+* Updated [FQDN based egress proxy in IBM Cloud VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy) guidance with recommended implementation using ALB with FQDN backends.
+
+## 29 September 2026
+{: #29-september-2026}
+
+* Updated [VPC reference architecture overview](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about) with Edge VPC clarifications.
 
 ## 23 June 2026
 {: #23-june-2026}

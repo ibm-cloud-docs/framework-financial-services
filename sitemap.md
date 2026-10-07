@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-06-22"
+lastupdated: "2026-10-06"
 
 keywords: 
 
@@ -133,6 +133,10 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [Release notes](/docs/framework-financial-services?topic=framework-financial-services-release-notes#release-notes)
 
+* [6 October 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#06-october-2026)
+
+* [29 September 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#29-september-2026)
+
 * [23 June 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#23-june-2026)
 
 * [17 June 2026](/docs/framework-financial-services?topic=framework-financial-services-release-notes#17-june-2026)
@@ -183,11 +187,11 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [VPC reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-architecture-about)
 
-* [Architecture diagram](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-arch-diagram)
+* [Architecture overview](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-arch-diagram)
 
-* [VPC reference architecture with only private access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#edge-vpc-architecture)
+* [Scenario 1: VPC reference architecture with edge or transit VPC for public internet access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#edge-vpc-architecture)
 
-* [Variation with edge or transit VPC for public internet access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#edge-vpc-architecture)
+* [Scenario 2: VPC reference architecture with only private access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#vpc-architecture-private-only)
 
 * [Financial Services Validated services](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about#financial-services-validated-services)
 
@@ -233,7 +237,7 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 [VPC with virtual servers reference architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#vpc-architecture-detailed-vsi)
 
-* [Architecture diagram](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#vpc-vsi-diagram)
+* [Architecture diagram for public ingress scenario with edge/transit VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#vpc-vsi-diagram)
 
 * [Management VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#vpc-architecture-detailed-management)
 
@@ -257,7 +261,17 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
     * [Using {{site.data.keyword.cloud_notm}} services outside of a VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#vpc-architecture-detailed-connectivity-services)
 
-* [Variation with edge/transit VPC for public internet access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture)
+    * [Isolation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#vpc-architecture-workload-isolation)
+
+* [Edge VPC](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-architecture)
+
+    * [Sharing](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-sharing)
+
+    * [Access](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-access)
+
+    * [Isolation](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#edge-vpc-isolation)
+
+* [Access via private network only scenario](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#private-only-vpc-architecture)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-detailed-vsi#next-steps)
 
@@ -684,25 +698,35 @@ Find what you are looking for in the topics that are available for {{site.data.k
 
 * [Scope and goals](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#scope-and-goals)
 
-* [Workload to Internet Connectivity – The BYO Proxy Approach for Services with dynamic IPs](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#byo-proxy)
+* [Workload to Internet Connectivity – Application Load Balancer as Transparent Proxy](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#alb-fqdn-proxy)
 
-* [Alternatives to BYO proxy](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#alternatives)
+* [Alternatives to ALB egress proxy](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#alternatives)
 
 * [High level architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#high-level-architecture)
 
-    * [HAproxy configuration example](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#haproxy-example)
-
 * [Private DNS configuration](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#private-dns)
 
-* [HA considerations](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#ha-considerations)
+    * [ALB configuration example](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#alb-example)
 
-    * [HA Deployment with VPC Application Load Balancers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#ha-deployment)
+* [HA considerations](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#ha-considerations)
 
 * [Networking configuration examples](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#network-flow-controls)
 
     * [Access control lists](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#acls)
 
     * [Security groups](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#security-groups)
+
+* [Alternative Solution - the BYO Proxy Approach for Services with dynamic IPs](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#byo-proxy)
+
+    * [BYO Proxy - High level architecture](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#byo-proxy-high-level-architecture)
+
+    * [HAProxy configuration example](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#haproxy-example)
+
+    * [DNS configuration](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#byo-proxy-private-dns)
+
+    * [HA considerations for BYO Proxy](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#ha-considerations)
+
+    * [HA Deployment with VPC Application Load Balancers](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#ha-deployment)
 
 * [Next steps](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-egress-proxy#next-steps)
 
@@ -825,6 +849,10 @@ Find what you are looking for in the topics that are available for {{site.data.k
     * [Architectural decisions](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#dl-decisions)
 
 * [ISV - Application Deployment](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-deployment)
+
+    * [Flow](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-network-flow)
+
+    * [Security enforcements](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-enforcements)
 
     * [High availability considerations](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#high-availability)
 

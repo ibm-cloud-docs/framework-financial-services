@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-06-18"
+lastupdated: "2026-10-06"
 
 keywords:
 
@@ -491,6 +491,23 @@ Remote work risks
 {: #app-deployment}
 
 ![ISV - Application Deployment](../images/vpc-dlp/dlp-arch-01.svg){: caption="ISV - Application Deployment" caption-side="bottom"}
+
+### Flow
+{: #app-network-flow}
+
+CIS -> Public ALB (Edge VPC) -> Private ALB (Workload VPC) -> Application(VSI/Pods)
+
+### Security enforcements
+{: #app-enforcements}
+
+* CIS needs to be configured with the WAF functionality and will provide Volumetric Layer 3 and Layer 7 DDOS.
+* Public Application Load Balancer in the Edge VPC should be configured to send the requests to the Private Application Load Balancers in the Workload VPC.
+  * ACLs and SGs on Public ALB should allow connections ONLY from CIS
+  * No other inbound flow must be allowed.
+* TLS termination
+  * Client TLS terminated in CIS and re-encrypted from CIS to origin.
+  * Recommendation is to terminate TLS at the application.
+  * All internal flows till the application (inside the VPC) need to be encrypted.
 
 ### High availability considerations
 {: #high-availability}

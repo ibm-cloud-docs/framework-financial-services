@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-09-15"
+  years: 2020, 2026
+lastupdated: "2026-10-06"
 
 keywords:
 
@@ -73,12 +73,19 @@ Workloads may need to be accessed from private intranets using VPN or Direct Lin
 
 There are many valid cases where you might want to allow consumers to access your service through the public internet. The base architecture can be adapted to securely enable this type of access as shown in the following diagram which introduces a new edge VPC. The request from the consumer gets routed through Cloud Internet Service's global load balancer, through a public load balancer in the edge VPC, and then to the private load balancer within the workload VPC. This is shown in the following diagram.
 
-![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/f5-bigip/fsv2-0/vpc-single-region-f5-fsv2.0.1.svg){: caption="Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
+![Detailed VPC reference architecture with edge VPC for the {{site.data.keyword.cloud_notm}} for Financial Services](../images/vpc-dlp/dlp-arch-01.svg){: caption="Detailed VPC reference architecture with edge VPC" caption-side="bottom"}
 
 #### Global load balancer
 {: #consumer-provider-public-internet-glb}
 
-One option for global load balancing outside of the edge VPC is {{site.data.keyword.cis_full}} ({{site.data.keyword.cis_short_notm}}), powered with Cloudflare. {{site.data.keyword.cis_short_notm}} provides a fast, highly performant, reliable, and secure internet service for customers running their business on {{site.data.keyword.cloud_notm}}.
+The recommended option for global load balancing outside of the edge VPC is {{site.data.keyword.cis_full}} ({{site.data.keyword.cis_short_notm}}), powered with Cloudflare. {{site.data.keyword.cis_short_notm}} provides a fast, highly performant, reliable, and secure internet service for customers running their business on {{site.data.keyword.cloud_notm}}.
+
+* Use the Enterprise Usage Plan of {{site.data.keyword.cis_short_notm}}
+  * Log push and pull feature required to be able to pull and push logs to logging and SIEM systems, is only available as a part of Enterprise plans.
+  * Range application feature need for passing VPN Connection(a TCP connection) through {{site.data.keyword.cis_short_notm}}, is only available as a part of Enterprise plans.
+  * Enterprise usage is a pay per use enterprise plan of {{site.data.keyword.cis_short_notm}} suitable to start off with, analyze the data transfer and consumption, upgrade to next enterprise plan as appropriate.
+* Utilize the WAF, DDoS, Firewall capabilities in {{site.data.keyword.cis_short_notm}}
+
 
 For more information, see the following resources:
 
@@ -89,7 +96,7 @@ For more information, see the following resources:
 #### Edge VPC with web application firewall
 {: #consumer-provider-public-internet-waf}
 
-The edge VPC is used to enhance boundary protection for both the management VPC and the workload VPC. For public internet access to the workload VPC, a WAF in the ({{site.data.keyword.cis_short_notm}})](/docs/cis?topic=cis-getting-started) is used to protect web applications by filtering and monitoring internet web traffic. A WAF can prevent attacks exploiting a web application's known vulnerabilities.
+The Edge VPC is used to enhance boundary protection for both the management VPC and the workload VPC. For public internet access to the workload VPC, a WAF in the [{{site.data.keyword.cis_short_notm}}](/docs/cis?topic=cis-getting-started) is used to protect web applications by filtering and monitoring internet web traffic. A WAF can prevent attacks exploiting a web application's known vulnerabilities.
 
 For [management VPC connectivity](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-management), your operators can connect to the environment from your on-premises network (with {{site.data.keyword.dl_short}} or {{site.data.keyword.vpn_vpc_short}}). In practice, all three zones in the edge VPC would be the same, but for illustrative purposes, each of the first and second zone in the edge VPC box depicts one of the two scenarios for operator connectivity:
 
@@ -105,6 +112,8 @@ Use {{site.data.keyword.cloud}} {{site.data.keyword.alb_full}} (ALB) to distribu
 
 * [About {{site.data.keyword.cloud_notm}} {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers&interface=ui)
 * [Creating an {{site.data.keyword.alb_full}}](/docs/vpc?topic=vpc-load-balancers&interface=ui)
+
+Find more details on application connectivity from public internet in the [Application Deployment section](/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-dlp#app-deployment) of perimeter security guidance.
 
 ## Related controls in {{site.data.keyword.framework-fs_notm}}
 {: #related-controls}
